@@ -1,0 +1,177 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>首页</title>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <link type="text/css" href="css/base.css" rel="stylesheet">
+    <link type="text/css" href="css/page.css" rel="stylesheet">
+</head>
+<body>
+<!--<header>-->
+    <!--<div class="header">-->
+        <!--<div class="header_b clearfix">-->
+            <!--<div class="wrapper">-->
+
+                <!--<div class="header-l">-->
+                    <!--<a class="navbar-brand" href="test"><b class="header-logo">ODELIC</b></a>-->
+                <!--</div>-->
+
+                <!--<div class="nav">-->
+                    <!--<ul id="aaa">-->
+                        <!--<li class="item"><a href="index.html" class="nav_small">首页</a>-->
+                        <!--</li>-->
+                        <!--<li class="item"><a href="home" class="nav_small">家居照明</a>-->
+                            <!--<ul class="dl-list">-->
+                                <!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
+                                <!--<li class="xy_item"><a href="http://www.opple.com.cn/solution/" class="xy_snav"-->
+                                                       <!--target="_blank">一站式解决方案</a></li>-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
+                                <!--<li class="xy_item"><a href="http://www.opple.com.cn/home/homelight/skill"-->
+                                                       <!--class="xy_snav" target="_blank">明星产品推荐</a></li>-->
+                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li class="item"><a href="http://www.opple.com.cn/commercial/" class="nav_small">商用照明</a>-->
+                            <!--<ul class="dl-list">-->
+                                <!--<div class="clearfix">-->
+                                    <!--<li class="xy_item"><a href="http://www.opple.com.cn/commercial/" class="xy_snav"-->
+                                                           <!--target="_blank">客户服务</a></li>-->
+                                <!--</div>-->
+                                <!--<div class="clearfix">-->
+                                    <!--<li class="xy_item"><a href="http://www.opple.com.cn/businesscase/" class="xy_snav"-->
+                                                           <!--target="_blank">客户案例</a></li>-->
+                                <!--</div>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li class="item"><a href="http://www.opple.com.cn/newpro" class="nav_small">产品中心</a>-->
+                            <!--<ul class="dl-list">-->
+                                <!--<div class="clearfix">-->
+                                    <!--<li class="xy_item"><a href="http://www.uichange.com" class="xy_snav"-->
+                                                           <!--target="_blank">家居灯具</a></li>-->
+                                <!--</div>-->
+                                <!--<div class="clearfix">-->
+                                    <!--<li class="xy_item"><a href="http://www.tpadsz.com" class="xy_snav" target="_blank">商用灯具</a>-->
+                                    <!--</li>-->
+                                <!--</div>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li class="item">-->
+                            <!--<a href="http://www.opple.com.cn/ir" class="nav_small">关于我们</a>-->
+                            <!--<ul class="dl-list">-->
+                                <!--<div class="clearfix">-->
+                                    <!--<li class="xy_item"><a href="http://www.opple.com.cn/ir#item1" class="xy_snav"-->
+                                                           <!--target="_blank">企业简介</a></li>-->
+                                <!--</div>-->
+                                <!--<div class="clearfix">-->
+                                    <!--<li class="xy_item"><a href="http://www.opple.com.cn/ir#item2" class="xy_snav"-->
+                                                           <!--target="_blank">发展历程</a></li>-->
+                                <!--</div>-->
+                            <!--</ul>-->
+                        <!--</li>-->
+                        <!--<li class="item"><a href="http://www.opple.com.cn/about" class="nav_small">联系我们</a>-->
+                        <!--</li>-->
+                        <!--<li class="item"><img width="14" style="cursor: pointer;" class="header_store"-->
+                                              <!--src="images/header_icon02.png"-->
+                                              <!--onclick="window.open('http://www.opplestore.com/')">-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</header>-->
+
+<div th:include="layout/header::header"></div>
+<div class="nyBanner01 syBanner pc" style="height: auto;">
+    <div id="slideBox" class="slideBox">
+        <div class="hd">
+            <ul></ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="about/detail/2507.html" title="欧普照明携旗下新业务亮相2018广州建博会"><img width="100%"
+                                                                                        src="images/1531211480.jpg"></a>
+                </li>
+
+                <li><a href="home/xsfg.html" title="PC-西式复古-大首页"><img width="100%" src="images/1534156777.jpg"></a></li>
+
+                <li><a href="newhome/newhome.html" title="首页家居kv"><img width="100%" src="images/1533899525.jpg"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="swiper-container phone swiper-container-horizontal">
+    <div class="swiper-wrapper" style="transition-duration: 0ms;">
+        <div class="swiper-slide swiper-slide-active">
+            <a href="http://www.opple.com.cn/about/detail/2507" title="欧普照明携旗下新业务亮相2018广州建博会"><img
+                    src="images/1531211555.jpg"></a>
+        </div>
+
+        <div class="swiper-slide swiper-slide-next">
+            <a href="http://www.opple.com.cn/newhome/" title="家居手机KV"><img src="images/indexbanner.png"></a>
+        </div>
+
+        <div class="swiper-slide">
+            <a href="http://www.opple.com.cn/commercial" title="移动端首页KV"><img src="images/index3.jpg"></a>
+        </div>
+
+    </div>
+    <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+</div>
+
+
+<div class="fixed_right">
+    <ul>
+
+        <li class="pos_re qq">
+            <div class='side-tools-tips'>
+                <p><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=806015080&site=qq&menu=yes'><img
+                        src='images/qq_ff0df34.png' alt=''/></a></p>
+            </div>
+            <!--<div class="fixed_right_hover">-->
+            <!--<div class="zhichiBtn" style="cursor: pointer;" id="zhichiBtn" target="blank"><img src="images/right_icon011.png" width="22">联系客服</div>-->
+            <!--</div>-->
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;">
+                    <img src="images/right_icon01.png" width="22">
+                </div>
+            </div>
+        </li>
+        <li class="pos_re">
+            <!--<div class="fixed_right_hover">-->
+            <!--<a href="http://www.opple.com.cn/service/store"><img src="images/right_icon077.png" width="18">APP下载</a>-->
+            <!--</div>-->
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;" title="APP下载">
+                    <img src="images/right_icon07.png" width="18">
+                </div>
+            </div>
+        </li>
+
+        <li class="pos_re totop">
+            <!--<div class="fixed_right_hover">-->
+            <!--<a href="javascript:;"><img src="images/right_icon066.png" width="20">回到顶部</a>-->
+            <!--</div>-->
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;" title="回到顶部">
+                    <img src="images/right_icon06.png" width="20">
+                </div>
+            </div>
+        </li>
+
+
+    </ul>
+</div>
+
+<div class="clearb"></div>
+<div th:include="layout/footer::footer"></div>
+<!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/footer.html"></iframe>-->
+</body>
+</html>
+
+<!--<script id="zhichiScript" class="zhichiBtn" src="js/entrance.js"></script>-->

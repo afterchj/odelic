@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)http://www.opple.com.cn/solution/?tid=14 -->
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>living room</title>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <link type="text/css" href="./css/base.css" rel="stylesheet">
+    <link type="text/css" href="./mycss/common.css" rel="stylesheet">
+    <!--<link type="text/css" href="./mycss/mybase.css" rel="stylesheet">-->
+    <!--<link type="text/css" href="./mycss/mypage.css" rel="stylesheet">-->
+    <link type="text/css" href="./living_files/inside.css" rel="stylesheet">
+
+    <!--
+    <script type="text/javascript" src="./living_files/api">
+    </script><script type="text/javascript" src="./living_files/getscript"></script>
+    <script type="text/javascript" src="./living_files/layer.js.下载"></script>
+    <script type="text/javascript" src="./living_files/BMapLib.js.下载"></script>
+    <link rel="stylesheet" href="./living_files/layer(1).mycss" id="layuicss-skinlayercss">
+    <script type="text/javascript" src="./living_files/jquery.SuperSlide.2.1.2.js.下载"></script>
+    <script type="text/javascript" src="./living_files/jquery.nicescroll.min.js.下载"></script>
+    <script type="text/javascript" src="./living_files/swiper.min.js.下载"></script>
+    -->
+</head>
+<body>
+<div th:include="layout/header::header"></div>
+<!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/header.html"></iframe>-->
+<div class="photo">
+    <img class="title" src="./img/home_1.jpg" id="alter"/>
+    <div class="num">
+        <div class="show">
+            <div class="numOver" id="img1" onclick="show(1)">1</div>
+            <div class="num1" id="img2" onclick="show(2)">2</div>
+            <div class="num1" id="img3" onclick="show(3)">3</div>
+            <div class="num1" id="img4" onclick="show(4)">4</div>
+        </div>
+    </div>
+</div>
+
+<!--banner-->
+<div class="lmbg">
+    <div class="wrapper">
+        <ul>
+            <li class="on"><a href="#"><em><img src="./living_files/1511786784.jpg"><s></s></em>
+                <p>客厅</p>
+            </a></li>
+            <li><a href="http://www.opple.com.cn/solution/?tid=15"><em><img src="./living_files/1511786787.jpg"><s></s></em>
+                <p>餐厅</p>
+            </a></li>
+            <li><a href="bedroom"><em><img src="./living_files/1511786790.jpg"><s></s></em>
+                <p>卧室</p>
+            </a></li>
+            <li><a href="http://www.opple.com.cn/solution/?tid=77"><em><img src="./living_files/1511786793.jpg"><s></s></em>
+                <p>厨房</p>
+            </a></li>
+            <li><a href="http://www.opple.com.cn/solution/?tid=81"><em><img src="./living_files/1511786795.jpg"><s></s></em>
+                <p>洗漱间</p>
+            </a></li>
+            <li><a href="bookroom"><em><img src="./living_files/1511786798.jpg"><s></s></em>
+                <p>书房</p>
+            </a></li>
+            <li><a href="http://www.opple.com.cn/solution/?tid=83"><em><img src="./living_files/1511786800.jpg"><s></s></em>
+                <p>玄关</p>
+            </a></li>
+            <!--<li><a href="http://www.opple.com.cn/solution/?tid=84"><em><img src="./living_files/1511786805.jpg"><s></s></em>-->
+                <!--<p>老人房</p>-->
+            <!--</a></li>-->
+            <!--<li><a href="http://www.opple.com.cn/solution/?tid=85"><em><img src="./living_files/1511786809.jpg"><s></s></em>-->
+                <!--<p>婴幼儿房</p>-->
+            <!--</a></li>-->
+            <li><a href="http://www.opple.com.cn/solution/?tid=86"><em><img src="./living_files/1511786813.jpg"><s></s></em>
+                <p>儿童房</p>
+            </a></li>
+        </ul>
+    </div>
+</div>
+<div class="phone phoneBanner">
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transition-duration: 0ms;">
+            <div class="swiper-slide swiper-slide-active"><img src="./living_files/phone03.jpg"></div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+    </div>
+</div>
+<div class="phone jjfaNav">
+    <div class="swiper-container swiper-container-horizontal">
+        <div class="swiper-wrapper" style="transition-duration: 0ms;">
+            <div class="swiper-slide swiper-slide-active"><a href="http://www.opple.com.cn/solution/?tid=14"><em><img
+                    src="./living_files/1511786784.jpg"><s></s></em>
+                <p>客厅</p>
+            </a></div>
+            <div class="swiper-slide swiper-slide-next"><a href="http://www.opple.com.cn/solution/?tid=15"><em><img
+                    src="./living_files/1511786787.jpg"><s></s></em>
+                <p>餐厅</p>
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.opple.com.cn/solution/?tid=76"><em><img
+                    src="./living_files/1511786790.jpg"><s></s></em>
+                <p>卧室</p>
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.opple.com.cn/solution/?tid=77"><em><img
+                    src="./living_files/1511786793.jpg"><s></s></em>
+                <p>厨房</p>
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.opple.com.cn/solution/?tid=81"><em><img
+                    src="./living_files/1511786795.jpg"><s></s></em>
+                <p>卫生间</p>
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.opple.com.cn/solution/?tid=82"><em><img
+                    src="./living_files/1511786798.jpg"><s></s></em>
+                <p>阳台</p>
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.opple.com.cn/solution/?tid=83"><em><img
+                    src="./living_files/1511786800.jpg"><s></s></em>
+                <p>玄关过道</p>
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.opple.com.cn/solution/?tid=84"><em><img
+                    src="./living_files/1511786805.jpg"><s></s></em>
+                <p>老人房</p>
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.opple.com.cn/solution/?tid=85"><em><img
+                    src="./living_files/1511786809.jpg"><s></s></em>
+                <p>婴幼儿房</p>
+            </a></div>
+            <div class="swiper-slide"><a href="http://www.opple.com.cn/solution/?tid=86"><em><img
+                    src="./living_files/1511786813.jpg"><s></s></em>
+                <p>儿童房</p>
+            </a></div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
+    </div>
+</div>
+<div class="info">
+    <div class="solu wrapper clearfix">
+        <div style="float:left">
+            <div class="solut">
+                <h2>客厅好灯光</h2>
+                <p>舒适 多功能 品位</p>
+            </div>
+            <div class="solum">
+                <p>客厅不仅是一个家的脸面，更是全家人共处最重要的地方。</p>
+                <br>
+                <p> 多点布灯，灵活调节模式，满足不同活动照明需求，体现空间层次感，彰显品位；<br>
+                    主灯建议选用经典款式， 匹配多种装修风格；<br>
+                    新一代LED吸顶灯，随心调光调色，时刻健康舒适。</p>
+            </div>
+        </div>
+        <div class="table">
+            <table border="0">
+                <tr>
+                    <td class="one">舒适</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td class="two">多功能</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="one">品味</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="photo"><img style="width:1200px; height:505px;" src="./living_files/1513249153.jpg" alt=""></div>
+<div class="solu wrapper clearfix">
+    <div class="solum" style="padding:0 0 0 30px;">
+        <p>
+            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+            <label style="font-size:16px; font-weight:bolder;">一款有品位的灯具，赋予生活质感与格调</label>
+        </p>
+        <br>
+        <p> 客厅是最能表现主人待客习性和品味特点的空间，选择一款有品位的灯具，赋予生活质感与格调</p>
+        <br/>
+        <div><img style="width:1130px; height:495px;" src="./img/u338.png" alt=""></div>
+    </div>
+</div>
+<div class="solu wrapper clearfix">
+    <div class="solum" style="padding:0 0 0 30px;">
+        <p>
+            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+            <label style="font-size:16px; font-weight:bolder;">多样风格，缔造明亮新空间</label>
+        </p>
+        <br>
+        <p> 结合家具的风格选择合适的灯具，缔造明亮新空间</p>
+        <br/>
+        <div><img style="width:1100px; height:508px;" src="./img/u351.png" alt=""></div>
+    </div>
+</div>
+<div class="solu wrapper clearfix">
+    <div class="solum" style="width:100%;padding:0 0 0 30px;">
+        <p>
+            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+            <label style="font-size:16px; font-weight:bolder;">RGB调光，给聚会时刻添姿增彩</label>
+        </p>
+        <br>
+        <p> 在客厅使用RGB灯具，随心调光调色，在聚会时刻添姿增彩</p>
+        <br/>
+        <div><img src="./img/u343.png" alt=""></div>
+        <div><img src="./img/u344.png" alt=""></div>
+
+        <div class="wntj" style="margin-top:100px;">
+            <div class="sertit">为你推荐</div>
+            <br/>
+            <div class="soc2 clearfix">
+                <div class="soc2m">
+                    <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2069"><img
+                            src="./living_files/1466847630.jpg" alt=""></a></div>
+                    <div class="soc2mt"><a href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>
+                    </div>
+                    <div class="soc2mm">功率（W）：116.5<br>
+                        规格尺寸(Mm)：Φ1000*360<br>
+                        应用空间：客厅
+                    </div>
+                </div>
+                <div class="soc2m">
+                    <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2580"><img
+                            src="./living_files/1451385080.jpg" alt=""></a></div>
+                    <div class="soc2mt"><a href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>
+                    </div>
+                    <div class="soc2mm">功率（W）：135<br>
+                        规格尺寸(Mm)：Φ1030*1100<br>
+                        应用空间：客厅
+                    </div>
+                </div>
+                <div class="soc2m">
+                    <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2574"><img
+                            src="./living_files/1447916958.jpg" alt=""></a></div>
+                    <div class="soc2mt"><a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>
+                    </div>
+                    <div class="soc2mm">功率（W）：100<br>
+                        规格尺寸(Mm)：Φ 1000*545<br>
+                        应用空间：客厅
+                    </div>
+                </div>
+                <div class="soc2m">
+                    <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2582"><img
+                            src="./living_files/1466762897.jpg" alt=""></a></div>
+                    <div class="soc2mt"><a
+                            href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a></div>
+                    <div class="soc2mm">功率（W）：117<br>
+                        规格尺寸(Mm)：Φ970*291<br>
+                        应用空间：客厅
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><a class="button" href="#" target="_blank">查看更多</a></div>
+    </div>
+</div>
+<div th:include="layout/footer::footer"></div>
+<!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/footer.html"></iframe>-->
+</body>
+</html>
