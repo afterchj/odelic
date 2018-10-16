@@ -19,12 +19,12 @@ spring:
     host: 192.168.51.75
     port: 6379
     database: 1
-  profiles:
-    active: dev
   http:
     encoding:
       charset: utf-8
       force: true
+  profiles:
+    active: dev
 logging:
   file: /mnt/odelic/log.log
 #server:
