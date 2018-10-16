@@ -26,7 +26,7 @@ spring:
   profiles:
     active: dev
 logging:
-  file: /mnt/odelic/log.log
+  file: /mnt/shared/odelic/log/log.log
 #server:
 #  servlet:
 #    context-path: /helloboot
