@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 html, body {
     margin: 0;
     pading: 0;
@@ -19,6 +25,10 @@ li {
     height: 375px;
 }
 
+.top {
+    margin-top: 5px;
+}
+
 .right {
     float: right;
 }
@@ -28,11 +38,13 @@ li {
 }
 
 .dd {
-    padding: 0 0 0 0;
+    padding: 0 0 0 50px;
 }
-.desc{
-    text-align:left
+
+.desc {
+    text-align: left
 }
+
 .tt {
     position: absolute;
     top: 5%;
@@ -155,9 +167,9 @@ li {
 .table {
     font-size: 20px;
     text-align: center;
-    float: inherit;
+    float: left;
     position: absolute;
-    left: 60%;
+    left: 55%;
 }
 
 .one {
@@ -197,7 +209,7 @@ li {
 .info {
     margin: 0 auto;
     position: relative;
-    width: 100%;
+    width: 1400px;
     height: auto;
 }
 
@@ -213,4 +225,42 @@ li {
     border-radius: 5px;
     display: block;
     color: #666;
+}
+
+.clear {
+    clear: both;
+    line-height: 0;
+    font-size: 0;
+    height: 0;
+}
+
+#jswbox {
+    width: 1100px;
+    margin: 0px auto;
+}
+
+#jswbox ul {
+    position: relative;
+    height: 600px;
+}
+
+#jswbox li {
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+#jswbox li img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+    float: left;
+    border: 0;
+}
+
+#jswbox .prev, #jswbox .next {
+    display: none;
 }

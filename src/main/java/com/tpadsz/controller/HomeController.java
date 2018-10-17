@@ -9,8 +9,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
-    @RequestMapping(value = {"/","/index"})
+    @RequestMapping(value = {"/", "/index"})
     public String view() {
         return "index";
+    }
+
+    @RequestMapping(value = "foot")
+    public String footer() {
+        return "layout/footer";
     }
 }

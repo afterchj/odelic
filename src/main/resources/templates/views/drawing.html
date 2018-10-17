@@ -7,6 +7,7 @@
     <title>drawing room</title>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/comm.js"></script>
     <script type="text/javascript" src="./js/common.js"></script>
     <link type="text/css" href="./css/base.css" rel="stylesheet">
     <link type="text/css" href="./mycss/common.css" rel="stylesheet">
@@ -14,16 +15,11 @@
     <link type="text/css" href="./mycss/mypage.css" rel="stylesheet">
     <link type="text/css" href="./living_files/inside.css" rel="stylesheet">
 
-    <!--
-    <script type="text/javascript" src="./living_files/api">
-    </script><script type="text/javascript" src="./living_files/getscript"></script>
-    <script type="text/javascript" src="./living_files/layer.js.下载"></script>
-    <script type="text/javascript" src="./living_files/BMapLib.js.下载"></script>
-    <link rel="stylesheet" href="./living_files/layer(1).mycss" id="layuicss-skinlayercss">
-    <script type="text/javascript" src="./living_files/jquery.SuperSlide.2.1.2.js.下载"></script>
-    <script type="text/javascript" src="./living_files/jquery.nicescroll.min.js.下载"></script>
-    <script type="text/javascript" src="./living_files/swiper.min.js.下载"></script>
-    -->
+    <script>
+        $(function(){
+            new ZoomPic("jswbox");
+        })
+    </script>
 </head>
 <body>
 <div th:include="layout/header::header"></div>
@@ -40,14 +36,14 @@
     </div>
 </div>
 <div th:include="layout/common::common"></div>
-<div class="info">
+<!--<div class="info">-->
     <div class="solu wrapper clearfix">
         <div style="float:left">
-            <div class="solut">
+            <div class="solut" style="padding:0 0 0 50px;">
                 <h2>客厅好灯光</h2>
                 <p>舒适 多功能 品位</p>
             </div>
-            <div class="solum">
+            <div class="solum" style="padding:0 0 0 50px;">
                 <p>客厅不仅是一个家的脸面，更是全家人共处最重要的地方。</p>
                 <br>
                 <p> 多点布灯，灵活调节模式，满足不同活动照明需求，体现空间层次感，彰显品位；<br>
@@ -75,10 +71,22 @@
             </table>
         </div>
     </div>
+<!--</div>-->
+<div style="margin-top: -120px;">
+    <div id="jswbox">
+        <pre class="prev">prev</pre>
+        <pre class="next">next</pre>
+        <ul>
+            <li style="display: block; width: 762px; height: 389px; top: 152px; left: 0; z-index: 1;"><img src="images/1.jpg" alt="许在浩"></li>
+            <li style="display: block; width: 762px; height: 389px;top: 152px; left: 200px; z-index: 2;"><img src="images/2.jpg" alt="MAGGIE"></li>
+            <li style="display: block; width: 762px; height: 389px;top: 152px; left: 400px; z-index: 3;"><img src="images/3.jpg" alt="万玲玲"></li>
+        </ul>
+    </div>
 </div>
-<div class="photo"><img style="width:1200px; height:505px;" src="./living_files/1513249153.jpg" alt=""></div>
+<!--<div class="photo"><img style="width:1200px; height:505px;" src="./living_files/1513249153.jpg" alt=""></div>-->
+
 <div class="solu wrapper clearfix">
-    <div class="solum" style="padding:0 0 0 30px;">
+    <div class="solum" style="padding:0 0 0 50px;">
         <p>
             <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
             <label style="font-size:16px; font-weight:bolder;">一款有品位的灯具，赋予生活质感与格调</label>
@@ -90,7 +98,7 @@
     </div>
 </div>
 <div class="solu wrapper clearfix">
-    <div class="solum" style="padding:0 0 0 30px;">
+    <div class="solum" style="padding:0 0 0 50px;">
         <p>
             <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
             <label style="font-size:16px; font-weight:bolder;">多样风格，缔造明亮新空间</label>
@@ -102,7 +110,7 @@
     </div>
 </div>
 <div class="solu wrapper clearfix">
-    <div class="solum" style="width:100%;padding:0 0 0 30px;">
+    <div class="solum" style="width:100%;padding:0 0 0 50px;">
         <p>
             <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
             <label style="font-size:16px; font-weight:bolder;">RGB调光，给聚会时刻添姿增彩</label>
