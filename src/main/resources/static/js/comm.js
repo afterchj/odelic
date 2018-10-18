@@ -22,9 +22,9 @@ ZoomPic.prototype = {
             return _this.doNext.apply(_this)
         };
         this.options = [
-            {width: 750, height: 450, top: 152, left: 0, zIndex: 1},
-            {width: 750, height: 450, top: 152, left: 200, zIndex: 3},
-            {width: 750, height: 450, top: 152, left: 400, zIndex: 1}
+            {width: 800, height: 450, top: 152, left: 0, zIndex: 1},
+            {width: 800, height: 450, top: 152, left: 200, zIndex: 3},
+            {width: 800, height: 450, top: 152, left: 400, zIndex: 1}
         ];
         for (var i = 0; i < this.aLi.length; i++)this.aSort[i] = this.aLi[i];
         this.aSort.unshift(this.aSort.pop());

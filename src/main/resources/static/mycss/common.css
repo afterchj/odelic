@@ -14,19 +14,89 @@ li {
     list-style: none;
 }
 
-#container {
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.photo {
+    margin: 0 auto;
+    width: 1920px;
+    height: auto;
+    text-align: center;
+}
+
+.title {
     width: 100%;
-    height: 100%;
+    height: 500px;
+    /*margin-top: -100px;*/
+}
+
+.info {
+    margin: 20px auto 0 auto;
+    /*position: relative;*/
+    width: 1200px;
+    height: 225px;
+    /*border: 1px solid black;*/
+}
+
+.lmbg {
+    margin: 0 auto;
+    width: 1200px;
+    height: 90px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+
+.table {
+    font-size: 20px;
+    text-align: center;
+    float: left;
+    position: absolute;
+    left: 60%;
+}
+
+.solum img {
+    width: 1200px;
+    height: 500px;
 }
 
 .home {
-    margin: 20px auto;
-    width: 75%;
-    height: 375px;
+    margin: 20px auto 0 auto;
+    width: 1200px;
+    height: 315px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}
+
+.content {
+    /*position: relative;*/
+    margin-top: 20px;
+    text-align: center;
+    width: 599px;
+    height: auto;
+    float: left;
+}
+
+.img {
+    /*position: relative;*/
+    width: 599px;
+    height: auto;
+    /*border: 1px solid black;*/
+    float: left;
+}
+
+.desc {
+    text-align: left
 }
 
 .top {
     margin-top: 5px;
+}
+
+.bottom {
+    margin-bottom: 20px;
 }
 
 .right {
@@ -41,43 +111,10 @@ li {
     padding: 0 0 0 50px;
 }
 
-.desc {
-    text-align: left
-}
-
 .tt {
     position: absolute;
     top: 5%;
     left: 2%;
-}
-
-.content {
-    position: relative;
-    margin-top: 20px;
-    text-align: center;
-    width: 50%;
-    height: auto;
-    float: left;
-}
-
-.img {
-    position: relative;
-    width: 50%;
-    height: auto;
-    float: left;
-}
-
-.title {
-    width: 100%;
-    height: 500px;
-    /*margin-top: -100px;*/
-}
-
-.photo {
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    text-align: center;
 }
 
 .num {
@@ -123,55 +160,6 @@ li {
     background-color: #39F;
 }
 
-.login {
-    display: none;
-    text-align: center;
-    width: auto;
-    height: 160px;
-    margin-top: 0;
-    position: absolute;
-    z-index: 1;
-    margin-left: 30%;
-}
-
-.login a {
-    text-decoration: none;
-    font-size: 12px;
-    margin-left: 12px;
-}
-
-.span a {
-    color: #FFF;
-    text-decoration: none;
-}
-
-.span li {
-    margin-right: 20px;
-}
-
-.tt a {
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.txt a {
-    color: #CCC;
-    font-weight: bold;
-    font-size: 14px;
-}
-
-.form input {
-    float: left;
-}
-
-.table {
-    font-size: 20px;
-    text-align: center;
-    float: left;
-    position: absolute;
-    left: 60%;
-}
-
 .one {
     /*border: 1px solid #CCC;*/
     /*
@@ -206,13 +194,6 @@ li {
     height: 70px;
 }
 
-.info {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
 .button {
     text-align: center;
     width: 140px;
@@ -236,14 +217,15 @@ li {
 
 .wntj {
     width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
     text-align: center;
-    padding: 0 0 0 50px;
+    /*padding: 0 0 0 50px;*/
 }
 
 #jswbox {
-    width: 1100px;
-    margin: 0px auto;
+    width: 1200px;
+    margin-top: -120px;
+    /*padding: 0 0 0 50px;*/
 }
 
 #jswbox ul {

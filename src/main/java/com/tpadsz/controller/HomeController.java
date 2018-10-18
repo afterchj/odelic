@@ -18,4 +18,9 @@ public class HomeController {
     public String footer() {
         return "layout/footer";
     }
+
+    @RequestMapping(value = "/common")
+    public String common() {
+        return "layout/common";
+    }
 }
