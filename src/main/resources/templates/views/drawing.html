@@ -24,158 +24,157 @@
 <body>
 <div th:include="layout/header::header"></div>
 <!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/header.html"></iframe>-->
-<div class="photo">
-    <img class="title" src="./img/home_1.jpg" id="alter"/>
-    <div class="num">
-        <div class="show">
-            <div class="numOver" id="img1" onclick="show(1)">1</div>
-            <div class="num1" id="img2" onclick="show(2)">2</div>
-            <div class="num1" id="img3" onclick="show(3)">3</div>
-            <div class="num1" id="img4" onclick="show(4)">4</div>
+<div class="container">
+    <div class="photo">
+        <img class="title" src="./img/home_1.jpg" id="alter"/>
+        <div class="num">
+            <div class="show">
+                <div class="numOver" id="img1" onclick="show(1)">1</div>
+                <div class="num1" id="img2" onclick="show(2)">2</div>
+                <div class="num1" id="img3" onclick="show(3)">3</div>
+                <div class="num1" id="img4" onclick="show(4)">4</div>
+            </div>
         </div>
     </div>
-</div>
-<div th:include="layout/common::common"></div>
-<!--<div class="info">-->
-<div class="solu wrapper clearfix">
-    <div style="float:left">
-        <div class="solut" style="padding:0 0 0 50px;">
-            <h2>客厅好灯光</h2>
-            <p>舒适 多功能 品位</p>
+    <div th:include="layout/common::common"></div>
+    <div class="info">
+        <div class="solu wrapper clearfix">
+            <div style="float:left">
+                <div class="solut"  >
+                    <h2>客厅好灯光</h2>
+                    <p>舒适 多功能 品位</p>
+                </div>
+                <div class="solum"  >
+                    <p>客厅不仅是一个家的脸面，更是全家人共处最重要的地方。</p>
+                    <br>
+                    <p> 多点布灯，灵活调节模式，满足不同活动照明需求，体现空间层次感，彰显品位；<br>
+                        主灯建议选用经典款式， 匹配多种装修风格；<br>
+                        新一代LED吸顶灯，随心调光调色，时刻健康舒适。</p>
+                </div>
+            </div>
+            <div class="table">
+                <table border="0">
+                    <tr>
+                        <td class="one">舒适</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="two">多功能</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="one">品味</td>
+                    </tr>
+                </table>
+            </div>
         </div>
-        <div class="solum" style="padding:0 0 0 50px;">
-            <p>客厅不仅是一个家的脸面，更是全家人共处最重要的地方。</p>
-            <br>
-            <p> 多点布灯，灵活调节模式，满足不同活动照明需求，体现空间层次感，彰显品位；<br>
-                主灯建议选用经典款式， 匹配多种装修风格；<br>
-                新一代LED吸顶灯，随心调光调色，时刻健康舒适。</p>
+    </div>
+    <div style="width:1200px;margin:0 auto">
+        <div id="jswbox">
+            <pre class="prev">prev</pre>
+            <pre class="next">next</pre>
+            <ul>
+                <li style="display: block; width: 800px; height: 450px; top: 152px; left: 0; z-index: 1;"><img src="images/1.jpg" alt=""></li>
+                <li style="display: block; width: 800px; height: 450px;top: 152px; left: 200px; z-index: 2;"><img src="images/2.jpg" alt=""></li>
+                <li style="display: block; width: 800px; height: 450px;top: 152px; left: 400px; z-index: 3;"><img src="images/3.jpg" alt=""></li>
+            </ul>
         </div>
     </div>
-    <div class="table">
-        <table border="0">
-            <tr>
-                <td class="one">舒适</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td class="two">多功能</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td class="one">品味</td>
-            </tr>
-        </table>
-    </div>
-</div>
-<!--</div>-->
-<div style="margin-top: -120px;">
-    <div id="jswbox">
-        <pre class="prev">prev</pre>
-        <pre class="next">next</pre>
-        <ul>
-            <li style="display: block; width: 750px; height: 450px; top: 152px; left: 0; z-index: 1;"><img
-                    src="images/1.jpg" alt="许在浩"></li>
-            <li style="display: block; width: 750px; height: 450px;top: 152px; left: 200px; z-index: 2;"><img
-                    src="images/2.jpg" alt="MAGGIE"></li>
-            <li style="display: block; width: 750px; height: 450px;top: 152px; left: 400px; z-index: 3;"><img
-                    src="images/3.jpg" alt="万玲玲"></li>
-        </ul>
-    </div>
-</div>
-<!--<div class="photo"><img style="width:1200px; height:505px;" src="./living_files/1513249153.jpg" alt=""></div>-->
+    <!--<div class="photo"><img style="width:1200px; height:505px;" src="./living_files/1513249153.jpg" alt=""></div>-->
 
-<div class="solu wrapper clearfix">
-    <div class="solum" style="padding:0 0 0 50px;">
-        <p>
-            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
-            <label style="font-size:16px; font-weight:bolder;">一款有品位的灯具，赋予生活质感与格调</label>
-        </p>
-        <br>
-        <p> 客厅是最能表现主人待客习性和品味特点的空间，选择一款有品位的灯具，赋予生活质感与格调</p>
+    <div class="solu wrapper clearfix">
+        <div class="solum"  >
+            <p>
+                <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+                <label style="font-size:16px; font-weight:bolder;">一款有品位的灯具，赋予生活质感与格调</label>
+            </p>
+            <br>
+            <p> 客厅是最能表现主人待客习性和品味特点的空间，选择一款有品位的灯具，赋予生活质感与格调</p>
+            <br/>
+            <div><img src="./home/一站式解决_38.png" alt=""></div>
+        </div>
+    </div>
+    <div class="solu wrapper clearfix">
+        <div class="solum"  >
+            <p>
+                <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+                <label style="font-size:16px; font-weight:bolder;">多样风格，缔造明亮新空间</label>
+            </p>
+            <br>
+            <p> 结合家具的风格选择合适的灯具，缔造明亮新空间</p>
+            <br/>
+            <div><img src="./home/一站式解决_40.png" alt=""></div>
+        </div>
+    </div>
+    <div class="solu wrapper clearfix">
+        <div class="solum"  >
+            <p>
+                <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+                <label style="font-size:16px; font-weight:bolder;">RGB调光，给聚会时刻添姿增彩</label>
+            </p>
+            <br>
+            <p> 在客厅使用RGB灯具，随心调光调色，在聚会时刻添姿增彩</p>
+            <br/>
+            <div><img src="./home/一站式解决_42.png" alt=""></div>
+            <div><img src="./home/一站式解决_43.png" alt=""></div>
+        </div>
+    </div>
+    <div class="wntj">
+        <div class="sertit" style="text-align: left;">
+            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>为你推荐
+        </div>
         <br/>
-        <div><img src="./home/一站式解决_38.png" alt=""></div>
-    </div>
-</div>
-<div class="solu wrapper clearfix">
-    <div class="solum" style="padding:0 0 0 50px;">
-        <p>
-            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
-            <label style="font-size:16px; font-weight:bolder;">多样风格，缔造明亮新空间</label>
-        </p>
-        <br>
-        <p> 结合家具的风格选择合适的灯具，缔造明亮新空间</p>
-        <br/>
-        <div><img src="./home/一站式解决_40.png" alt=""></div>
-    </div>
-</div>
-<div class="solu wrapper clearfix">
-    <div class="solum" style="padding:0 0 0 50px;">
-        <p>
-            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
-            <label style="font-size:16px; font-weight:bolder;">RGB调光，给聚会时刻添姿增彩</label>
-        </p>
-        <br>
-        <p> 在客厅使用RGB灯具，随心调光调色，在聚会时刻添姿增彩</p>
-        <br/>
-        <div><img src="./home/一站式解决_42.png" alt=""></div>
-        <div><img src="./home/一站式解决_43.png" alt=""></div>
-    </div>
-</div>
-<div class="wntj">
-    <div class="sertit" style="text-align: left;">
-        <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>为你推荐
-    </div>
-    <br/>
-    <div class="soc2 clearfix">
-        <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2069"><img
-                    src="./living_files/1466847630.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>
+        <div class="soc2 clearfix">
+            <div class="soc2m">
+                <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2069"><img
+                        src="./living_files/1466847630.jpg" alt=""></a></div>
+                <div class="soc2mt"><a
+                        href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>
+                </div>
+                <div class="soc2mm">功率（W）：116.5<br>
+                    规格尺寸(Mm)：Φ1000*360<br>
+                    应用空间：客厅
+                </div>
             </div>
-            <div class="soc2mm">功率（W）：116.5<br>
-                规格尺寸(Mm)：Φ1000*360<br>
-                应用空间：客厅
+            <div class="soc2m">
+                <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2580"><img
+                        src="./living_files/1451385080.jpg" alt=""></a></div>
+                <div class="soc2mt"><a
+                        href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>
+                </div>
+                <div class="soc2mm">功率（W）：135<br>
+                    规格尺寸(Mm)：Φ1030*1100<br>
+                    应用空间：客厅
+                </div>
             </div>
-        </div>
-        <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2580"><img
-                    src="./living_files/1451385080.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>
+            <div class="soc2m">
+                <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2574"><img
+                        src="./living_files/1447916958.jpg" alt=""></a></div>
+                <div class="soc2mt"><a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>
+                </div>
+                <div class="soc2mm">功率（W）：100<br>
+                    规格尺寸(Mm)：Φ 1000*545<br>
+                    应用空间：客厅
+                </div>
             </div>
-            <div class="soc2mm">功率（W）：135<br>
-                规格尺寸(Mm)：Φ1030*1100<br>
-                应用空间：客厅
-            </div>
-        </div>
-        <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2574"><img
-                    src="./living_files/1447916958.jpg" alt=""></a></div>
-            <div class="soc2mt"><a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>
-            </div>
-            <div class="soc2mm">功率（W）：100<br>
-                规格尺寸(Mm)：Φ 1000*545<br>
-                应用空间：客厅
-            </div>
-        </div>
-        <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2582"><img
-                    src="./living_files/1466762897.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a></div>
-            <div class="soc2mm">功率（W）：117<br>
-                规格尺寸(Mm)：Φ970*291<br>
-                应用空间：客厅
+            <div class="soc2m">
+                <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2582"><img
+                        src="./living_files/1466762897.jpg" alt=""></a></div>
+                <div class="soc2mt"><a
+                        href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a></div>
+                <div class="soc2mm">功率（W）：117<br>
+                    规格尺寸(Mm)：Φ970*291<br>
+                    应用空间：客厅
+                </div>
             </div>
         </div>
     </div>
+    <div><a class="button" href="#" target="_blank">查看更多</a></div>
 </div>
-<div><a class="button" href="#" target="_blank">查看更多</a></div>
 <div th:include="layout/footer::footer"></div>
 <!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/footer.html"></iframe>-->
 </body>
