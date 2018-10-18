@@ -169,7 +169,7 @@ li {
     text-align: center;
     float: left;
     position: absolute;
-    left: 55%;
+    left: 60%;
 }
 
 .one {
@@ -209,7 +209,7 @@ li {
 .info {
     margin: 0 auto;
     position: relative;
-    width: 1400px;
+    width: 100%;
     height: auto;
 }
 
@@ -232,6 +232,13 @@ li {
     line-height: 0;
     font-size: 0;
     height: 0;
+}
+
+.wntj {
+    width: 1200px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0 0 0 50px;
 }
 
 #jswbox {
