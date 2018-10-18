@@ -1,0 +1,13 @@
+.tit{font-size: 30px;color: #333; margin:25px auto;text-align:center;}
+.sertit{color:#333; font-size:24px;}
+.lx{position:relative; background:#fafafa; }
+.lxl{position:absolute;left:0;top:0;height:100%;width:315px; padding:0 95px 0 30px;line-height: 36px; }
+.lxlm{color: #6e6e6e;line-height: 20px; margin-top:15px; text-align:justify;}
+.lxr{width: 760px;}
+.lxl1{left:760px;width:300px; padding:0 95px 0 45px;}
+.lx .table,.lx .table-cell,.lxlm{width:315px;}
+.dotr:hover em img,.lxr:hover img,.zyc1 li:hover img,.zyc2 li:hover img{-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1);-o-transform:scale(1.1,1.1);-moz-transform:scale(1.1,1.1);}
+.dotr em,.lxr,.zyc1 li,.zyc2 li a{overflow: hidden;}
+
+.design{text-align:center;}
+.lxln{color: #6e6e6e;line-height: 20px; margin-top:15px; text-align:center;}

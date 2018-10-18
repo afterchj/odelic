@@ -7,18 +7,18 @@ spring:
     prefix: classpath:/templates/views/
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://192.168.51.75:3306/test?useUnicode=true&characterEncoding=utf8
-      password: root
-      username: root
+      url: jdbc:mysql://10.10.11.60:3306/light?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      password: mopita
+      username: mopita
       type: com.alibaba.druid.pool.DruidDataSource
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-  redis:
-    host: 192.168.51.75
-    port: 6379
-    database: 1
+#  redis:
+#    host: 192.168.51.75
+#    port: 6379
+#    database: 1
   http:
     encoding:
       charset: utf-8
