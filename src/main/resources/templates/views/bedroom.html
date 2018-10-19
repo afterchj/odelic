@@ -6,7 +6,7 @@
     <meta charset="UTF-8"/>
     <title>bedroom</title>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/nav.js"></script>
+    <!--<script type="text/javascript" src="./js/nav.js"></script>-->
     <script type="text/javascript" src="./js/common.js"></script>
     <link type="text/css" href="./css/base.css" rel="stylesheet">
     <link type="text/css" href="./mycss/common.css" rel="stylesheet">
@@ -17,10 +17,38 @@
 </head>
 <body>
 <!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/header.html"></iframe>-->
-<div th:include="layout/header::header"></div>
+<!--<div th:include="layout/header::header"></div>-->
 <div th:include="layout/trade::trade"></div>
-<div th:include="layout/common::common"></div>
-
+<div class="lmbg">
+    <div class="wrapper">
+        <ul>
+            <li><a href="drawing"><em><img src="./home/一站式解决_04.png"><s></s></em><br>
+                <p>客厅</p>
+            </a></li>
+            <li><a href="dining"><em><img src="./home/一站式解决_06.png"><s></s></em><br>
+                <p>餐厅</p>
+            </a></li>
+            <li class="on"><a href="bedroom"><em><img src="./home/一站式解决_08.png"><s></s></em><br>
+                <p>卧室</p>
+            </a></li>
+            <li><a href="kitchen"><em><img src="./home/一站式解决_10.png"><s></s></em><br>
+                <p>厨房</p>
+            </a></li>
+            <li><a href="bathroom"><em><img src="./home/一站式解决_12.png"><s></s></em><br>
+                <p>洗漱间</p>
+            </a></li>
+            <li><a href="bookroom"><em><img src="./home/一站式解决_14.png"><s></s></em><br>
+                <p>书房</p>
+            </a></li>
+            <li><a href="hallway"><em><img src="./home/一站式解决_16.png"><s></s></em><br>
+                <p>玄关</p>
+            </a></li>
+            <li><a href="childhood"><em><img src="./home/一站式解决_18.png"><s></s></em><br>
+                <p>儿童房</p>
+            </a></li>
+        </ul>
+    </div>
+</div>
 <div class="info">
     <div class="solu wrapper clearfix">
         <div style="float:left">

@@ -14,39 +14,140 @@ li {
     list-style: none;
 }
 
-.container {
-    width: 1920px;
-    margin: 0 auto;
-    height: auto;
-}
-
-.photo {
-    margin: 0 auto;
-    width: 1920px;
-    height: auto;
+.nyBanner01 .hd {
+    position: absolute;
+    z-index: 10;
+    bottom: 15px;
     text-align: center;
-}
-
-.title {
     width: 100%;
-    height: 500px;
-    /*margin-top: -100px;*/
 }
 
 .info {
-    margin: 20px auto 0 auto;
+    margin: 30px auto 0 auto;
     /*position: relative;*/
+    text-align: right;
     width: 1200px;
-    height: 225px;
-    /*border: 1px solid black;*/
+    height: 230px;
+    /*border: 1px solid green;*/
 }
 
-.lmbg {
-    margin: 0 auto;
-    width: 1200px;
-    height: 90px;
-    /*border: 1px solid black;*/
-    text-align: center;
+/*PC*/
+@media screen and (min-width: 1400px) {
+    .photo {
+        margin: 0 auto;
+        width: 1920px;
+        height: auto;
+        text-align: center;
+    }
+
+    .title {
+        width: 100%;
+        height: 500px;
+        /*margin-top: -100px;*/
+    }
+
+    .lmbg {
+        margin: 0 auto;
+        width: 1200px;
+        height: 90px;
+        /*border: 1px solid black;*/
+        text-align: center;
+    }
+
+    #jswbox {
+        width: 1200px;
+        margin: -120px auto 0 auto;
+        text-align: center;
+        /*padding: 0 0 0 50px;*/
+    }
+
+    .spc {
+        display: block;
+        width: 800px;
+        height: 450px;
+    }
+}
+
+/*通用样式*/
+/*手机*/
+@media screen and (max-width: 1200px) {
+    .photo {
+        margin: 0 auto;
+        width: 1200px;
+        height: auto;
+        text-align: center;
+    }
+
+    .title {
+        width: 100%;
+        height: 500px;
+        /*margin-top: -100px;*/
+    }
+
+    .lmbg {
+        margin: 0 auto;
+        width: 1200px;
+        height: 100px;
+        /*border: 1px solid black;*/
+        text-align: center;
+    }
+
+    .lmbg li {
+        margin-left: 30px;
+    }
+
+    #jswbox {
+        width: 1200px;
+        /*height: 325px;*/
+        /*border: 1px solid black;*/
+        margin: 0 auto;
+        text-align: center;
+        /*margin-top: -120px;*/
+        /*padding: 0 0 0 50px;*/
+    }
+
+    .spc {
+        display: block;
+        width: 600px;
+        height: 450px;
+    }
+}
+
+/*平板*/
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .photo {
+        margin: 0 auto;
+        width: 1000%;
+        height: auto;
+        text-align: center;
+    }
+
+    .title {
+        width: 100%;
+        height: 500px;
+        /*margin-top: -100px;*/
+    }
+
+    .lmbg {
+        margin: 0 auto;
+        width: 100%;
+        height: 100px;
+        /*border: 1px solid black;*/
+        text-align: center;
+    }
+
+    #jswbox {
+        width: 1200px;
+        margin: -120px auto 0 auto;
+        text-align: center;
+        /*padding: 0 0 0 50px;*/
+    }
+
+    .spc {
+        display: block;
+        width: 800px;
+        height: 450px;
+    }
 }
 
 .table {
@@ -57,9 +158,14 @@ li {
     left: 60%;
 }
 
+.solum {
+    width: 1200px;
+    margin: 0 auto;
+}
+
 .solum img {
     width: 1200px;
-    height: 500px;
+    height: 485px;
 }
 
 .home {
@@ -171,11 +277,13 @@ li {
     background: #80b3ff;
     width: 70px;
     height: 70px;
+    text-align: center;
 }
 
 .two {
     width: 65px;
     height: 65px;
+    text-align: center;
     color: white;
     /*border: 1px solid #CCC;*/
     background: #80b3ff;
@@ -192,6 +300,7 @@ li {
     */
     width: 70px;
     height: 70px;
+    text-align: center;
 }
 
 .button {
@@ -219,12 +328,6 @@ li {
     width: 1200px;
     margin: 0 auto;
     text-align: center;
-    /*padding: 0 0 0 50px;*/
-}
-
-#jswbox {
-    width: 1200px;
-    margin-top: -120px;
     /*padding: 0 0 0 50px;*/
 }
 

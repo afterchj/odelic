@@ -1,29 +1,126 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>jQuery制作立体图片轮播左右切换展示 - xw素材网</title>
-    <link rel="stylesheet" type="text/css" href="css/css.css">
-    <script src="js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/comm.js" type="text/javascript"></script>
-    <script>
-        $(function(){
-            new ZoomPic("jswbox");
+    <meta charset="UTF-8"/>
+    <title>响应式布局</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            font-size: 14px;
+            font-family: "微软雅黑";
+            text-align: center;
+            color: #fff;
+        }
 
-        })
-    </script>
+        .clear {
+            clear: both;
+        }
+
+        #header, #content, #footer {
+            margin: 0 auto;
+            margin-top: 10px;
+        }
+
+        #header, #footer {
+            height: 100px;
+        }
+
+        #header, #footer, .left, .right, .center {
+            margin-top: 10px;
+            height: 50px;
+            background: #333;
+        }
+
+        /*通用样式*/
+        /*手机*/
+        @media screen and (max-width: 1200px) {
+            #header, #content, #footer {
+                width: 800px;
+            }
+
+            .right, .center {
+                margin-top: 10px;
+            }
+
+            .left, .right {
+                width: 800px;
+                height: 100px;
+            }
+
+            .center {
+                background: red;
+                height: 200px;
+            }
+
+            #content {
+                background: url(img/homepic05.jpg) no-repeat;
+            }
+        }
+
+        /*平板*/
+        @media screen and (min-width: 1200px) and (max-width: 1600px) {
+            #header, #content, #footer {
+                width: 600px;
+            }
+
+            .left, .center {
+                margin-top: 10px;
+                width: 600px;
+            }
+
+            .right {
+                display: none;
+            }
+
+            .center {
+                background: green;
+                height: 200px;
+            }
+        }
+
+        /*PC*/
+        @media screen and (min-width: 1400px) {
+            #header, #content, #footer {
+                margin-top: 10px;
+                width: 100%;
+            }
+
+            .left, .center, .right {
+                margin: 5px auto;
+                width: 1000px;
+                height: 100px;
+
+            }
+
+            .center {
+                background: blue;
+                width: 1000px;
+            }
+
+            #content {
+                border: 1px solid black;
+            }
+        }
+    </style>
 </head>
 <body>
-
-
-<div id="jswbox">
-    <pre class="prev">prev</pre>
-    <pre class="next">next</pre>
-    <ul>
-        <li style="display: block; width: 562px; height: 389px; top: 152px; left: 0; z-index: 1; "><img src="images/1.jpg" alt="许在浩"></li>
-        <li style="display: block; width: 562px; height: 389px;top: 152px; left: 180px; z-index: 2; "><img src="images/2.jpg" alt="MAGGIE"></li>
-        <li style="display: block; width: 562px; height: 389px;top: 152px; left: 360px; z-index: 3; "><img src="images/3.jpg" alt="万玲玲"></li>
-    </ul>
+<!--header start-->
+<div id="header">header</div>
+<!--end header-->
+<!--content start-->
+<div id="content">
+    <div class="left">left</div>
+    <div class="center">center</div>
+    <div class="right">right</div>
+    <div></div>
 </div>
+<!--end content-->
+<!--footer-->
+<div id="footer">footer</div>
+<!--end footer-->
 </body>
 </html>

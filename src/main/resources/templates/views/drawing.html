@@ -6,29 +6,60 @@
     <meta charset="UTF-8"/>
     <title>drawing room</title>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/nav.js"></script>
-    <script type="text/javascript" src="./js/comm.js"></script>
+    <!--<script type="text/javascript" src="./js/nav.js"></script>-->
+    <!--<script type="text/javascript" src="./js/comm.js"></script>-->
     <script type="text/javascript" src="./js/common.js"></script>
     <link type="text/css" href="./css/base.css" rel="stylesheet">
+    <!--<link type="text/css" href="./css/page.css" rel="stylesheet">-->
     <link type="text/css" href="./mycss/common.css" rel="stylesheet">
     <link type="text/css" href="./mycss/mypage.css" rel="stylesheet">
     <link type="text/css" href="./living_files/inside.css" rel="stylesheet">
 
-    <script>
-        $(function () {
-            new ZoomPic("jswbox");
-        })
-    </script>
+    <!--<script>-->
+    <!--$(function () {-->
+    <!--new ZoomPic("jswbox");-->
+    <!--})-->
+    <!--</script>-->
 </head>
 <body>
-<div th:include="layout/header::header"></div>
+<!--<div th:include="layout/header::header"></div>-->
 <div th:include="layout/trade::trade"></div>
 <!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/header.html"></iframe>-->
-<div class="container">
-    <div th:include="layout/common::common"></div>
+<!--<div th:include="layout/common::common"></div>-->
+<div style="margin-bottom: 20px;">
+    <div class="lmbg">
+        <div class="wrapper">
+            <ul>
+                <li class="on"><a href="drawing"><em><img src="./home/一站式解决_04.png"><s></s></em><br>
+                    <p>客厅</p>
+                </a></li>
+                <li><a href="dining"><em><img src="./home/一站式解决_06.png"><s></s></em><br>
+                    <p>餐厅</p>
+                </a></li>
+                <li><a href="bedroom"><em><img src="./home/一站式解决_08.png"><s></s></em><br>
+                    <p>卧室</p>
+                </a></li>
+                <li><a href="kitchen"><em><img src="./home/一站式解决_10.png"><s></s></em><br>
+                    <p>厨房</p>
+                </a></li>
+                <li><a href="bathroom"><em><img src="./home/一站式解决_12.png"><s></s></em><br>
+                    <p>洗漱间</p>
+                </a></li>
+                <li><a href="bookroom"><em><img src="./home/一站式解决_14.png"><s></s></em><br>
+                    <p>书房</p>
+                </a></li>
+                <li><a href="hallway"><em><img src="./home/一站式解决_16.png"><s></s></em><br>
+                    <p>玄关</p>
+                </a></li>
+                <li><a href="childhood"><em><img src="./home/一站式解决_18.png"><s></s></em><br>
+                    <p>儿童房</p>
+                </a></li>
+            </ul>
+        </div>
+    </div>
     <div class="info">
         <!--<div class="solu wrapper clearfix">-->
-        <div style="float:left">
+        <div style="float:left;text-align: left;width: 1000px;height: 230px;">
             <div class="solut">
                 <h2>客厅好灯光</h2>
                 <p>舒适 多功能 品位</p>
@@ -41,7 +72,7 @@
                     新一代LED吸顶灯，随心调光调色，时刻健康舒适。</p>
             </div>
         </div>
-        <div style="float: right;text-align: center">
+        <div style="float: right;width: 200px;height: 230px">
             <table border="0">
                 <tr>
                     <td class="one">舒适</td>
@@ -62,59 +93,55 @@
         </div>
         <!--</div>-->
     </div>
-    <div style="width:1200px;margin:0 auto">
-        <div id="jswbox">
-            <pre class="prev">prev</pre>
-            <pre class="next">next</pre>
-            <ul>
-                <li style="display: block; width: 800px; height: 450px; top: 152px; left: 0; z-index: 1;"><img
-                        src="images/1.jpg" alt=""></li>
-                <li style="display: block; width: 800px; height: 450px;top: 152px; left: 200px; z-index: 2;"><img
-                        src="images/2.jpg" alt=""></li>
-                <li style="display: block; width: 800px; height: 450px;top: 152px; left: 400px; z-index: 3;"><img
-                        src="images/3.jpg" alt=""></li>
-            </ul>
-        </div>
+    <div class="solum">
+        <img src="./home/一站式解决_29.png" alt=""/>
+        <!--<pre class="prev">prev</pre>-->
+        <!--<pre class="next">next</pre>-->
+        <!--<ul>-->
+        <!--<li class="spc" style="left: 0; z-index: 1;"><img src="images/1.jpg" alt=""></li>-->
+        <!--<li class="spc" style="left: 100px; z-index: 2;"><img src="images/2.jpg" alt=""></li>-->
+        <!--<li class="spc" style="left: 200px; z-index: 3;"><img src="images/3.jpg" alt=""></li>-->
+        <!--</ul>-->
     </div>
     <!--<div class="photo"><img style="width:1200px; height:505px;" src="./living_files/1513249153.jpg" alt=""></div>-->
 
-    <div class="solu wrapper clearfix">
-        <div class="solum">
-            <p>
-                <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
-                <label style="font-size:16px; font-weight:bolder;">一款有品位的灯具，赋予生活质感与格调</label>
-            </p>
-            <br>
-            <p> 客厅是最能表现主人待客习性和品味特点的空间，选择一款有品位的灯具，赋予生活质感与格调</p>
-            <br/>
-            <div><img src="./home/一站式解决_38.png" alt=""></div>
-        </div>
+    <!--<div class="solu wrapper clearfix">-->
+    <div class="solum">
+        <p>
+            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+            <label style="font-size:16px; font-weight:bolder;">一款有品位的灯具，赋予生活质感与格调</label>
+        </p>
+        <br>
+        <p> 客厅是最能表现主人待客习性和品味特点的空间，选择一款有品位的灯具，赋予生活质感与格调</p>
+        <br/>
+        <div><img src="./home/一站式解决_38.png" alt=""></div>
     </div>
-    <div class="solu wrapper clearfix">
-        <div class="solum">
-            <p>
-                <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
-                <label style="font-size:16px; font-weight:bolder;">多样风格，缔造明亮新空间</label>
-            </p>
-            <br>
-            <p> 结合家具的风格选择合适的灯具，缔造明亮新空间</p>
-            <br/>
-            <div><img src="./home/一站式解决_40.png" alt=""></div>
-        </div>
+    <!--</div>-->
+    <!--<div class="solu wrapper clearfix">-->
+    <div class="solum">
+        <p>
+            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+            <label style="font-size:16px; font-weight:bolder;">多样风格，缔造明亮新空间</label>
+        </p>
+        <br>
+        <p> 结合家具的风格选择合适的灯具，缔造明亮新空间</p>
+        <br/>
+        <div><img src="./home/一站式解决_40.png" alt=""></div>
     </div>
-    <div class="solu wrapper clearfix">
-        <div class="solum">
-            <p>
-                <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
-                <label style="font-size:16px; font-weight:bolder;">RGB调光，给聚会时刻添姿增彩</label>
-            </p>
-            <br>
-            <p> 在客厅使用RGB灯具，随心调光调色，在聚会时刻添姿增彩</p>
-            <br/>
-            <div><img src="./home/一站式解决_42.png" alt=""></div>
-            <div><img src="./home/一站式解决_43.png" alt=""></div>
-        </div>
+    <!--</div>-->
+    <!--<div class="solu wrapper clearfix">-->
+    <div class="solum">
+        <p>
+            <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>
+            <label style="font-size:16px; font-weight:bolder;">RGB调光，给聚会时刻添姿增彩</label>
+        </p>
+        <br>
+        <p> 在客厅使用RGB灯具，随心调光调色，在聚会时刻添姿增彩</p>
+        <br/>
+        <div><img src="./home/一站式解决_42.png" alt=""></div>
+        <div><img src="./home/一站式解决_43.png" alt=""></div>
     </div>
+    <!--</div>-->
     <div class="wntj">
         <div class="sertit" style="text-align: left;">
             <label style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>为你推荐
@@ -146,7 +173,8 @@
             <div class="soc2m">
                 <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2574"><img
                         src="./living_files/1447916958.jpg" alt=""></a></div>
-                <div class="soc2mt"><a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>
+                <div class="soc2mt"><a
+                        href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>
                 </div>
                 <div class="soc2mm">功率（W）：100<br>
                     规格尺寸(Mm)：Φ 1000*545<br>
@@ -164,10 +192,11 @@
                 </div>
             </div>
         </div>
+        <div><a class="button" href="#" target="_blank">查看更多</a></div>
     </div>
-    <div><a class="button" href="#" target="_blank">查看更多</a></div>
 </div>
 <div th:include="layout/footer::footer"></div>
+
 <!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/footer.html"></iframe>-->
 </body>
 </html>
