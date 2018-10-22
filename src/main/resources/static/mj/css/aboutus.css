@@ -1,0 +1,39 @@
+.nav {
+    float: right;
+    _display: inline;
+}
+b {
+    font-weight: 700;
+}
+.newFooter{background:#828485!important;}
+.nyBanner01 .hd{position:absolute;z-index:10;bottom:15px;text-align:center;width:100%;}
+
+.bannerbox {
+    margin: 0 auto;
+    position:relative;
+    overflow:hidden;
+    height:600px;
+}
+.banner {
+    width:2000px; /*图片宽度*/
+    position:absolute;
+    left:50%;
+    margin-left:-1000px; /*图片宽度的一半*/
+    height: 600px;
+}
+
+.cirl{
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: #227AF1;
+    -moz-border-radius: 7px;/**兼容火狐浏览器*/
+    -webkit-border-radius: 7px;/**兼容苹果；谷歌，等一些浏览器认*/
+    -o-border-radius: 7px;/**兼容opera浏览器*/
+    border-radius: 7px;
+    margin-left: -7px;
+    margin-top: -10px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+}

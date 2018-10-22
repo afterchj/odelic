@@ -97,10 +97,12 @@ Main components
   position: absolute;
   top: 0;
   left: 18px;
-  height: 250%;/*竖线长度*/
-  width: 4px;
+  /*height: 400%;!*竖线长度 10个100%*!*/
+  /*height: 3000px;*/
+  width: 2px;
   background: #d7e4ed;
 }
+
 @media only screen and (min-width: 1170px) {
   #cd-timeline {
     margin-top: 3em;
@@ -109,15 +111,11 @@ Main components
   #cd-timeline::before {
     left: 50%;
     margin-left: -2px;
-    height: 300%;
+      /*height: attr(data-before);*/
+    /*height: 3970px;*/
+    /*height: 650%;*/
   }
 }
-@media only screen and (max-width: 600px) {
-  #cd-timeline::before {
-    height: 150%;
-  }
-}
-
 
 .cd-timeline-block {
   position: relative;

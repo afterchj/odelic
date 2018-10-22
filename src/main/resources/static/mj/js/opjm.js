@@ -39,7 +39,7 @@ list.cate = function () {
         var a='';
         var pageNum = $("#num").val();//当前页
         var totalPage = $("#total").val();//总页数
-        $.post('/odelic/listType',
+        $.post('listType',
             {category:category,sonCategory:sonCategory},function (data) {
                 // console.log(data);
                 $.each(data, function (key,values) {
@@ -114,7 +114,7 @@ list.son= function () {
         var a='';
         var pageNum = $("#num").val();//当前页
         var totalPage = $("#total").val();//总页数
-        $.post('/odelic/listType',
+        $.post('listType',
             {category:category,sonCategory:sonCategory},function (data) {
                 // console.log(data);
                 $.each(data, function (key,values) {
@@ -176,6 +176,13 @@ list.son= function () {
 
 list.phon = function(){
     $('.new_pro_screen_btn .qd').click(function () {
+
+        $(".new_pro_screen_ul").css({
+            "right":"-100%",
+            "opacity":0
+        });
+        $(".black").css('display','none');
+
         var category = null;
         var sonCategory = null;
         $("#phon_cate dd").each(function(){
@@ -213,7 +220,7 @@ list.phon = function(){
         var a='';
         var pageNum = $("#num").val();//当前页
         var totalPage = $("#total").val();//总页数
-        $.post('/odelic/listType',
+        $.post('listType',
             {category:category,sonCategory:sonCategory},function (data) {
                 console.log(data);
                 $.each(data, function (key,values) {
@@ -287,7 +294,7 @@ list.next = function () {
             $(".pagination").empty();//清空分页
             $(".pagenums").parent().removeClass("active");
             var a='';
-            $.post("/odelic/listType",
+            $.post("listType",
                 {pageNum:pageNum,totalPage:totalPage, category:category,sonCategory:sonCategory},
                 function (data) {
                     $.each(data, function (key,values) {
@@ -364,7 +371,7 @@ list.previous = function () {
             $(".pagination").empty();//清空分页
             $(".pagenums").parent().removeClass("active");
             var a='';
-            $.post("/odelic/listType",
+            $.post("listType",
                 {pageNum:pageNum,totalPage:totalPage, category:category,sonCategory:sonCategory},
                 function (data) {
                     $.each(data, function (key,values) {
@@ -444,7 +451,7 @@ list.first = function () {
             $(".pagination").empty();//清空分页
             $(".pagenums").parent().removeClass("active");
             var a='';
-            $.post("/odelic/listType",
+            $.post("listType",
                 {pageNum:pageNum,totalPage:totalPage, category:category,sonCategory:sonCategory},
                 function (data) {
                     $.each(data, function (key,values) {
@@ -524,7 +531,7 @@ list.last = function () {
             $(".pagination").empty();//清空分页
             $(".pagenums").parent().removeClass("active");
             var a='';
-            $.post("/odelic/listType",
+            $.post("listType",
                 {pageNum:pageNum,totalPage:totalPage, category:category,sonCategory:sonCategory},
                 function (data) {
                     $.each(data, function (key,values) {
@@ -606,7 +613,7 @@ list.page = function(){
         $(".pagenums").parent().removeClass("active");
 
         var a='';
-        $.post("/odelic/listType",
+        $.post("listType",
             {pageNum:pageNum,totalPage:totalPage, category:category,sonCategory:sonCategory},
             function (data) {
                 $.each(data, function (key,values) {

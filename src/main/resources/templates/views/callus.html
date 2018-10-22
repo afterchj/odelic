@@ -8,406 +8,318 @@
     <link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/inside.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/style.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="/static/mj/daohang/js/jquery.min.js"></script>
+    <link href="/static/mj/css/callus.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript"
+            src="/static/mj/daohang/js/jquery.min.js"></script>
     <script src="/static/mj/daohang/js/nav.js"></script>
-    <script src="/static/mj/daohang/js/hm.js">
-    </script><script src="/static/mj/daohang/js/hm.js"></script>
-
-    <script type="text/javascript" src="/static/mj/daohang/js/jquery.SuperSlide.2.1.2.js"></script>
-    <script type="text/javascript" src="/static/mj/daohang/js/swiper.min.js"></script>
-    <!--<style>-->
-        <!--.parents{-->
-            <!--margin-left: 10%;-->
-            <!--margin-bottom: 3%;-->
-            <!--/*margin-top: 10%;*/-->
-            <!--margin-right: 10%;-->
-            <!--width: 100%;-->
-            <!--height: 50%;-->
-            <!--overflow: hidden;-->
-            <!--position: relative;-->
-            <!--/*padding-bottom: 10%;*/-->
-        <!--}-->
-        <!--.childImg{-->
-            <!--width: 50%;-->
-            <!--float: right;-->
-            <!--transform:translate(-20%,-20%);-->
-            <!-- -webkit-transform: translate(-20%,-20%);-->
-            <!-- -webkit-transform: translate(-20%,-20%);-->
-            <!-- -o-transform: translate(-20%,-20%);-->
-            <!--padding-top: 10%;-->
-        <!--}-->
-        <!--.childImg>img{-->
-            <!--width: 80%;-->
-            <!--height: 80%;-->
-
-        <!--}-->
-        <!--.childTxt{-->
-            <!--position: absolute;-->
-            <!--/*right: 5%;*/-->
-            <!--right: 50%;-->
-            <!--/*top: 50%;*/-->
-            <!--top: 10%;-->
-            <!--width: 35%;-->
-            <!--/*transform: translateY(-50%);*/-->
-             <!--/*-moz-transform: translateY(-50%);*/-->
-             <!--/*-webkit-transform: translateY(-50%);*/-->
-             <!--/*-o-transform: translateY(-50%);*/-->
-            <!--transform:translate(-20%,-20%);-->
-            <!-- -webkit-transform: translate(-20%,-20%);-->
-            <!-- -webkit-transform: translate(-20%,-20%);-->
-            <!-- -o-transform: translate(-20%,-20%);-->
-            <!--padding-top: 10%;-->
-        <!--}-->
-
-    <!--</style>-->
-
     <style>
-        .header_b{
-            background: black;
-        }
+
+        /** {*/
+        /*box-sizing: unset !important;*/
+        /*}*/
+
+        /*.media {*/
+        /*margin-left: 20%;*/
+        /*margin-right: 10%;*/
+        /*height: 100%;*/
+        /*}*/
+
+        /*.media .media-left > img, .media .media-right > img {*/
+        /*max-width: none !important;*/
+        /*}*/
+
+        /*.parents {*/
+        /*margin-left: 10%;*/
+        /*!*margin-bottom: 3%;*!*/
+        /*!*margin-top: 10%;*!*/
+        /*margin-right: 10%;*/
+        /*width: 100%;*/
+        /*height: 100%;*/
+        /*overflow: hidden;*/
+        /*position: relative;*/
+        /*!*padding-bottom: 10%;*!*/
+        /*}*/
+
+        /*.childImg {*/
+        /*width: 50%;*/
+        /*float: right;*/
+        /*transform: translate(-20%, -20%);*/
+        /*-webkit-transform: translate(-20%, -20%);*/
+        /*-webkit-transform: translate(-20%, -20%);*/
+        /*-o-transform: translate(-20%, -20%);*/
+        /*padding-top: 10%;*/
+        /*}*/
+
+        /*.childImg > img {*/
+        /*width: 80%;*/
+        /*height: 80%;*/
+
+        /*}*/
+
+        /*.childTxt {*/
+        /*position: absolute;*/
+        /*!*right: 5%;*!*/
+        /*right: 50%;*/
+        /*!*top: 50%;*!*/
+        /*!*top: 10%;*!*/
+        /*width: 35%;*/
+        /*!*transform: translateY(-50%);*!*/
+        /*!*-moz-transform: translateY(-50%);*!*/
+        /*!*-webkit-transform: translateY(-50%);*!*/
+        /*!*-o-transform: translateY(-50%);*!*/
+        /*transform: translate(-20%, -20%);*/
+        /*-webkit-transform: translate(-20%, -20%);*/
+        /*-webkit-transform: translate(-20%, -20%);*/
+        /*-o-transform: translate(-20%, -20%);*/
+        /*padding-top: 10%;*/
+        /*}*/
+
     </style>
+
     <style>
-        .nav {
-            float: right;
-            _display: inline;
-        }
-        b {
-            font-weight: 700;
-        }
+        /*.header_b {*/
+        /*background: black;*/
+        /*}*/
+
+        /*.nav {*/
+        /*float: right;*/
+        /*_display: inline;*/
+        /*}*/
+
+        /*b {*/
+        /*font-weight: 700;*/
+        /*}*/
     </style>
 </head>
 
-<body>
+<body style="height: 100%">
 
-<div th:include="layout/header::header"></div>
-<!--<header>-->
-    <!--<div class="header">-->
-        <!--<div class="header_b clearfix">-->
-            <!--<div class="wrapper">-->
-                <!--<div class="header-l">-->
-                    <!--<a class="navbar-brand" href="index.html"><b-->
-                            <!--class="header-logo">ODELIC</b></a>-->
-                <!--</div>-->
-                <!--<div class="nav">-->
-                    <!--<ul id="aaa">-->
-                        <!--<li class="item"><a href="index.html" class="nav_small">首页</a>-->
-                        <!--</li>-->
-                        <!--<li class="item"><a-->
-                                <!--href="http://www.opple.com.cn/newhome/"-->
-                                <!--class="nav_small">家居照明</a>-->
-                            <!--<ul class="dl-list">-->
-                                <!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="http://www.opple.com.cn/solution/"-->
-                                        <!--class="xy_snav"-->
-                                        <!--target="_blank">一站式解决方案</a></li>-->
-                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                                <!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="http://www.opple.com.cn/home/homelight/skill"-->
-                                        <!--class="xy_snav"-->
-                                        <!--target="_blank">明星产品推荐</a></li>-->
-                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li class="item"><a-->
-                                <!--href="http://www.opple.com.cn/commercial/"-->
-                                <!--class="nav_small">商用照明</a>-->
-                            <!--<ul class="dl-list">-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="http://www.opple.com.cn/commercial/"-->
-                                            <!--class="xy_snav"-->
-                                            <!--target="_blank">客户服务</a></li>-->
-                                <!--</div>-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="http://www.opple.com.cn/businesscase/"-->
-                                            <!--class="xy_snav"-->
-                                            <!--target="_blank">客户案例</a></li>-->
-                                <!--</div>-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li class="item"><a-->
-                                <!--href="/odelic/opjm"-->
-                                <!--class="nav_small">产品中心</a>-->
-                            <!--<ul class="dl-list">-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="/odelic/opjm"-->
-                                            <!--class="xy_snav"-->
-                                            <!--&gt;家居灯具</a></li>-->
-                                <!--</div>-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="/odelic/opjm"-->
-                                            <!--class="xy_snav"-->
-                                            <!--&gt;商用灯具</a></li>-->
-                                <!--</div>-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li class="item">-->
-                            <!--<a href="/odecli/aboutus2"-->
-                               <!--class="nav_small">关于我们</a>-->
-                            <!--<ul class="dl-list">-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="/odelic/aboutus2#aboutUs"-->
-                                            <!--class="xy_snav"-->
-                                            <!--&gt;企业简介</a></li>-->
-                                <!--</div>-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="/odelic/aboutus2#timeSec"-->
-                                            <!--class="xy_snav"-->
-                                            <!--&gt;发展历程</a></li>-->
-                                <!--</div>-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li class="item"><a href="/odelic/callus3"-->
-                                            <!--class="nav_small">联系我们</a>-->
-                        <!--</li>-->
-                        <!--<li class="item"><img width="14"-->
-                                              <!--style="cursor: pointer;"-->
-                                              <!--class="header_store"-->
-                                              <!--src="/static/mj/daohang/images/header_icon02.png"-->
-                                              <!--onclick="window.open('http://www.opplestore.com/')">-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</header>-->
-<!--<div style="clear: both"></div>-->
+<div th:replace="layout/header::header"></div>
+
 <style>
 
-    .bannerbox {
-        margin: 0 auto;
-        position:relative;
-        overflow:hidden;
-        height:200px;
-    }
-    .banner , .footer{
-        width:2000px; /*图片宽度*/
-        position:fixed;
-        left:50%;
-        margin-left:-1000px; /*图片宽度的一半*/
-        height: 200px;
-        bottom: 0;
-    }
+    /*.bannerbox {*/
+    /*margin: 0 auto;*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+    /*height: 300px;*/
+    /*}*/
+
+    /*.banner {*/
+
+    /*width: 2000px; !*图片宽度*!*/
+    /*-position: fixed;*/
+    /*left: 50%;*/
+    /*margin-left: -1000px; !*图片宽度的一半*!*/
+    /*height: 300px;*/
+    /*bottom: 0;*/
+    /*}*/
 </style>
 <div class="bannerbox">
-    <div class="banner">
-        <!--<img src="./static/img/aboutus_01.png">-->
-    </div>
-</div>
-<!--<script>-->
-
-    <!--$(function(){-->
-        <!--//返回顶部-->
-        <!--var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix-->
-        <!--$(".totop").hide();-->
-        <!--$(".totop").click(function(){-->
-            <!--$body.animate({scrollTop: 0});-->
-        <!--});-->
-        <!--window.onscroll=function(){-->
-            <!--if((document.documentElement.scrollTop + document.body.scrollTop)>200){-->
-                <!--$(".totop").show();-->
-            <!--}else{-->
-                <!--$(".totop").hide();-->
-            <!--}-->
-        <!--};-->
-    <!--})-->
-
-<!--</script>-->
-<!--<div class="about" id="aboutUs">-->
-    <!--<div class="aboutBox">-->
-        <!--<div class="aboutCon01 aboutCon" id="item1">-->
-            <!--<div class="wrapper">-->
-                <!--<ul>-->
-                    <!--<li class="clearfix" style="display: block">-->
-                        <!--<div class="con clearfix">-->
-                            <!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-                            <!--&lt;!&ndash;<img src="./static/img/about01.jpg">&ndash;&gt;-->
-                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                            <!--<div class="wenz">-->
-                                <!--<div class="table">-->
-                                    <!--<div class="table-cell">-->
-                                        <!--<h4 class="f16">商务合作（可联系订单）</h4>-->
-                                        <!--<h4 class="f16">公司：XXXXXXXXX</h4>-->
-                                        <!--<h4 class="f16">地址：XXXXXXXXXXXX</h4>-->
-                                        <!--<h4 class="f16">E-MAIL：XXXX@tpadsz.com</h4>-->
-                                        <!--<h4 class="f16">QQ：XXXXXXXXXX</h4>-->
-                                    <!--</div>-->
-                                <!--</div>-->
-                            <!--</div>-->
-                            <!--<div class="pic">-->
-                                <!--<img src="./static/img/about01.jpg">-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
+    <!--<div class="banner">-->
+    <!--<img src="./static/img/aboutus_01.png">-->
     <!--</div>-->
+</div>
+
+<div class="fixed_right">
+    <ul>
+        <li class="pos_re qq">
+            <div class='side-tools-tips'>
+                <p><a target='_blank'
+                      href='http://wpa.qq.com/msgrd?v=3&uin=806015080&site=qq&menu=yes'><img
+                        src='/static/mj/daohang/images/qq_ff0df34.png' alt=''/></a>
+                </p>
+            </div>
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;">
+                    <img src="/static/mj/daohang/images/right_icon01.png"
+                         width="22">
+                </div>
+            </div>
+        </li>
+        <li class="pos_re">
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;" title="APP下载">
+                    <img src="/static/mj/daohang/images/right_icon07.png"
+                         width="18">
+                </div>
+            </div>
+        </li>
+        <li class="pos_re totop">
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;" title="回到顶部">
+                    <img src="/static/mj/daohang/images/right_icon06.png"
+                         width="20">
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<script>
+    //    $(function () {
+    //        //返回顶部
+    //        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix
+    //        $(".totop").hide();
+    //        $(".totop").click(function () {
+    //            $body.animate({scrollTop: 0});
+    //        });
+    //        window.onscroll = function () {
+    //            if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {
+    //                $(".totop").show();
+    //            } else {
+    //                $(".totop").hide();
+    //            }
+    //        };
+    //    })
+</script>
+<!--<div class="about" id="aboutUs" style="margin-bottom: 10%;">-->
+<!--<div class="aboutBox">-->
+<!--<div class="aboutCon01 aboutCon" id="item1">-->
+<!--<div class="wrapper">-->
+<!--<ul>-->
+<!--<li class="clearfix" style="display: block">-->
+<!--<div class="con clearfix">-->
+<!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
+<!--&lt;!&ndash;<img src="./static/img/about01.jpg">&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--<div class="wenz" style="float: left;left: 0;margin-left: 10%">-->
+<!--<div class="table">-->
+<!--<div class="table-cell">-->
+<!--<h3 class="f16"><strong style="font-weight: bolder">商务合作（可联系订单）</strong></h3>-->
+<!--<h3 class="f16">公司：XXXXXXXXX</h3>-->
+<!--<h3 class="f16">地址：XXXXXXXXXXXX</h3>-->
+<!--<h3 class="f16">E-MAIL：XXXX@tpadsz.com</h3>-->
+<!--<h3 class="f16">QQ：XXXXXXXXXX</h3>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="pic" style="float: right;width: 50%;margin-right: 10%">-->
+<!--<img src="/static/mj/img/callus_03.png">-->
+<!--</div>-->
+<!--</div>-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 <!--</div>-->
 <!--<div style="clear: both"></div>-->
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet">
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<div class="media" style="height: 65%;">
 
-
-<!--<div class="parents">-->
-    <!--<div class="childTxt">-->
-        <!--<h3 class="f24"><strong style="font-weight: bolder">-->
-            <!--商务合作（可联系订单）</strong>-->
-        <!--</h3><br>-->
-        <!--<h3 class="f24">-->
-            <!--公司：XXXXXXXXX-->
-        <!--</h3>-->
-        <!--<h3 class="f24">-->
-            <!--地址：XXXXXXXXXXXX-->
-        <!--</h3>-->
-        <!--<h3 class="f24">-->
-            <!--E-MAIL：XXXX@tpadsz.com-->
-        <!--</h3>-->
-        <!--<h3 class="f24">-->
-            <!--QQ：XXXXXXXXXX-->
-        <!--</h3>-->
-    <!--</div>-->
-    <!--<div class="childImg">-->
-        <!--<img src="./static/img/ditu.png">-->
-    <!--</div>-->
-    <!--<div style="clear: both"></div>-->
-<!--</div>-->
-
-<div class="parents" style="margin-bottom: 10%;margin-left: 20%">
-    <div class="childTxt" style="float: left;">
-        <h3 class="f24"><strong style="font-weight: bolder">
+    <div class="media-body media-top">
+        <h3 class="media-heading"><strong style="font-weight: bolder">
             商务合作（可联系订单）</strong>
         </h3><br>
-        <h3 class="f24">
+        <h3 class="media-heading">
             公司：XXXXXXXXX
         </h3>
-        <h3 class="f24">
+        <h3 class="media-heading">
             地址：XXXXXXXXXXXX
         </h3>
-        <h3 class="f24">
+        <h3 class="media-heading">
             E-MAIL：XXXX@tpadsz.com
         </h3>
-        <h3 class="f24">
+        <h3 class="media-heading">
             QQ：XXXXXXXXXX
         </h3>
     </div>
-    <div class="childImg" style="float:right;margin-right: 20%">
-        <!--<img src="img/ditu.png" alt="" style="width: 60%;height: 60%;">-->
-        <img src="/static/mj/img/callus_03.png" alt="" style="width: 80%;height: 80%;">
+    <div class="media-right">
+        <img src="/static/mj/img/callus_03.png" class="media-object">
     </div>
-    <div style="clear: both"></div>
 </div>
 
-<div th:include="layout/footer::footer"></div>
-<!--<footer style="margin-bottom: -1%">-->
-    <!--<div class="newFooter pc">-->
-        <!--<div class="newFooterTop">-->
-            <!--<div class="wrapper clearfix">-->
-                <!--<ul class="clearfix">-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="http://www.opple.com.cn/newhome/">家居照明</a>-->
-                            <!--</dt>-->
-                            <!--<dd><a href="http://www.opple.com.cn/solution/">一站式解决方案</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/newpro/prolist/?classid=79">明星产品推荐</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt><a href="http://www.opple.com.cn/commercial/">商用照明</a>-->
-                            <!--</dt>-->
-                            <!--<dd><a href="http://www.opple.com.cn/commercial/">客户服务</a>-->
-                            <!--</dd>-->
-                            <!--<dd><a href="http://www.opple.com.cn/businesscase/">客户案例</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="/oddelic/opjm">产品中心</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="/odelic/opjm">家居灯具</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="/odelic/opjm">商用灯具</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="/odelic/aboutus2">关于我们</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="/odelic/aboutus2#aboutUs">企业简介</a>-->
-                            <!--</dd>-->
-                            <!--<dd><a href="/odelic/aboutus2#timeSec">发展历程</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt><a href="/odelic/callus3">联系我们</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about">地址：xxxx</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about/shsubcom">QQ:xxxxx</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about/responsibility">E-MAIL:xxxxx</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                <!--</ul>-->
-                <!--<div class="line"></div>-->
-                <!--<div class="code">-->
-                    <!--<dl class="clearfix">-->
-                        <!--<dd>-->
-                            <!--<img src="/static/mj/daohang/images/code02.jpg">-->
-                            <!--扫码关注公众号-->
-                        <!--</dd>-->
-                    <!--</dl>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
 
-<!--</footer>-->
+<!--<div class="parents">-->
+<!--<div class="childTxt">-->
+<!--<h3 class="f24"><strong style="font-weight: bolder">-->
+<!--商务合作（可联系订单）</strong>-->
+<!--</h3><br>-->
+<!--<h3 class="f24">-->
+<!--公司：XXXXXXXXX-->
+<!--</h3>-->
+<!--<h3 class="f24">-->
+<!--地址：XXXXXXXXXXXX-->
+<!--</h3>-->
+<!--<h3 class="f24">-->
+<!--E-MAIL：XXXX@tpadsz.com-->
+<!--</h3>-->
+<!--<h3 class="f24">-->
+<!--QQ：XXXXXXXXXX-->
+<!--</h3>-->
+<!--</div>-->
+<!--<div class="childImg">-->
+<!--<img src="/static/mj/img/callus_03.png">-->
+<!--</div>-->
+<!--<div style="clear: both"></div>-->
+<!--</div>-->
+
+<!--<div class="parents" style="margin-bottom: 10%;margin-left: 20%">-->
+<!--<div class="childTxt" style="float: left;">-->
+<!--<h3 class="f24"><strong style="font-weight: bolder">-->
+<!--商务合作（可联系订单）</strong>-->
+<!--</h3><br>-->
+<!--<h3 class="f24">-->
+<!--公司：XXXXXXXXX-->
+<!--</h3>-->
+<!--<h3 class="f24">-->
+<!--地址：XXXXXXXXXXXX-->
+<!--</h3>-->
+<!--<h3 class="f24">-->
+<!--E-MAIL：XXXX@tpadsz.com-->
+<!--</h3>-->
+<!--<h3 class="f24">-->
+<!--QQ：XXXXXXXXXX-->
+<!--</h3>-->
+<!--</div>-->
+<!--<div class="childImg" style="float:right;margin-right: 20%">-->
+<!--&lt;!&ndash;<img src="img/ditu.png" alt="" style="width: 60%;height: 60%;">&ndash;&gt;-->
+<!--<img src="/static/mj/img/callus_03.png" alt="" style="width: 80%;height: 80%;">-->
+<!--</div>-->
+<!--<div style="clear: both"></div>-->
+<!--</div>-->
+<script src="/static/mj/daohang/js/nav.js"></script>
+<style>
+    /*footer {*/
+    /*height: 25%;*/
+    /*}*/
+</style>
+
+<div th:replace="layout/footer::footer"></div>
+<style>
+    footer{
+        margin-bottom: -2%;
+    }
+</style>
 </body>
+<script src="/static/mj/js/callus.js"></script>
 <script>
-    $(function(){
-        jQuery(".slideBox").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,interTime:5000,mouseOverStop:true,autoPage:true,trigger:"click",delayTime:800,effect:"fold"});
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            paginationClickable: true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: 5000,
-            autoplayDisableOnInteraction: false
-        });
 
-        var w=$(window).width();
-        $('.nyBanner01 .bd li,.nyBanner01 .bd').css('height',w*(480/1440));
-        $(window).resize(function(){
-            var w=$(window).width();
-            $('.nyBanner01 .bd li,.nyBanner01 .bd').css('height',w*(480/1440));
-        })
-    })
+    //中间内容自动填充屏幕
+    var body = $(window).height() + $(window).scrollTop();//屏幕的高，包括滚动距离
+    if (body>=1200){
+        var banner = $(".bannerbox").outerHeight(true);//banner高度
+        var footer = $("footer").outerHeight(true);//footer高度
+        var height = body - (banner + footer);
+        $(".media").height(height);
+        console.log("body:" + body);
+        console.log("banner:" + banner);
+        console.log("footer:" + footer);
+        console.log("height:" + height);
+        $(window).resize(function () {
+            body = $(window).height() + $(window).scrollTop();//屏幕的高，包括滚动距离
+            banner = $(".bannerbox").outerHeight(true);//banner高度
+            footer = $("footer").outerHeight(true);//footer高度
+            height = body - (banner + footer);
+            $(".media").height(height);
+            console.log("body:" + body);
+            console.log("banner:" + banner);
+            console.log("footer:" + footer);
+            console.log("height:" + height);
+        });
+    }
 </script>
 </html>

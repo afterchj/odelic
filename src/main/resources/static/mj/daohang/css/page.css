@@ -67,7 +67,7 @@ a:hover .show{display:none;}
 .pro-shaix .li_select select{font-size:12px;background:url(/web/ucan/images/else/jt.png) no-repeat right 8px center;padding:0 26px 0 18px;line-height:28px;height:30px;border:1px solid #cccccc;}
 .pro-paix{margin:50px 0 14px;}
 .pro-paix a{font-size:14px;color:#333;padding:0 22px 0 9px;background:url(/web/ucan/images/else/down.png) no-repeat right 7px center;display:inline-block;*display:inline; *zoom:1;line-height:28px;border:1px solid #b3b3b3;}
-.pro-paix a:hover,.pro-paix a.cur{border:1px solid #0046aa;color:#fff;background:#0046aa url(/web/ucan/images/else/up.png) no-repeat right 7px center;}
+.pro-paix a:hover,.pro-paix a.cur{border:1px solid #0046aa;color:#fff;background:#0046aa url(/static/mj/img/log/up.png) no-repeat right 7px center;}
 .pro-paix a.phone{display:none;}
 .pro-list{}
 .pro-list li{float:left;width:300px;margin:0 0 20px 0;}
@@ -923,7 +923,7 @@ body{overflow-x:hidden;}
 .syNews li h3 a{color:#333;}
 .syNews li h3 a:hover{color:#004baa;}
 .syNews li h4{font-size:12px;color:#6e6e6e;}
-.newFooter{background:#9e9e9ecc;}
+.newFooter{background:#828485;}
 .newFooterTop{padding:40px 0 48px;}
 .newFooterTop ul{float:left;}
 .newFooterTop li{float:left;margin-right:68px;}
@@ -1247,6 +1247,9 @@ em{font-style:normal;}
 
 
 @media screen and (max-width: 1440px) {
+    /*适配pad*/
+    .header_b{ position: absolute; width: 100%; padding: 8px 0; z-index: 9; display: flex; justify-content: space-between; transition: background .25s; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
+    .header-l{float:left; _display:inline;margin-left:-30px;}
     .syContent .wrapper{width:1200px;}
     .f30{font-size:24px;}
     .syContent01 .wenz.btm50{padding-bottom:30px;}

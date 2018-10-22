@@ -15,142 +15,63 @@
     <link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/inside.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/style.css" rel="stylesheet" type="text/css"/>
-    <script src="/static/mj/js/modernizr.js"></script> <!-- Modernizr -->
-    <!--<script type="text/javascript" src="./static/js/jquery.min.js"></script>-->
+    <link href="/static/mj/css/aboutus.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="/static/mj/daohang/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/static/mj/daohang/js/jquery.SuperSlide.2.1.2.js"></script>
-    <script type="text/javascript" src="/static/mj/daohang/js/swiper.min.js"></script>
     <style>
+        /*.nav {*/
+            /*float: right;*/
+            /*_display: inline;*/
+        /*}*/
+        /*b {*/
+            /*font-weight: 700;*/
+        /*}*/
+        /*.newFooter{background:#828485!important;}*/
+        /*.nyBanner01 .hd{position:absolute;z-index:10;bottom:15px;text-align:center;width:100%;}*/
     </style>
-    <style>
-        .nav {
-            float: right;
-            _display: inline;
-        }
-        b {
-            font-weight: 700;
-        }
-    </style>
+    <script src="/static/mj/js/jquery-1.8.3.js"></script>
+    <script>
+
+//        $(function(){
+//            var start=$(".p_start").offset().top;
+//            var end=$(".p_end").offset().top;
+//            var line=(end-start);
+//            var style='';
+//            if ($("style").hasClass("myStyle")){
+//                $(".myStyle").html('#cd-timeline::before{height: '+line+'px;}');
+//            }else {
+//                style = '<style class="myStyle">#cd-timeline::before{height: '+line+'px;}</style>';
+//                $("head").append(style);
+//            }
+//            //监听 浏览器窗口大小的变化事件
+//            $(window).resize(function () {
+//                start=$(".start").offset().top;
+//                end=$(".end").offset().top;
+//                line=((end-start)+200);
+//                $(".myStyle").html('#cd-timeline::before{height: '+line+'px;}');
+//            });
+//        });
+    </script>
 </head>
 <body>
 
 <div th:include="layout/header::header"></div>
 
-<!--<header>-->
-    <!--<div class="header">-->
-        <!--<div class="header_b clearfix">-->
-            <!--<div class="wrapper">-->
-                <!--<div class="header-l">-->
-                    <!--<a class="navbar-brand" href="index.html"><b-->
-                            <!--class="header-logo">ODELIC</b></a>-->
-                <!--</div>-->
-                <!--<div class="nav">-->
-                    <!--<ul id="aaa">-->
-                        <!--<li class="item"><a href="index.html" class="nav_small">首页</a>-->
-                        <!--</li>-->
-                        <!--<li class="item"><a-->
-                                <!--href="http://www.opple.com.cn/newhome/"-->
-                                <!--class="nav_small">家居照明</a>-->
-                            <!--<ul class="dl-list">-->
-                                <!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="http://www.opple.com.cn/solution/"-->
-                                        <!--class="xy_snav"-->
-                                        <!--target="_blank">一站式解决方案</a></li>-->
-                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                                <!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="http://www.opple.com.cn/home/homelight/skill"-->
-                                        <!--class="xy_snav"-->
-                                        <!--target="_blank">明星产品推荐</a></li>-->
-                                <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li class="item"><a-->
-                                <!--href="http://www.opple.com.cn/commercial/"-->
-                                <!--class="nav_small">商用照明</a>-->
-                            <!--<ul class="dl-list">-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="http://www.opple.com.cn/commercial/"-->
-                                            <!--class="xy_snav"-->
-                                            <!--target="_blank">客户服务</a></li>-->
-                                <!--</div>-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="http://www.opple.com.cn/businesscase/"-->
-                                            <!--class="xy_snav"-->
-                                            <!--target="_blank">客户案例</a></li>-->
-                                <!--</div>-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li class="item"><a-->
-                                <!--href="/mySpringBoot2X/opjm"-->
-                                <!--class="nav_small">产品中心</a>-->
-                            <!--<ul class="dl-list">-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="/mySpringBoot2X/opjm"-->
-                                            <!--class="xy_snav">家居灯具</a></li>-->
-                                <!--</div>-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="/mySpringBoot2X/opjm"-->
-                                            <!--class="xy_snav"-->
-                                            <!--&gt;商用灯具</a></li>-->
-                                <!--</div>-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li class="item">-->
-                            <!--<a href="/mySpringBoot2X/aboutus2"-->
-                               <!--class="nav_small">关于我们</a>-->
-                            <!--<ul class="dl-list">-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="/mySpringBoot2X/aboutus2#aboutUs"-->
-                                            <!--class="xy_snav"-->
-                                            <!--&gt;企业简介</a></li>-->
-                                <!--</div>-->
-                                <!--<div class="clearfix">-->
-                                    <!--<li class="xy_item"><a-->
-                                            <!--href="/mySpringBoot2X/aboutus2#timeSec"-->
-                                            <!--class="xy_snav"-->
-                                            <!--&gt;发展历程</a></li>-->
-                                <!--</div>-->
-                            <!--</ul>-->
-                        <!--</li>-->
-                        <!--<li class="item"><a href="/mySpringBoot2X/callus3"-->
-                                            <!--class="nav_small">联系我们</a>-->
-                        <!--</li>-->
-                        <!--<li class="item"><img width="14"-->
-                                              <!--style="cursor: pointer;"-->
-                                              <!--class="header_store"-->
-                                              <!--src="./static/daohang/images/header_icon02.png"-->
-                                              <!--onclick="window.open('http://www.opplestore.com/')">-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</header>-->
-
 <!--<div class="banner" data-image-lg="./static/img/banner02.jpg"></div>-->
 <style>
 
-    .bannerbox {
-        margin: 0 auto;
-        position:relative;
-        overflow:hidden;
-        height:600px;
-    }
-    .banner {
-        width:2000px; /*图片宽度*/
-        position:absolute;
-        left:50%;
-        margin-left:-1000px; /*图片宽度的一半*/
-        height: 600px;
-    }
+    /*.bannerbox {*/
+        /*margin: 0 auto;*/
+        /*position:relative;*/
+        /*overflow:hidden;*/
+        /*height:600px;*/
+    /*}*/
+    /*.banner {*/
+        /*width:2000px; !*图片宽度*!*/
+        /*position:absolute;*/
+        /*left:50%;*/
+        /*margin-left:-1000px; !*图片宽度的一半*!*/
+        /*height: 600px;*/
+    /*}*/
 </style>
 
 <div class="bannerbox">
@@ -165,68 +86,37 @@
 <!--<div class="ny-banner pro-banner bckBanner" style="background:url(./static/img/aboutus_01.png) no-repeat center center;background-size:cover;">-->
 <!--<div class="ny-banner pro-banner bckBanner" style="background:url(./static/img/banner02.jpg) no-repeat center center;background-size:cover;">-->
 
+<div class="fixed_right">
+    <ul>
+        <li class="pos_re qq">
+            <div class='side-tools-tips'>
+                <p><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=806015080&site=qq&menu=yes'><img
+                        src='/static/mj/daohang/images/qq_ff0df34.png' alt=''/></a></p>
+            </div>
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;">
+                    <img src="/static/mj/daohang/images/right_icon01.png" width="22">
+                </div>
+            </div>
+        </li>
+        <li class="pos_re">
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;" title="APP下载">
+                    <img src="/static/mj/daohang/images/right_icon07.png" width="18">
+                </div>
+            </div>
+        </li>
+        <li class="pos_re totop">
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;" title="回到顶部">
+                    <img src="/static/mj/daohang/images/right_icon06.png" width="20">
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 
-<!--<div class="fixed_right">-->
-    <!--<ul>-->
-        <!--<li class="pos_re qq">-->
-            <!--<div class='side-tools-tips'>-->
-                <!--<p><a target='_blank'-->
-                      <!--href='http://wpa.qq.com/msgrd?v=3&uin=806015080&site=qq&menu=yes'><img-->
-                        <!--src='./static/daohang/images/qq_ff0df34.png' alt=''/></a></p>-->
-            <!--</div>-->
-            <!--&lt;!&ndash;<div class="fixed_right_hover">&ndash;&gt;-->
-            <!--&lt;!&ndash;<div class="zhichiBtn" style="cursor: pointer;" id="zhichiBtn" target="blank"><img src="images/right_icon011.png" width="22">联系客服</div>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--<div class="table">-->
-                <!--<div class="table-cell" style="cursor: pointer;">-->
-                    <!--<img src="./static/daohang/images/right_icon01.png" width="22">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</li>-->
-        <!--<li class="pos_re">-->
-            <!--&lt;!&ndash;<div class="fixed_right_hover">&ndash;&gt;-->
-            <!--&lt;!&ndash;<a href="http://www.opple.com.cn/service/store"><img src="images/right_icon077.png" width="18">APP下载</a>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--<div class="table">-->
-                <!--<div class="table-cell" style="cursor: pointer;" title="APP下载">-->
-                    <!--<img src="./static/daohang/images/right_icon07.png" width="18">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</li>-->
-
-        <!--<li class="pos_re totop">-->
-            <!--&lt;!&ndash;<div class="fixed_right_hover">&ndash;&gt;-->
-            <!--&lt;!&ndash;<a href="javascript:;"><img src="images/right_icon066.png" width="20">回到顶部</a>&ndash;&gt;-->
-            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-            <!--<div class="table">-->
-                <!--<div class="table-cell" style="cursor: pointer;" title="回到顶部">-->
-                    <!--<img src="./static/daohang/images/right_icon06.png" width="20">-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</li>-->
-    <!--</ul>-->
-<!--</div>-->
-
-<!--<script>-->
-
-    <!--$(function () {-->
-        <!--//返回顶部-->
-        <!--var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix-->
-        <!--$(".totop").hide();-->
-        <!--$(".totop").click(function () {-->
-            <!--$body.animate({scrollTop: 0});-->
-        <!--});-->
-        <!--window.onscroll = function () {-->
-            <!--if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {-->
-                <!--$(".totop").show();-->
-            <!--} else {-->
-                <!--$(".totop").hide();-->
-            <!--}-->
-        <!--};-->
-    <!--})-->
-
-<!--</script>-->
-<div class="about" id="aboutUs">
+<div class="about" id="aboutUs" style="margin-top: -8%">
     <div class="wrapper">
         <!--<h2 class="f30" style="margin-top: 1%">企业介绍</h2>-->
         <h2 class="f30"><strong style="font-weight: bolder">|</strong>&nbsp;企业介绍</h2>
@@ -243,14 +133,8 @@
                             <div class="wenz">
                                 <div class="table">
                                     <div class="table-cell">
-                                        <h4 class="f16">
-                                            照明行业标杆的整体照明解决方案提供者为消费者<br>提供差异化整体照明解决方案
-                                        </h4>
-                                        <p>
-
-                                            欧普照明始于1996年，是一家集研发、生产、销售、服务于一体的综合型照明企业。欧普照明于2016年8月19日成功登陆上海证券交易所主板，正式挂牌上市。股票简称“欧普照明”，股票代码：603515.SH。<br><br>
-                                            公司现有员工6000多人，拥有上海总部及中山工业园、吴江工业园等多个生产基地；公司产品涵盖LED及传统光源、灯具、电工电器、厨卫吊顶产品等领域。
-                                        </p>
+                                        <h4 class="f16">ODELIC 照明(欧德立克)——生活品味创造者。<br>以究极创新与您诚恳温馨对话，点亮家居生活，让“光”照亮全家。</h4>
+                                        <p>ODELIC (欧德立克) 于1951年创立于日本东京，初期为荧光灯及照明灯具销售，创业初期以“大山照明”行销全日本。1996年1月变更社名为“ODELIC”，以期展望，拓展海外发展事业。1996年11月，日本证券协会登录上市股票公司。目前ODELIC于日本设置有：羽村工厂、兵库县西官物流中心、山形生产工厂、山形物流中心，其取得认证与环境保护认证如下：<br>1998年 本社、山形工厂 ｢ ISO – 9001 ｣ 认证取得。<br>2000年 山形工厂｢ ISO – 14001 ｣ 环境保护认证取得。<br>2002年 羽村工厂 ｢ ISO – 9001 ｣认证取得。<br>2003年 羽村工厂｢ ISO – 14001 ｣ 环境保护认证取得。<br>六十多年照明器具生产销售经验，不断在灯饰领域中，淘汰旧有款式，日本设计师的创新与新潮流的时代，引领日本照明器具创新的先驱，朝向绿能环保、节能低碳的世界潮流，像灯塔般，照亮着每一位心中足够的亮能，让自我发光发热，成为“光”的领航者。全系列照明灯具销售有：吊灯、餐吊灯、间接照明、商业照明、LED光源开发。结合灯光、视觉与听觉艺术，创造美好的工作环境与家居生活。</p>
                                     </div>
                                 </div>
                             </div>
@@ -272,107 +156,54 @@
     </div>
 </div>
     <div id="timeSec"></div>
-    <!--<link rel="stylesheet" href="./static/cs/style.css">-->
-    <section id="cd-timeline" class="cd-container" style="overflow-y: scroll;height: 40%;margin-bottom: 1%">
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
+    <section id="cd-timeline" class="cd-container" style="overflow-y: scroll;height: 80%;margin-bottom: 1%" data-attr=0>
+        <p class="p_start"></p>
+        <div class="cd-timeline-block" th:each="timeShaftList:${timeShaftLists}">
+            <div class="cd-timeline-img">
                 <!--<img src="./static/img/cd-icon-location.svg" alt="Location">-->
-                <!--<img ><p id="cirl"></p></img>-->
-                <p class="cirl"></p>
+                <p class="cirl start"></p>
             </div> <!-- cd-timeline-img -->
 
             <div class="cd-timeline-content">
-                <h2>1973年11月</h2>
-                <p>公司名称更改为Oyama Lighting Co.，Ltd</p>
+                <h2 th:text="${timeShaftList.year}+'年'+${timeShaftList.month}+'月'"></h2>
+                <p th:text="${timeShaftList.intro}"></p>
                 <!--<a href="#0" class="cd-read-more">查看详情</a>-->
                 <!--<span class="cd-date">1月28日</span>-->
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
 
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-movie">
-                <!--<img src="./static/img/cd-icon-location.svg" alt="Location">-->
-                <p class="cirl"></p>
-            </div> <!-- cd-timeline-img -->
+        <!--<div class="cd-timeline-block">-->
+            <!--<div class="cd-timeline-img cd-picture">-->
+                <!--&lt;!&ndash;<img src="./static/img/cd-icon-location.svg" alt="Location">&ndash;&gt;-->
+                <!--<p class="cirl start"></p>-->
+            <!--</div> &lt;!&ndash; cd-timeline-img &ndash;&gt;-->
 
-            <div class="cd-timeline-content">
-                <h2>1961年10月</h2>
-                <p>羽村工厂在东京羽村市开业</p>
-                <!--<a href="#0" class="cd-read-more">查看详情</a>-->
-                <!--<span class="cd-date">2月</span>-->
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-picture">
-                <!--<img src="./static/img/cd-icon-picture.svg" alt="Picture">-->
-                <p class="cirl"></p>
-            </div> <!-- cd-timeline-img -->
-
-            <div class="cd-timeline-content">
-                <h2>1958年5月3日</h2>
-                <p>开始制造白炽灯具</p>
-                <!--<a href="#0" class="cd-read-more">Read more</a>-->
-                <!--<span class="cd-date">2月</span>-->
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-location">
-                <!--<img src="./static/img/cd-icon-location.svg" alt="Location">-->
-                <p class="cirl"></p>
-            </div> <!-- cd-timeline-img -->
-
-            <div class="cd-timeline-content">
-                <h2>1956年5月7日</h2>
-                <p>将公司名称更改为Oyama Electric Industry Co.，Ltd</p>
-                <!--<a href="#0" class="cd-read-more">Read more</a>-->
-                <!--<span class="cd-date">3月</span>-->
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-location">
-                <!--<img src="./static/img/cd-icon-location.svg" alt="Location">-->
-                <p class="cirl"></p>
-            </div> <!-- cd-timeline-img -->
-
-            <div class="cd-timeline-content">
-                <h2>1954年11月</h2>
-                <p>开始制造荧光灯放电灯（辉光灯）</p>
-                <!--<a href="#0" class="cd-read-more">Read more</a>-->
-                <!--<span class="cd-date">4月</span>-->
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
-
-        <div class="cd-timeline-block">
-            <div class="cd-timeline-img cd-movie">
-                <!--<img src="./static/img/cd-icon-movie.svg" alt="Movie">-->
-                <p class="cirl"></p>
-            </div> <!-- cd-timeline-img -->
-
-            <div class="cd-timeline-content">
-                <h2>1951年5月6日</h2>
-                <p>成立制造和销售各类照明设备有限公司，在三鹰市，东京大山有限公司金属工程的目的，同时三鹰工厂安装荧光灯照明设备的制造，开始销售</p>
-                <!--<span class="cd-date">8月16号</span>-->
-            </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+            <!--<div class="cd-timeline-content">-->
+                <!--<h2>2013年7月1日</h2>-->
+                <!--<p>继大阪证券交易所和东京证券交易所合并后，在东京证券交易所（JASDAQ市场）上市</p>-->
+                <!--&lt;!&ndash;<a href="#0" class="cd-read-more">查看详情</a>&ndash;&gt;-->
+                <!--&lt;!&ndash;<span class="cd-date">1月28日</span>&ndash;&gt;-->
+            <!--</div> &lt;!&ndash; cd-timeline-content &ndash;&gt;-->
+        <!--</div> &lt;!&ndash; cd-timeline-block &ndash;&gt;-->
+        <p class="p_end"></p>
     </section> <!-- cd-timeline -->
 <style>
-    .cirl{
-        display: block;
-        width: 14px;
-        height: 14px;
-        background: #227AF1;
-        border-radius: 7px;
-        margin-left: -7px;
-        margin-top: -10px;
-        position: relative;
-        left: 50%;
-        top: 50%;
-    }
+    /*.cirl{*/
+        /*display: block;*/
+        /*width: 14px;*/
+        /*height: 14px;*/
+        /*background: #227AF1;*/
+        /*-moz-border-radius: 7px;!**兼容火狐浏览器*!*/
+        /*-webkit-border-radius: 7px;!**兼容苹果；谷歌，等一些浏览器认*!*/
+        /*-o-border-radius: 7px;!**兼容opera浏览器*!*/
+        /*border-radius: 7px;*/
+        /*margin-left: -7px;*/
+        /*margin-top: -10px;*/
+        /*position: relative;*/
+        /*left: 50%;*/
+        /*top: 50%;*/
+    /*}*/
 </style>
-
 <!--<div class="content">-->
     <!--<div class="wrapper">-->
         <!--&lt;!&ndash;<h2 class="f30" style="margin-left: 2%">发展历程</h2>&ndash;&gt;-->
@@ -424,88 +255,7 @@
 
 <div th:include="layout/footer::footer"></div>
 
-<!--<footer style="margin-bottom: -1%">-->
-    <!--<div class="newFooter pc">-->
-        <!--<div class="newFooterTop">-->
-            <!--<div class="wrapper clearfix">-->
-                <!--<ul class="clearfix">-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="http://www.opple.com.cn/newhome/">家居照明</a>-->
-                            <!--</dt>-->
-                            <!--<dd><a href="http://www.opple.com.cn/solution/">一站式解决方案</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/newpro/prolist/?classid=79">明星产品推荐</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt><a href="http://www.opple.com.cn/commercial/">商用照明</a>-->
-                            <!--</dt>-->
-                            <!--<dd><a href="http://www.opple.com.cn/commercial/">客户服务</a>-->
-                            <!--</dd>-->
-                            <!--<dd><a href="http://www.opple.com.cn/businesscase/">客户案例</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="/mySpringBoot2X/opjm">产品中心</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="/mySpringBoot2X/opjm">家居灯具</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="/mySpringBoot2X/opjm">商用灯具</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="/mySpringBoot2X/aboutus2">关于我们</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="/mySpringBoot2X/aboutus2#aboutUs">企业简介</a>-->
-                            <!--</dd>-->
-                            <!--<dd><a href="/mySpringBoot2X/aboutus2#timeSec">发展历程</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt><a href="/mySpringBoot2X/callus3">联系我们</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about">地址：xxxx</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about/shsubcom">QQ:xxxxx</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about/responsibility">E-MAIL:xxxxx</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                <!--</ul>-->
-                <!--<div class="line"></div>-->
-                <!--<div class="code">-->
-                    <!--<dl class="clearfix">-->
-                        <!--<dd>-->
-                            <!--<img src="./static/daohang/images/code02.jpg">-->
-                            <!--扫码关注公众号-->
-                        <!--</dd>-->
-                    <!--</dl>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
 
-<!--</footer>-->
 <!--<script type="text/javascript" src="./static/js/jquery.min.js"></script>-->
 <!--<script type="text/javascript" src="./static/js/aboutus2.js"></script>-->
 
@@ -527,54 +277,7 @@
 <!--</script>-->
 <script src="/static/mj/js/jquery.min.js"></script>
 <script src="/static/mj/js/main.js"></script> <!-- Resource jQuery -->
-<script>
-//    var h3 = document.documentElement.getElementsByTagName('h3')[0];
-//
-//    function fontS() {
-//        var hw = h3.offsetWidth;
-//        var hs = hw/40;
-//        h3.style.fontSize = hs+ "px";
-//    }
-//    window.onresize = function () {fontS();}
-</script>
-<script type="text/javascript" src="/static/mj/daohang/js/jquery.min.js"></script>
 <script src="/static/mj/daohang/js/nav.js"></script>
-<script src="/static/mj/daohang/js/hm.js"></script>
-<script src="/static/mj/daohang/js/hm.js"></script>
-<script type="text/javascript" src="/static/mj/daohang/js/jquery.SuperSlide.2.1.2.js"></script>
-<script type="text/javascript" src="/static/mj/daohang/js/swiper.min.js"></script>
-<script>
-    $(function () {
-        jQuery(".slideBox").slide({
-            titCell: ".hd ul",
-            mainCell: ".bd ul",
-            autoPlay: true,
-            interTime: 5000,
-            mouseOverStop: true,
-            autoPage: true,
-            trigger: "click",
-            delayTime: 800,
-            effect: "fold"
-        });
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            paginationClickable: true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: 5000,
-            autoplayDisableOnInteraction: false
-        });
-
-        var w = $(window).width();
-        $('.nyBanner01 .bd li,.nyBanner01 .bd').css('height', w * (480 / 1440));
-        $(window).resize(function () {
-            var w = $(window).width();
-            $('.nyBanner01 .bd li,.nyBanner01 .bd').css('height', w * (480 / 1440));
-        })
-    })
-</script>
-
+<script src="/static/mj/js/aboutus.js"></script>
 </body>
 </html>

@@ -18,4 +18,6 @@ public interface TimeShaftService {
     List<Integer> findYear();
 
     List<TimeShaft> findLastDay();
+
+    List<TimeShaft> findAll();
 }

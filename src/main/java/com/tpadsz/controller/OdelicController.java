@@ -21,7 +21,6 @@ import java.util.Map;
  * @create: 2018-09-27 15:24
  **/
 @Controller
-@RequestMapping("odelic")
 public class OdelicController {
 
     @Resource
@@ -36,7 +35,7 @@ public class OdelicController {
         maps.put("list",pageInfos.getList());
         maps.put("getPageNum", pageInfos.getPageNum());
         maps.put("getPages", pageInfos.getPages());
-        System.out.println("getPages:"+pageInfos.getPages());
+//        System.out.println("getPages:"+pageInfos.getPages());
         return maps;
     }
 
@@ -68,6 +67,15 @@ public class OdelicController {
     @RequestMapping(value = "navigation", method = RequestMethod.GET)
     public String navigation(){
         return "navigation";
+    }
+
+    /**
+     * 导航
+     * @return html
+     */
+    @RequestMapping(value = "navigation2", method = RequestMethod.GET)
+    public String navigation2(){
+        return "test/nav-fixed-alt1";
     }
 
 }

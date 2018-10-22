@@ -23,4 +23,7 @@ public interface  TimeShaftDao {
 
     @Select("SELECT * FROM t_time_shaft WHERE date in(SELECT max(date) from t_time_shaft GROUP BY year) ORDER BY year desc")
     List<TimeShaft> findLastDay();
+
+    @Select("SELECT * FROM t_time_shaft ORDER BY year desc,month desc,day desc")
+    List<TimeShaft> findAll();
 }

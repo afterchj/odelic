@@ -912,7 +912,7 @@ body{overflow-x:hidden;}
 .syNews li h3 a{color:#333;}
 .syNews li h3 a:hover{color:#004baa;}
 .syNews li h4{font-size:12px;color:#6e6e6e;}
-.newFooter{background:#9e9e9ecc;}
+.newFooter{background:#828485;}
 .newFooterTop{padding:40px 0 48px;}
 .newFooterTop ul{float:left;}
 .newFooterTop li{float:left;margin-right:68px;}
@@ -1238,6 +1238,9 @@ em{font-style:normal;}
 
 
 @media screen and (max-width: 1440px) {
+    /*适配pad*/
+    .header_b{ position: absolute; width: 100%; padding: 8px 0; z-index: 9; display: flex; justify-content: space-between; transition: background .25s; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
+    .header-l{float:left; _display:inline;margin-left:-30px;}
     .syContent .wrapper{width:1200px;}
     .f30{font-size:24px;}
     .syContent01 .wenz.btm50{padding-bottom:30px;}

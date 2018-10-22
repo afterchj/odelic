@@ -1,0 +1,38 @@
+*{
+    box-sizing:unset!important;
+}
+a {
+    text-decoration: none!important;
+}
+@media screen and (max-width: 1023px) {
+    nav{
+        display: block;
+    }
+}
+
+.bannerbox {
+    margin: 0 auto;
+    position:relative;
+    overflow:hidden;
+    height:500px;
+}
+.banner {
+    width: 2000px;
+    /*width:100%; !*图片宽度*!*/
+    position:absolute;
+    left:50%;
+    /*margin-left:-50%; !*图片宽度的一半*!*/
+    margin-left:-50%;
+    height: 500px;
+}
+
+.divPages{
+    padding-bottom: 10px;
+}
+
+.newFooter{
+    margin-top: 8%;
+    margin-bottom: -15px;
+}
+
+

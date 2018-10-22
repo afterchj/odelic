@@ -17,7 +17,6 @@ import java.util.List;
  * @create: 2018-10-10 10:09
  **/
 @Controller
-@RequestMapping("time")
 public class TimeShaftController {
 
     @Resource
@@ -29,12 +28,14 @@ public class TimeShaftController {
      */
     @RequestMapping(value = "aboutus", method = RequestMethod.GET)
     public String aboutus(ModelMap modelMap){
-        List<TimeShaft> timeShaftLists = timeShaftService.findAllExcLastDay();
+//        List<TimeShaft> timeShaftLists = timeShaftService.findAllExcLastDay();
+//        modelMap.put("timeShaftLists", timeShaftLists);
+//        List<Integer> years = timeShaftService.findYear();
+//        modelMap.put("years", years);
+//        List<TimeShaft> lastDays = timeShaftService.findLastDay();
+//        modelMap.put("lastDays", lastDays);
+        List<TimeShaft> timeShaftLists = timeShaftService.findAll();
         modelMap.put("timeShaftLists", timeShaftLists);
-        List<Integer> years = timeShaftService.findYear();
-        modelMap.put("years", years);
-        List<TimeShaft> lastDays = timeShaftService.findLastDay();
-        modelMap.put("lastDays", lastDays);
         return "aboutofus";
     }
 }

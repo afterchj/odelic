@@ -34,4 +34,9 @@ public class TimeShaftServiceImpl implements TimeShaftService {
     public List<TimeShaft> findLastDay() {
         return timeShaftDao.findLastDay();
     }
+
+    @Override
+    public List<TimeShaft> findAll() {
+        return timeShaftDao.findAll();
+    }
 }

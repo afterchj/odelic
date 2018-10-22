@@ -10,139 +10,43 @@
     <meta name="format-detection" content="telephone=no"><!--禁止ios自动识别数字为手机号-->
     <meta name="renderer" content="webkit"><!--让360双核浏览器用webkit内核渲染页面-->
     <link rel="stylesheet" href="/static/mj/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="/static/mj/js/jquery.min.js"></script>
     <script src="/static/mj/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link type="text/css" href="/static/mj/daohang/css/base.css" rel="stylesheet">
     <link type="text/css" href="/static/mj/daohang/css/page.css" rel="stylesheet">
     <style>
-        *{
-            box-sizing:unset!important;
-        }
+        /**{*/
+            /*box-sizing:unset!important;*/
+        /*}*/
+        /*a {*/
+            /*text-decoration: none!important;*/
+        /*}*/
+        /*@media screen and (max-width: 1023px) {*/
+            /*nav{*/
+                /*display: block;*/
+            /*}*/
+        /*}*/
     </style>
+    <link type="text/css" href="/static/mj/css/product.css" rel="stylesheet">
 </head>
 <body>
 <div th:include="layout/header::header"></div>
-<!--<header>-->
-<!--<div class="header">-->
-    <!--<div class="header_b clearfix">-->
-        <!--<div class="wrapper">-->
-
-            <!--<div class="header-l">-->
-                <!--<a class="navbar-brand" href="index.html"><b-->
-                        <!--class="header-logo">ODELIC</b></a>-->
-            <!--</div>-->
-            <!--<div class="nav">-->
-                <!--<ul id="aaa">-->
-                    <!--<li class="item"><a href="index.html" class="nav_small">首页</a>-->
-                    <!--</li>-->
-                    <!--<li class="item"><a-->
-                            <!--href="http://www.opple.com.cn/newhome/"-->
-                            <!--class="nav_small">家居照明</a>-->
-                        <!--<ul class="dl-list">-->
-                            <!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
-                            <!--<li class="xy_item"><a-->
-                                    <!--href="http://www.opple.com.cn/solution/"-->
-                                    <!--class="xy_snav"-->
-                                    <!--target="_blank">一站式解决方案</a></li>-->
-                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<div class="clearfix">&ndash;&gt;-->
-                            <!--<li class="xy_item"><a-->
-                                    <!--href="http://www.opple.com.cn/home/homelight/skill"-->
-                                    <!--class="xy_snav"-->
-                                    <!--target="_blank">明星产品推荐</a></li>-->
-                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <!--<li class="item"><a-->
-                            <!--href="http://www.opple.com.cn/commercial/"-->
-                            <!--class="nav_small">商用照明</a>-->
-                        <!--<ul class="dl-list">-->
-                            <!--<div class="clearfix">-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="http://www.opple.com.cn/commercial/"-->
-                                        <!--class="xy_snav"-->
-                                        <!--target="_blank">客户服务</a></li>-->
-                            <!--</div>-->
-                            <!--<div class="clearfix">-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="http://www.opple.com.cn/businesscase/"-->
-                                        <!--class="xy_snav"-->
-                                        <!--target="_blank">客户案例</a></li>-->
-                            <!--</div>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <!--<li class="item"><a-->
-                            <!--href="/odelic/opjm"-->
-                            <!--class="nav_small">产品中心</a>-->
-                        <!--<ul class="dl-list">-->
-                            <!--<div class="clearfix">-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="/odelic/product"-->
-                                        <!--class="xy_snav"-->
-                                        <!--&gt;家居灯具</a></li>-->
-                            <!--</div>-->
-                            <!--<div class="clearfix">-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="/odelic/product"-->
-                                        <!--class="xy_snav"-->
-                                        <!--&gt;商用灯具</a></li>-->
-                            <!--</div>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <!--<li class="item">-->
-                        <!--<a href="/odelic/aboutus2"-->
-                           <!--class="nav_small">关于我们</a>-->
-                        <!--<ul class="dl-list">-->
-                            <!--<div class="clearfix">-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="/odelic/aboutus#aboutUs"-->
-                                        <!--class="xy_snav"-->
-                                        <!--&gt;企业简介</a></li>-->
-                            <!--</div>-->
-                            <!--<div class="clearfix">-->
-                                <!--<li class="xy_item"><a-->
-                                        <!--href="/odelic/aboutus#timeSec"-->
-                                        <!--class="xy_snav"-->
-                                        <!--&gt;发展历程</a></li>-->
-                            <!--</div>-->
-                        <!--</ul>-->
-                    <!--</li>-->
-                    <!--<li class="item"><a href="/odelic/callus"-->
-                                        <!--class="nav_small">联系我们</a>-->
-                    <!--</li>-->
-                    <!--<li class="item"><img width="14"-->
-                                          <!--style="cursor: pointer;"-->
-                                          <!--class="header_store"-->
-                                          <!--src="/static/mj/daohang/images/header_icon02.png"-->
-                                          <!--onclick="window.open('http://www.opplestore.com/')">-->
-                    <!--</li>-->
-                <!--</ul>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--</header>-->
-
-<!--<div class="ny-banner pro-banner bckBanner"-->
-<!--style="background:url(./static/opjm_files/jjdj02.jpg) no-repeat center center;background-size:cover;">-->
-<!--<div class="ny-banner pro-banner bckBanner" style="background:url(./static/img/cpzx_01.png) no-repeat center center;background-size:cover;">-->
-
 
     <style>
 
-        .bannerbox {
-            margin: 0 auto;
-            position:relative;
-            overflow:hidden;
-            height:400px;
-        }
-        .banner {
-            width:2000px; /*图片宽度*/
-            position:absolute;
-            left:50%;
-            margin-left:-1000px; /*图片宽度的一半*/
-            height: 400px;
-        }
+        /*.bannerbox {*/
+             /*margin: 0 auto;*/
+             /*position:relative;*/
+             /*overflow:hidden;*/
+             /*height:400px;*/
+         /*}*/
+        /*.banner {*/
+            /*width:2000px; !*图片宽度*!*/
+            /*position:absolute;*/
+            /*left:50%;*/
+            /*margin-left:-1000px; !*图片宽度的一半*!*/
+            /*height: 400px;*/
+        /*}*/
     </style>
     <div class="bannerbox">
         <div class="banner">
@@ -150,52 +54,36 @@
         </div>
     </div>
 
-    <!--<div class="nyBanner01 syBanner pc" style="height: auto;">-->
-    <!--<div id="slideBox" class="slideBox">-->
-        <!--<div class="hd">-->
-            <!--<ul></ul>-->
-        <!--</div>-->
-        <!--<div class="bd">-->
-            <!--<ul>-->
-                <!--<li><a href="about/detail/2507.html"-->
-                       <!--title="欧普照明携旗下新业务亮相2018广州建博会"><img width="100%"-->
-                                                          <!--src="./static/daohang/images/1531211480.jpg"></a>-->
-                <!--</li>-->
-
-                <!--<li><a href="home/xsfg.html" title="PC-西式复古-大首页"><img-->
-                        <!--width="100%" src="./static/daohang/images/1534156777.jpg"></a></li>-->
-
-                <!--<li><a href="newhome/newhome.html" title="首页家居kv"><img-->
-                        <!--width="100%" src="./static/daohang/images/1533899525.jpg"></a></li>-->
-            <!--</ul>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-<!--<script>-->
-
-    <!--$(function () {-->
-        <!--//返回顶部-->
-        <!--var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix-->
-        <!--$(".totop").hide();-->
-        <!--$(".totop").click(function () {-->
-            <!--$body.animate({scrollTop: 0});-->
-        <!--});-->
-        <!--window.onscroll = function () {-->
-            <!--if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {-->
-                <!--$(".totop").show();-->
-            <!--} else {-->
-                <!--$(".totop").hide();-->
-            <!--}-->
-        <!--};-->
-    <!--})-->
-
-<!--</script>-->
+<div class="fixed_right">
+    <ul>
+        <li class="pos_re qq">
+            <div class='side-tools-tips'>
+                <p><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=806015080&site=qq&menu=yes'><img
+                        src='/static/mj/daohang/images/qq_ff0df34.png' alt=''/></a></p>
+            </div>
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;">
+                    <img src="/static/mj/daohang/images/right_icon01.png" width="22">
+                </div>
+            </div>
+        </li>
+        <li class="pos_re">
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;" title="APP下载">
+                    <img src="/static/mj/daohang/images/right_icon07.png" width="18">
+                </div>
+            </div>
+        </li>
+        <li class="pos_re totop">
+            <div class="table">
+                <div class="table-cell" style="cursor: pointer;" title="回到顶部">
+                    <img src="/static/mj/daohang/images/right_icon06.png" width="20">
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
 <div class="black01" style="display: none; opacity: 1;"></div>
-<style>
-    body {
-        /*background: #f3f3f3;*/
-    }
-</style>
 
 <!--<div class="ny-banner pro-banner bckBanner"-->
      <!--style="background:url(./static/opjm_files/jjdj02.jpg) no-repeat center center;background-size:cover;">-->
@@ -321,9 +209,6 @@
 </div>
 </div>
 
-<!--<div id="pgServer" dir="ltr">-->
-<!--<ul class="nr_fenye">-->
-
 <div class="divPages">
 
     <input type="hidden" id="num" th:value="${pageInfos.getPageNum()}">
@@ -370,9 +255,9 @@
     </ul>
 </div>
 <style>
-    .divPages{
-        padding-bottom: 10px;
-    }
+    /*.divPages{*/
+        /*padding-bottom: 10px;*/
+    /*}*/
 </style>
 
 <div class="new_pro_screen_ul" style="background-color: rgb(246, 244, 236);">
@@ -436,420 +321,178 @@
 </div>
 <div class="black"></div>
 <div class="clearb"></div>
-<!--<footer>-->
-    <!--</div>-->
-<!--</footer>-->
-<!--<div class="footer_fixed_mar phone"></div>-->
-
-
-<script type="text/javascript">//id="zhichiScript" src="//www.sobot.com/chat/frame/js/entrance.js?sysNum=4c349791a07b46c1a70b8ac88aa23257"
-var $script = document.createElement("script");
-var isMobile = window.navigator.userAgent.indexOf("Mobile") >= 0;
-$script.id = "zhichiScript";
-//$script.setAttribute("data-args", "manual=true");
-$script.className = "zhichiBtn";
-$script.src = '';
-window.addEventListener("load", function () {
-    document.body.appendChild($script);
-})
-
-$script.onload = function () {
-    var zhiManager = getzhiSDKInstance();
-    //zhiManager.set("groupId", "f1550b52c33043c683349f01fdd98e81");
-    // if (!isMobile) {
-    //     zhiManager.set("autoExpand", true);
-    // }
-    //zhiManager.set("customMargin", 75);
-    zhiManager.on("load", function () {
-        zhiManager.initBtnDOM();
-    });
-    zhiManager.on("core.framestatuschange", function (status) {
-        $(".right-side-bar li:first-child").toggleClass("show");
-    });
-    setTimeout(function () {
-        $(".tips-outer").css({
-            'z-index': +new Date()
-        })
-    }, 10);
-
-};
-</script>
 
 <script type="text/javascript" src="/static/mj/opjm_files/common.js"></script>
 <script>
 
-    function  downloaddoc(proid)
-    {
-        $.ajax({
-            type:'POST',
-            url:'/newpro/downloaddoc',//路径
-            data:{
-                proid:proid
-            },
-            dataType:'text',
-            success:function(msg){
-                if(msg!="")
-                    location.href=msg;
-            }
-        });
-    }
-    function opcompare(proid,classid,op)
-    {
-        $.ajax({
-            type:'POST',
-            url:'/newpro/opcompare',//路径
-            data:{
-                proid:proid,
-                classid:classid,
-                op:op
-            },
-            dataType:'json',
-            success:function(msg){
-
-            }
-        });
-    }
-    $(function () {
-        //排序
-        $('.pro-paix a').click(function () {
-            $(this).addClass('cur').siblings().removeClass('cur');
-        });
-
-
-        //筛选选中
-        $('.pro-shaix .li_select a').click(function () {
-            if ($(this).hasClass('all')) {
-                $(this).addClass('cur').siblings("a").removeClass('cur')
-            }
-            else if ($(this).hasClass('cur')) {
-                $(this).removeClass('cur');
-            }
-            else {
-                $(this).addClass('cur').siblings(".all").removeClass('cur');
-            }
-        });
-
-
-        $('#btn_search').click(function () {
-            var key = $('#txt_key');
-            if (key.val() == '') {
-                key.focus();
-                return false;
-            }
-            location.href = '/newpro/prolist/?classid=79&key=' + key.val();
-        });
-        var url = '/newpro/prolist/?classid=79';
-        document.onkeydown = function (e) {
-            var ev = document.all ? window.event : e;
-            if (ev.keyCode == 13) {
-                var key = $('#txt_key');
-                if (key.val() == '') {
-                    key.focus();
-                    return false;
-                }
-                url += '&key=' + key.val();
-                //alert(url);
-                window.location.href = url;
-            }
-        }
-
-        //选中
-        $('.new_pro_screen_ul li dd').click(function () {
-            if ($(this).hasClass('cur')) {
-                $(this).removeClass('cur')
-            }
-            else {
-                $(this).addClass('cur').siblings().removeClass('cur');
-            }
-        });
-        //筛选出现
-        $(".shaixBtn").click(function () {
-            $('.black').fadeIn();
-            $('.new_pro_screen_ul').animate({
-                "right": "0",
-                "opacity": 1
-            });
-            $('.new_pro_screen_ul li').addClass('on')
-        });
-        //筛选关闭
-        $('.black').click(function () {
-            $('.black').fadeOut();
-            $('.new_pro_screen_ul').animate({
-                "right": "-100%",
-                "opacity": 0
-            });
-            $('.new_pro_screen_ul li').removeClass('on')
-        });
-        //重置
-        $('.new_pro_screen_btn .cz').click(function () {
-            $('.new_pro_screen_ul li dd').removeClass('cur');
-        });
-        $(".new_pro_screen_ul li h3").click(function () {
-            $(this).siblings(".sub").slideToggle();
-        });
-
-
-//        $('.new_pro_screen_btn .qd').click(function () {
-//            var url = "classid=79";
-//            $('.new_pro_screen_ul li dd').each(function () {
-//                if ($(this).hasClass('cur') && $(this).attr('data-title') != undefined) {
-//                    if (url != "")
-//                        url += "&";
-//                    url += $(this).attr('data-title') + "=" + $(this).attr('data-val');
-//                }
-//            });
-//            if (url != "") {
-//                location.href = "/newpro/prolist/?" + url;
-//            } else {
-//                location.href = "/newpro/prolist/";
+//    $(function () {
+//        //排序
+//        $('.pro-paix a').click(function () {
+//            $(this).addClass('cur').siblings().removeClass('cur');
+//        });
+//
+//        //筛选选中
+//        $('.pro-shaix .li_select a').click(function () {
+//            if ($(this).hasClass('all')) {
+//                $(this).addClass('cur').siblings("a").removeClass('cur')
 //            }
-//        })
-    })
-    function s_click(obj) {
-        var num = 0;
-        for (var i = 0; i < obj.options.length; i++) {
-            if (obj.options[i].selected == true) {
-                num++;
-            }
-        }
-        if (num == 1) {
-            var url = obj.options[obj.selectedIndex].value;
-            window.open(url, '_self'); //这里修改打开连接方式
-        }
-    }
-    //    $(document).ready(function () {
-    //        $(".nice").niceScroll();
-    //    });
+//            else if ($(this).hasClass('cur')) {
+//                $(this).removeClass('cur');
+//            }
+//            else {
+//                $(this).addClass('cur').siblings(".all").removeClass('cur');
+//            }
+//        });
+//
+//        $('#btn_search').click(function () {
+//            var key = $('#txt_key');
+//            if (key.val() == '') {
+//                key.focus();
+//                return false;
+//            }
+//            location.href = '/newpro/prolist/?classid=79&key=' + key.val();
+//        });
+//        var url = '/newpro/prolist/?classid=79';
+//        document.onkeydown = function (e) {
+//            var ev = document.all ? window.event : e;
+//            if (ev.keyCode == 13) {
+//                var key = $('#txt_key');
+//                if (key.val() == '') {
+//                    key.focus();
+//                    return false;
+//                }
+//                url += '&key=' + key.val();
+//                //alert(url);
+//                window.location.href = url;
+//            }
+//        }
+//
+//        //选中
+//        $('.new_pro_screen_ul li dd').click(function () {
+//            if ($(this).hasClass('cur')) {
+//                $(this).removeClass('cur')
+//            }
+//            else {
+//                $(this).addClass('cur').siblings().removeClass('cur');
+//            }
+//        });
+//        //筛选出现
+//        $(".shaixBtn").click(function () {
+//            $('.black').fadeIn();
+//            $('.new_pro_screen_ul').animate({
+//                "right": "0",
+//                "opacity": 1
+//            });
+//            $('.new_pro_screen_ul li').addClass('on')
+//        });
+//        //筛选关闭
+//        $('.black').click(function () {
+//            $('.black').fadeOut();
+//            $('.new_pro_screen_ul').animate({
+//                "right": "-100%",
+//                "opacity": 0
+//            });
+//            $('.new_pro_screen_ul li').removeClass('on')
+//        });
+//        //重置
+//        $('.new_pro_screen_btn .cz').click(function () {
+//            $('.new_pro_screen_ul li dd').removeClass('cur');
+//        });
+//        $(".new_pro_screen_ul li h3").click(function () {
+//            $(this).siblings(".sub").slideToggle();
+//        });
+//    })
 </script>
 
 <div class="clearb" style="clear: both;"></div>
 <style>
-    .newFooter{
-        margin-top: 8%;
-        margin-bottom: -15px;
-    }
+    /*.newFooter{*/
+        /*margin-top: 8%;*/
+        /*margin-bottom: -15px;*/
+    /*}*/
 </style>
 <div th:include="layout/footer::footer"></div>
 
-<!--<footer style="margin-top: 8%;margin-bottom: -15px">-->
-    <!--<div class="newFooter pc">-->
-        <!--<div class="newFooterTop">-->
-            <!--<div class="wrapper clearfix">-->
-                <!--<ul class="clearfix">-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="http://www.opple.com.cn/newhome/">家居照明</a>-->
-                            <!--</dt>-->
-                            <!--<dd><a href="http://www.opple.com.cn/solution/">一站式解决方案</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/newpro/prolist/?classid=79">明星产品推荐</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt><a href="http://www.opple.com.cn/commercial/">商用照明</a>-->
-                            <!--</dt>-->
-                            <!--<dd><a href="http://www.opple.com.cn/commercial/">客户服务</a>-->
-                            <!--</dd>-->
-                            <!--<dd><a href="http://www.opple.com.cn/businesscase/">客户案例</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="/odelic/product">产品中心</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="/odelic/product">家居灯具</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="/odelic/product">商用灯具</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt>-->
-                                <!--<a href="/odelic/aboutus2">关于我们</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="/odelic/aboutus#aboutUs">企业简介</a>-->
-                            <!--</dd>-->
-                            <!--<dd><a href="/odelic/aboutus#timeSec">发展历程</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                    <!--<li>-->
-                        <!--<dl>-->
-                            <!--<dt><a href="/odelic/callus">联系我们</a>-->
-                            <!--</dt>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about">地址：xxxx</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about/shsubcom">QQ:xxxxx</a>-->
-                            <!--</dd>-->
-                            <!--<dd>-->
-                                <!--<a href="http://www.opple.com.cn/about/responsibility">E-MAIL:xxxxx</a>-->
-                            <!--</dd>-->
-                        <!--</dl>-->
-                    <!--</li>-->
-                <!--</ul>-->
-                <!--<div class="line"></div>-->
-                <!--<div class="code">-->
-                    <!--<dl class="clearfix">-->
-                        <!--<dd>-->
-                            <!--<img src="/static/mj/daohang/images/code02.jpg">-->
-                            <!--扫码关注公众号-->
-                        <!--</dd>-->
-                    <!--</dl>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-
-<!--</footer>-->
 </body>
 
 <script src="/static/mj/js/opjm.js" type="text/javascript"></script>
 <script>
 
-//    function reinitIframe(){
-//        var iframe = document.getElementById("mainIframe");
-//        try{
-//            var bHeight = iframe.contentWindow.document.body.scrollHeight;
-//            var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
-//            var height = Math.max(bHeight, dHeight);
-//            iframe.height = height;
-//            console.log(height);
-//        }catch (ex){}
-//    }
-//    window.setInterval("reinitIframe()", 200);
-
-    $(function () {
-//        alert("width: "+$(".pagination").width());
-//        alert("inner: "+$(".pagination").innerWidth());
-//        alert("outer: "+$(".pagination").outerWidth());
-        var width = $(window).width();
-        var height = $(window).height();
-        if (width <= 400 && height <= 700) {
-            $(".pagination").addClass("pagination-sm");
-            $(".divPages").css({
-                position: 'absolute',
-                left: 10
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-            });
-        } else if (width > 1100 && height > 900) {
-            $(".pagination").addClass("pagination-lg");
-            $(".divPages").css({
-                position: 'absolute',
-                left: ($(window).width() - $(".pagination").width()) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-            });
-        } else {
-            $(".divPages").css({
-                position: 'absolute',
-                left: ($(window).width() - $(".pagination").width()) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-            });
-        }
-        //监听 浏览器窗口大小的变化事件
-        $(window).resize(function () {
-            width = $(window).width();
-            height = $(window).height();
-            //随着窗口的变化改变分页大小
-            if (width <= 400 && height <= 700) {
-                $(".pagination").removeClass("pagination-lg");
-                $(".pagination").addClass("pagination-sm");
-                $(".divPages").removeAttr('style');
-//                $(".divPages").style('float','left');
-                $(".divPages").css({
-                    position: 'absolute',
-                    left: 10
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-                });
-            } else if (width > 1100 && height > 900) {
-                $(".pagination").removeClass("pagination-sm");
-                $(".pagination").addClass("pagination-lg");
-                $(".divPages").removeAttr('style');
-                $(".divPages").css({
-                    position: 'absolute',
-                    left: ($(window).width() - $(".pagination").width()) / 2
-//                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-                });
-
-            } else {
-                $(".pagination").removeClass("pagination-lg");
-                $(".pagination").removeClass("pagination-sm");
-                $(".divPages").removeAttr('style');
-                $(".divPages").css({
-                    position: 'absolute',
-                    left: ($(window).width() - $(".pagination").width()) / 2
-//                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-                });
-
-            }
-        });
-
-
-        $("#phon_cate dd").on('click', function () {
-            $("#phon_cate dd").removeClass('cur');
-            $(this).addClass('cur');
-        });
-        $("#phon_son dd").on('click', function () {
-            $("#phon_son dd").removeClass('cur');
-            $(this).addClass('cur');
-        });
-        //重置
-        $('.new_pro_screen_btn .cz').click(function () {
-            $("#phon_cate dd").removeClass('cur');
-            $("#phon_son dd").removeClass('cur');
-        });
-
-
-    });
+//    $(function () {
+//        var width = $(window).width();
+//        var height = $(window).height();
+//        if (width <= 400 && height <= 700) {
+//            $(".pagination").addClass("pagination-sm");
+//            $(".divPages").css({
+//                position: 'absolute',
+//                left: 10
+////                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//            });
+//        } else if (width > 1100 && height > 900) {
+//            $(".pagination").addClass("pagination-lg");
+//            $(".divPages").css({
+//                position: 'absolute',
+//                left: ($(window).width() - $(".pagination").width()) / 2
+////                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//            });
+//        } else {
+//            $(".divPages").css({
+//                position: 'absolute',
+//                left: ($(window).width() - $(".pagination").width()) / 2
+////                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//            });
+//        }
+//        //监听 浏览器窗口大小的变化事件
+//        $(window).resize(function () {
+//            width = $(window).width();
+//            height = $(window).height();
+//            //随着窗口的变化改变分页大小
+//            if (width <= 400 && height <= 700) {
+//                $(".pagination").removeClass("pagination-lg");
+//                $(".pagination").addClass("pagination-sm");
+//                $(".divPages").removeAttr('style');
+//                $(".divPages").css({
+//                    position: 'absolute',
+//                    left: 10
+////                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//                });
+//            } else if (width > 1100 && height > 900) {
+//                $(".pagination").removeClass("pagination-sm");
+//                $(".pagination").addClass("pagination-lg");
+//                $(".divPages").removeAttr('style');
+//                $(".divPages").css({
+//                    position: 'absolute',
+//                    left: ($(window).width() - $(".pagination").width()) / 2
+////                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//                });
+//
+//            } else {
+//                $(".pagination").removeClass("pagination-lg");
+//                $(".pagination").removeClass("pagination-sm");
+//                $(".divPages").removeAttr('style');
+//                $(".divPages").css({
+//                    position: 'absolute',
+//                    left: ($(window).width() - $(".pagination").width()) / 2
+////                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//                });
+//
+//            }
+//        });
+//        $("#phon_cate dd").on('click', function () {
+//            $("#phon_cate dd").removeClass('cur');
+//            $(this).addClass('cur');
+//        });
+//        $("#phon_son dd").on('click', function () {
+//            $("#phon_son dd").removeClass('cur');
+//            $(this).addClass('cur');
+//        });
+//        //重置
+//        $('.new_pro_screen_btn .cz').click(function () {
+//            $("#phon_cate dd").removeClass('cur');
+//            $("#phon_son dd").removeClass('cur');
+//        });
+//    });
 </script>
-<script type="text/javascript" src="/static/mj/daohang/js/jquery.min.js"></script>
 <script src="/static/mj/daohang/js/nav.js"></script>
-<script src="/static/mj/daohang/js/hm.js"></script>
-<script src="/static/mj/daohang/js/hm.js"></script>
-<script type="text/javascript" src="/static/mj/daohang/js/jquery.SuperSlide.2.1.2.js"></script>
-<script type="text/javascript" src="/static/mj/daohang/js/swiper.min.js"></script>
-<script>
-    $(function () {
-        jQuery(".slideBox").slide({
-            titCell: ".hd ul",
-            mainCell: ".bd ul",
-            autoPlay: true,
-            interTime: 5000,
-            mouseOverStop: true,
-            autoPage: true,
-            trigger: "click",
-            delayTime: 800,
-            effect: "fold"
-        });
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
-            paginationClickable: true,
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: 5000,
-            autoplayDisableOnInteraction: false
-        });
-
-        var w = $(window).width();
-        $('.nyBanner01 .bd li,.nyBanner01 .bd').css('height', w * (480 / 1440));
-        $(window).resize(function () {
-            var w = $(window).width();
-            $('.nyBanner01 .bd li,.nyBanner01 .bd').css('height', w * (480 / 1440));
-        })
-    })
-</script>
-
+<script src="/static/mj/js/product.js"></script>
 </html>
