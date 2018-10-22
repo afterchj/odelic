@@ -14,7 +14,17 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping(value = "foot")
+    @RequestMapping(value = "/header")
+    public String header() {
+        return "layout/header";
+    }
+
+    @RequestMapping(value = "/trade")
+    public String trade() {
+        return "layout/trade";
+    }
+
+    @RequestMapping(value = "/foot")
     public String footer() {
         return "layout/footer";
     }
