@@ -157,17 +157,11 @@ li {
     position: absolute;
     left: 60%;
 }
-
 .solum {
+    clear: both;
     width: 1200px;
     margin: 0 auto;
 }
-
-.solum img {
-    width: 1200px;
-    height: 485px;
-}
-
 .home {
     margin: 20px auto;
     width: 1200px;
@@ -194,7 +188,8 @@ li {
 }
 
 .desc {
-    text-align: left
+    text-align: left;
+    margin-left: 10px;
 }
 
 .top {
@@ -325,6 +320,7 @@ li {
 }
 
 .wntj {
+    clear: both;
     width: 1200px;
     margin: 0 auto;
     text-align: center;
