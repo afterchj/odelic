@@ -41,9 +41,10 @@ li {
 @media screen and (min-width: 1400px) {
     .photo {
         margin: 0 auto;
-        width: 1920px;
+        width: 100%;
         height: auto;
         text-align: center;
+        /*border: 1px solid red;*/
     }
 
     .title {
@@ -84,7 +85,7 @@ li {
         margin: 0 0;
         width: 1300px;
         /*height: 505px;*/
-        /*border: 1px solid black;*/
+        /*border: 1px solid green;*/
     }
 
     .title {
@@ -135,6 +136,7 @@ li {
         width: 100%;
         height: auto;
         text-align: center;
+        /*border: 1px solid blue;*/
     }
 
     .title {
