@@ -1,36 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <!-- saved from url=(0051)http://www.opple.com.cn/?tdsourcetag=s_pctim_aiomsg -->
 <html xmlns:th="http://www.thymeleaf.org">
-<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<head>
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><!--用最新版ie-->
-    <meta name="format-detection" content="telephone=no"><!--禁止ios自动识别数字为手机号-->
-    <meta name="renderer" content="webkit"><!--让360双核浏览器用webkit内核渲染页面-->
-    <link rel="shortcut icon" href="http://www.opple.com.cn/web/ucan/images/icon.ico" type="image/x-icon">
-    <title>
-        首页</title>
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>-->
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">&lt;!&ndash;用最新版ie&ndash;&gt;-->
+    <!--<meta name="format-detection" content="telephone=no">&lt;!&ndash;禁止ios自动识别数字为手机号&ndash;&gt;-->
+    <!--<meta name="renderer" content="webkit">&lt;!&ndash;让360双核浏览器用webkit内核渲染页面&ndash;&gt;-->
+    <!--<link rel="shortcut icon" href="http://www.opple.com.cn/web/ucan/images/icon.ico" type="image/x-icon">-->
+    <title>首页</title>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-        <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
     <link type="text/css" href="css/base.css" rel="stylesheet">
     <link type="text/css" href="css/page.css" rel="stylesheet">
     <script type="text/javascript" src="js/jquery.SuperSlide.2.1.2.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
-    <style></style></head>
+    <style></style>
+</head>
 <body>
 <div th:include="layout/header::header"></div>
-<div class="nyBanner01 syBanner pc" >
+<div class="nyBanner01 syBanner pc">
     <div id="slideBox" class="slideBox">
         <div class="hd">
             <ul></ul>
         </div>
         <div class="bd">
             <ul>
-                <li ><a href="about/detail/2507.html" title="欧普照明携旗下新业务亮相2018广州建博会"><img width="100%" height="100%" src="images/网页ODELIC_01.png"></a></li>
+                <li><a href="about/detail/2507.html" title="欧普照明携旗下新业务亮相2018广州建博会"><img width="100%" height="100%" src="images/网页ODELIC_01.png"></a>
+                </li>
 
-                <li ><a href="home/xsfg.html" title="PC-西式复古-大首页"><img width="100%" height="100%" src="images/1534156777.jpg"></a></li>
+                <li><a href="home/xsfg.html" title="PC-西式复古-大首页"><img width="100%" height="100%" src="images/1534156777.jpg"></a></li>
 
-                <li ><a href="newhome/newhome.html" title="首页家居kv"><img width="100%" height="100%" src="images/1533899525.jpg"></a></li>
+                <li><a href="newhome/newhome.html" title="首页家居kv"><img width="100%" height="100%" src="images/1533899525.jpg"></a></li>
             </ul>
         </div>
     </div>
@@ -101,33 +103,46 @@
 <div th:include="layout/right::right"></div>
 <script>
 
-    $(function(){
+    $(function () {
         //返回顶部
         var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix
         $(".totop").hide();
-        $(".totop").click(function(){
+        $(".totop").click(function () {
             $body.animate({scrollTop: 0});
         });
-        window.onscroll=function(){
-            if((document.documentElement.scrollTop + document.body.scrollTop)>200){
+        window.onscroll = function () {
+            if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {
                 $(".totop").show();
-            }else{
+            } else {
                 $(".totop").hide();
             }
         };
     })
 </script>
 <style>
-    .return{display:none;}
+    .return {
+        display: none;
+    }
 </style>
 <div class="clearb"></div>
 <div th:include="layout/footer::footer"></div>
 
-</body></html>
+</body>
+</html>
 
 <script>
-    $(function(){
-        jQuery(".slideBox").slide({titCell:".hd ul",mainCell:".bd ul",autoPlay:true,interTime:5000,mouseOverStop:false,autoPage:true,trigger:"click",delayTime:800,effect:"fold"});
+    $(function () {
+        jQuery(".slideBox").slide({
+            titCell: ".hd ul",
+            mainCell: ".bd ul",
+            autoPlay: true,
+            interTime: 5000,
+            mouseOverStop: false,
+            autoPage: true,
+            trigger: "click",
+            delayTime: 800,
+            effect: "fold"
+        });
         var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             nextButton: '.swiper-button-next',
@@ -139,10 +154,10 @@
             autoplayDisableOnInteraction: false
         });
 
-        var w=$(window).width();
+        var w = $(window).width();
 //        $('.nyBanner01 .bd li,.nyBanner01 .bd').css('height',w*(480/1440));
-        $(window).resize(function(){
-            var w=$(window).width();
+        $(window).resize(function () {
+            var w = $(window).width();
 //            $('.nyBanner01 .bd li,.nyBanner01 .bd').css('height',w*(480/1440));
         })
     })
