@@ -7254,9 +7254,9 @@ em {
         padding-bottom: 40px;
     }
 
-    .header {
-        display: none;
-    }
+    /*.header {*/
+        /*display: none;*/
+    /*}*/
 
     .new_header {
         display: block;
