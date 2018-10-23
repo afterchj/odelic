@@ -60,22 +60,8 @@ public class OdelicController {
         return "productCenter";
     }
 
-    /**
-     * 导航
-     * @return html
-     */
-    @RequestMapping(value = "navigation", method = RequestMethod.GET)
-    public String navigation(){
-        return "navigation";
+    @RequestMapping(value = "nav-fixed-alt4", method = RequestMethod.GET)
+    public String navAlt4(){
+        return "test/nav-fixed-alt4";
     }
-
-    /**
-     * 导航
-     * @return html
-     */
-    @RequestMapping(value = "navigation2", method = RequestMethod.GET)
-    public String navigation2(){
-        return "test/nav-fixed-alt1";
-    }
-
 }

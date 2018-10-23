@@ -83,21 +83,14 @@ a:hover .show{display:none;}
 .pro-list li .wenz{height:136px;padding-bottom:14px;}
 .pro-list .li_link{border-top:1px solid #dfe2e4;}
 .pro-list .li_link a{color:#333;font-size:12px;display:block;text-align:center;line-height:46px;float:left;width:50%;}
-.pro-list .li_link .download-btn{background:url(/web/ucan/images/else/icon01.png) no-repeat left 28px center;}
-.pro-list .li_link .db-btn{background:url(/web/ucan/images/else/icon02.png) no-repeat left 28px center;float:right;}
 .pro-list .li_link a:hover{color:#1570c5;}
-.pro-list .li_link .download-btn:hover{background:url(/web/ucan/images/else/icon011.png) no-repeat left 28px center;}
-.pro-list .li_link .db-btn:hover{background:url(/web/ucan/images/else/icon022.png) no-repeat left 28px center;}
-.pro-list .li_link .db-btn.cur{background:url(/web/ucan/images/else/icon03.png) no-repeat left 28px center;}
 .pro-list li:hover .box{border:3px solid #0046aa;}
 .pro-list #pgServer{margin-top:25px;}
 /*åˆ†é¡µ*/
 #pgServer{padding:15px 0;text-align: center;font-size: 14px;color: #646464;}
 #pgServer a{float:none;}
-#pgServer a,#pgServer font,#pgServer span{background:none !important;width:24px !important;height:24px !important;line-height:24px !important;display: inline-block;*display:inline; *zoom:1;border-radius:50%;behavior:url(PIE.htc);font-size: 14px;color: #646464;border: 1px solid #d8d8d8;margin-right: 5px;padding:0;text-align:center;}
 #pgServer font{border-color: #0046aa;background-color: #0046aa;color: #0046aa!important;}
 #pgServer a:hover,#pgServer a.fy_xz{border-color: #0046aa;background-color: #0046aa !important;color: #fff;}
-#pgServer a.none{border:none;border-radius:20px;behavior:url(PIE.htc);}
 .pageFirst,.pagePrev,.pageNext,.pageLast{border:none;}
 #pgServer span.cur{border:1px solid #0046aa;}
 #pgServer li{display:inline-block;}
@@ -121,15 +114,7 @@ a:hover .show{display:none;}
 .pro_detail_1 .slideBox{position:relative;width:800px;margin:auto;height:450px;overflow:hidden;}
 .pro_detail_1 .bd{width:450px;margin:auto;}
 .pro_detail_1 .bd li{text-align:center;}
-.prev{border:none !important;background:url(/web/ucan/images/else/prev.png) no-repeat;width:50px;height:50px;position:absolute;left:0;top:50%;margin-top:-25px;}
-.next{border:none !important;background:url(/web/ucan/images/else/next.png) no-repeat;width:50px;height:50px;position:absolute;right:0;top:50%;margin-top:-25px;}
-.prev:hover{background:url(/web/ucan/images/else/prev-hover.png) no-repeat;}
-.next:hover{background:url(/web/ucan/images/else/next-hover.png) no-repeat;}
 .pro_detail_1 .slideBox{}
-.swiper-button-prev.prev{width:36px !important;height:36px !important;background:url(/web/ucan/images/else/prev.png);background-size:100% 100% !important;margin-top:-18px;}
-.swiper-button-next.next{width:36px !important;height:36px !important;background:url(/web/ucan/images/else/next.png);background-size:100% 100% !important;margin-top:-18px;}
-
-
 
 .pro_detail_2{overflow:hidden;position:relative;}
 .pro_detail_2 h2{z-index:2;position:absolute;width:100%;text-align:center;top:7.5%;left:0;}
@@ -143,39 +128,7 @@ a:hover .show{display:none;}
 .shaixBox .picScroll-left li.cur img,.shaixBox .picScroll-left li:hover img{border:5px solid #f78f2c;}
 .shaixBox .prev{background-size:100% 100% !important;width:24px;height:24px;position:absolute;top:50%;margin-top:-12px;left:0px;}
 .shaixBox .next{background-size:100% 100% !important;width:24px;height:24px;position:absolute;top:50%;margin-top:-12px;right:0px;}
-.shaixBox .prev:hover{background:url(/web/ucan/images/else/prev.png) no-repeat;}
-.shaixBox .next:hover{background:url(/web/ucan/images/else/next.png) no-repeat;}
 .shaixBox .select{margin-top:-3px;width: 180px;float:left;}
-.shaixBox .select select{font-size:14px;color:#333;background:Rgba(255,255,255,.77) url(/web/ucan/images/else/jt.png) no-repeat right 18px center;margin:4px 0;line-height:35px;height:35px;width:160px;padding-left:20px;border:none;outline:none;}
-
-.pro_detail_3{padding:45px 0;}
-.pro_detail_3 li{margin-top:40px;float:left;width:33.333%;}
-.box{width:auto !important;height:auto !important;padding:0;}
-.pro_detail_3 dd,.pro_detail_3 dt{font-size:14px;line-height:30px;color:#000;float:left;}
-.pro_detail_3 dt{width:105px;}
-.pro_detail_4{}
-.pro_detail_4_tit{position:relative;font-size:20px;color:#333;padding-bottom:12px;border-bottom:1px solid #bdbdbd;}
-.pro_detail_4_tit a{margin-right:30px;display:inline-block;*display:inline; *zoom:1;color:#333;}
-.pro_detail_4_tit a:hover,.pro_detail_4_tit a.cur{color:#0046aa;}
-.pro_detail_4_tit .sx{font-size:12px;position:absolute;bottom:12px;right:0;margin:0;}
-.pro_detail_4_tit .sx img{margin:-1px 0 0 8px;}
-.pro_detail_4 .pro-list li .box{border:1px solid #ccc;}
-.pro_detail_4 .pro-list{margin:26px 0 33px 0;}
-.pro_detail_4 .pro-list li:hover .box{box-shadow:0 0 5px rgba(0,0,0,.5);}
-.pro_detail_3{}
-.pro_detail_3 table{margin-top:25px;width:100%;border-collapse:collapse;}
-.pro_detail_3 thead td{background:#0046aa;color:#fff;font-size:12px;padding:14px 0;text-align:center;}
-.pro_detail_3 tbody{}
-.pro_detail_3 tbody td img{width:60px;border:1px solid #e8e8e8;}
-.pro_detail_3 tbody td{text-align:center;border-bottom:1px solid #f5f5f5;padding:14px 0;font-size:12px;color:#000;}
-.pro_detail_3 tbody tr:nth-child(2n){background:#fafafa;}
-.pro_detail_3 tbody td a{color:#000;}
-.pro_detail_3 tbody td a:hover,.pro_detail_3 tbody td .download{color:#0046aa;}
-.pro_detail_3 tbody td .download:hover{text-decoration:underline;}
-.pro_detail_3 .canshu{}
-.pro_detail_3 .canshu td{vertical-align:top;background:#fff !important;border-bottom:0 !important;color:#333;padding:8px 6px;text-align:left;}
-.pro_detail_3 .canshu td.kong{background:#fff url(/web/ucan/images/xian.jpg) repeat-y center center !important;}
-.pro_detail_3 .canshu td span{color:#666;}
 
 .compared-btn{position:fixed;right:0;bottom:8%;border:1px solid #0046aa;font-size:14px;background:#0046aa;width:40px;padding:20px 0;line-height:22px;color:#fff;text-align:center;z-index:7;}
 .compared-btn:hover{color:#0046aa;background:#fff;}
@@ -199,13 +152,6 @@ a:hover .show{display:none;}
 .compared .li-compared dd:nth-child(2n){background:rgba(0,70,170,.1);}
 .compared .compared-add dd:nth-child(2n){background:rgba(0,70,170,.1);}
 .compared_r li:nth-child(2n){background:rgba(0,70,170,.1);}
-.compared-add{width:248px;position:relative;}
-.compared-add dt div{position:absolute;left:0;top:0;width:100%;}
-.compared-add dt span{padding:25px 0 20px;font-size:16px;text-align:center;display:block;}
-.compared-add dt select{display:block;width:144px;margin:0 auto 10px auto;padding:0 10px;height:28px;line-height:28px;background:#fff url(/web/ucan/images/else/jt.png) no-repeat right 10px center;border:1px solid #808080;font-size:12px;color:#333;}
-.compared-add dt input[type=text]{display:block;margin:0 auto 10px auto;width:122px;padding:0 10px;height:28px;line-height:28px;background:#fff;border:1px solid #808080;font-size:12px;color:#333;}
-.compared-add dt a{display:block;background:#0046aa;line-height:30px;color:#fff;text-align:center;width:142px;margin:auto;}
-.compared-add dt a:hover{background:#f78f2c;}
 .compared_r ul::-webkit-scrollbar {cursor:pointer;height:5px;}
 .compared_r ul::-webkit-scrollbar-track { background: rgba(0,0,0,.2);}
 .compared_r ul::-webkit-scrollbar-thumb {background:#0046aa;}
@@ -290,21 +236,6 @@ a:hover .show{display:none;}
 .pro-img-list-l{width:590px;}
 .pro-img-list-r{width:600px;}
 .marb10{margin-bottom:10px;}
-.home-banner{overflow:hidden;position:relative;}
-.home-banner .wenz{position:absolute;left:0;top:50%;margin-top:-100px;width:100%;}
-.home-banner .wrapper{}
-.home-banner .box{max-width:420px !important;width:420px;padding:35px 60px 60px 60px;margin:0;background:rgba(247,143,44,.8);}
-.home-banner h3{margin-bottom:12px;font-weight:bold;font-size:30px;color:#fff;}
-.home-banner p{font-size:14px;color:#fff;line-height:24px;}
-.home-banner .hd li{cursor:pointer;border-radius:50%;behavior:url(PIE.htc);display:inline-block;*display:inline; *zoom:1;width:10px;height:10px;background:#fff;margin-right:10px;}
-.home-banner .hd{width:100%;bottom:15px;text-align:center;z-index:2;color:transparent;position:absolute;}
-.home-banner .hd li.on{background:#f78f2c;}
-.home-banner .hd ul{width:1080px;margin:auto;}
-/*.newHomeBanner{height:540px;}*/
-/*.newHomeBanner .bd li{padding:140px 0 210px;}*/
-/*.newHomeBanner .bd li .wenz{position:relative;left:auto;top:auto;margin:0;}*/
-/*.newHomeBanner .hd{bottom:126px !important;}*/
-
 
 .crumbs{padding:24px 0;font-size:12px;color:#666;}
 .crumbs a{color:#666;}
@@ -332,24 +263,6 @@ a:hover .show{display:none;}
     .pro_detail_2 .pro{width:180px !important;}
 }
 
-
-.compared-box{opacity:0;z-index:2;top:-1px;position:absolute;right:-620px;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;}
-.compared-box ul{max-width:620px;white-space:nowrap;overflow-x:auto;}
-.compared-box li{vertical-align:middle;position:relative;cursor:pointer;padding:15px 0;width:200px;display:inline-block;border:1px solid #0046aa;background:#fff;}
-.compared-box li .img{width:75px;height:75px;margin:0 auto 9px auto;}
-.compared-box li h3{font-size:12px;white-space:normal;color:#2c2c2c;padding:0 20px;line-height:18px;height:36px;}
-.compared-box li .checkbox{position:absolute;left:10px;top:10px;z-index:2;display:block;width:20px;height:20px;background:url(/web/ucan/images/else/cur.png) no-repeat center center;border:1px solid #ddd;}
-.compared-btn:hover .compared-box{right:40px;opacity:1;}
-.compared .li-compared .close{z-index:3;position:absolute;right:0;top:0;background:#0046aa url(/web/ucan/images/else/close.png) no-repeat center center;display:block;width:15px;height:15px;}
-.compared-box li:nth-child(1){margin-left:0;}
-.compared-box li:nth-child(2){margin-left:0;}
-.compared-box li:nth-child(3){margin-left:0;}
-
 .pro_info{font-size:14px;color:#343434;line-height:28px;margin-top:40px;position:relative;padding:30px 40px;border:1px solid #0046aa;border-top:5px solid #0046aa;}
 .pro_info:after{bottom:-10px;position:absolute;width:1178px;height:9px;border:1px solid #0046aa;border-top:0;left:11px;display:block;content:"";}
 .pro_info>span{font-size:24px;color:#004baa;font-weight:600;left:50%;position:absolute;padding:0 21px;line-height:26px;top:-17px;z-index:2;margin-left:-69px;background:#fff;}
@@ -362,7 +275,6 @@ a:hover .show{display:none;}
 .pro_detail_alert{display:none;padding:50px 30px;background:#fff;width:1100px;height:540px;margin:auto;left:0;top:0;right:0;bottom:0;z-index:9999;position:fixed;}
 .gdt_box{overflow-y:auto;height:100%;}
 .gdt_box img{max-width:600px;height:auto !important;display:block;margin:auto;}
-.pro_detail_alert .close_btn{position:absolute;top:10px;right:10px;z-index:2;background:#de8028 url(/web/ucan/images/else/close.png) no-repeat center center;width:30px;height:30px;display:block;}
 .pro_detail_alert .close_btn:hover{background-color:#0046aa;}
 .pro_detail_alert .nicescroll-cursors{margin-right:-2px;width:3px !important;background:#de8028 !important;border-radius:0 !important;opacity:1 !important;}
 .pro_detail_alert .nicescroll-rails.nicescroll-rails-vr{opacity:1 !important;background:#cbcbcb !important;width:1px !important;}
@@ -415,66 +327,7 @@ a:hover .show{display:none;}
 .nyBanner .bd li{height:360px;}
 .bckBanner{height:300px;}
 
-
-
 .f30{font-size:30px;padding-bottom:30px;color:#333;}
-
-.commercialCon01 ul{margin:0 -5px;}
-.commercialCon01 li{position:relative;float:left;width:180px;height:345px;margin:0 5px;
-    -webkit-transition: all .8s;
-    -moz-transition: all .8s;
-    -ms-transition: all .8s;
-    -o-transition: all .8s;
-    transition: all .8s;}
-.commercialCon01 li h3{margin-bottom:15px;font-size:18px;color:#fff;}
-.commercialCon01 li p{font-size:16px;line-height:24px;}
-.commercialCon01 li .bck{width:100%;height:100%;position:absolute;left:0;top:0;z-index:2;background:url(/web/ucan/images/new/yy05.png);
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
-}
-.commercialCon01 li .yy{display:none;position:absolute;left:0;top:0;z-index:2;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
-    transition: all .4s;
-}
-.commercialCon01 li .wenz{max-width:570px;z-index:3;position:absolute;left:0;top:25px;text-align:center;}
-.commercialCon01 li .wenz p{color:#fff;text-align:left;opacity:0;filter:alpha(opacity=0);margin-top:20px;}
-.commercialCon01 li.cur{width:630px;}
-.commercialCon01 li.cur .yy{display:block;}
-.commercialCon01 li.cur .bck{display:none;}
-.commercialCon01 li.cur .wenz p{opacity:1;filter:alpha(opacity=100);margin-top:0;}
-.commercialCon01 li.cur .wenz{text-align:left;left:30px;}
-.commercialCon02{padding-top:32px;}
-.commercialCon02 li{position:relative;}
-.commercialCon02 li .yy{opacity:.4;filter:alpha(opacity=40);position:absolute;left:0;top:0;width:100%;height:100%;z-index:2;background-size:100% 100%;background:url(/web/ucan/images/new/yy02.png);
-    -webkit-transition: all .6s;
-    -moz-transition: all .6s;
-    -ms-transition: all .6s;
-    -o-transition: all .6s;
-    transition: all .6s;
-}
-.commercialCon02 li:hover .yy{opacity:1;filter:alpha(opacity=100);}
-.commercialCon02 li .wenz{z-index:3;position:absolute;left:35px;bottom:35px;}
-.commercialCon02 li .wenz h3{font-size:30px;color:#fff;margin-bottom:10px;}
-.commercialCon02 li .wenz p{height:0;overflow:hidden;color:#fff;width:60%;
-    -webkit-transition: all .6s;
-    -moz-transition: all .6s;
-    -ms-transition: all .6s;
-    -o-transition: all .6s;
-    transition: all .6s;}
-.commercialCon02 li:hover .wenz p{height:auto;}
-.marb16{margin-bottom:20px;}
-.commercialCon02 li.full{}
-.commercialCon02 li.full .wenz{text-align:center;left:0;width:100%;top:50%;margin-top:-57px;}
-.commercialCon02 li.full .wenz p{max-width:100%;margin:auto;height:auto;width:500px;}
-.commercialCon02 li.full .yy{opacity:1;filter:alpha(opacity=100);}
-.commercialCon02 li.full.right .wenz{width:430px;right:70px;left:auto;text-align:left;}
-.commercialCon02 li.full.left .wenz{width:360px;left:70px;text-align:left;}
 
 .footerUL{padding:40px 0;}
 .footerUL li{font-size:18px;color:#333;float:left;border-right:1px solid #e1e1e1;width:399px;line-height:60px;text-align:center;}
@@ -514,62 +367,6 @@ a:hover .show{display:none;}
     -o-transition: all .3s;
     transition: all .3s;}
 .caseList li:hover .imgBox,.caseList li.cur .imgBox{background-position:bottom center !important;}
-
-
-.PhotoBox{position:relative;}
-.PhotoBox li{width:288px;border:1px solid #f5f5f5;}
-.PhotoBox li h3{font-size:14px;color:#333333;margin-bottom:8px;}
-.PhotoBox li .wz{padding:12px;}
-.PhotoBox li .wz p{font-size:12px;line-height:20px;color:#919191;}
-.PhotoBox li h3 a{color:#333;}
-.PhotoBox li h3 a:hover{color:#0046aa;}
-.PhotoBox li .link{border-top:1px solid #f5f5f5;padding:12px;background:#fafafa;}
-.PhotoBox li .link a{margin:0 12px 0 0;padding:0 !important;opacity:1 !important;}
-.PhotoBox li .link span{float:right;color:#919191;}
-.PhotoBox li .link .lj{background:url(/web/ucan/images/new/icon20.png);background-size:100% 100% !important;width:16px !important;height:16px !important;}
-.PhotoBox li .link .bds_more{background:url(/web/ucan/images/new/icon21.png);background-size:100% 100% !important;width:16px !important;height:16px !important;}
-.PhotoBox li .link .lj:hover{background:url(/web/ucan/images/new/icon2020.png);}
-.PhotoBox li .link .bds_more:hover{background:url(/web/ucan/images/new/icon2121.png);}
-
-.caseDetailCon01{margin:15px 0;}
-.caseDetail .caseBox{background:#fafafa;padding:54px 60px;}
-.caseDetailCon01 h3{margin:15px 0 10px 0;font-size:24px;color:#333;}
-.caseDetailCon01 .fl{width:320px;}
-.caseDetailCon01 .fl span{display:block;width:85px;background:#e7e7e7;line-height:30px;padding:0 15px;font-size:14px; float: left;}
-.caseDetailCon01 .fl a{float: left; margin-left: 10px; background: #004baa;display: inline-block;margin: 0 10px 8px 10px;line-height: 30px;padding: 0 18px;font-size: 14px;color: #fff;}
-.caseDetailCon01 .fl a:hover{opacity: .8;}
-.caseDetailCon01 .fl span img{}
-.caseDetailCon01 .fl span em{vertical-align:middle;display:inline-block;width:18px;margin-right:11px;height:18px;overflow:hidden;}
-.caseDetailCon01 .fr{width:640px;font-size:12px;line-height:20px;color:#6e6e6e;}
-.caseDetailCon02{}
-.caseDetailCon02 .slideBox{height:650px;overflow:hidden;position:relative;}
-.caseDetailCon02 .slideBox .bd{height:100%;}
-.caseDetailCon02 .slideBox .bd li{height:100%;}
-.caseDetailCon02 .slideBox .bd ul{height:100%;}
-.caseDetailCon02 li{position:relative;}
-.caseDetailCon02 li .yy{z-index:2;background:url(/web/ucan/images/new/yy02.png);position:absolute;left:0;top:0;width:100%;height:100%;}
-.caseDetailCon02 .hd li{border-radius:50%;cursor:pointer;display:inline-block;*display:inline; *zoom:1;width:12px;height:12px;background:#fff;margin:0 5px;}
-.caseDetailCon02 .hd{z-index:3;color:transparent;position:absolute;width:100%;text-align:center;bottom:15px;}
-.caseDetailCon02 .hd li.on{background:#f78f2c;}
-.caseDetailCon03 .wrapper{position:relative;}
-.caseDetailCon03 h2{font-size:24px;color:#333;padding:45px 0 16px 0;}
-.caseDetailCon03 ul{overflow:hidden;}
-.caseDetailCon03 li{float:left;width:230px;padding:0 10px 0 0;}
-.caseDetailCon03 li h3{padding-top:12px;text-align:center;font-size:16px;color:#333;}
-.caseDetailCon03 li img{width:200px;}
-.caseDetailCon03 li .pic1{text-align:center;border:1px solid #e1e1e1;}
-.caseDetailCon03 .hd{position:absolute;right:0;top:-30px;}
-.caseDetailCon03 .hd .prev{position:relative;left:auto;top:auto;margin:0;background:url(/web/ucan/images/new/l.png);width:7px;height:13px;display:block;float:left;}
-.caseDetailCon03 .hd .next{position:relative;left:auto;top:auto;margin:0;background:url(/web/ucan/images/new/r.png);width:7px;height:13px;display:block;float:left;}
-.caseDetailCon03 .picScroll-left{position:relative;}
-.caseDetailCon03 .hd span{float:left;height:13px;width:1px;background:#e1e1e1;margin:0px 15px 0 15px;}
-.caseDetailCon03 .hd .prev:hover{width:27px;background:url(/web/ucan/images/new/lhover.png);}
-.caseDetailCon03 .hd .next:hover{width:27px;background:url(/web/ucan/images/new/rhover.png);}
-.caseDetailCon03 li h3 a{color:#333;}
-.caseDetailCon03 li h3 a:hover{color:#004baa;}
-.caseDetailCon03 .more{display:block;margin:30px auto 0 auto;text-align:left;padding-left:20px;width:138px;height:45px;line-height:45px;font-size:14px;color:#fff;background:url(/web/ucan/images/new/btn.png);}
-.caseDetailCon03 .more:hover{background:url(/web/ucan/images/new/btnhover.png);}
-
 .hide{visibility:visible !important;}
 .aftermarketCon01{padding-bottom:50px;text-align:center;}
 .aftermarketCon01 h3{font-size:24px;color:#333;}
@@ -667,8 +464,6 @@ body{overflow-x:hidden;}
 .suggestion .wenz p{padding:0 50px;}
 .suggestion .wenz .links{position:absolute;right:-34px;bottom:95px;z-index:2;}
 .suggestion .wenz .links a{margin:7px 0;font-size:12px;display:block;width:205px;padding-left:64px;height:64px;line-height:60px;}
-.suggestion .wenz .links .mail{background:url(/web/ucan/images/new/bck01.png);color:#333;}
-.suggestion .wenz .links .weibo{background:url(/web/ucan/images/new/bck02.png);color:#fff;}
 .suggestion .wenz .links a:hover{padding-left:70px;width:199px;}
 .technology{}
 .technologyCon01 ul{padding-bottom:50px;}
@@ -691,9 +486,6 @@ body{overflow-x:hidden;}
 .technologyCon01 dd .fr label.cur .show{display:none;}
 .technologyCon01 dd .fr label img{visibility:visible;}
 .technologyCon01 dd .fr label.cur,.technologyCon01 dd .fr label:hover{color:#f78f2c;}
-.technologyCon01 dd .fl:after{content:"";top:-8px;position:absolute;background:url(/web/ucan/web/ucan/images/new/sj.png);display:block;width:13px;height:8px;}
-.technologyCon01 .close{position:absolute;right:-45px;width:45px;height:45px;display:block;background:url(/web/ucan/images/new/close.png);}
-.technologyCon01 .close:hover{background:url(/web/ucan/images/new/close01.png);}
 .technologyCon02{background:#fafafa;padding:47px 0 0px;}
 .technologyCon02 ul{padding-bottom:90px;}
 .technologyCon02 li{background:#fff;}
@@ -802,8 +594,6 @@ body{overflow-x:hidden;}
 .pro_screen_search a{display:inline-block;margin-top:.15rem;background:rgba(255,255,255,.7);line-height:.45rem;padding:0 .35rem;color:#333;font-size:.2rem;margin-right:.15rem;}
 .pro_screen_search a:hover{background:rgba(247,143,44,.7);color:#fff;}
 .new_pro_screen_ul{right:-100%;opacity:0;box-sizing:border-box;padding:60px 0;overflow-y:auto;position:fixed;height:100%;width:90%;top:0;z-index:9;background:#fff;}
-.new_pro_screen_ul li h3{background:#f3f3f3 url(/web/ucan/images/phone/jia.png) no-repeat right 5% center;background-size:12px !important;line-height:36px;padding:0 5%;font-size:14px;color:#333;}
-.new_pro_screen_ul li h3.cur{background:#f3f3f3 url(/web/ucan/images/phone/jian.png) no-repeat right 5% center;}
 .new_pro_screen_ul li .sub{display:none;overflow:hidden;padding:.25rem 0 0 0;}
 .new_pro_screen_ul li{padding-bottom:6px;}
 .new_pro_screen_ul li dd{text-align:center;box-sizing:border-box;margin:8px 6px 8px 0;border:1px dashed #b3b3b3;line-height:30px;float:left;width:auto;padding:0 16px;font-size:12px;color:#333;}

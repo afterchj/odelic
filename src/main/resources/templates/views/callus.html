@@ -204,10 +204,13 @@
 <!--</div>-->
 <!--</div>-->
 <!--<div style="clear: both"></div>-->
-<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
-      rel="stylesheet">
-<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!--<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"-->
+      <!--rel="stylesheet">-->
+<!--<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>-->
+<!--<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<link rel="stylesheet" href="/static/mj/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="/static/mj/js/jquery.min.js"></script>
+<script src="/static/mj/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <div class="media" style="height: 65%;">
 
     <div class="media-body media-top">
@@ -305,20 +308,12 @@
         var footer = $("footer").outerHeight(true);//footer高度
         var height = body - (banner + footer);
         $(".media").height(height);
-        console.log("body:" + body);
-        console.log("banner:" + banner);
-        console.log("footer:" + footer);
-        console.log("height:" + height);
         $(window).resize(function () {
             body = $(window).height() + $(window).scrollTop();//屏幕的高，包括滚动距离
             banner = $(".bannerbox").outerHeight(true);//banner高度
             footer = $("footer").outerHeight(true);//footer高度
             height = body - (banner + footer);
             $(".media").height(height);
-            console.log("body:" + body);
-            console.log("banner:" + banner);
-            console.log("footer:" + footer);
-            console.log("height:" + height);
         });
     }
 </script>

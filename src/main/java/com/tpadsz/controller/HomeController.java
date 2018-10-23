@@ -33,4 +33,6 @@ public class HomeController {
     public String common() {
         return "layout/common";
     }
+
+
 }
