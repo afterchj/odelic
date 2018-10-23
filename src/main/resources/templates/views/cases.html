@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>案例</title>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <link type="text/css" href="../css/base.css" rel="stylesheet">
+    <link type="text/css" href="../css/page.css" rel="stylesheet">
+    <style type="text/css">
+
+        span {
+            display: inline-block;
+            background: #999;
+            padding: 10px 0;
+            width: 300px;
+            height: 60px;
+            font: 16px/40px "微软雅黑";
+            text-align: center;
+            color: #FFF;
+        }
+
+        span.current, span:hover {
+            background: #666;
+            color: #FFFFFF;
+        }
+
+        #header, #content, #footer {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .tab_box {
+            z-index: 1;
+            width: 1200px;
+            height: 485px;
+            margin: 0 auto;
+            /*margin-top: 80px;*/
+        }
+
+        .sm {
+            position: absolute;
+            z-index: 2;
+            width: 1000px;
+            text-align: right;
+        }
+
+        .sm li {
+            list-style: none;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .hd {
+            margin-top: 40px;
+            height: 60px;
+        }
+
+        .bd {
+            height: 400px;
+            font-size: 50px;
+        }
+
+        .pd {
+            border: 2px solid red;
+        }
+
+        .sp {
+            width: 280px;
+            height: 250px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float: left;
+            margin-left: 10px;
+        }
+
+        .button {
+            text-align: center;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 12px;
+            border: 1px solid #856404;
+            margin: 40px auto;
+            /*margin-top: 40px;*/
+            border-radius: 5px;
+            display: block;
+            color: #856404;
+        }
+
+        .bd > div {
+            display: none;
+        }
+
+        .bd .show {
+            display: block;
+        }
+
+        .show img {
+            width: 1200px;
+            height: 485px;
+        }
+
+        /*通用样式*/
+        /*手机*/
+        @media screen and (max-width: 1400px) {
+            #header {
+                /*width: 1920px;*/
+                height: 80px;
+                /*border: 1px solid red;*/
+            }
+
+            .sm {
+                margin: 95px 0 0 65%;
+            }
+
+            /*#content,#footer{*/
+                /*width: 1920px;*/
+                /*margin: 0 15%;*/
+            /*}*/
+        }
+
+        /*平板*/
+        @media screen and (min-width: 1200px) and (max-width: 1400px) {
+            #header {
+                /*width: 1920px;*/
+                height: 80px;
+                /*border: 1px solid green;*/
+            }
+
+            .sm {
+                margin: 95px 0 0 40%;
+            }
+            /*#content,#footer{*/
+                /*height:1920px;*/
+                /*margin: 0 10%;*/
+            /*}*/
+
+        }
+
+        /*PC*/
+        @media screen and (min-width: 1400px) {
+            #header {
+                width: 100%;
+                height: 80px;
+                /*border: 1px solid blue;*/
+            }
+
+            .sm {
+                margin: 95px 0 0 25%;
+            }
+            #content{
+                width: 1200px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        $(function () {
+            var sp = document.getElementsByTagName("span");
+            var cons = document.querySelector(".bd").getElementsByTagName("div");
+            var imgs = document.querySelector(".sm").getElementsByTagName("img");
+            for (var i = 0; i < sp.length; i++) {
+                sp[i].index = i;
+
+                sp[i].onmouseover = function () {
+                    for (var j = 0; j < sp.length; j++) {
+                        sp[j].className = "";
+                        cons[j].className = "";
+                        imgs[j].className = "";
+                    }
+                    this.className = "current";
+                    cons[this.index].className = "show";
+                    imgs[this.index].className = "pd";
+                }
+            }
+        });
+    </script>
+</head>
+
+<body>
+<div id="header"><div th:include="layout/header::header"></div></div>
+<div id="content">
+    <div class="tab_box">
+        <h2>案例一</h2>
+        <p>在空间设计中，强调常水平线和连续竖立的垂直线。我们需要一种尽可能不会感觉设备存在的照明设计</p>
+        <div class="hd"><span class="current">新闻</span><span>军事</span><span>房产</span><span>体育</span></div>
+        <div class="bd">
+            <div class="show"><img src="img/案例_03.png"/></div>
+            <div><img src="img/案例_03.png"/></div>
+            <div><img src="img/案例_03.png"/></div>
+            <div><img src="img/案例_03.png"/></div>
+        </div>
+    </div>
+    <div class="sm">
+        <ul>
+            <li><img class="pd" src="img/案例_05.png"/></li>
+            <li><img src="img/案例_10.png"/></li>
+            <li><img src="img/案例_12.png"/></li>
+            <li><img src="img/案例_14.png"/></li>
+        </ul>
+    </div>
+    <div style="width:1200px; margin:300px auto 10px auto; text-align:center">
+        <label style="font-size: x-large;font-weight: bolder;color: black">采用产品</label><br>
+        <div class="sp"><img src="img/案例_21.png"/></div>
+        <div class="sp"><img src="img/案例_23.png"/></div>
+        <div class="sp"><img src="img/案例_25.png"/></div>
+        <div class="sp"><img src="img/案例_27.png"/></div>
+        <div style="height: 40px; margin-top:20px;clear: both"><a class="button" href="#" target="_blank">我要下单</a></div>
+    </div>
+</div>
+<div id="footer"><div th:include="layout/footer::footer"></div></div>
+</body>
+</html>
