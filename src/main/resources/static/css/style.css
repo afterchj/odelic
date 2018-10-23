@@ -30,12 +30,13 @@
     font-size: 20px;
     line-height: 1.5;
     margin-top: 15px;
-    font-weight: bold;
+    float: left;
 }
 #contents .lst-product .item .b .txt-info {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
-    margin-top: 10px;
+    margin-top: 15px;
+    float: right;
 }
 #contents .lst-product .item img {
     width: 100%;

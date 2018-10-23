@@ -100,7 +100,7 @@ img{max-width:100%;
 .header_b li.home a{}
 .header_b li.home img{width:14px !important;}
 .header_b li:nth-last-child(1){margin-right:0;}
-.header_store{margin-top:19px;}
+.header_store{margin-top:6px;}
 .header-logo{font-size: 38px;color:#ffffff;}
 
 .nav .item{float:left;height:50px;width:120px;text-align:center;padding-left:3px;}

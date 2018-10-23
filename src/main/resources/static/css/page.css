@@ -291,16 +291,11 @@ a:hover .show{display:none;}
 .pro-img-list-l{width:590px;}
 .pro-img-list-r{width:600px;}
 .marb10{margin-bottom:10px;}
-.home-banner{overflow:hidden;position:relative;}
-.home-banner .wenz{position:absolute;left:0;top:50%;margin-top:-100px;width:100%;}
-.home-banner .wrapper{}
-.home-banner .box{max-width:420px !important;width:420px;padding:35px 60px 60px 60px;margin:0;background:rgba(247,143,44,.8);}
-.home-banner h3{margin-bottom:12px;font-weight:bold;font-size:30px;color:#fff;}
-.home-banner p{font-size:14px;color:#fff;line-height:24px;}
-.home-banner .hd li{cursor:pointer;border-radius:50%;behavior:url(PIE.htc);display:inline-block;*display:inline; *zoom:1;width:10px;height:10px;background:#fff;margin-right:10px;}
-.home-banner .hd{width:100%;bottom:15px;text-align:center;z-index:2;color:transparent;position:absolute;}
-.home-banner .hd li.on{background:#f78f2c;}
-.home-banner .hd ul{width:1080px;margin:auto;}
+.nyBanner01 .wenz{position:absolute;left:0;top:50%;margin-top:-100px;width:100%;}
+.nyBanner01 .box{max-width:640px !important;width:640px;padding:35px 40px 60px 40px;margin:0;background:rgba(14, 14, 14, 0.8);position: absolute;left: 50%;top:50%;margin-left: -365px;}
+.nyBanner01 .style-banner h3{margin-bottom:12px;font-size:30px;color:#da8835;text-align: center;}
+.nyBanner01 .style-banner p{font-size:14px;color:#fff;line-height:40px;text-align: center;position: relative;top:40px;}
+.nyBanner01 .banner-line{border-bottom: 1px solid #fff;padding: 10px;width:130px;position: relative;left:39%;}
 /*.newHomeBanner{height:540px;}*/
 /*.newHomeBanner .bd li{padding:140px 0 210px;}*/
 /*.newHomeBanner .bd li .wenz{position:relative;left:auto;top:auto;margin:0;}*/
@@ -491,9 +486,9 @@ a:hover .show{display:none;}
 .pro_canshu li td{background:#f2f2f2;background-size:100% 100% !important;font-size:12px;color:#000;text-align:center;line-height:18px;padding:6px;border:1px solid #ccc;}
 
 
-.nyBanner01{position:relative;height: 480px;background-size:cover !important;}
-.nyBanner01 .hd{position:absolute;z-index:10;bottom:15px;text-align:center;width:100%;}
-.nyBanner01 .bd li{background-size:cover !important;width:100%;height: 480px;}
+.nyBanner01{position:relative;height: 855px;background-size:cover !important;}
+.nyBanner01 .hd{position:absolute;z-index:7;bottom:15px;text-align:center;width:100%;}
+.nyBanner01 .bd li{background-size:cover !important;width:100%;height: 855px;}
 .nyBanner01 .bd{overflow:hidden;}
 .nyBanner01 .hd li{display:inline-block;margin:0 10px 0 0;cursor:pointer;color:transparent;width:10px;height:10px;border-radius:50%;background:#fff;}
 .yykj .hd li{display:inline-block;margin:0 10px 0 0;cursor:pointer;color:transparent;width:10px;height:10px;border-radius:50%;background:#fff;}
@@ -865,10 +860,16 @@ body{overflow-x:hidden;}
 /*.syBanner .hd li.on{height:4px;background:#fff;}*/
 .syContent .wrapper{width:1410px;}
 .syContent01{padding:30px 0;}
-.syContent01 .wenz{z-index:2;padding-bottom:100px;position:absolute;bottom:0;left:0;width:100%;}
-.syContent01 .wenz .f30{color:#fff;padding-bottom:14px;}
-.syContent01 .wenz p{font-size:14px;max-width:425px;line-height:24px;color:#fff;height:72px;display:none;}
-.syContent01 .pos_re:hover .wenz p{display:block;}
+.syContent01 .wenz{position:absolute;left:0;top:50%;margin-top:-100px;width:100%;}
+.syContent01 .box{max-width:240px !important;width:240px;padding:35px 40px 60px 40px;margin:0;background:rgba(226, 225, 225, 0.68);border: 4px solid #fff;}
+.syContent01 .picBox1 .box{position: relative;left: 10%;top:50%;}
+.syContent01 .picBox2 .box{position: relative;left: 20%;top:50%;}
+.syContent01 .picBox3 .box{position: relative;left: 18%;top:50%;}
+.syContent01 .picBox4 .box{position: relative;left: 10%;top:50%;}
+.syContent01 .style-banner h3{font-size:30px;color:#f0a908;text-align: center;}
+.syContent01 .style-banner h4{font-size:30px;color:#f0a908;float: left;}
+.syContent01 .style-banner h5{font-size:30px;color:#f0a908;float: right;}
+.syContent01 .style-banner p{font-size:14px;color:#000000;line-height:40px;text-align: center;position: relative;top:30px;}
 .syContent01 .yy{position:absolute;left:0;top:0;width:100%;height:100%;z-index:1;opacity:0;filter:Alpha(opacity=0);background-size:100% 100%;
     -webkit-transition: all .4s;
     -moz-transition: all .4s;
@@ -888,11 +889,11 @@ body{overflow-x:hidden;}
 .syContent01 .pos_re:hover .yy{opacity:0.8;filter:Alpha(opacity=80);}
 
 /*图片样式*/
-.picBox1 .pic{height: 380px;width: 370px;position: relative;margin: 3px;overflow: hidden;}
-.picBox2 .pic{height: 380px;width: 1000px;position: relative;margin: 3px;overflow: hidden;}
-.picBox3 .pic{height: 380px;width: 900px;position: relative;margin: 3px;overflow: hidden;}
-.picBox4 .pic{height: 380px;width: 470px;position: relative;margin: 3px;overflow: hidden;}
-.pic img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+.picBox1 .pic{height: 390px;width: 630px;position: relative;overflow: hidden;}
+.picBox2 .pic{height: 390px;width: 840px;position: relative;overflow: hidden;}
+.picBox3 .pic{height: 390px;width: 840px;position: relative;overflow: hidden;}
+.picBox4 .pic{height: 390px;width: 630px;position: relative;overflow: hidden;}
+.syContent01 .pic img{position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
 
 .syContent01 .fullpic{}
 .syContent01 .fullpic .wenz{color:#fff;top:85px;position:absolute;width:100%;text-align:center;}
@@ -966,7 +967,7 @@ body{overflow-x:hidden;}
 .aboutCon02{background:#e3e3e3;padding:47px 0 60px;}
 .aboutCon02 .qiehuan{float:right; width:1200px; height:647px; position:relative;}
 .aboutCon02 .qiehuan .datu{float:left; background:#fff; width:860px;padding:30px; height:590px; overflow:hidden; position:relative; }
-.home-banner .bd ul{overflow:hidden;}
+/*.home-banner .bd ul{overflow:hidden;}*/
 .aboutCon02 .qiehuan .datu ul{ position:absolute; left:30px; top:30px; height:860px; width:590px;}
 .aboutCon02 .qiehuan .datu ul li{ display:none; width:860px; height:590px; position:absolute; left:0px; top:0px;  text-align:center;}
 .aboutCon02 .qiehuan .datu ul li .pic1{height:543px;}
@@ -1247,12 +1248,18 @@ em{font-style:normal;}
 
 
 @media screen and (max-width: 1440px) {
+    .header_b{ position: absolute; width: 100%; padding: 8px 0; z-index: 9; display: flex; justify-content: space-between; transition: background .25s; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
+    .header-l{float:left; _display:inline;margin-left:-30px;}
     .syContent .wrapper{width:1200px;}
     .f30{font-size:24px;}
     .syContent01 .wenz.btm50{padding-bottom:30px;}
     .syActivity{width: 38.3%;}
     .syNews{width:60%;}
     .pro_detail_alert{height:400px;padding:40px 20px;}
+    .picBox1 .pic{height: 390px;width: 540px;position: relative;overflow: hidden;}
+    .picBox2 .pic{height: 390px;width: 680px;position: relative;overflow: hidden;}
+    .picBox3 .pic{height: 390px;width: 710px;position: relative;overflow: hidden;}
+    .picBox4 .pic{height: 390px;width: 510px;position: relative;overflow: hidden;}
 }
 
 
@@ -1272,7 +1279,7 @@ em{font-style:normal;}
     .pro-nav-ul li .subnav{width:800px;height:330px;left:161px;}
     img{max-width:100%;}
     .pro_detail_2{display:none;}
-    .home-banner{height:414px;}
+    /*.home-banner{height:414px;}*/
     .wrapper{width:93.75%;}
     .nyBanner{height:320px;}
     .f30,.tit{font-size:26px;}
@@ -1410,7 +1417,7 @@ em{font-style:normal;}
     .home .mart10{}
     .home .marl10{margin-left:9px;}
     .home .pro-img-list{padding-bottom:100px;}
-    .home-banner .hd ul{width:100%;}
+    /*.home-banner .hd ul{width:100%;}*/
     .home .pro-img-list .wenz.left{top:0;}
     .home .pro-img-list .wenz.right.top{top:0;}
     .irCon02Box li .date{width:80px;}
@@ -1508,11 +1515,11 @@ em{font-style:normal;}
     .responsibilityCon02 h4{line-height:28px;}
     .responsibilityCon03 .prev{left:0;}
     .responsibilityCon03 .next{right:0;}
-    .home-banner .box{max-width:320px;padding:20px 30px;box-sizing:border-box;}
+    /*.home-banner .box{max-width:320px;padding:20px 30px;box-sizing:border-box;}*/
     .home{padding-bottom:40px;}
-    /*.header{display:none;}*/
+    .header{display:none;}
     .new_header{display:block;}
-    .home-banner{height:288px;}
+    /*.home-banner{height:288px;}*/
     .pro-nav-ul{display:none;}
     .pro-nav-index .pro-banner{width:100%;}
     .fixed_mar{height:65px;}
@@ -2011,18 +2018,6 @@ em{font-style:normal;}
     .pro-list .li_link .db-btn{padding-left:12px;background-position:left 8px center !important;}
     .home.phone li h3{font-size:14px;}
 
-}
-
-
-@media screen and (max-width: 1440px) {
-    .header_b{ position: absolute; width: 100%; padding: 8px 0; z-index: 9; display: flex; justify-content: space-between; transition: background .25s; background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%); }
-    .header-l{float:left; _display:inline;margin-left:-30px;}
-    .syContent .wrapper{width:1200px;}
-    .f30{font-size:24px;}
-    .syContent01 .wenz.btm50{padding-bottom:30px;}
-    .syActivity{width: 38.3%;}
-    .syNews{width:60%;}
-    .pro_detail_alert{height:400px;padding:40px 20px;}
 }
 
 
