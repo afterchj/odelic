@@ -60,8 +60,12 @@ public class OdelicController {
         return "productCenter";
     }
 
+    /**
+     * bootstrap导航栏
+     * @return
+     */
     @RequestMapping(value = "nav-fixed-alt4", method = RequestMethod.GET)
     public String navAlt4(){
-        return "test/nav-fixed-alt4";
+        return "test/nav-fixed-alt1";
     }
 }

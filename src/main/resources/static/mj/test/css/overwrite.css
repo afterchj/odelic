@@ -19,7 +19,7 @@ html,body {
     overflow-x: hidden;
 }
 
-body {
+header {
     font-family: 'Open Sans', sans-serif;
     position: relative;
 	font-size:14px;
@@ -88,8 +88,9 @@ p{
 	margin-bottom:20px;
 }
 
-.wrapper{
+.wrappe{
     min-height: 800px;
+    width: 100%!important;
 }
 
 /*
@@ -184,7 +185,9 @@ ul.cart-list > li.total > .btn{
     nav.navbar.bootsnav.no-background.white .attr-nav > ul > li > a,
     nav.navbar.bootsnav.navbar-transparent.white .attr-nav > ul > li > a,
     nav.navbar.bootsnav.navbar-transparent.white ul.nav > li > a,
-    nav.navbar.bootsnav.no-background.white ul.nav > li > a{
+    nav.navbar.bootsnav.no-background.white ul.nav > li > a,
+    nav.navbar.bootsnav.no-background.white .navbar-header .navbar-brand strong/*logo颜色*/
+    {
         color: #fff;
     }
     

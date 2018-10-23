@@ -51,7 +51,9 @@ nav.navbar.bootsnav{
     z-index: 9;
 }
 
-nav.navbar.bootsnav ul.nav > li > a{
+nav.navbar.bootsnav ul.nav > li > a,
+nav.navbar.bootsnav .navbar-header .navbar-brand strong/*logo颜色*/
+{
     color: #6f6f6f;
     background-color: transparent !important;
 }
@@ -666,7 +668,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     nav.navbar.bootsnav.no-background.white .attr-nav > ul > li > a,
     nav.navbar.bootsnav.navbar-transparent.white .attr-nav > ul > li > a,
     nav.navbar.bootsnav.navbar-transparent.white ul.nav > li > a,
-    nav.navbar.bootsnav.no-background.white ul.nav > li > a{
+    nav.navbar.bootsnav.no-background.white ul.nav > li > a,
+    nav.navbar.bootsnav.no-background.white .navbar-header .navbar-brand strong/*logo颜色*/{
         color: #fff;
     }
     
@@ -1015,7 +1018,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     
     nav.navbar.bootsnav.no-full .navbar-collapse{
         max-height: 350px;
-        overflow-y: auto !important;
+        /*overflow-y: auto !important;*/
     }
     
     nav.navbar.bootsnav .navbar-collapse.collapse {
@@ -1031,6 +1034,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         padding-left: 30px;
         padding-right: 30px;
         margin: 0px -15px;
+        font-size: 20px;
     }
     
     nav.navbar.bootsnav .navbar-nav > li {

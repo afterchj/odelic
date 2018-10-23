@@ -1,13 +1,22 @@
 *{
+    webkit-box-sizing:unset!important;
+    -moz-box-sizing: unset!important;
     box-sizing:unset!important;
 }
 a {
-    text-decoration: none!important;
-}
+     text-decoration: none!important;
+ }
 @media screen and (max-width: 1023px) {
     nav{
         display: block;
     }
+}
+.nav {
+    float: right;
+    _display: inline;
+}
+b {
+    font-weight: 700;
 }
 
 .bannerbox {

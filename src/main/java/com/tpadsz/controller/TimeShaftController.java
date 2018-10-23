@@ -38,4 +38,11 @@ public class TimeShaftController {
         modelMap.put("timeShaftLists", timeShaftLists);
         return "aboutofus";
     }
+
+    @RequestMapping(value = "aboutus2", method = RequestMethod.GET)
+    public String aboutus2(ModelMap modelMap){
+        List<TimeShaft> timeShaftLists = timeShaftService.findAll();
+        modelMap.put("timeShaftLists", timeShaftLists);
+        return "test/aboutofus2";
+    }
 }
