@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Solis Grande</title>
+
+    <!--<link type="text/css" href="./css/jquery.jslides.css" rel="stylesheet" media="screen">-->
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.2.js"></script>
+
+    <!--header right footer-->
+    <script type="text/javascript" src="js/nav.js"></script>
+    <link type="text/css" href="css/base.css" rel="stylesheet">
+    <link type="text/css" href="css/page.css" rel="stylesheet">
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <!--header right footer-->
+
+    <link type="text/css" href="css/commercial3_css.css" rel="stylesheet">
+    <link type="text/css" href="css/comm3.banner.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        .top_switch ul li{
+            width: 240px;
+            height: 50px;
+            list-style: none;
+            float: left;
+        }
+
+        /*---------*/
+        .comm3_show_pic ul li{
+            width:240px;
+            height:400px;
+            /*padding-left: 20px;*/
+            list-style: none;
+            float: left;
+        }
+
+        .comm3_show_pic ul li img{
+            width:200px;
+            height:200px;
+            clear: both;
+            display: block;
+            margin:0px auto;
+        }
+
+        .comm3_xinghao{
+            font-size: 16px;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .comm3_price{
+            font-size: 12px;
+            margin-left: 20px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+<!---------------------------header-------------------------------->
+<div th:include="layout/header::header"></div>
+
+<p class="spacegap"></p>
+
+<!------------------------------顶部标题------------------------------------->
+<p class="comm3_title">餐厅-Solis Grande</p>
+
+<div class="comm3_desc">充满异国情调的冲绳度假村餐厅
+    这是冲绳·北谷美浜一个面向大海的意大利创意美食餐厅。
+    充满度假风味的室内装饰成为可以享受异国情调的微观设计。除了华丽的的吊灯和聚光灯之外，嵌入装饰的间接照明也增强了照明效果。
+</div>
+
+
+<!------------------------------轮播------------------------------------->
+<div class="comm3_banner" id="comm2_switch">
+    <div class="top_switch">
+        <ul>
+            <!--<li id="top_switch01">-->
+                <!--<div>咖啡馆</div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+
+
+    <div class="content_banner">
+        <div class="content1" id="content1">
+            <div class="content_banner1" id="content_banner1">
+                <div id="content_banner1_div">
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_photo01.jpg" style="display: block">
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_photo02.jpg">
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_photo03.jpg">
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_photo04.jpg">
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_photo05.jpg">
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_photo01.jpg">
+                </div>
+            </div>
+            <ul>
+                <li style="background: #CC0000">
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_s_photo01.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_s_photo02.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_s_photo03.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_s_photo04.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/3餐厅/4SolisGrande/图片/01_s_photo05.jpg">
+                </li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<!---------------------------展示图-------------------------->
+<p class="spacegap"></p>
+<div class="comm3_show_pic">
+    <div class="comm3_title">采用产品</div>
+    <ul>
+        <li>
+            <img src="./images/商用案例/3餐厅/4SolisGrande/采用的产品/MAIN_OL251373.jpg">
+            <div class="comm3_xinghao">型号：OL251373</div>
+            <div class="comm3_price">价格：498,000</div>
+        </li>
+        <li>
+            <img src="./images/商用案例/3餐厅/4SolisGrande/采用的产品/MAIN_OL251811.jpg">
+            <div class="comm3_xinghao">型号：OL251811</div>
+            <div class="comm3_price">价格：498,000</div>
+        </li>
+        <li>
+            <img src="./images/商用案例/3餐厅/4SolisGrande/采用的产品/MAIN_OL251811_1.jpg">
+            <div class="comm3_xinghao">型号：OL251811_1</div>
+            <div class="comm3_price">价格：498,000</div>
+        </li>
+        <li>
+            <img src="./images/商用案例/3餐厅/4SolisGrande/采用的产品/MAIN_OX9727.jpg">
+            <div class="comm3_xinghao">型号：OX9727</div>
+            <div class="comm3_price">价格：498,000</div>
+        </li>
+        <li>
+            <img src="./images/商用案例/3餐厅/4SolisGrande/采用的产品/MAIN_OX9727_1.jpg">
+            <div class="comm3_xinghao">型号：OX9727_1</div>
+            <div class="comm3_price">价格：498,000</div>
+        </li>
+    </ul>
+</div>
+<p class="spacegap"></p>
+<div class="comm3_xiadan">我要下单</div>
+
+</div>
+
+<p class="spacegap"></p>
+<p class="spacegap"></p>
+
+
+
+<!--------------------------right---------------------->
+<div th:include="layout/right::right"></div>
+
+
+<!-------------------------footer------------------------------>
+<div th:include="layout/footer::footer"></div>
+
+
+
+
+
+
+<!------------------------------顶部轮播图布局JS------------------------------------->
+<script type="text/javascript">
+
+    function sendParam1(c1) {
+        document.getElementById('content_banner1_div').style.width = ((c1+1) * 1200)+"px";
+        var c = 0;
+
+        function autorun() {
+            c = c + 1;
+            if (c == (c1 + 1)) {
+                c = 1;
+                $("#content_banner1 div").css({"left": 0})
+            }
+            console.log(c);
+            $("#content_banner1 div").animate({"left": c * -1200}, 300)
+
+            for (var i = 0; i < c1; i++) {
+                document.getElementById('content1').getElementsByTagName("li")[i].style.background = "#DDDDDD";
+            }
+
+            if (c == c1) {
+                document.getElementById('content1').getElementsByTagName("li")[0].style.background = "#CC0000";
+            } else {
+                document.getElementById('content1').getElementsByTagName("li")[c].style.background = "#CC0000";
+            }
+
+        }
+
+        var timer = setInterval(autorun, 2500)
+
+        $("#content1").mouseleave(function () {
+            timer = setInterval(autorun, 2500);
+        });
+        $("#content1").mouseenter(function () {
+            clearInterval(timer);
+        });
+
+        $("#content1 ul li").mouseenter(function () {
+            c = $(this).index();
+            $("#content_banner1 div").css({"left": c * -1200})
+
+            for (var i = 0; i < c1; i++) {
+                document.getElementById('content1').getElementsByTagName("li")[i].style.background = "#DDDDDD";
+            }
+
+            if (c == c1) {
+                document.getElementById('content1').getElementsByTagName("li")[0].style.background = "#CC0000";
+            } else {
+                document.getElementById('content1').getElementsByTagName("li")[c].style.background = "#CC0000";
+            }
+        });
+    }
+
+
+
+
+    sendParam1(5);
+
+
+
+    function initView(){
+        document.getElementById('top_switch01').style.background="#c2c2c2";
+    };
+    initView();
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>商用照明</title>
+
+    <!--<link type="text/css" href="./css/jquery.jslides.css" rel="stylesheet" media="screen">-->
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.2.js"></script>
+
+
+    <!--header right footer-->
+    <script type="text/javascript" src="js/nav.js"></script>
+    <link type="text/css" href="css/base.css" rel="stylesheet">
+    <link type="text/css" href="css/page.css" rel="stylesheet">
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <!--header right footer-->
+
+    <link type="text/css" rel="stylesheet" href="css/commercial1_css.css">
+
+
+
+
+</head>
+
+<body>
+
+<!---------------------------header-------------------------------->
+<div th:include="layout/header::header"></div>
+
+
+<!------------------------------顶部banner布局------------------------------------->
+<div class="comm1_banner">
+    <img src="./images/comm_banner.jpg" >
+</div>
+<p class="spacegap"></p>
+
+
+<!------------------------------客户服务------------------------------------->
+<div class="content_cus1">
+
+    <p class="title_cus1">客户服务</p>
+
+    <ul class="content_cus1_ul">
+        <li class="content_cus1_li">
+            <a class="content_cus1_pic" ><img class="content_cus1_img" src="images/icon22.png" alt=""/></a>
+
+            <div class="content_cus1_title">服务1</div>
+            <div class="content_cus1_content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+            </div>
+        </li>
+
+        <li class="content_cus1_li">
+            <a class="content_cus1_pic" ><img class="content_cus1_img" src="images/icon22.png" alt=""/></a>
+            <div class="content_cus1_title">服务2</div>
+            <div class="content_cus1_content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+            </div>
+        </li>
+
+        <li class="content_cus1_li">
+            <a class="content_cus1_pic" ><img class="content_cus1_img" src="images/icon22.png" alt=""/></a>
+            <div class="content_cus1_title">服务2</div>
+            <div class="content_cus1_content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+            </div>
+        </li>
+
+    </ul>
+</div>
+
+
+<!------------------------------底部轮播图布局------------------------------------->
+<p class="spacegap"></p>
+<p class="title_cus1">客户案例</p>
+
+<div class="comm1_bottom">
+    <div class="bottombanner" id="bottombanner1">
+
+        <div>
+            <a href="comm2" target="_blank"><img src="./images/comm1/comm1_lunbo1.jpg" style="display: block"></a>
+            <a href="comm2" target="_blank"><img src="./images/comm1/comm1_lunbo2.jpg"></a>
+            <a href="comm2" target="_blank"><img src="./images/comm1/comm1_lunbo3.jpg"></a>
+            <a href="comm2" target="_blank"><img src="./images/comm1/comm1_lunbo1.jpg"></a>
+            <!--<img src="./images/comm1/comm1_lunbo1.jpg" style="display: block">-->
+            <!--<img src="./images/comm1/comm1_lunbo2.jpg">-->
+            <!--<img src="./images/comm1/comm1_lunbo3.jpg">-->
+            <!--<img src="./images/comm1/comm1_lunbo1.jpg">-->
+        </div>
+
+        <ul>
+            <li style="background: #f78f2c"></li>
+            <li></li>
+            <li></li>
+            <!--<li></li>-->
+        </ul>
+    </div>
+</div>
+
+<p class="spacegap"></p>
+
+<!--------------------------right---------------------->
+<div th:include="layout/right::right"></div>
+
+
+<!-------------------------footer------------------------------>
+<div th:include="layout/footer::footer"></div>
+
+
+
+<!------------------------------底部轮播图布局JS------------------------------------->
+<script type="text/javascript">
+    var c=0;
+    var banner=document.getElementById('bottombanner1');
+    var lis=document.getElementById('bottombanner1').getElementsByTagName("li")
+    var imgs=document.getElementById('bottombanner1').getElementsByTagName("img")
+    function autorun() {
+
+        c=c+1;
+        if(c==4){
+            c=1;
+            $("#bottombanner1 div").css({"left":0})
+        }
+        console.log(c);
+        $("#bottombanner1 div").animate({"left":c*-1000},300)
+
+        for(var i=0; i<3;i++){
+            document.getElementById('bottombanner1').getElementsByTagName("li")[i].style.background="#DDDDDD";
+        }
+
+        if(c==3){
+            document.getElementById('bottombanner1').getElementsByTagName("li")[0].style.background="#f78f2c";
+        }else {
+            document.getElementById('bottombanner1').getElementsByTagName("li")[c].style.background="#f78f2c";
+        }
+
+    }
+
+    var timer =setInterval(autorun,2500)
+
+    $("#bottombanner1").mouseleave(function () {
+        timer =setInterval(autorun,2500);
+    });
+    $("#bottombanner1").mouseenter(function ( ) {
+        clearInterval(timer);
+    });
+
+    $("#bottombanner1 ul li").mouseenter(function () {
+        c=$(this).index();
+        $("#bottombanner1 div").css({"left":c*-1000})
+
+        for(var i=0; i<3;i++){
+            document.getElementById('bottombanner1').getElementsByTagName("li")[i].style.background="#DDDDDD";
+        }
+
+        if(c==3){
+            document.getElementById('bottombanner1').getElementsByTagName("li")[0].style.background="#f78f2c";
+        }else {
+            document.getElementById('bottombanner1').getElementsByTagName("li")[c].style.background="#f78f2c";
+        }
+    });
+
+
+</script>
+
+
+</body>
+
+</html>
