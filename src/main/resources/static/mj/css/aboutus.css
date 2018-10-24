@@ -1,9 +1,9 @@
-/**{*/
-    /*webkit-box-sizing:unset!important;*/
-    /*-moz-box-sizing: unset!important;*/
-    /*box-sizing:unset!important;*/
+*{
+    webkit-box-sizing:unset!important;
+    -moz-box-sizing: unset!important;
+    box-sizing:unset!important;
 
-/*}*/
+}
 a {
     text-decoration: none!important;
 }
