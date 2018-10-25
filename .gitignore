@@ -17,6 +17,7 @@
 *.log
 *.gz
 *.cmd
+*.mp4
 
 ### NetBeans ###
 /nbproject/private/
