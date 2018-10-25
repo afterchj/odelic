@@ -15,9 +15,7 @@ input{display:inline-block; vertical-align:middle;}
 fieldset{border:none;}
 legend{display:none;}
 /*Clear Css*/
-.clear{clear:both; font-size:0; height:0; line-height:0;}
 .clearfix:after{content:'\20';display:block;clear:both;visibility:hidden;line-height:0;height:0;}
-.clearb{ clear:both;}
 .clearfix{display:block;zoom:1;}
 html[xmlns] .clearfix{display:block;}
 html[xmlns] .wtcmm.clearfix{display:none;}
@@ -26,8 +24,6 @@ html[xmlns] .wtcm.on .wtcmm{display:block;}
 /*Common Css*/
 body{font-size:12px;}
 a{ text-decoration:none;}
-.fl{float:left; _display:inline;}
-.fr{float:right; _display:inline;}
 .header-l{float:left; _display:inline;margin-left:-175px;}
 ::-ms-clear, ::-ms-reveal{display: none;}  /*æ¸…é™¤inputå³ä¾§ Xæˆ–è€…çœ¼ç›*/
 input,select{border-radius:0;appearance:none;-moz-appearance:none;-webkit-appearance:none;}/*æ¸…æ¥šè‹¹æžœé»˜è®¤æ ·å¼*/
@@ -98,7 +94,7 @@ img{max-width:100%;
 .header_b li.home a{}
 .header_b li.home img{width:14px !important;}
 .header_b li:nth-last-child(1){margin-right:0;}
-.header_store{margin-top:19px;}
+.header_store{margin-top:7px;}
 .header-logo{font-size: 38px;color:#ffffff;}
 
 .nav .item{float:left;height:50px;width:120px;text-align:center;padding-left:3px;}

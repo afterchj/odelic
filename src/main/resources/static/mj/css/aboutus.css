@@ -4,9 +4,6 @@
     box-sizing:unset!important;
 
 }
-a {
-    text-decoration: none!important;
-}
 
 .nav {
     float: right;
@@ -31,7 +28,6 @@ b {
     margin-left:-1000px; /*图片宽度的一半*/
     height: 600px;
 }
-
 .cirl{
     display: block;
     width: 14px;
@@ -47,3 +43,5 @@ b {
     left: 50%;
     top: 50%;
 }
+
+
