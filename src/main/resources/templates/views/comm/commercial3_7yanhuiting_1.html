@@ -22,7 +22,7 @@
 
     <style type="text/css">
         .top_switch ul li{
-            width: 400px;
+            width: 320px;
             height: 50px;
             list-style: none;
             float: left;
@@ -230,7 +230,7 @@
 <script type="text/javascript">
 
     function sendParam1(c1) {
-        document.getElementById('content_banner1_div').style.width = ((c1+1) * 1200)+"px";
+        document.getElementById('content_banner1_div').style.width = ((c1+1) * 960)+"px";
         var c = 0;
 
         function autorun() {
@@ -240,7 +240,7 @@
                 $("#content_banner1 div").css({"left": 0})
             }
             console.log(c);
-            $("#content_banner1 div").animate({"left": c * -1200}, 300)
+            $("#content_banner1 div").animate({"left": c * -960}, 300)
 
             for (var i = 0; i < c1; i++) {
                 document.getElementById('content1').getElementsByTagName("li")[i].style.background = "#DDDDDD";
@@ -265,7 +265,7 @@
 
         $("#content1 ul li").mouseenter(function () {
             c = $(this).index();
-            $("#content_banner1 div").css({"left": c * -1200})
+            $("#content_banner1 div").css({"left": c * -960})
 
             for (var i = 0; i < c1; i++) {
                 document.getElementById('content1').getElementsByTagName("li")[i].style.background = "#DDDDDD";
@@ -281,7 +281,7 @@
 
 
     function sendParam2(c1) {
-        document.getElementById('content_banner2_div').style.width=((c1+1) * 1200)+"px";
+        document.getElementById('content_banner2_div').style.width=((c1+1) * 960)+"px";
         var c=0;
 
         function autorun() {
@@ -291,7 +291,7 @@
                 $("#content_banner2 div").css({"left":0})
             }
             console.log(c);
-            $("#content_banner2 div").animate({"left":c*-1200},300)
+            $("#content_banner2 div").animate({"left":c*-960},300)
 
             for(var i=0; i<c1;i++){
                 document.getElementById('content2').getElementsByTagName("li")[i].style.background="#DDDDDD";
@@ -316,7 +316,7 @@
 
         $("#content2 ul li").mouseenter(function () {
             c=$(this).index();
-            $("#content_banner2 div").css({"left":c*-1200})
+            $("#content_banner2 div").css({"left":c*-960})
 
             for(var i=0; i<c1;i++){
                 document.getElementById('content2').getElementsByTagName("li")[i].style.background="#DDDDDD";
@@ -331,7 +331,7 @@
     }
 
     function sendParam3(c1,banner) {
-        document.getElementById('content_banner3_div').style.width=((c1+1) * 1200)+"px";
+        document.getElementById('content_banner3_div').style.width=((c1+1) * 960)+"px";
         var c=0;
 
         function autorun() {
@@ -341,7 +341,7 @@
                 $("#content_banner3 div").css({"left":0})
             }
             console.log(c);
-            $("#content_banner3 div").animate({"left":c*-1200},300)
+            $("#content_banner3 div").animate({"left":c*-960},300)
 
             for(var i=0; i<c1;i++){
                 document.getElementById('content3').getElementsByTagName("li")[i].style.background="#DDDDDD";
@@ -366,7 +366,7 @@
 
         $("#content3 ul li").mouseenter(function () {
             c=$(this).index();
-            $("#content_banner3 div").css({"left":c*-1200})
+            $("#content_banner3 div").css({"left":c*-960})
 
             for(var i=0; i<c1;i++){
                 document.getElementById('content3').getElementsByTagName("li")[i].style.background="#DDDDDD";
