@@ -36,32 +36,95 @@
  */
 // t: current time, b: begInnIng value, c: change In value, d: duration
 jQuery.easing['jswing'] = jQuery.easing['swing'];
-jQuery.extend(jQuery.easing,{def:'easeOutExpo',swing:function(x,t,b,c,d){return jQuery.easing[jQuery.easing.def](x,t,b,c,d);},easeOutExpo:function (x,t,b,c,d){return (t==d)?b+c:c*(-Math.pow(2,-10*t/d)+1)+ b;}});
+jQuery.extend(jQuery.easing, {
+    def: 'easeOutExpo', swing: function (x, t, b, c, d) {
+        return jQuery.easing[jQuery.easing.def](x, t, b, c, d);
+    }, easeOutExpo: function (x, t, b, c, d) {
+        return (t == d) ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+    }
+});
 
-$(function(){
+$(function () {
+    var i = 0;
+    var clone = $(".ad .slider li").first().clone();//克隆第一张图片
+    $(".ad .slider").append(clone);//复制到列表最后
+    var size = $(".ad .slider li").size();
+    for (var j = 0; j < size-1; j++) {
+        $(".ad .num").append("<li></li>");
+    }
+    $(".ad .num li").first().addClass("on");
+
+    /*自动轮播*/
+    var t = setInterval(function () { i++; move();},2000);
+
+    /*鼠标悬停事件*/
+    $(".ad").hover(function () {
+        clearInterval(t);//鼠标悬停时清除定时器
+    }, function () {
+        t = setInterval(function () { i++; move(); }, 2000); //鼠标移出时清除定时器
+    });
+
+    /*鼠标滑入原点事件*/
+    $(".ad .num li").hover(function () {
+        var index = $(this).index();//获取当前索引值
+        i = index;
+        $(".ad .slider").stop().animate({ left: -index * 1200 }, 500);
+        $(this).addClass("on").siblings().removeClass("on");
+    });
+
+    /*向左按钮*/
+    $(".ad .btn_l").click(function () {
+        i++;
+        move();
+    })
+
+    /*向右按钮*/
+    $(".ad .btn_r").click(function () {
+        i--;
+        move();
+    })
+
+    /*移动事件*/
+    function move() {
+        if (i == size) {
+            $(".ad .slider").css({ left: 0 });
+            i = 1;
+        }
+        if (i == -1) {
+            $(".ad .slider").css({ left: -(size - 1) * 1200 });
+            i = size - 2;
+        }
+        $(".ad .slider").stop().animate({ left: -i * 1200 }, 500);
+
+        if (i == size - 1) {
+            $(".ad .num li").eq(0).addClass("on").siblings().removeClass("on");
+        } else {
+            $(".ad .num li").eq(i).addClass("on").siblings().removeClass("on");
+        }
+    };
     //Add Rollover Event
     var originaSrc;
     $("img.rollover,input.rollover").hover(
-        function(){
+        function () {
             var $this = $(this);
             originaSrc = $this.attr('src');
             var filename = originaSrc.match(".+/(.+?)\.[a-z]+$")[1]
             $this.attr('src', originaSrc.replace(filename, filename + "_ov"));
         },
-        function(){
+        function () {
             $(this).attr('src', originaSrc);
         }
     );
 
     //Add SmoothScroll Event
-    $('a[href^=#], area[href^=#]').click(function() {
+    $('a[href^=#], area[href^=#]').click(function () {
         var speed = 1000;
-        var href= $(this).attr("href");
+        var href = $(this).attr("href");
         var target = $(href == "#" || href == "" ? 'html' : href);
         //$.support.checkOn
         var position = target.offset().top;
 //	  $($.browser.safari ? 'body' : 'html').animate({scrollTop:position}, speed, 'easeOutExpo');//del 2018.6.5
-        $('html,body').animate({scrollTop:position}, speed, 'easeOutExpo');//add 2018.6.5
+        $('html,body').animate({scrollTop: position}, speed, 'easeOutExpo');//add 2018.6.5
         return false;
     });
 
@@ -77,22 +140,17 @@ $(function(){
                 placeholderText = input.attr('placeholder'),
                 placeholderColor = 'GrayText',
                 defaultColor = input.css('color');
-            input.
-            focus(function () {
+            input.focus(function () {
                 if (input.val() === placeholderText) {
                     input.val('').css('color', defaultColor);
                 }
-            }).
-            blur(function () {
+            }).blur(function () {
                 if (input.val() === '') {
                     input.val(placeholderText).css('color', placeholderColor);
                 } else if (input.val() === placeholderText) {
                     input.css('color', placeholderColor);
                 }
-            }).
-            blur().
-            parents('form').
-            submit(function () {
+            }).blur().parents('form').submit(function () {
                 if (input.val() === placeholderText) {
                     input.val('');
                 }
@@ -101,53 +159,83 @@ $(function(){
     }
 
     //set biggerlink
-    if($.fn.biggerlink){
+    if ($.fn.biggerlink) {
         // Supporting target _blank
-        $('.biggerlink a[target="_blank"]').click(function(){
+        $('.biggerlink a[target="_blank"]').click(function () {
             window.open(this.href);
             return false;
         });
-        $('.biggerlink').biggerlink({hoverclass:'hover'});
+        $('.biggerlink').biggerlink({hoverclass: 'hover'});
     }
 
     //for ios safari
-    var ua =navigator.userAgent;
-    if(ua.indexOf('iPhone') > -1 || ua.indexOf('iPad') > -1 || ua.indexOf('iPod') > -1){
-        $('label').click(function(){});
+    var ua = navigator.userAgent;
+    if (ua.indexOf('iPhone') > -1 || ua.indexOf('iPad') > -1 || ua.indexOf('iPod') > -1) {
+        $('label').click(function () {
+        });
     }
     if (ua.search(/Android 4/) !== -1) {
-        $("head").append($('<meta name="viewport" content="width=device-width,user-scalable=yes,target-densitydpi=device-dpi,initial-scale='+(screen.width/960)+'">'));
+        $("head").append($('<meta name="viewport" content="width=device-width,user-scalable=yes,target-densitydpi=device-dpi,initial-scale=' + (screen.width / 960) + '">'));
     }
 });
 
+
+// var title = new Array();
+var start = 1;
+var end = 4;
+
+function show(dl) {
+    if (Number(dl)) {
+        //clearTimeout(theTimer);
+        start = dl;
+    }
+    for (var i = 1; i < (end + 1); i++) {
+        if (i == start) {
+            document.getElementById("alter").src = "./img/home_" + i + ".jpg";
+            document.getElementById("img" + i).className = "numOver";
+        }
+        else {
+            document.getElementById("img" + i).className = "num1";
+        }
+    }
+    if (start == end) {   //设置下一个显示的图片
+        start = 1;
+    }
+    else {
+        start++;
+    }
+}
+//设置定时器，显示下一张图片
+// var theTimer = setInterval(show, 3000);
+//页面加载时运行函数show()
 //popup window
-function openWindow(evt, url, name, features){
+function openWindow(evt, url, name, features) {
     //default settings
     var settings = {
-        menubar : 'no',
-        location : 'no',
-        resizable : 'yes',
-        scrollbars : 'yes',
-        status : 'yes',
-        toolbar : 'no'
+        menubar: 'no',
+        location: 'no',
+        resizable: 'yes',
+        scrollbars: 'yes',
+        status: 'yes',
+        toolbar: 'no'
     }
-    if(features){
-        for(var p in features){
+    if (features) {
+        for (var p in features) {
             settings[p] = features[p];
         }
     }
     var param = [];
-    for(var p in settings){
-        param.push(p + '=' +settings[p]);
+    for (var p in settings) {
+        param.push(p + '=' + settings[p]);
     }
     var w = window.open(url, name, param.join(','));
     w.focus();
 
     //Prevent the Default Action
-    if(evt.preventDefault){
+    if (evt.preventDefault) {
         evt.preventDefault();
     }
-    else{
+    else {
         evt.returnValue = false;
     }
 }

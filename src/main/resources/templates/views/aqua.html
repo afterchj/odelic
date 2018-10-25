@@ -5,12 +5,13 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>施华洛世奇系列</title>
+    <title>AQUA系列</title>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/star.js"></script>
     <link type="text/css" href="./css/base.css" rel="stylesheet">
     <link type="text/css" href="./mycss/common.css" rel="stylesheet">
+    <link type="text/css" href="./mycss/lunbo.css" rel="stylesheet">
     <link type="text/css" href="./mycss/mybase.css" rel="stylesheet">
     <link type="text/css" href="./mycss/mypage.css" rel="stylesheet">
     <link type="text/css" href="./living_files/inside.css" rel="stylesheet">
@@ -24,11 +25,6 @@
             height: 90px;
             /*margin-bottom: 20px;*/
         }
-
-        .solum img {
-            width: 1200px;
-            height: 485px;
-        }
     </style>
 </head>
 <body>
@@ -39,10 +35,10 @@
 <div class="lmbg">
     <div class="wrapper">
         <ul>
-            <li><a href="aqua"><img src="./star/明星产品_03.png">
+            <li class="on"><a href="aqua"><img src="./star/明星产品_03.png">
                 <p>AQUA系列</p>
             </a></li>
-            <li class="on"><a href="swrski"><img src="./star/明星产品_05.png">
+            <li><a href="swrski"><img src="./star/明星产品_05.png">
                 <p>施华洛世奇系列</p>
             </a></li>
             <li><a href="tline"><img src="./star/明星产品_07.png">
@@ -55,33 +51,46 @@
     </div>
 </div>
 <div class="solum">
-    <img src="./star/swrski_banner.jpg" alt=""/>
+    <img src="./star/aqua_banner.jpg" alt=""/>
     <div style="width: 300px;height:80px;background: #666;opacity: 0.7;padding: 40px 30px;position: absolute;bottom: 50px; left: 0;color: white">
-       <label style="font-size: xx-large;">施华洛世奇系列</label>
+        <label style="font-size: xx-large;">AQUA系列</label>
         <br><br>
-        <p>高级空间，精致与奢华共鸣</p>
+        <p>水的多样形态，自然的美丽表达</p>
     </div>
-    <!--<span style="position: absolute;bottom: 30px; left: 0;">施华洛世奇系列<br>高级空间，精致与奢华共鸣</span>-->
 </div>
-<div class="solum" style="text-align: center">
-    <p>
-        <label style="font-size:24px; font-weight:bolder; color:#666;">以调光、色调丰富多彩的表现水晶玻璃</label>
-    </p>
-    <br>
-    <div style="margin:0 auto;width: 500px;text-align: center">
-        <p> 为了营造舒适的生活环境，还需要为每个生活场景提供最佳的色彩和亮度。
-            灯泡颜色的华丽灯光也是一般的水晶玻璃照明，调光/调色控制，
-            表达适合那种场合的各种发光。 如果您连接了照明，则总共控制空间的总光。
-            只需一个遥控器即可轻松再现华丽的氛围和清新的氛围。
+
+<div class="solum" style="text-align:center;">
+    <div style="margin:10px auto;width: 400px;">
+        <span style="font-size:20px;">产品介绍</span><br><br>
+        <p>
+            在各种环境气候，四季变换期间，在我们身边存在的水同时改变其外观。
+            它通过自然界产生的各种现象来表达其美丽的面部表情。
+            请享受充满空气感的许多灯光
         </p>
     </div>
+    <video width="1200px" controls autoplay="autoplay">
+        <!--网络视频-->
+        <!--http://www.uichange.com/ums3-share/odelic/aqua.mp4-->
+        <!--本地视频-->
+        <!--./star/aqua.mp4-->
+        <source src="http://www.uichange.com/ums3-share/odelic/aqua.mp4" type="video/mp4">
+        <!--<source src="/web-ssm/upload/${path}" type="video/mp4">-->
+        <!--<source src="movie.ogg" type="video/ogg">-->
+        您的浏览器不支持Video标签。
+    </video>
+    <br/>
 </div>
 <div class="solum">
-    <div><img src="./star/swrski_scene_1.jpg" alt=""></div>
-    <br/>
-    <p> 施华洛世奇®水晶闪耀着明亮的水晶光芒。
-        在镜面顶板上反射放大的闪光是华丽无处不在的奢华空间的象征。
-        此外，还可以通过调光/调色功能来产生适应场景的照明。</p>
+    <div class="ad">
+        <ul class="slider">
+            <li><img src="star/water1.jpg" alt=""/></li>
+            <li><img src="star/water2.jpg" alt=""/></li>
+            <li><img src="star/water3.jpg" alt=""/></li>
+        </ul>
+        <!--<ul class="num"></ul>-->
+        <div class="btn btn_l">&lt;</div>
+        <div class="btn btn_r">&gt;</div>
+    </div>
 </div>
 <div class="solum">
     <div><img src="./star/swrski_scene_2.jpg" alt=""></div>
