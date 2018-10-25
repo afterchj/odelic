@@ -1,0 +1,77 @@
+.ad {
+    clear: both;
+    width: 1200px;
+    height: 450px;
+    margin: 5px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.ad .slider {
+    width: 12000px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.ad .slider img {
+    width: 1200px;
+    height: 450px;
+}
+
+.ad .slider li {
+    float: left;
+}
+
+.ad .num {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 48%;
+    text-align: center;
+    font-size: 0px;
+}
+
+.ad .num li {
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 3px;
+    cursor: pointer;
+}
+
+.ad .num li.on {
+    background-color: #ff6a00;
+}
+
+.ad .btn {
+    width: 30px;
+    height: 50px;
+    background-color: #808080;
+    opacity: 0.5;
+    filter: alpha(opacity:0.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    color: #fff;
+    font-family: "宋体";
+    display: none;
+}
+
+.ad .btn_l {
+    left: 0px;
+}
+
+.ad .btn_r {
+    right: 0px;
+}
+
+.ad:hover .btn {
+    display: block;
+}

@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>宴会住宿花园</title>
+
+    <!--<link type="text/css" href="./css/jquery.jslides.css" rel="stylesheet" media="screen">-->
+
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.SuperSlide.2.1.2.js"></script>
+
+    <!--header right footer-->
+    <script type="text/javascript" src="js/nav.js"></script>
+    <link type="text/css" href="css/base.css" rel="stylesheet">
+    <link type="text/css" href="css/page.css" rel="stylesheet">
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <!--header right footer-->
+
+    <link type="text/css" href="css/commercial3_css.css" rel="stylesheet">
+    <link type="text/css" href="css/comm3.banner.css" rel="stylesheet">
+
+
+    <style type="text/css">
+        .top_switch ul li{
+            width: 300px;
+            height: 50px;
+            list-style: none;
+            float: left;
+        }
+
+        /*---------*/
+        .comm3_show_pic ul li{
+            width:1200px;
+            height:400px;
+            /*padding-left: 20px;*/
+            list-style: none;
+            float: left;
+        }
+
+        .comm3_show_pic ul li img{
+            width:200px;
+            height:200px;
+            clear: both;
+            display: block;
+            margin:0px auto;
+        }
+
+        .comm3_xinghao{
+            font-size: 16px;
+            margin-top: 30px;
+            margin-left: 500px;
+        }
+        .comm3_price{
+            font-size: 12px;
+            margin-left: 500px;
+        }
+    </style>
+
+</head>
+
+
+<body>
+<!---------------------------header-------------------------------->
+<div th:include="layout/header::header"></div>
+
+<p class="spacegap"></p>
+
+<!------------------------------顶部标题------------------------------------->
+<p class="comm3_title">酒店-宴会住宿花园</p>
+
+<div class="comm3_desc">位于山形县永井市的宴会厅。
+    入口处的枝形吊灯散发出梦幻般的光芒。
+    二楼的宴会厅通过间接照明、调光调色来演绎各种场景。
+    此外，我们在圆顶天花板上随机使用LED筒灯来模拟星空。
+</div>
+
+
+<!------------------------------轮播------------------------------------->
+<div class="comm3_banner" id="comm2_switch">
+    <div class="top_switch">
+        <ul>
+            <li id="top_switch01">
+                <div>宴会厅</div>
+            </li>
+            <li id="top_switch02">
+                <div>外观大堂</div>
+            </li>
+            <li id="top_switch03">
+                <div>房间餐厅</div>
+            </li>
+            <li id="top_switch04">
+                <div>楼梯过道</div>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="content_banner">
+        <div class="content1" id="content1">
+            <div class="content_banner1" id="content_banner1">
+                <div id="content_banner1_div">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo01.jpg" style="display: block">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo02.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo03.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo04.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo05.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo06.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo07.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo08.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo09.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_photo01.jpg">
+                </div>
+            </div>
+            <ul>
+                <li style="background: #CC0000">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo01.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo02.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo03.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo04.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo05.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo06.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo07.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo08.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/1宴会厅/01_s_photo09.jpg">
+                </li>
+            </ul>
+        </div>
+
+        <div class="content2" id="content2">
+            <div class="content_banner2" id="content_banner2">
+                <div id="content_banner2_div">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_photo01.jpg" style="display: block">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_photo02.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_photo03.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_photo04.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_photo05.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_photo06.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_photo01.jpg">
+                </div>
+            </div>
+            <ul>
+                <li style="background: #CC0000">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_s_photo01.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_s_photo02.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_s_photo03.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_s_photo04.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_s_photo05.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/2外观大堂/02_s_photo06.jpg">
+                </li>
+            </ul>
+        </div>
+
+        <div class="content3" id="content3">
+            <div class="content_banner3" id="content_banner3">
+                <div id="content_banner3_div">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_photo01.jpg" style="display: block">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_photo02.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_photo03.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_photo04.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_photo05.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_photo01.jpg">
+                </div>
+            </div>
+            <ul>
+                <li style="background: #CC0000">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_s_photo01.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_s_photo02.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_s_photo03.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_s_photo04.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/3房间餐厅/03_s_photo05.jpg">
+                </li>
+            </ul>
+        </div>
+
+        <div class="content4" id="content4">
+            <div class="content_banner4" id="content_banner4">
+                <div id="content_banner4_div">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo01.jpg" style="display: block">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo02.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo03.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo04.jpg">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo01.jpg">
+                </div>
+            </div>
+            <ul>
+                <li style="background: #CC0000">
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo01.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo02.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo03.jpg">
+                </li>
+                <li>
+                    <img src="./images/商用案例/1酒店/4宴会住宿花园/图片/4楼梯过道/04_photo04.jpg">
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!---------------------------展示图-------------------------->
+<p class="spacegap"></p>
+<div class="comm3_show_pic">
+    <div class="comm3_title">采用产品</div>
+    <ul>
+        <li>
+            <img src="./images/商用案例/1酒店/4宴会住宿花园/采用产品/MAIN_OB255028LD.jpg">
+            <div class="comm3_xinghao">型号：OB255028LD</div>
+            <div class="comm3_price">价格：498,000</div>
+        </li>
+    </ul>
+</div>
+<p class="spacegap"></p>
+<div class="comm3_xiadan">我要下单</div>
+
+</div>
+
+<p class="spacegap"></p>
+<p class="spacegap"></p>
+
+
+<!--------------------------right---------------------->
+<div th:include="layout/right::right"></div>
+
+
+<!-------------------------footer------------------------------>
+<div th:include="layout/footer::footer"></div>
+
+
+<!------------------------------顶部轮播图布局JS------------------------------------->
+<script type="text/javascript">
+
+    function sendParam1(c1) {
+        document.getElementById('content_banner1_div').style.width = ((c1+1) * 1200)+"px";
+        var c = 0;
+
+        function autorun() {
+            c = c + 1;
+            if (c == (c1 + 1)) {
+                c = 1;
+                $("#content_banner1 div").css({"left": 0})
+            }
+            console.log(c);
+            $("#content_banner1 div").animate({"left": c * -1200}, 300)
+
+            for (var i = 0; i < c1; i++) {
+                document.getElementById('content1').getElementsByTagName("li")[i].style.background = "#DDDDDD";
+            }
+
+            if (c == c1) {
+                document.getElementById('content1').getElementsByTagName("li")[0].style.background = "#CC0000";
+            } else {
+                document.getElementById('content1').getElementsByTagName("li")[c].style.background = "#CC0000";
+            }
+
+        }
+
+        var timer = setInterval(autorun, 2500)
+
+        $("#content1").mouseleave(function () {
+            timer = setInterval(autorun, 2500);
+        });
+        $("#content1").mouseenter(function () {
+            clearInterval(timer);
+        });
+
+        $("#content1 ul li").mouseenter(function () {
+            c = $(this).index();
+            $("#content_banner1 div").css({"left": c * -1200})
+
+            for (var i = 0; i < c1; i++) {
+                document.getElementById('content1').getElementsByTagName("li")[i].style.background = "#DDDDDD";
+            }
+
+            if (c == c1) {
+                document.getElementById('content1').getElementsByTagName("li")[0].style.background = "#CC0000";
+            } else {
+                document.getElementById('content1').getElementsByTagName("li")[c].style.background = "#CC0000";
+            }
+        });
+    }
+
+
+    function sendParam2(c1) {
+        document.getElementById('content_banner2_div').style.width=((c1+1) * 1200)+"px";
+        var c=0;
+
+        function autorun() {
+            c=c+1;
+            if(c==(c1+1)){
+                c=1;
+                $("#content_banner2 div").css({"left":0})
+            }
+            console.log(c);
+            $("#content_banner2 div").animate({"left":c*-1200},300)
+
+            for(var i=0; i<c1;i++){
+                document.getElementById('content2').getElementsByTagName("li")[i].style.background="#DDDDDD";
+            }
+
+            if(c==c1){
+                document.getElementById('content2').getElementsByTagName("li")[0].style.background="#CC0000";
+            }else {
+                document.getElementById('content2').getElementsByTagName("li")[c].style.background="#CC0000";
+            }
+
+        }
+
+        var timer =setInterval(autorun,2500)
+
+        $("#content2").mouseleave(function () {
+            timer =setInterval(autorun,2500);
+        });
+        $("#content2").mouseenter(function ( ) {
+            clearInterval(timer);
+        });
+
+        $("#content2 ul li").mouseenter(function () {
+            c=$(this).index();
+            $("#content_banner2 div").css({"left":c*-1200})
+
+            for(var i=0; i<c1;i++){
+                document.getElementById('content2').getElementsByTagName("li")[i].style.background="#DDDDDD";
+            }
+
+            if(c==c1){
+                document.getElementById('content2').getElementsByTagName("li")[0].style.background="#CC0000";
+            }else {
+                document.getElementById('content2').getElementsByTagName("li")[c].style.background="#CC0000";
+            }
+        });
+    }
+
+    function sendParam3(c1,banner) {
+        document.getElementById('content_banner3_div').style.width=((c1+1) * 1200)+"px";
+        var c=0;
+
+        function autorun() {
+            c=c+1;
+            if(c==(c1+1)){
+                c=1;
+                $("#content_banner3 div").css({"left":0})
+            }
+            console.log(c);
+            $("#content_banner3 div").animate({"left":c*-1200},300)
+
+            for(var i=0; i<c1;i++){
+                document.getElementById('content3').getElementsByTagName("li")[i].style.background="#DDDDDD";
+            }
+
+            if(c==c1){
+                document.getElementById('content3').getElementsByTagName("li")[0].style.background="#CC0000";
+            }else {
+                document.getElementById('content3').getElementsByTagName("li")[c].style.background="#CC0000";
+            }
+
+        }
+
+        var timer =setInterval(autorun,2500)
+
+        $("#content3").mouseleave(function () {
+            timer =setInterval(autorun,2500);
+        });
+        $("#content3").mouseenter(function ( ) {
+            clearInterval(timer);
+        });
+
+        $("#content3 ul li").mouseenter(function () {
+            c=$(this).index();
+            $("#content_banner3 div").css({"left":c*-1200})
+
+            for(var i=0; i<c1;i++){
+                document.getElementById('content3').getElementsByTagName("li")[i].style.background="#DDDDDD";
+            }
+
+            if(c==c1){
+                document.getElementById('content3').getElementsByTagName("li")[0].style.background="#CC0000";
+            }else {
+                document.getElementById('content3').getElementsByTagName("li")[c].style.background="#CC0000";
+            }
+        });
+    }
+
+    function sendParam4(c1,banner) {
+        document.getElementById('content_banner4_div').style.width=((c1+1) * 1200)+"px";
+        var c=0;
+
+        function autorun() {
+            c=c+1;
+            if(c==(c1+1)){
+                c=1;
+                $("#content_banner4 div").css({"left":0})
+            }
+            console.log(c);
+            $("#content_banner4 div").animate({"left":c*-1200},300)
+
+            for(var i=0; i<c1;i++){
+                document.getElementById('content4').getElementsByTagName("li")[i].style.background="#DDDDDD";
+            }
+
+            if(c==c1){
+                document.getElementById('content4').getElementsByTagName("li")[0].style.background="#CC0000";
+            }else {
+                document.getElementById('content4').getElementsByTagName("li")[c].style.background="#CC0000";
+            }
+
+        }
+
+        var timer =setInterval(autorun,2500)
+
+        $("#content4").mouseleave(function () {
+            timer =setInterval(autorun,2500);
+        });
+        $("#content4").mouseenter(function ( ) {
+            clearInterval(timer);
+        });
+
+        $("#content4 ul li").mouseenter(function () {
+            c=$(this).index();
+            $("#content_banner4 div").css({"left":c*-1200})
+
+            for(var i=0; i<c1;i++){
+                document.getElementById('content4').getElementsByTagName("li")[i].style.background="#DDDDDD";
+            }
+
+            if(c==c1){
+                document.getElementById('content4').getElementsByTagName("li")[0].style.background="#CC0000";
+            }else {
+                document.getElementById('content4').getElementsByTagName("li")[c].style.background="#CC0000";
+            }
+        });
+    }
+
+
+
+    sendParam1(9);
+    sendParam2(6);
+    sendParam3(5);
+    sendParam4(4);
+
+
+
+    function initView(){
+        document.getElementById('top_switch01').style.background="#c2c2c2";
+        document.getElementById('top_switch02').style.background="#fff";
+        document.getElementById('top_switch03').style.background="#fff";
+        document.getElementById('top_switch04').style.background="#fff";
+        document.getElementById('content1').style.display="block";
+        document.getElementById('content2').style.display="none";
+        document.getElementById('content3').style.display="none";
+        document.getElementById('content4').style.display="none";
+
+    };
+    initView();
+
+
+    $("#top_switch01").click(function () {
+        document.getElementById('top_switch01').style.background="#c2c2c2";
+        document.getElementById('top_switch02').style.background="#fff";
+        document.getElementById('top_switch03').style.background="#fff";
+        document.getElementById('top_switch04').style.background="#fff";
+        document.getElementById('content1').style.display="block";
+        document.getElementById('content2').style.display="none";
+        document.getElementById('content3').style.display="none";
+        document.getElementById('content4').style.display="none";
+    });
+    $("#top_switch02").click(function () {
+        document.getElementById('top_switch01').style.background="#fff";
+        document.getElementById('top_switch02').style.background="#c2c2c2";
+        document.getElementById('top_switch03').style.background="#fff";
+        document.getElementById('top_switch04').style.background="#fff";
+        document.getElementById('content1').style.display="none";
+        document.getElementById('content2').style.display="block";
+        document.getElementById('content3').style.display="none";
+        document.getElementById('content4').style.display="none";
+    });
+    $("#top_switch03").click(function () {
+        document.getElementById('top_switch01').style.background="#fff";
+        document.getElementById('top_switch02').style.background="#fff";
+        document.getElementById('top_switch03').style.background="#c2c2c2";
+        document.getElementById('top_switch04').style.background="#fff";
+        document.getElementById('content1').style.display="none";
+        document.getElementById('content2').style.display="none";
+        document.getElementById('content3').style.display="block";
+        document.getElementById('content4').style.display="none";
+    });
+    $("#top_switch04").click(function () {
+        document.getElementById('top_switch01').style.background="#fff";
+        document.getElementById('top_switch02').style.background="#fff";
+        document.getElementById('top_switch03').style.background="#fff";
+        document.getElementById('top_switch04').style.background="#c2c2c2";
+        document.getElementById('content1').style.display="none";
+        document.getElementById('content2').style.display="none";
+        document.getElementById('content3').style.display="none";
+        document.getElementById('content4').style.display="block";
+    });
+
+
+</script>
+
+</body>
+</html>
