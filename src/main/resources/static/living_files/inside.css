@@ -263,7 +263,7 @@
 .socmlm{ margin:15px 0 20px 0;}
 .soc1{ padding:18px 70px 28px 20px;border: solid 1px #e1e1e1; margin:12px auto 50px auto;color: #6e6e6e; font-size:14px;}
 .soc1r{width: 1041px;}
-.soc2m{border: solid 1px #e1e1e1;width:280px; margin:15px 15px 0 0; float:left;}
+.soc2m{border: solid 1px #e1e1e1;width:280px; margin:15px 0 0 15px; float:left;}
 .soc2m .pic img{max-width:100%;}
 .soc2mt{margin:0 20px 10px 20px;line-height:24px;height:48px;overflow:hidden;}
 .soc2mt a{text-align:left !important;color:#333;display:inline !important;}
