@@ -8,9 +8,10 @@
     <title>AQUA系列</title>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
-    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/star.js"></script>
     <link type="text/css" href="./css/base.css" rel="stylesheet">
     <link type="text/css" href="./mycss/common.css" rel="stylesheet">
+    <link type="text/css" href="./mycss/lunbo.css" rel="stylesheet">
     <link type="text/css" href="./mycss/mybase.css" rel="stylesheet">
     <link type="text/css" href="./mycss/mypage.css" rel="stylesheet">
     <link type="text/css" href="./living_files/inside.css" rel="stylesheet">
@@ -23,11 +24,6 @@
             width: 240px;
             height: 90px;
             /*margin-bottom: 20px;*/
-        }
-
-        .solum img {
-            width: 1200px;
-            height: 485px;
         }
     </style>
 </head>
@@ -64,7 +60,7 @@
 </div>
 
 <div class="solum" style="text-align:center;">
-    <div style="width: 400px;">
+    <div style="margin:10px auto;width: 400px;">
         <span style="font-size:20px;">产品介绍</span><br><br>
         <p>
             在各种环境气候，四季变换期间，在我们身边存在的水同时改变其外观。
@@ -85,11 +81,16 @@
     <br/>
 </div>
 <div class="solum">
-    <div><img src="./star/swrski_scene_1.jpg" alt=""></div>
-    <br/>
-    <p> 施华洛世奇®水晶闪耀着明亮的水晶光芒。
-        在镜面顶板上反射放大的闪光是华丽无处不在的奢华空间的象征。
-        此外，还可以通过调光/调色功能来产生适应场景的照明。</p>
+    <div class="ad">
+        <ul class="slider">
+            <li><img src="star/water1.jpg" alt=""/></li>
+            <li><img src="star/water2.jpg" alt=""/></li>
+            <li><img src="star/water3.jpg" alt=""/></li>
+        </ul>
+        <!--<ul class="num"></ul>-->
+        <div class="btn btn_l">&lt;</div>
+        <div class="btn btn_r">&gt;</div>
+    </div>
 </div>
 <div class="solum">
     <div><img src="./star/swrski_scene_2.jpg" alt=""></div>
