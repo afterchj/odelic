@@ -10,8 +10,8 @@
     <title>关于我们</title>
     <link rel="stylesheet" href="/static/mj/cs/reset.css"> <!-- CSS reset -->
     <link rel="stylesheet" href="/static/mj/cs/style.css"> <!-- Resource style -->
-    <link href="/static/mj/css/base2.css" rel="stylesheet" type="text/css"/>
-    <!--<link type="text/css" href="../css/base.css" rel="stylesheet"> &lt;!&ndash;导航&ndash;&gt;-->
+    <!--<link href="/static/mj/css/base2.css" rel="stylesheet" type="text/css"/>-->
+    <link type="text/css" href="../css/base.css" rel="stylesheet"> <!--导航-->
     <!--<link type="text/css" href="../css/page.css" rel="stylesheet"> &lt;!&ndash;导航&ndash;&gt;-->
     <link href="/static/mj/css/page.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>
@@ -19,63 +19,13 @@
     <link href="/static/mj/css/style.css" rel="stylesheet" type="text/css"/><!--时间轴-->
     <link href="/static/mj/css/aboutus.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript" src="/static/mj/daohang/js/jquery.min.js"></script>
-    <style>
-        /*.nav {*/
-            /*float: right;*/
-            /*_display: inline;*/
-        /*}*/
-        /*b {*/
-            /*font-weight: 700;*/
-        /*}*/
-        /*.newFooter{background:#828485!important;}*/
-        /*.nyBanner01 .hd{position:absolute;z-index:10;bottom:15px;text-align:center;width:100%;}*/
-    </style>
     <script src="/static/mj/js/jquery-1.8.3.js"></script>
-    <script>
-
-//        $(function(){
-//            var start=$(".p_start").offset().top;
-//            var end=$(".p_end").offset().top;
-//            var line=(end-start);
-//            var style='';
-//            if ($("style").hasClass("myStyle")){
-//                $(".myStyle").html('#cd-timeline::before{height: '+line+'px;}');
-//            }else {
-//                style = '<style class="myStyle">#cd-timeline::before{height: '+line+'px;}</style>';
-//                $("head").append(style);
-//            }
-//            //监听 浏览器窗口大小的变化事件
-//            $(window).resize(function () {
-//                start=$(".start").offset().top;
-//                end=$(".end").offset().top;
-//                line=((end-start)+200);
-//                $(".myStyle").html('#cd-timeline::before{height: '+line+'px;}');
-//            });
-//        });
-    </script>
 </head>
 <body>
 
 <div th:include="layout/header::header"></div>
 
 <!--<div class="banner" data-image-lg="./static/img/banner02.jpg"></div>-->
-<style>
-
-    /*.bannerbox {*/
-        /*margin: 0 auto;*/
-        /*position:relative;*/
-        /*overflow:hidden;*/
-        /*height:600px;*/
-    /*}*/
-    /*.banner {*/
-        /*width:2000px; !*图片宽度*!*/
-        /*position:absolute;*/
-        /*left:50%;*/
-        /*margin-left:-1000px; !*图片宽度的一半*!*/
-        /*height: 600px;*/
-    /*}*/
-</style>
-
 <div class="bannerbox" style="font-family: none;">
     <div class="banner">
         <img src="/static/mj/img/aboutus_01.png">
@@ -90,7 +40,6 @@
 <div th:include="layout/right::right"></div>
 <div class="about" id="aboutUs" style="margin-top: -8%">
     <div class="wrapper">
-        <!--<h2 class="f30" style="margin-top: 1%">企业介绍</h2>-->
         <h2 class="f30"><strong style="font-weight: bolder">|</strong>&nbsp;企业介绍</h2>
     </div>
     <div class="aboutBox">
@@ -99,9 +48,6 @@
                 <ul>
                     <li class="clearfix" style="display: block">
                         <div class="con clearfix">
-                            <!--<div class="pic">-->
-                                <!--<img src="./static/img/about01.jpg">-->
-                            <!--</div>-->
                             <div class="wenz">
                                 <div class="table">
                                     <div class="table-cell">
@@ -111,7 +57,6 @@
                                 </div>
                             </div>
                             <div class="pic">
-                                <!--<img src="./static/img/about01.jpg">-->
                                 <img src="/static/mj/img/aboutus_04.png">
                             </div>
                         </div>
@@ -132,10 +77,8 @@
         <p class="p_start"></p>
         <div class="cd-timeline-block" th:each="timeShaftList:${timeShaftLists}">
             <div class="cd-timeline-img">
-                <!--<img src="./static/img/cd-icon-location.svg" alt="Location">-->
                 <p class="cirl start"></p>
-            </div> <!-- cd-timeline-img -->
-
+            </div>
             <div class="cd-timeline-content">
                 <h2 th:text="${timeShaftList.year}+'年'+${timeShaftList.month}+'月'"></h2>
                 <p th:text="${timeShaftList.intro}"></p>
@@ -143,39 +86,8 @@
                 <!--<span class="cd-date">1月28日</span>-->
             </div> <!-- cd-timeline-content -->
         </div> <!-- cd-timeline-block -->
-
-        <!--<div class="cd-timeline-block">-->
-            <!--<div class="cd-timeline-img cd-picture">-->
-                <!--&lt;!&ndash;<img src="./static/img/cd-icon-location.svg" alt="Location">&ndash;&gt;-->
-                <!--<p class="cirl start"></p>-->
-            <!--</div> &lt;!&ndash; cd-timeline-img &ndash;&gt;-->
-
-            <!--<div class="cd-timeline-content">-->
-                <!--<h2>2013年7月1日</h2>-->
-                <!--<p>继大阪证券交易所和东京证券交易所合并后，在东京证券交易所（JASDAQ市场）上市</p>-->
-                <!--&lt;!&ndash;<a href="#0" class="cd-read-more">查看详情</a>&ndash;&gt;-->
-                <!--&lt;!&ndash;<span class="cd-date">1月28日</span>&ndash;&gt;-->
-            <!--</div> &lt;!&ndash; cd-timeline-content &ndash;&gt;-->
-        <!--</div> &lt;!&ndash; cd-timeline-block &ndash;&gt;-->
         <p class="p_end"></p>
     </section> <!-- cd-timeline -->
-<style>
-    /*.cirl{*/
-        /*display: block;*/
-        /*width: 14px;*/
-        /*height: 14px;*/
-        /*background: #227AF1;*/
-        /*-moz-border-radius: 7px;!**兼容火狐浏览器*!*/
-        /*-webkit-border-radius: 7px;!**兼容苹果；谷歌，等一些浏览器认*!*/
-        /*-o-border-radius: 7px;!**兼容opera浏览器*!*/
-        /*border-radius: 7px;*/
-        /*margin-left: -7px;*/
-        /*margin-top: -10px;*/
-        /*position: relative;*/
-        /*left: 50%;*/
-        /*top: 50%;*/
-    /*}*/
-</style>
 <!--<div class="content">-->
     <!--<div class="wrapper">-->
         <!--&lt;!&ndash;<h2 class="f30" style="margin-left: 2%">发展历程</h2>&ndash;&gt;-->
@@ -226,29 +138,8 @@
 <!--</div>-->
 
 <div th:include="layout/footer::footer"></div>
-
-
-<!--<script type="text/javascript" src="./static/js/jquery.min.js"></script>-->
-<!--<script type="text/javascript" src="./static/js/aboutus2.js"></script>-->
-
-<!--<script>-->
-
-    <!--$(function () {-->
-        <!--$(".year").toggleClass("close");-->
-        <!--$(".main .year h2 a").append("<i></i>");-->
-    <!--});-->
-    <!--$(".main .year .list").each(function (e, target) {-->
-        <!--var $target = $(target),-->
-                <!--$ul = $target.find("ul");-->
-        <!--$target.height($ul.outerHeight()), $ul.css("position", "absolute");-->
-    <!--});-->
-    <!--$(".main .year>h2>a").click(function (e) {-->
-        <!--e.preventDefault();-->
-        <!--$(this).parents(".year").toggleClass("close");-->
-    <!--});-->
-<!--</script>-->
 <script src="/static/mj/js/jquery.min.js"></script>
-<script src="/static/mj/js/main.js"></script> <!-- Resource jQuery -->
+<script src="/static/mj/js/main.js"></script>
 <script src="/static/mj/daohang/js/nav.js"></script>
 <script src="/static/mj/js/aboutus.js"></script>
 </body>
