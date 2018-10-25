@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 <!-- saved from url=(0040)http://www.opple.com.cn/solution/?tid=14 -->
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
@@ -16,6 +15,11 @@
     <link type="text/css" href="./mycss/mypage.css" rel="stylesheet">
     <link type="text/css" href="./living_files/inside.css" rel="stylesheet">
     <style type="text/css">
+
+        .aqua {
+            display: none;
+        }
+
         .lmbg li {
             margin-right: 20px;
         }
@@ -25,7 +29,44 @@
             height: 90px;
             /*margin-bottom: 20px;*/
         }
+
+        .spect {
+            border-bottom: 1px solid blue;
+        }
+
+        .mystar {
+            margin: 20px auto 10px auto;
+            width: 400px;
+            height: 80px;
+        }
+
+        .mystar li {
+            float: left;
+            list-style: none;
+            color: blue;
+            height: 30px;
+            margin-right: 50px;
+            font-size: x-large;
+        }
     </style>
+    <script type="text/javascript">
+//        $(function () {
+//            $("#aqua1").removeClass("aqua");
+//            $(".mystar li").click(function () {
+//                $(this).siblings('li').removeClass('spect');  // 删除其他兄弟元素的样式
+//                $(this).addClass('spect');  // 添加当前元素的样式
+//            });
+//        });
+//        function showAu(id) {
+//            for (var i = 1; i < 4; i++) {
+//                if (id == i) {
+//                    $("#aqua" + id).removeClass("aqua");
+//                } else {
+//                    $("#aqua" + i).addClass("aqua");
+//                }
+//            }
+//        }
+    </script>
 </head>
 <body>
 <div th:include="layout/header::header"></div>
@@ -80,82 +121,140 @@
     </video>
     <br/>
 </div>
-<div class="solum">
-    <div class="ad">
-        <ul class="slider">
-            <li><img src="star/water1.jpg" alt=""/></li>
-            <li><img src="star/water2.jpg" alt=""/></li>
-            <li><img src="star/water3.jpg" alt=""/></li>
+<div class="solum" style="text-align:center;">
+    <div class="mystar">
+        <ul>
+            <li class="spect" onclick="showAu(1)">Water</li>
+            <li onclick="showAu(2)">Ice</li>
+            <li onclick="showAu(3)">Mist</li>
         </ul>
-        <!--<ul class="num"></ul>-->
-        <div class="btn btn_l">&lt;</div>
-        <div class="btn btn_r">&gt;</div>
     </div>
 </div>
-<div class="solum">
-    <div><img src="./star/swrski_scene_2.jpg" alt=""></div>
-    <br/>
-    <p> 透明水晶，精致切割，带来美丽的彩虹光泽。</p>
+<!--1-->
+<div id="aqua1" class="aqua">
+    <div class="solum">
+        <div class="ad">
+            <ul class="slider">
+                <li><img src="star/water1.jpg" alt=""/></li>
+                <li><img src="star/water2.jpg" alt=""/></li>
+                <li><img src="star/water3.jpg" alt=""/></li>
+            </ul>
+            <!--<ul class="num"></ul>-->
+            <div class="btn btn_l">&lt;</div>
+            <div class="btn btn_r">&gt;</div>
+        </div>
+    </div>
+    <div class="solum" style="text-align:center;">
+        <div style="margin:10px auto;width: 400px;">
+            <span style="font-size:20px;">细节尽显品质</span><br><br>
+            <p>
+                透明的形状切断了宁静的水和闪闪发光的表达
+                天花板和墙壁上反射的阴影舒适度散布在空间中
+            </p>
+        </div>
+        <div><img src="./star/water细节.jpg" alt=""></div>
+    </div>
 </div>
-<div class="solum">
-    <div><img src="./star/swrski_scene_3.jpg" alt=""></div>
-    <br/>
-    <p> 施华洛世奇®水晶的闪耀，洒下一滴光。
-        生活在简约设计中的极致光芒将空间变成奢华。
-    </p>
+<!--2-->
+<div id="aqua2" class="aqua">
+    <div class="solum">
+        <div class="ad">
+            <ul class="slider">
+                <li><img src="star/ice1.jpg" alt=""/></li>
+                <li><img src="star/ice2.jpg" alt=""/></li>
+                <li><img src="star/ice3.jpg" alt=""/></li>
+            </ul>
+            <!--<ul class="num"></ul>-->
+            <div class="btn btn_l">&lt;</div>
+            <div class="btn btn_r">&gt;</div>
+        </div>
+    </div>
+    <div class="solum" style="text-align:center;">
+        <div style="margin:10px auto;width: 400px;">
+            <span style="font-size:20px;">细节尽显品质</span><br><br>
+            <p>
+                透明的形状切断了宁静的水和闪闪发光的表达
+                天花板和墙壁上反射的阴影舒适度散布在空间中
+            </p>
+        </div>
+        <div><img src="./star/ice细节.jpg" alt=""></div>
+    </div>
 </div>
-
+<!--3-->
+<div id="aqua3" class="aqua">
+    <div class="solum">
+        <div class="ad">
+            <ul class="slider">
+                <li><img src="star/mist1.jpg" alt=""/></li>
+                <li><img src="star/mist2.jpg" alt=""/></li>
+                <li><img src="star/mist3.jpg" alt=""/></li>
+            </ul>
+            <!--<ul class="num"></ul>-->
+            <div class="btn btn_l">&lt;</div>
+            <div class="btn btn_r">&gt;</div>
+        </div>
+    </div>
+    <div class="solum" style="text-align:center;">
+        <div style="margin:10px auto;width: 400px;">
+            <span style="font-size:20px;">细节尽显品质</span><br><br>
+            <p>
+                透明的形状切断了宁静的水和闪闪发光的表达
+                天花板和墙壁上反射的阴影舒适度散布在空间中
+            </p>
+        </div>
+        <div><img src="./star/mist细节.jpg" alt=""></div>
+    </div>
+</div>
 <!--<div class="solu wrapper clearfix" style="clear:both">-->
 <div class="wntj" style="margin-top:100px;">
     <div class="sertit">为你推荐</div>
     <br/>
     <div class="soc2 clearfix">
         <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2069"><img
-                    src="./living_files/1466847630.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>
-            </div>
-            <div class="soc2mm">功率（W）：116.5<br>
+            <div class="pic"><a href="#"><img src="./star/img_water_OL291347.jpg" alt=""></a></div>
+            <!--<div class="soc2mt"><a-->
+            <!--href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>-->
+            <!--</div>-->
+            <div class="soc2mm">
+                功率（W）：116.5<br>
                 规格尺寸(Mm)：Φ1000*360<br>
-                应用空间：客厅
+                价格-型号
             </div>
         </div>
         <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2580"><img
-                    src="./living_files/1451385080.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>
-            </div>
-            <div class="soc2mm">功率（W）：135<br>
+            <div class="pic"><a href="#"><img src="./star/img_ice_OP252543LD.jpg" alt=""></a></div>
+            <!--<div class="soc2mt"><a-->
+            <!--href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>-->
+            <!--</div>-->
+            <div class="soc2mm">
+                功率（W）：135<br>
                 规格尺寸(Mm)：Φ1030*1100<br>
-                应用空间：客厅
+                价格-型号
             </div>
         </div>
         <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2574"><img
-                    src="./living_files/1447916958.jpg" alt=""></a></div>
-            <div class="soc2mt"><a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>
-            </div>
+            <div class="pic"><a href="#"><img src="./star/img_water_OB255191LD.jpg" alt=""></a></div>
+            <!--<div class="soc2mt">-->
+                <!--<a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>-->
+            <!--</div>-->
             <div class="soc2mm">功率（W）：100<br>
                 规格尺寸(Mm)：Φ 1000*545<br>
-                应用空间：客厅
+                价格-型号
             </div>
         </div>
         <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2582"><img
-                    src="./living_files/1466762897.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a>
-            </div>
+            <div class="pic"><a href="#"><img src="./star/img_mist_OP252547LD.jpg" alt=""></a></div>
+            <!--<div class="soc2mt"><a-->
+                    <!--href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a>-->
+            <!--</div>-->
             <div class="soc2mm">功率（W）：117<br>
                 规格尺寸(Mm)：Φ970*291<br>
-                应用空间：客厅
+                价格-型号
             </div>
         </div>
     </div>
     <!--</div>-->
-    <div><a class="button" href="#" target="_blank">查看更多</a></div>
+    <div><a class="button" href="product" target="_blank">更多</a></div>
 </div>
 </div>
 <div th:include="layout/footer::footer"></div>
