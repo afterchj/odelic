@@ -151,7 +151,7 @@ a:hover .show{display:none;}
 
 .pro_detail_3{padding:45px 0;}
 .pro_detail_3 li{margin-top:40px;float:left;width:33.333%;}
-.box{width:auto !important;height:auto !important;padding:0;}
+.box{height:auto !important;padding:0;}
 .pro_detail_3 dd,.pro_detail_3 dt{font-size:14px;line-height:30px;color:#000;float:left;}
 .pro_detail_3 dt{width:105px;}
 .pro_detail_4{}

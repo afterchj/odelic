@@ -1,0 +1,356 @@
+*{ margin:0; padding:0}
+
+/*---------------------------顶部标题栏-----------------------------------*/
+.comm3_banner{
+    width: 960px;
+    margin:0px auto;
+}
+
+.top_switch{
+    width:960px;
+    margin: 0px auto;
+}
+.top_switch ul li{
+    width: 240px;
+    height: 50px;
+    list-style: none;
+    float: left;
+}
+.top_switch ul li:hover{
+    background:#fff;box-shadow:0px -2px 16px 0px rgba(0,0,0,.4);
+}
+.top_switch ul li div{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.comm2_switch ul li div{
+    display:block;color:#0046aa;font-size:14px;line-height:40px;
+    background:#f2f2f2;text-align:center;text-decoration: none;
+}
+
+/*------------------------------底部轮播图1----------------------------------*/
+.content1{
+    clear: both;
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.content_banner1{
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+    /*border: 2px solid red;*/
+    overflow: hidden;
+
+
+    background: #202020;
+}
+.content_banner1 div{
+    width: 3840px;
+    height: 640px;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.content_banner1 img{
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner1  .banner1_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
+    float: left;
+}
+.content1 ul{
+    position: absolute;
+    right: 60px;
+    bottom: -22px;
+}
+.content1 ul li{
+    width: 48px;
+    height: 48px;
+    background: #DDDDDD;
+    /*border: 2px solid #DDDDDD;*/
+    list-style: none;
+    float: left;
+    margin-right: 8px;
+    /*border-radius: 50%;*/
+}
+
+.content1 ul li img{
+    width: 44px;
+    height: 44px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+
+
+/*2----------------------------------*/
+.content2{
+    clear: both;
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.content_banner2{
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+    /*border: 2px solid red;*/
+    overflow: hidden;
+
+
+    background: #202020;
+}
+.content_banner2 div{
+    width: 3840px;
+    height: 640px;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.content_banner2 img{
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner2  .banner2_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
+    float: left;
+}
+.content2 ul{
+    position: absolute;
+    right: 60px;
+    bottom: -22px;
+}
+.content2 ul li{
+    width: 48px;
+    height: 48px;
+    background: #DDDDDD;
+    /*border: 2px solid #DDDDDD;*/
+    list-style: none;
+    float: left;
+    margin-right: 8px;
+    /*border-radius: 50%;*/
+}
+
+.content2 ul li img{
+    width: 44px;
+    height: 44px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+
+/*3-----------------------------------*/
+.content3{
+    clear: both;
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.content_banner3{
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+    /*border: 2px solid red;*/
+    overflow: hidden;
+
+
+    background: #202020;
+}
+.content_banner3 div{
+    width: 3840px;
+    height: 640px;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.content_banner3 img{
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner3  .banner3_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
+    float: left;
+}
+.content3 ul{
+    position: absolute;
+    right: 60px;
+    bottom: -22px;
+}
+.content3 ul li{
+    width: 48px;
+    height: 48px;
+    background: #DDDDDD;
+    /*border: 2px solid #DDDDDD;*/
+    list-style: none;
+    float: left;
+    margin-right: 8px;
+    /*border-radius: 50%;*/
+}
+
+.content3 ul li img{
+    width: 44px;
+    height: 44px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+
+/*4-----------------------------------*/
+.content4{
+    clear: both;
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.content_banner4{
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+    /*border: 2px solid red;*/
+    overflow: hidden;
+
+
+    background: #202020;
+}
+.content_banner4 div{
+    width: 3840px;
+    height: 640px;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.content_banner4 img{
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner4  .banner4_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
+    float: left;
+}
+.content4 ul{
+    position: absolute;
+    right: 60px;
+    bottom: -22px;
+}
+.content4 ul li{
+    width: 48px;
+    height: 48px;
+    background: #DDDDDD;
+    /*border: 2px solid #DDDDDD;*/
+    list-style: none;
+    float: left;
+    margin-right: 8px;
+    /*border-radius: 50%;*/
+}
+
+.content4 ul li img{
+    width: 44px;
+    height: 44px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+
+/*5-----------------------------------*/
+.content5{
+    clear: both;
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+}
+
+.content_banner5{
+    width: 960px;
+    height: 640px;
+    margin: 0px auto;
+    position: relative;
+    /*border: 2px solid red;*/
+    overflow: hidden;
+
+
+    background: #202020;
+}
+.content_banner5 div{
+    width: 3840px;
+    height: 640px;
+    position:absolute;
+    left: 0;
+    top: 0;
+}
+.content_banner5 img{
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner5  .banner5_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
+    float: left;
+}
+.content5 ul{
+    position: absolute;
+    right: 60px;
+    bottom: -22px;
+}
+.content5 ul li{
+    width: 48px;
+    height: 48px;
+    background: #DDDDDD;
+    /*border: 2px solid #DDDDDD;*/
+    list-style: none;
+    float: left;
+    margin-right: 8px;
+    /*border-radius: 50%;*/
+}
+
+.content5 ul li img{
+    width: 44px;
+    height: 44px;
+    margin-top: 2px;
+    margin-left: 2px;
+}

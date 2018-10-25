@@ -43,6 +43,9 @@
 .soc2m .pic img{max-width:100%;}
 .soc2mt{margin:10px 20px 10px 20px;line-height:24px;height:48px;overflow:hidden;text-align: center;}
 .soc2mt a{text-align:left !important;color:#333;display:inline !important;}
-.soc2mt a:hover{color:#004baa;}
+.soc2m1:hover .soc2m2 a{color: #54a3f7;}
+.soc2m1:hover img{
+    opacity: .4;
+}
 .soc2mm{font-size: 12px;color:#666;line-height: 20px;margin:0 20px 20px 20px;height:60px;overflow:hidden;}
 .soc2m a{ text-align:center; display:block;height: 187.5px;}

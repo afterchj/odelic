@@ -1,0 +1,79 @@
+*{ margin:0; padding:0}
+
+/*-------------------------------顶部标题-------------------------------------*/
+
+.spacegap{
+    clear: both;
+    height: 50px;
+}
+
+.comm3_title{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.comm3_desc{
+    font-size: 15px;
+    margin: 30px auto;
+    width: 960px;
+    text-align: left;
+}
+
+
+/*-------------------------------轮播-------------------------------------*/
+/*comm3banner*/
+
+/*----------------------------------------采用产品---------------------------------------*/
+.comm3_show_pic {
+    width: 1200px;
+    margin: 30px auto;
+}
+.comm3_title{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.comm3_show_pic ul{
+
+}
+
+.comm3_show_pic ul li{
+    width:400px;
+    height:400px;
+    /*padding-left: 20px;*/
+    list-style: none;
+    float: left;
+}
+
+.comm3_show_pic ul li img{
+    width:200px;
+    height:200px;
+    clear: both;
+    display: block;
+    margin:0px auto;
+}
+
+.comm3_xinghao{
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+.comm3_price{
+    font-size: 12px;
+    margin-left: 100px;
+}
+
+.comm3_xiadan{
+    clear: both;
+    font-size: 23px;
+    text-align:center;
+}
+
+
+
+
+
+
+

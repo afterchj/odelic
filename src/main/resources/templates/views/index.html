@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0051)http://www.opple.com.cn/?tdsourcetag=s_pctim_aiomsg -->
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
@@ -8,7 +7,6 @@
     <!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">&lt;!&ndash;用最新版ie&ndash;&gt;-->
     <!--<meta name="format-detection" content="telephone=no">&lt;!&ndash;禁止ios自动识别数字为手机号&ndash;&gt;-->
     <!--<meta name="renderer" content="webkit">&lt;!&ndash;让360双核浏览器用webkit内核渲染页面&ndash;&gt;-->
-    <!--<link rel="shortcut icon" href="http://www.opple.com.cn/web/ucan/images/icon.ico" type="image/x-icon">-->
     <title>首页</title>
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/nav.js"></script>
@@ -73,7 +71,7 @@
             </div>
             <div class="clearfix mart20">
                 <div class="fl pos_re picBox3">
-                    <a href="http://www.opple.com.cn/about/responsibility"></a>
+                    <a href="/comm1"></a>
                     <div class="yy"></div>
                     <div class="pic"><img src="images/网页ODELIC_09.png"></div>
                     <div class="wenz">
@@ -104,24 +102,7 @@
 </div>
 
 <div th:include="layout/right::right"></div>
-<script>
 
-    $(function () {
-        //返回顶部
-        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix
-        $(".totop").hide();
-        $(".totop").click(function () {
-            $body.animate({scrollTop: 0});
-        });
-        window.onscroll = function () {
-            if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {
-                $(".totop").show();
-            } else {
-                $(".totop").hide();
-            }
-        };
-    })
-</script>
 <style>
     .return {
         display: none;
