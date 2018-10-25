@@ -1,17 +1,17 @@
-body{ margin:0; padding:0}
+*{ margin:0; padding:0}
 
 /*---------------------------顶部标题栏-----------------------------------*/
 .comm3_banner{
-    width: 1200px;
+    width: 960px;
     margin:0px auto;
 }
 
 .top_switch{
-    width:1200px;
+    width:960px;
     margin: 0px auto;
 }
 .top_switch ul li{
-    width: 300px;
+    width: 240px;
     height: 50px;
     list-style: none;
     float: left;
@@ -21,8 +21,8 @@ body{ margin:0; padding:0}
 }
 .top_switch ul li div{
     text-align: center;
-    font-size: 25px;
-    margin-top: 5px;
+    font-size: 22px;
+    margin-top: 10px;
 }
 
 .comm2_switch ul li div{
@@ -33,35 +33,47 @@ body{ margin:0; padding:0}
 /*------------------------------底部轮播图1----------------------------------*/
 .content1{
     clear: both;
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner1{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
     overflow: hidden;
+
+
+    background: #202020;
 }
 .content_banner1 div{
-    width: 4800px;
-    height: 800px;
+    width: 3840px;
+    height: 640px;
     position:absolute;
     left: 0;
     top: 0;
 }
 .content_banner1 img{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner1  .banner1_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
     float: left;
 }
 .content1 ul{
     position: absolute;
-    right: 80px;
+    right: 60px;
     bottom: -22px;
 }
 .content1 ul li{
@@ -87,35 +99,47 @@ body{ margin:0; padding:0}
 /*2----------------------------------*/
 .content2{
     clear: both;
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner2{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
     overflow: hidden;
+
+
+    background: #202020;
 }
 .content_banner2 div{
-    width: 4800px;
-    height: 800px;
+    width: 3840px;
+    height: 640px;
     position:absolute;
     left: 0;
     top: 0;
 }
 .content_banner2 img{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner2  .banner2_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
     float: left;
 }
 .content2 ul{
     position: absolute;
-    right: 80px;
+    right: 60px;
     bottom: -22px;
 }
 .content2 ul li{
@@ -136,38 +160,51 @@ body{ margin:0; padding:0}
     margin-left: 2px;
 }
 
+
 /*3-----------------------------------*/
 .content3{
     clear: both;
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner3{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
     overflow: hidden;
+
+
+    background: #202020;
 }
 .content_banner3 div{
-    width: 4800px;
-    height: 800px;
+    width: 3840px;
+    height: 640px;
     position:absolute;
     left: 0;
     top: 0;
 }
 .content_banner3 img{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner3  .banner3_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
     float: left;
 }
 .content3 ul{
     position: absolute;
-    right: 80px;
+    right: 60px;
     bottom: -22px;
 }
 .content3 ul li{
@@ -188,38 +225,51 @@ body{ margin:0; padding:0}
     margin-left: 2px;
 }
 
+
 /*4-----------------------------------*/
 .content4{
     clear: both;
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner4{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
     overflow: hidden;
+
+
+    background: #202020;
 }
 .content_banner4 div{
-    width: 4800px;
-    height: 800px;
+    width: 3840px;
+    height: 640px;
     position:absolute;
     left: 0;
     top: 0;
 }
 .content_banner4 img{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner4  .banner4_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
     float: left;
 }
 .content4 ul{
     position: absolute;
-    right: 80px;
+    right: 60px;
     bottom: -22px;
 }
 .content4 ul li{
@@ -240,38 +290,51 @@ body{ margin:0; padding:0}
     margin-left: 2px;
 }
 
+
 /*5-----------------------------------*/
 .content5{
     clear: both;
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner5{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
     overflow: hidden;
+
+
+    background: #202020;
 }
 .content_banner5 div{
-    width: 4800px;
-    height: 800px;
+    width: 3840px;
+    height: 640px;
     position:absolute;
     left: 0;
     top: 0;
 }
 .content_banner5 img{
-    width: 1200px;
-    height: 800px;
+    width: 960px;
+    height: 640px;
+    float: left;
+}
+.content_banner5  .banner5_vert{
+    width: 426px;
+    height: 640px;
+
+    margin-left: 267px;
+    margin-right: 267px;
+
     float: left;
 }
 .content5 ul{
     position: absolute;
-    right: 80px;
+    right: 60px;
     bottom: -22px;
 }
 .content5 ul li{
