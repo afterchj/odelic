@@ -28,7 +28,7 @@ html[xmlns] .wtcm.on .wtcmm{display:block;}
 * html .clearfix{height:1%;}
 /*Common Css*/
 body{font-size:12px;}
-a{ text-decoration:none;}
+a{ text-decoration:none!important;}
 a:focus,a:hover{-webkit-tap-highlight-color:rgba(0,0,0,0);}
 a{
     -webkit-transition: all 0.4s;

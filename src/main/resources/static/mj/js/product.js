@@ -3,36 +3,9 @@
  * Created by nannan.li on 2018/10/22.
  */
 $(function () {
-    //返回顶部
-    // var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix
-    // $(".totop").hide();
-    // $(".totop").click(function () {
-    //     $body.animate({scrollTop: 0});
-    // });
-    // window.onscroll = function () {
-    //     if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {
-    //         $(".totop").show();
-    //     } else {
-    //         $(".totop").hide();
-    //     }
-    // };
-
     //排序
     $('.pro-paix a').click(function () {
         $(this).addClass('cur').siblings().removeClass('cur');
-    });
-
-    //筛选选中
-    $('.pro-shaix .li_select a').click(function () {
-        if ($(this).hasClass('all')) {
-            $(this).addClass('cur').siblings("a").removeClass('cur')
-        }
-        else if ($(this).hasClass('cur')) {
-            $(this).removeClass('cur');
-        }
-        else {
-            $(this).addClass('cur').siblings(".all").removeClass('cur');
-        }
     });
 
     $('#btn_search').click(function () {
@@ -41,22 +14,7 @@ $(function () {
             key.focus();
             return false;
         }
-        // location.href = '/newpro/prolist/?classid=79&key=' + key.val();
     });
-    // var url = '/newpro/prolist/?classid=79';
-    // document.onkeydown = function (e) {
-    //     var ev = document.all ? window.event : e;
-    //     if (ev.keyCode == 13) {
-    //         var key = $('#txt_key');
-    //         if (key.val() == '') {
-    //             key.focus();
-    //             return false;
-    //         }
-    //         url += '&key=' + key.val();
-    //         //alert(url);
-    //         window.location.href = url;
-    //     }
-    // }
 
     //选中
     $('.new_pro_screen_ul li dd').click(function () {
@@ -164,13 +122,5 @@ $(function () {
     $('.new_pro_screen_btn .cz').click(function () {
         $("#phon_cate dd").removeClass('cur');
         $("#phon_son dd").removeClass('cur');
-    });
-    $("[id^='categoryId']").on('click',function(){
-        $("[id^='categoryId']").removeClass('cur');
-        $(this).addClass('cur');
-    });
-    $("[id^='sonCategoryId']").click(function () {
-        $("[id^='sonCategoryId']").removeClass('cur');
-        $(this).addClass('cur');
     });
 })
