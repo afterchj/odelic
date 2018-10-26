@@ -53,7 +53,7 @@
 .comm2_anli_content{
     clear: both;
     width: 1320px;
-    margin: 10px auto;
+    margin: 30px auto;
     padding-left: 30px;
 }
 .comm2_anli_content ul{
@@ -61,7 +61,7 @@
 }
 .comm2_anli_content ul li{
     width: 420px;
-    height: 320px;
+    height: 340px;
     padding-left: 20px;
     list-style: none;
 }
@@ -89,7 +89,7 @@
     width: 390px;
     font-size:18px;
     color: #333333;
-    margin-top: 8px;
+    margin-top: 10px;
     text-align:center;
 }
 

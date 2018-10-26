@@ -41,8 +41,8 @@
 }
 
 .content_cus1_img{
-    width:63px;
-    height:50px;
+    width:100px;
+    height:100px;
 
     clear: both;
     display: block;
@@ -56,11 +56,24 @@
     margin-top: 20px;
 }
 
-.content_cus1_content{
-    font-size: 16px;
-    color: #000000;
+
+.content_cus1_content ul {
     margin: 40px;
 }
+
+.content_cus1_content ul li{
+    /*float: left;*/
+    list-style: none;
+
+}
+
+.content_cus1_content ul li div{
+    font-size: 16px;
+    color: #000000;
+    text-align:center;
+}
+
+
 
 /*------------------------------底部轮播图----------------------------------*/
 .comm1_title_anli{
