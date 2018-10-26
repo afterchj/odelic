@@ -8,15 +8,17 @@
 }
 
 .comm3_title{
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 80px;
+    color: #000000;
+    margin-top: 50px;
 }
 
 .comm3_desc{
-    font-size: 15px;
+    font-size: 16px;
     margin: 30px auto;
-    width: 960px;
+    width: 860px;
+    color: #333333;
     text-align: left;
 }
 
@@ -27,21 +29,17 @@
 /*----------------------------------------采用产品---------------------------------------*/
 .comm3_show_pic {
     width: 1200px;
-    margin: 30px auto;
+    height:300px;
+    margin: 0px auto;
 }
-.comm3_title{
-    font-size: 25px;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
+
 .comm3_show_pic ul{
 
 }
 
 .comm3_show_pic ul li{
     width:400px;
-    height:400px;
+    height:300px;
     /*padding-left: 20px;*/
     list-style: none;
     float: left;
@@ -57,18 +55,28 @@
 
 .comm3_xinghao{
     font-size: 16px;
-    margin-top: 30px;
+    color: #333333;
+    margin-top: 20px;
     margin-left: 100px;
 }
-.comm3_price{
-    font-size: 12px;
-    margin-left: 100px;
-}
+/*.comm3_price{*/
+    /*font-size: 12px;*/
+    /*margin-left: 100px;*/
+/*}*/
 
-.comm3_xiadan{
+/*.comm3_xiadan{*/
+    /*clear: both;*/
+    /*font-size: 23px;*/
+    /*text-align:center;*/
+/*}*/
+
+.comm3_contact img{
+    width:180px;
+    height:44px;
     clear: both;
-    font-size: 23px;
-    text-align:center;
+    display: block;
+    margin:0px auto;
+
 }
 
 
