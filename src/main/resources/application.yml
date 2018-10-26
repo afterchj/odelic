@@ -25,6 +25,9 @@ spring:
       force: true
   profiles:
     active: dev
+  mvc:
+    favicon:
+      enabled: false
 logging:
   file: /mnt/shared/odelic/log/log.log
 #server:
