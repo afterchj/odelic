@@ -17,59 +17,68 @@
 
 /**/
 .comm2_switch{
-    width:1200px;
+    width:1204px;
     margin: 30px auto;
 }
 .comm2_switch ul li{
-    width: 14.2%;
+    width: 172px;
     list-style: none;
     float: left;
 }
-.comm2_switch ul li:hover{
-    background:#fff;box-shadow:0px -2px 16px 0px rgba(0,0,0,.4);
-}
+/*.comm2_switch ul li:hover{*/
+/*background:#fff;box-shadow:0px -2px 16px 0px rgba(0,0,0,.4);*/
+/*}*/
 .comm2_switch ul li img{
     clear: both;
     display: block;
     margin:0px auto;
     margin-top: 15px;
+    width: 70px;
+    height: 80px;
+    transition: all 1s;
+}
+
+.comm2_switch ul li:hover img{
+    transform: scale(1.2,1.2);
 }
 
 .comm2_switch ul li div{
-    display:block;color:#0046aa;font-size:14px;line-height:40px;
-    background:#f2f2f2;text-align:center;text-decoration: none;
+    color:#333333;font-size:16px;margin-top: 16px;text-align:center;
 }
 
 
 /*-------------------------------案例展示-------------------------------------*/
 
+
 .comm2_anli_content{
     clear: both;
-    width: 1060px;
+    width: 1320px;
     margin: 30px auto;
+    padding-left: 30px;
 }
 .comm2_anli_content ul{
     clear: both;
 }
 .comm2_anli_content ul li{
-    width: 500px;
-    height: 380px;
+    width: 420px;
+    height: 320px;
+    padding-left: 20px;
     list-style: none;
 }
 .comm2_anli_content ul .img_left{
     float: left;
 }
 .comm2_anli_content ul .img_right{
-    float: right;
+    float: left;
 }
 .comm2_anli_content ul li a div{
-    width: 500px;
-    height: 333px;
+    width: 390px;
+    height: 260px;
     overflow: hidden;
 }
 .comm2_anli_content ul li a div img{
-    width: 500px;
-    height: 333px;
+    width: 390px;
+    height: 260px;
     transition: all 1s;
 }
 .comm2_anli_content ul li a div:hover img{
@@ -77,11 +86,11 @@
 }
 
 .comm2_anli_content ul li div{
-    width: 500px;
-    font-size:14px;
+    width: 390px;
+    font-size:18px;
+    color: #333333;
+    margin-top: 8px;
     /*text-align:center;*/
 }
-
-
 
 
