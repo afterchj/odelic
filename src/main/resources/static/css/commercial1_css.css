@@ -6,19 +6,24 @@
     height: auto;
 }
 
+.spacegap{
+    clear: both;
+    width: 100%;
+    height: 50px;
+}
+
 /*-------------------------------客户服务---------------------------------*/
+.comm1_title_server{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #000000;
+}
+
 .content_cus1{
     width: 80%;
     margin: 0 auto;
-    margin-top: 50px;
-}
-
-.title_cus1{
-    font-size: 25px;
-    text-align: center;
-    /*margin: 10px;*/
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 .content_cus1_ul{
@@ -43,37 +48,36 @@
     clear: both;
     display: block;
     margin:0px auto;
-    margin-top: 15px;
+    margin-top: 60px;
 }
 
 .content_cus1_title{
     font-size: 20px;
+    color: #000000;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 .content_cus1_content{
-    font-size: 12px;
-    margin: 10px;
+    font-size: 16px;
+    color: #000000;
+    margin: 40px;
 }
 
 /*------------------------------底部轮播图----------------------------------*/
-.spacegap{
-    clear: both;
-    height: 100px;
-}
 
-.title_cus1{
+.comm1_title_anli{
     font-size: 25px;
     text-align: center;
-    /*margin: 10px;*/
-    margin-top: 10px;
+    margin-top: 50px;
     margin-bottom: 10px;
+    color: #000000;
 }
+
 .bottombanner{
     width: 1000px;
     height: 583px;
-    margin: 30px auto;
+    margin: 60px auto;
     position: relative;
     /*border: 2px solid red;*/
     overflow: hidden;
