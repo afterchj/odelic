@@ -7,7 +7,10 @@
     height: 230px;
     /*border: 1px solid green;*/
 }
-
+.bann{
+    width: 1200px;
+    height: 500px;
+}
 .wntj {
     clear: both;
     width: 1200px;
