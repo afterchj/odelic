@@ -1346,7 +1346,7 @@
 }
 
 .solu {
-    margin: 60px auto 40px;
+    margin: 60px auto 40px auto;
 }
 
 .solut, .solum {
@@ -1465,7 +1465,9 @@
 .soc2m {
     border: solid 1px #e1e1e1;
     width: 250px;
+    /*margin: 0 auto;*/
     margin: 15px 15px 0 0;
+    text-align: center;
     float: left;
 }
 
@@ -1589,10 +1591,13 @@
         font-size: 26px;
     }
 
-    .f24, .sertit {
+    .f24 {
         font-size: 20px;
     }
 
+    .sertit {
+        font-size: 20px;
+    }
     .serc li {
         width: 25%;
         box-sizing: border-box;
@@ -2025,11 +2030,12 @@
         padding: 22px;
     }
 
-    .soc2m {
-        width: 23.5%;
-        margin-right: 2%;
-        box-sizing: border-box;
-    }
+    /*.soc2m {*/
+        /*margin: 0 auto;*/
+        /*width: 23.5%;*/
+        /*!*margin-right: 2%;*!*/
+        /*box-sizing: border-box;*/
+    /*}*/
 
     .soc2m:nth-child(4) {
         margin-right: 0;

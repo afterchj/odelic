@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- saved from url=(0040)http://www.opple.com.cn/solution/?tid=14 -->
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
@@ -11,63 +10,14 @@
     <link type="text/css" href="./css/base.css" rel="stylesheet">
     <link type="text/css" href="./mycss/common.css" rel="stylesheet">
     <link type="text/css" href="./mycss/lunbo.css" rel="stylesheet">
-    <!--<link type="text/css" href="./mycss/mybase.css" rel="stylesheet">-->
+    <link type="text/css" href="./mycss/star.css" rel="stylesheet">
     <link type="text/css" href="./mycss/mypage.css" rel="stylesheet">
     <link type="text/css" href="./living_files/inside.css" rel="stylesheet">
     <style type="text/css">
-
-        .aqua {
-            display: none;
-        }
-
         .lmbg li {
             margin-right: 20px;
         }
-
-        .lmbg img {
-            width: 240px;
-            height: 90px;
-            /*margin-bottom: 20px;*/
-        }
-
-        .spect {
-            border-bottom: 1px solid blue;
-        }
-
-        .mystar {
-            margin: 20px auto 10px auto;
-            width: 400px;
-            height: 80px;
-        }
-
-        .mystar li {
-            float: left;
-            list-style: none;
-            color: blue;
-            height: 30px;
-            margin-right: 50px;
-            font-size: x-large;
-            cursor: pointer;
-        }
     </style>
-    <script type="text/javascript">
-//        $(function () {
-//            $("#aqua1").removeClass("aqua");
-//            $(".mystar li").click(function () {
-//                $(this).siblings('li').removeClass('spect');  // 删除其他兄弟元素的样式
-//                $(this).addClass('spect');  // 添加当前元素的样式
-//            });
-//        });
-//        function showAu(id) {
-//            for (var i = 1; i < 4; i++) {
-//                if (id == i) {
-//                    $("#aqua" + id).removeClass("aqua");
-//                } else {
-//                    $("#aqua" + i).addClass("aqua");
-//                }
-//            }
-//        }
-    </script>
 </head>
 <body>
 <div th:include="layout/header::header"></div>
@@ -208,46 +158,32 @@
         <div><img src="./star/mist细节.jpg" alt=""></div>
     </div>
 </div>
-<!--<div class="solu wrapper clearfix" style="clear:both">-->
-<div class="wntj" style="margin-top:100px;">
+<div class="wntj">
     <div class="sertit">为你推荐</div>
     <br/>
-    <div class="soc2 clearfix">
+    <div class="clearfix">
         <div class="soc2m">
             <div class="pic"><a href="#"><img src="./star/img_water_OL291347.jpg" alt=""></a></div>
-            <!--<div class="soc2mt"><a-->
-            <!--href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>-->
-            <!--</div>-->
             <div class="soc2mm">
                 型号：OL291347
             </div>
         </div>
         <div class="soc2m">
             <div class="pic"><a href="#"><img src="./star/img_ice_OP252543LD.jpg" alt=""></a></div>
-            <!--<div class="soc2mt"><a-->
-            <!--href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>-->
-            <!--</div>-->
             <div class="soc2mm">
-               型号：OP252543LD
+                型号：OP252543LD
             </div>
         </div>
         <div class="soc2m">
             <div class="pic"><a href="#"><img src="./star/img_water_OB255191LD.jpg" alt=""></a></div>
-            <!--<div class="soc2mt">-->
-                <!--<a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>-->
-            <!--</div>-->
             <div class="soc2mm">型号：OB255191LD
             </div>
         </div>
         <div class="soc2m">
             <div class="pic"><a href="#"><img src="./star/img_mist_OP252547LD.jpg" alt=""></a></div>
-            <!--<div class="soc2mt"><a-->
-                    <!--href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a>-->
-            <!--</div>-->
             <div class="soc2mm">型号：OP252547LD</div>
         </div>
     </div>
-    <!--</div>-->
     <div><a class="button" href="product" target="_blank">更多</a></div>
 </div>
 </div>
