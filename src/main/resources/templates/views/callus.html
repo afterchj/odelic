@@ -15,8 +15,15 @@
             src="/static/mj/daohang/js/jquery.min.js"></script>
     <script src="/static/mj/daohang/js/nav.js"></script>
 </head>
-
-<body style="height: 100%;font-family: none;">
+<style>
+    strong, b {
+        font-weight: bold!important;
+    }
+    body{
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif!important;
+    }
+</style>
+<body style="height: 100%;">
 
 <div th:replace="layout/header::header"></div>
 
@@ -83,7 +90,8 @@
         </h3>
     </div>
     <div class="media-right">
-        <img src="/static/mj/img/callus_03.png" class="media-object">
+        <!--<img src="/static/mj/img/callus_03.png" class="media-object">-->
+        <img src="/static/mj/img/map.png" class="media-object">
     </div>
 </div>
 
@@ -136,7 +144,7 @@
 <!--</div>-->
 <!--<div style="clear: both"></div>-->
 <!--</div>-->
-<script src="/static/mj/daohang/js/nav.js"></script>
+<script type="text/javascript" src="../js/nav.js"></script>
 <style>
     /*footer {*/
     /*height: 25%;*/

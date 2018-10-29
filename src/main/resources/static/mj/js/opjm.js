@@ -54,7 +54,7 @@ list.cate = function () {
                     if (key=="list"){
                         var li="";
                         $.each(values, function (i, value) {
-                            li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a></h3><p class="fontp">功率（W）：3.5W<br>规格尺寸(mm)：120*120*65mm<br>' +value.category+'=='+value.sonCategory+'</p></div></div></li>';
+                            li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">型号：'+value.name+'</a></h3></div></div></li>';
                         });
 
                         $("#wind_cate").append($(li));
@@ -129,7 +129,7 @@ list.son= function () {
                     if (key=="list"){
                         var li="";
                         $.each(values, function (i, value) {
-                            li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a></h3><p class="fontp">功率（W）：3.5W<br>规格尺寸(mm)：120*120*65mm<br>' +value.category+'=='+value.sonCategory+'</p></div></div></li>';
+                            li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">型号：'+value.name+'</a></h3></div></div></li>';
                         });
 
                         $("#wind_cate").append($(li));
@@ -235,7 +235,7 @@ list.phon = function(){
                     if (key=="list"){
                         var li="";
                         $.each(values, function (i, value) {
-                            li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a></h3><p class="fontp">功率（W）：3.5W<br>规格尺寸(mm)：120*120*65mm<br>' +value.category+'=='+value.sonCategory+'</p></div></div></li>';
+                            li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">型号：'+value.name+'</a></h3></div></div></li>';
                         });
 
                         $("#wind_cate").append($(li));
@@ -309,7 +309,7 @@ list.next = function () {
                         if (key=="list"){
                             var li="";
                             $.each(values, function (i, value) {
-                                li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a></h3><p class="fontp">功率（W）：3.5W<br>规格尺寸(mm)：120*120*65mm<br>' +value.category+'=='+value.sonCategory+'</p></div></div></li>';
+                                li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">型号：'+value.name+'</a></h3></div></div></li>';
                             });
 
                             $("#wind_cate").append($(li));
@@ -388,7 +388,7 @@ list.previous = function () {
                         if (key=="list"){
                             var li="";
                             $.each(values, function (i, value) {
-                                li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a></h3><p class="fontp">功率（W）：3.5W<br>规格尺寸(mm)：120*120*65mm<br>' +value.category+'=='+value.sonCategory+'</p></div></div></li>';
+                                li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">型号：'+value.name+'</a></h3></div></div></li>';
                             });
 
                             $("#wind_cate").append($(li));
@@ -468,7 +468,7 @@ list.first = function () {
                         if (key=="list"){
                             var li="";
                             $.each(values, function (i, value) {
-                                li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a></h3><p class="fontp">功率（W）：3.5W<br>规格尺寸(mm)：120*120*65mm<br>' +value.category+'=='+value.sonCategory+'</p></div></div></li>';
+                                li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">型号：'+value.name+'</a></h3></div></div></li>';
                             });
 
                             $("#wind_cate").append($(li));
@@ -548,7 +548,7 @@ list.last = function () {
                         if (key=="list"){
                             var li="";
                             $.each(values, function (i, value) {
-                                li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a></h3><p class="fontp">功率（W）：3.5W<br>规格尺寸(mm)：120*120*65mm<br>' +value.category+'=='+value.sonCategory+'</p></div></div></li>';
+                                li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">型号：'+value.name+'</a></h3></div></div></li>';
                             });
 
                             $("#wind_cate").append($(li));
@@ -628,7 +628,7 @@ list.page = function(){
                     if (key=="list"){
                         var li="";
                         $.each(values, function (i, value) {
-                            li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a></h3><p class="fontp">功率（W）：3.5W<br>规格尺寸(mm)：120*120*65mm<br>' +value.category+'=='+value.sonCategory+'</p></div></div></li>';
+                            li+='<li><div class="box" style="background-color: rgb(246, 244, 236);"><div class="img"><a href="#"><img src="'+value.url+'"></a></div><div class="wenz"><h3><a href="#">型号：'+value.name+'</a></h3></div></div></li>';
                         });
                         $("#wind_cate").append($(li));
                     }

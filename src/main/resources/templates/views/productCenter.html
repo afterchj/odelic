@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="/static/mj/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="/static/mj/js/jquery.min.js"></script>
     <script src="/static/mj/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link type="text/css" href="/static/mj/daohang/css/base.css" rel="stylesheet">
-    <link type="text/css" href="/static/mj/daohang/css/page.css" rel="stylesheet">
+    <!--<link type="text/css" href="/static/mj/daohang/css/base.css" rel="stylesheet">-->
+    <!--<link type="text/css" href="/static/mj/daohang/css/page.css" rel="stylesheet">-->
+    <link type="text/css" href="../css/base.css" rel="stylesheet"> <!--导航-->
+    <link type="text/css" href="../css/page.css" rel="stylesheet"> <!--导航-->
     <style>
         /**{*/
             /*box-sizing:unset!important;*/
@@ -26,6 +28,10 @@
                 /*display: block;*/
             /*}*/
         /*}*/
+        .pro-list li .wenz {
+            /*height: 136px;*/
+            height: 36px !important;//产品文本高
+        }
     </style>
     <link type="text/css" href="/static/mj/css/product.css" rel="stylesheet">
 </head>
@@ -67,11 +73,11 @@
                     <div class="li_tit">风格：</div>
                     <div class="li_select">
                         <a href="#" id="sonCategoryId1" class="all cur">全部</a>
-                        <a href="#" id="sonCategoryId2">轻奢</a>
-                        <a href="#" id="sonCategoryId3">简约</a>
-                        <a href="#" id="sonCategoryId4">田园</a>
-                        <a href="#" id="sonCategoryId5">新中式</a>
-                        <a href="#" id="sonCategoryId6">和风</a>
+                        <a href="#" id="sonCategoryId2">欧式</a>
+                        <a href="#" id="sonCategoryId3">时尚轻奢</a>
+                        <a href="#" id="sonCategoryId4">文艺复古</a>
+                        <a href="#" id="sonCategoryId5">现代简约</a>
+                        <a href="#" id="sonCategoryId6">日式</a>
                         <a href="#" id="sonCategoryId7">蒸汽朋克</a>
                         <a href="#" id="sonCategoryId8">工业风</a>
                     </div>
@@ -99,11 +105,11 @@
                     </div>
                     <div class="wenz">
                         <h3>
-                            <a href="#">MB1212-D0.2×5+1×2-悠彩壁灯-2700K4000K</a>
+                            <a href="#" th:text="'型号：'+${pageInfo.name}"></a>
                         </h3>
-                        <p class="fontp">
-                            功率（W）：3.5W<br> 规格尺寸(mm)：120*120*65mm<br>
-                            应用空间：客厅,卧室,过道,玄关 </p>
+                        <!--<p class="fontp">-->
+                            <!--功率（W）：3.5W<br> 规格尺寸(mm)：120*120*65mm<br>-->
+                            <!--应用空间：客厅,卧室,过道,玄关 </p>-->
                     </div>
                 </div>
             </li>
@@ -112,7 +118,6 @@
     </div>
 </div>
 </div>
-
 <div class="divPages">
     <input type="hidden" id="num" th:value="${pageInfos.getPageNum()}">
     <input type="hidden" id="total" th:value="${pageInfos.getPages()}">
@@ -230,6 +235,6 @@
 <div th:include="layout/footer::footer"></div>
 </body>
 <script src="/static/mj/js/opjm.js" type="text/javascript"></script>
-<script src="/static/mj/daohang/js/nav.js"></script>
+<script type="text/javascript" src="../js/nav.js"></script>
 <script src="/static/mj/js/product.js"></script>
 </html>

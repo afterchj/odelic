@@ -15,9 +15,9 @@ a {
     float: right;
     _display: inline;
 }
-b {
-    font-weight: 700;
-}
+/*b {*/
+    /*font-weight: 700;*/
+/*}*/
 
 .bannerbox {
     margin: 0 auto;

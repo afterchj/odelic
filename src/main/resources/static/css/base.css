@@ -19,7 +19,7 @@ legend{display:none;}
 .clearfix:after{content:'\20';display:block;clear:both;visibility:hidden;line-height:0;height:0;}
 .clearb{ clear:both;}
 .clearfix{display:block;zoom:1;}
-html[xmlns] .clearfix{display:block;}
+/*html[xmlns] .clearfix{display:block;}*/
 html[xmlns] .wtcmm.clearfix{display:none;}
 html[xmlns] .wtcm.on .wtcmm{display:block;}
 * html .clearfix{height:1%;}

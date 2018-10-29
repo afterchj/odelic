@@ -62,6 +62,7 @@ $(function () {
         });
     } else if (width > 1100 && height > 900) {
         $(".pagination").addClass("pagination-lg");
+        var pagination = $(".pagination").width();
         $(".divPages").css({
             position: 'absolute',
             left: ($(window).width() - $(".pagination").width()) / 2

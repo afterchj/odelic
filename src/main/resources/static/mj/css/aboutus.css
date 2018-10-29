@@ -9,9 +9,9 @@
     float: right;
     _display: inline;
 }
-b {
-    font-weight: 700;
-}
+/*b {*/
+    /*font-weight: 700;*/
+/*}*/
 .newFooter{background:#828485!important;}
 .nyBanner01 .hd{position:absolute;z-index:10;bottom:15px;text-align:center;width:100%;}
 

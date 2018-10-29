@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="/static/mj/cs/style.css"> <!-- Resource style -->
     <!--<link href="/static/mj/css/base2.css" rel="stylesheet" type="text/css"/>-->
     <link type="text/css" href="../css/base.css" rel="stylesheet"> <!--导航-->
-    <!--<link type="text/css" href="../css/page.css" rel="stylesheet"> &lt;!&ndash;导航&ndash;&gt;-->
-    <link href="/static/mj/css/page.css" rel="stylesheet" type="text/css"/>
+    <link type="text/css" href="../css/page.css" rel="stylesheet"> <!--导航-->
+    <!--<link href="/static/mj/css/page.css" rel="stylesheet" type="text/css"/>-->
     <link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/inside.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/style.css" rel="stylesheet" type="text/css"/><!--时间轴-->
@@ -37,10 +37,42 @@
 
 <!--<div class="ny-banner pro-banner bckBanner" style="background:url(./static/img/aboutus_01.png) no-repeat center center;background-size:cover;">-->
 <!--<div class="ny-banner pro-banner bckBanner" style="background:url(./static/img/banner02.jpg) no-repeat center center;background-size:cover;">-->
+<style>
+    .aboutCon01 li .con .wenz .f16 {
+        line-height: unset!important;
+    }
+    /**发展历程**/
+    #course {
+        padding-bottom: 1px!important;
+        padding-top: 15px;
+    }
+    /*企业介绍*/
+    #introduce{
+        padding-top: 15px;
+        padding-bottom: 3px!important;
+    }
+    @media screen and (max-width: 1023px){
+        .aboutCon01 li .con .wenz {
+            padding: 1px 0;
+        }
+    }
+    @media screen and (max-width: 767px){
+        .aboutCon01 li .con {
+            margin-top: 1px;
+        }
+    }
+    @media screen and (max-width: 767px){
+        .aboutCon01 {
+             padding: 1px 0;
+        }
+    }
+
+
+</style>
 <div th:include="layout/right::right"></div>
-<div class="about" id="aboutUs" style="margin-top: -8%">
+<div class="about" id="aboutUs">
     <div class="wrapper">
-        <h2 class="f30"><strong style="font-weight: bolder">|</strong>&nbsp;企业介绍</h2>
+        <h2 class="f30" id="introduce"><strong style="font-weight: bolder">|</strong>&nbsp;企业介绍</h2>
     </div>
     <div class="aboutBox">
         <div class="aboutCon01 aboutCon" id="item1">
@@ -69,7 +101,7 @@
 
 <div>
     <div class="wrapper">
-        <h2 class="f30"><strong style="font-weight: bolder">|</strong>&nbsp;发展历程</h2>
+        <h2 class="f30" id="course"><strong style="font-weight: bolder">|</strong>&nbsp;发展历程</h2>
     </div>
 </div>
     <div id="timeSec"></div>
@@ -140,7 +172,7 @@
 <div th:include="layout/footer::footer"></div>
 <script src="/static/mj/js/jquery.min.js"></script>
 <script src="/static/mj/js/main.js"></script>
-<script src="/static/mj/daohang/js/nav.js"></script>
+<script type="text/javascript" src="../js/nav.js"></script>
 <script src="/static/mj/js/aboutus.js"></script>
 </body>
 </html>

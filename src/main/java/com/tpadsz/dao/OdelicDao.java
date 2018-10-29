@@ -15,16 +15,16 @@ import java.util.List;
 @Mapper
 public interface OdelicDao {
 
-    @Select("select * FROM t_odelic WHERE main='家用' AND category=#{category}")
+    @Select("select * FROM t_odelic WHERE main='家用' AND category=#{category} order by id desc")
     List<Odelic> selectByType(@Param("category") String category);
 
-    @Select("select * FROM t_odelic WHERE main='家用' AND category=#{category} AND sonCategory=#{sonCategory}")
+    @Select("select * FROM t_odelic WHERE main='家用' AND category=#{category} AND sonCategory=#{sonCategory} order by id desc")
     List<Odelic> selectByTypeAndStyle(@Param("category") String category,
                                       @Param("sonCategory") String sonCategory);
 
-    @Select("select * FROM t_odelic WHERE main='家用' AND sonCategory=#{sonCategory}")
+    @Select("select * FROM t_odelic WHERE main='家用' AND sonCategory=#{sonCategory} order by id desc")
     List<Odelic> selectByStyle(@Param("sonCategory") String sonCategory);
 
-    @Select("select * FROM t_odelic")
+    @Select("select * FROM t_odelic order by id desc")
     List<Odelic> selectAll();
 }

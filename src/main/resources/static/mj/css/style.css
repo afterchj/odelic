@@ -50,8 +50,8 @@ a {
 	text-decoration:none;
 }
 a:hover {
-	color:#F60;
-	text-decoration:underline;
+	/*color:#F60;*/
+	/*text-decoration:underline;*/
 }
 .clearfix {
 	*zoom:1;
