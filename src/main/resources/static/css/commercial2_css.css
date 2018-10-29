@@ -18,7 +18,7 @@
 /**/
 .comm2_switch{
     width:1204px;
-    margin: 30px auto;
+    margin: 0px auto;
 }
 .comm2_switch ul li{
     width: 172px;
@@ -32,9 +32,9 @@
     clear: both;
     display: block;
     margin:0px auto;
-    margin-top: 15px;
     width: 70px;
     height: 80px;
+    cursor:pointer;
     transition: all 1s;
 }
 
@@ -61,7 +61,7 @@
 }
 .comm2_anli_content ul li{
     width: 420px;
-    height: 320px;
+    height: 340px;
     padding-left: 20px;
     list-style: none;
 }
@@ -89,8 +89,8 @@
     width: 390px;
     font-size:18px;
     color: #333333;
-    margin-top: 8px;
-    /*text-align:center;*/
+    margin-top: 10px;
+    text-align:center;
 }
 
 

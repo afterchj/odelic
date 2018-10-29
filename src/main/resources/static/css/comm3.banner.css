@@ -14,15 +14,18 @@
     width: 240px;
     height: 50px;
     list-style: none;
+    background: #0d0d0d;
+    /*border:1px solid #fff;*/
     float: left;
 }
 .top_switch ul li:hover{
-    background:#fff;box-shadow:0px -2px 16px 0px rgba(0,0,0,.4);
+    background:#DDDDDD;
 }
 .top_switch ul li div{
     text-align: center;
     font-size: 22px;
     margin-top: 10px;
+    cursor:pointer;
 }
 
 .comm2_switch ul li div{
@@ -34,14 +37,14 @@
 .content1{
     clear: both;
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner1{
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
@@ -52,7 +55,7 @@
 }
 .content_banner1 div{
     width: 3840px;
-    height: 640px;
+    height: 480px;
     position:absolute;
     left: 0;
     top: 0;
@@ -60,11 +63,15 @@
 .content_banner1 img{
     width: 960px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
     float: left;
 }
 .content_banner1  .banner1_vert{
     width: 426px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
 
     margin-left: 267px;
     margin-right: 267px;
@@ -100,14 +107,14 @@
 .content2{
     clear: both;
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner2{
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
@@ -118,7 +125,7 @@
 }
 .content_banner2 div{
     width: 3840px;
-    height: 640px;
+    height: 480px;
     position:absolute;
     left: 0;
     top: 0;
@@ -126,11 +133,15 @@
 .content_banner2 img{
     width: 960px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
     float: left;
 }
 .content_banner2  .banner2_vert{
     width: 426px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
 
     margin-left: 267px;
     margin-right: 267px;
@@ -165,14 +176,14 @@
 .content3{
     clear: both;
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner3{
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
@@ -183,7 +194,7 @@
 }
 .content_banner3 div{
     width: 3840px;
-    height: 640px;
+    height: 480px;
     position:absolute;
     left: 0;
     top: 0;
@@ -191,11 +202,15 @@
 .content_banner3 img{
     width: 960px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
     float: left;
 }
 .content_banner3  .banner3_vert{
     width: 426px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
 
     margin-left: 267px;
     margin-right: 267px;
@@ -230,14 +245,14 @@
 .content4{
     clear: both;
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner4{
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
@@ -248,7 +263,7 @@
 }
 .content_banner4 div{
     width: 3840px;
-    height: 640px;
+    height: 480px;
     position:absolute;
     left: 0;
     top: 0;
@@ -256,11 +271,15 @@
 .content_banner4 img{
     width: 960px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
     float: left;
 }
 .content_banner4  .banner4_vert{
     width: 426px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
 
     margin-left: 267px;
     margin-right: 267px;
@@ -295,14 +314,14 @@
 .content5{
     clear: both;
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
 }
 
 .content_banner5{
     width: 960px;
-    height: 640px;
+    height: 480px;
     margin: 0px auto;
     position: relative;
     /*border: 2px solid red;*/
@@ -313,7 +332,7 @@
 }
 .content_banner5 div{
     width: 3840px;
-    height: 640px;
+    height: 480px;
     position:absolute;
     left: 0;
     top: 0;
@@ -321,11 +340,15 @@
 .content_banner5 img{
     width: 960px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
     float: left;
 }
 .content_banner5  .banner5_vert{
     width: 426px;
     height: 640px;
+    margin-top: -80px;
+    margin-bottom: -80px;
 
     margin-left: 267px;
     margin-right: 267px;
