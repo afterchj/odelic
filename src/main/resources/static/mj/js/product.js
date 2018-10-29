@@ -51,61 +51,64 @@ $(function () {
         $(this).siblings(".sub").slideToggle();
     });
 
-    var width = $(window).width();
-    var height = $(window).height();
-    if (width <= 400 && height <= 700) {
-        $(".pagination").addClass("pagination-sm");
-        $(".divPages").css({
-            position: 'absolute',
-            left: 10
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-        });
-    } else if (width > 1100 && height > 900) {
-        $(".pagination").addClass("pagination-lg");
-        var pagination = $(".pagination").width();
-        $(".divPages").css({
-            position: 'absolute',
-            left: ($(window).width() - $(".pagination").width()) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-        });
-    } else {
-        $(".divPages").css({
-            position: 'absolute',
-            left: ($(window).width() - $(".pagination").width()) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-        });
-    }
+//     var width = $(window).width();
+//     var height = $(window).height();
+//     var pagination= $(".pagination").width();
+//     if (width <= 400 ) {
+//         $(".pagination").addClass("pagination-sm");
+//         $(".divPages").css({
+//             position: 'absolute',
+//             left: 10
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//         });
+// //     } else if (width > 1100 && height > 900) {
+// //         $(".pagination").addClass("pagination-lg");
+// //         // var pagination = $(".pagination").width();
+// //         $(".divPages").css({
+// //             position: 'absolute',
+// //             left: ($(window).width() - $(".pagination").width()) / 2
+// // //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+// //         });
+//     } else {
+//         $(".pagination").addClass("pagination-lg");
+//         $(".divPages").css({
+//             position: 'absolute',
+//             left: ($(window).width() - pagination) / 2
+// //                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//         });
+//     }
     //监听 浏览器窗口大小的变化事件
     $(window).resize(function () {
-        width = $(window).width();
-        height = $(window).height();
+        var width = $(window).width();
+        // height = $(window).height();
         //随着窗口的变化改变分页大小
-        if (width <= 400 && height <= 700) {
+        if (width <= 400) {
             $(".pagination").removeClass("pagination-lg");
-            $(".pagination").addClass("pagination-sm");
             $(".divPages").removeAttr('style');
+            $(".pagination").addClass("pagination-sm");
             $(".divPages").css({
                 position: 'absolute',
                 left: 10
 //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
             });
-        } else if (width > 1100 && height > 900) {
-            $(".pagination").removeClass("pagination-sm");
-            $(".pagination").addClass("pagination-lg");
-            $(".divPages").removeAttr('style');
-            $(".divPages").css({
-                position: 'absolute',
-                left: ($(window).width() - $(".pagination").width()) / 2
-//                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-            });
+//         } else if (width > 1100 && height > 900) {
+//             $(".pagination").removeClass("pagination-sm");
+//             $(".pagination").addClass("pagination-lg");
+//             $(".divPages").removeAttr('style');
+//             $(".divPages").css({
+//                 position: 'absolute',
+//                 left: ($(window).width() - $(".pagination").width()) / 2
+// //                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//             });
 
         } else {
-            $(".pagination").removeClass("pagination-lg");
             $(".pagination").removeClass("pagination-sm");
             $(".divPages").removeAttr('style');
+            $(".pagination").addClass("pagination-lg");
+           var pagination= $(".pagination").width();
             $(".divPages").css({
                 position: 'absolute',
-                left: ($(window).width() - $(".pagination").width()) / 2
+                left: ($(window).width() - pagination) / 2
 //                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
             });
 
@@ -124,4 +127,31 @@ $(function () {
         $("#phon_cate dd").removeClass('cur');
         $("#phon_son dd").removeClass('cur');
     });
-})
+});
+$(window).load(function(){
+    var width = $(window).width();
+    var pagination= $(".pagination").width();
+    if (width <= 400 ) {
+        $(".pagination").addClass("pagination-sm");
+        $(".divPages").css({
+            position: 'absolute',
+            left: 10
+//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+        });
+//     } else if (width > 1100 && height > 900) {
+//         $(".pagination").addClass("pagination-lg");
+//         // var pagination = $(".pagination").width();
+//         $(".divPages").css({
+//             position: 'absolute',
+//             left: ($(window).width() - $(".pagination").width()) / 2
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//         });
+    } else {
+        $(".pagination").addClass("pagination-lg");
+        $(".divPages").css({
+            position: 'absolute',
+            left: ($(window).width() - pagination) / 2
+//                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+        });
+    }
+});
