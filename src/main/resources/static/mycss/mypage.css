@@ -4478,13 +4478,17 @@ body {
 }
 
 .newFooterTop .code dl {
-    margin: 0 -10px;
+    /*margin: 0 -10px;*/
+}
+
+.newFooterTop ul {
+    margin-left: 120px;
 }
 
 .newFooterTop .code dd {
     text-align: center;
     margin: 0 10px;
-    width: 95px;
+    width: 100px;
     float: left;
     color: rgba(255, 255, 255, .7);
     font-size: 14px;
