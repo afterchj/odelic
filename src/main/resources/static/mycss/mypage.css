@@ -6096,6 +6096,11 @@ em {
 }
 
 @media screen and (max-width: 1440px) {
+    .nav .item{float:left;height:70px;width:120px;text-align:center;padding-left:3px;}
+    .nav .nav_small{font-size:14px;padding:0 17px 0 17px;-padding:0 18px 0 19px;color:#ffffff;font-weight:bold;line-height:70px;display:block;float:left;width:76px;}
+    .nav .item .xy_item{width:110px;height:70px;background:#0d0d0d;float:left;cursor: pointer;}
+    .index-wrapper{width: 1200px;}
+
     .syContent .wrapper {
         width: 1200px;
     }

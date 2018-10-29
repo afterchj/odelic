@@ -69,3 +69,11 @@ header dl, #contents {
     margin-right: auto;
     margin-left: auto;
 }
+
+@media screen and (max-width: 1440px) {
+    .cowrapper{width:800px;margin:auto;margin-bottom:130px;}
+    #contents section {
+        padding: 50px 240px;
+        margin-top: 0;
+    }
+}
