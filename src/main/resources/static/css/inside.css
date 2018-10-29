@@ -1,10 +1,10 @@
 .tit{font-size: 30px;color: #333; margin:25px auto;text-align:center;}
 .sertit{color:#333; font-size:24px;}
 .lx{position:relative; background:#fafafa; }
-.lxl{position:absolute;left:0;top:0;height:100%;width:315px; padding:0 95px 0 30px;line-height: 36px; }
+.lxl{position:absolute;left:0;top:0;height:100%;width:30%; padding:0 95px 0 30px;line-height: 36px; }
 .lxlm{color: #6e6e6e;line-height: 20px; margin-top:15px; text-align:justify;}
-.lxr{width: 760px;}
-.lxl1{left:760px;width:300px; padding:0 95px 0 45px;}
+.lxr{width: 65%;}
+.lxl1{left:66.1%; padding:0 95px 0 45px;}
 .lx .table,.lx .table-cell,.lxlm{width:315px;}
 .dotr:hover em img,.lxr:hover img,.zyc1 li:hover img,.zyc2 li:hover img{-webkit-transform:scale(1.1,1.1);transform:scale(1.1,1.1);-o-transform:scale(1.1,1.1);-moz-transform:scale(1.1,1.1);}
 .dotr em,.lxr,.zyc1 li,.zyc2 li a{overflow: hidden;}
@@ -16,6 +16,7 @@
 .solut,.solum{ padding:0 0 0 0;}
 .solut h2{font-size: 30px;color:#333;}
 .solut h3{font-size: 20px;color:#333;text-align:center;}
+.solup,.socmlp span{font-size: 16px;}
 .connect-de1{text-align:center;}
 .connect-de2{padding-top: 70px;}
 .connect-de3{color: #6e6e6e;line-height: 30px;}
@@ -26,7 +27,7 @@
 .solum{color: #6e6e6e;line-height: 20px;}
 .solup{width:1200px; /*height:540px;*/ position:relative;}
 .solu1mbg{ margin:65px auto 10px auto;}
-.socml{width:580px;line-height: 20px;color: #6e6e6e;position: relative;}
+.socml{width:48%;line-height: 20px;color: #6e6e6e;position: relative;}
 .socmlt,.soc2mt{font-size: 14px;color:#333;}
 .bg-cleargray {
     background-color: #d7d4d4;
@@ -50,3 +51,12 @@
 }
 .soc2mm{font-size: 12px;color:#666;line-height: 20px;margin:0 20px 20px 20px;height:60px;overflow:hidden;}
 .soc2m a{ text-align:center; display:block;height: 187.5px;}
+
+@media screen and (max-width: 1440px) {
+    .lx .table,.lx .table-cell,.lxlm{width:215px;}
+    .connect-de3{color: #6e6e6e;line-height: 30px;width: 800px;margin-left: auto;margin-right: auto;}
+    .solup{width:800px; position:relative;margin-left: auto;margin-right: auto;}
+    .solup,.socmlp span{font-size: 10px;}
+    .soc2m{width:120.8px;}
+    .soc2m a{height: 120.8px;}
+}

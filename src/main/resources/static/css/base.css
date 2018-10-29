@@ -29,7 +29,7 @@ a{ text-decoration:none;}
 .nav{float:right; _display:inline;}
 .fl{float:left; _display:inline;}
 .fr{float:right; _display:inline;}
-.header-l{float:left; _display:inline;margin-left:-175px;}
+.header-l{float:left; _display:inline;line-height:70px;}
 ::-ms-clear, ::-ms-reveal{display: none;}  /*清除input右侧 X或者眼睛*/
 input,select{border-radius:0;appearance:none;-moz-appearance:none;-webkit-appearance:none;}/*清楚苹果默认样式*/
 select::-ms-expand { display: none; }/*清楚IE默认样式*/
@@ -69,6 +69,7 @@ img{max-width:100%;
     -o-transition: all 0s;
     transition: all 0s;}
 .wrapper{width:1200px;margin:auto;}
+.index-wrapper{width:1900px;margin:auto;height: 70px;}
 .phone{display:none;}
 
 .flex{
@@ -100,14 +101,14 @@ img{max-width:100%;
 .header_b li.home a{}
 .header_b li.home img{width:14px !important;}
 .header_b li:nth-last-child(1){margin-right:0;}
-.header_store{margin-top:6px;}
+.header_store{margin-top:17px;padding: 0 50px 0 50px;}
 .header-logo{font-size: 38px;color:#ffffff;}
 
-.nav .item{float:left;height:50px;width:120px;text-align:center;padding-left:3px;}
-.nav .nav_small{font-size:14px;padding:0 17px 0 17px;-padding:0 18px 0 19px;color:#ffffff;font-weight:bold;line-height:51px;display:block;float:left;width:76px;}
-.nav .item .xy_item{width:110px;height:28px;background:#ed8232;float:left;cursor: pointer;}
+.nav .item{float:left;height:70px;text-align:center;}
+.nav .nav_small{font-size:20px;padding:0 50px 0 50px;-padding:0 18px 0 19px;color:#ffffff;font-weight:bold;line-height:70px;display:block;float:left;width:120px;}
+.nav .item .xy_item{width:220px;height:70px;background:#0d0d0d;float:left;cursor: pointer;}
 /*.nav .item .xy_item{width:110px;height:28px;float:left;cursor: pointer;}*/
-.nav .item .xy_snav{color:#ffffff;line-height:28px;display: block;}
+.nav .item .xy_snav{color:#ffffff;line-height:70px;display: block;}
 .nav .item .xy_item:hover{display:block;background:#ED593D;}
 /*.nav .item .xy_item:hover{display:block;}*/
 .dl-list{display:none;}
@@ -139,7 +140,7 @@ img{max-width:100%;
 /*.header_b li.two .sub .dt a{background-size:16px !important;}*/
 /*.header_b li.four .sub .dl-list>div{padding:11px 0;}*/
 /*.header_b li.four .tit{padding:15px 0 !important;margin:0;}*/
-.line {float: left;height: 135px;width: 1px;margin-left: 80px;margin-top: 0px;background-color: #dbdbdb;}
+.line {float: left;height: 135px;width: 1px;margin-left: 70px;margin-top: 0;background-color: #dbdbdb;}
 
 
 
