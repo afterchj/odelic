@@ -325,11 +325,14 @@
 <script>
     $(function () {
         if ($("i").hasClass("fa-bars")){
-
+            $(".navbar").css("height","");
         }
-        $(".fa-bars").click(function(){
+        $(".fa.fa-bars").click(function(){
             $(".navbar").height("100%");
         });
+    });
+    window.onload=$(".navbar-toggle").on('click','.fa.fa-times',function(){
+        $(".navbar").css("height","");
     });
 </script>
 </body>

@@ -9,52 +9,54 @@
     <link type="text/css" href="../css/page.css" rel="stylesheet">
 </head>
 <body>
-<right th:fragment="right">
-    <div class="fixed_right">
-        <ul>
-            <li class="pos_re qq">
-                <div class='side-tools-tips'>
-                    <p><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=806015080&site=qq&menu=yes'><img src='images/qq_ff0df34.png' alt=''/></a></p>
-                </div>
-                <div class="table">
-                    <div class="table-cell" style="cursor: pointer;">
-                        <img src="images/right_icon01.png" width="40">
+<div th:fragment="right">
+    <right>
+        <div class="fixed_right">
+            <ul>
+                <li class="pos_re qq">
+                    <div class='side-tools-tips'>
+                        <p><a target='_blank' href='http://wpa.qq.com/msgrd?v=3&uin=806015080&site=qq&menu=yes'><img src='images/qq_ff0df34.png' alt=''/></a></p>
                     </div>
-                </div>
-            </li>
-            <li class="pos_re">
-                <div class="table">
-                    <div class="table-cell" style="cursor: pointer;" title="APP下载">
-                        <img src="images/right_icon07.png" width="40">
+                    <div class="table">
+                        <div class="table-cell" style="cursor: pointer;">
+                            <img src="images/right_icon01.png" width="40">
+                        </div>
                     </div>
-                </div>
-            </li>
-            <li class="pos_re totop">
-                <div class="table">
-                    <div class="table-cell" style="cursor: pointer;" title="回到顶部">
-                        <img src="images/right_icon06.png" width="40">
+                </li>
+                <li class="pos_re">
+                    <div class="table">
+                        <div class="table-cell" style="cursor: pointer;" title="APP下载">
+                            <img src="images/right_icon07.png" width="40">
+                        </div>
                     </div>
-                </div>
-            </li>
-        </ul>
-    </div>
-    <script>
-        $(function () {
-            //返回顶部
-            var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix
-            $(".totop").hide();
-            $(".totop").click(function () {
-                $body.animate({scrollTop: 0});
-            });
-            window.onscroll = function () {
-                if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {
-                    $(".totop").show();
-                } else {
-                    $(".totop").hide();
-                }
-            };
-        })
-    </script>
-</right>
+                </li>
+                <li class="pos_re totop">
+                    <div class="table">
+                        <div class="table-cell" style="cursor: pointer;" title="回到顶部">
+                            <img src="images/right_icon06.png" width="40">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <script>
+            $(function () {
+                //返回顶部
+                var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix
+                $(".totop").hide();
+                $(".totop").click(function () {
+                    $body.animate({scrollTop: 0});
+                });
+                window.onscroll = function () {
+                    if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {
+                        $(".totop").show();
+                    } else {
+                        $(".totop").hide();
+                    }
+                };
+            })
+        </script>
+    </right>
+</div>
 </body>
 </html>

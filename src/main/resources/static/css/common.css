@@ -5,3 +5,7 @@ ol, ul { list-style: none; }
 
 
 #content { position: relative; width: 1200px; min-height: 500px; margin: 0 auto; }
+
+@media screen and (max-width: 1440px) {
+    #content { position: relative; width: 800px; min-height: 500px; margin: 0 auto; }
+}

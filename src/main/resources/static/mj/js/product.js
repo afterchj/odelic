@@ -3,36 +3,9 @@
  * Created by nannan.li on 2018/10/22.
  */
 $(function () {
-    //返回顶部
-    var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix
-    $(".totop").hide();
-    $(".totop").click(function () {
-        $body.animate({scrollTop: 0});
-    });
-    window.onscroll = function () {
-        if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {
-            $(".totop").show();
-        } else {
-            $(".totop").hide();
-        }
-    };
-
     //排序
     $('.pro-paix a').click(function () {
         $(this).addClass('cur').siblings().removeClass('cur');
-    });
-
-    //筛选选中
-    $('.pro-shaix .li_select a').click(function () {
-        if ($(this).hasClass('all')) {
-            $(this).addClass('cur').siblings("a").removeClass('cur')
-        }
-        else if ($(this).hasClass('cur')) {
-            $(this).removeClass('cur');
-        }
-        else {
-            $(this).addClass('cur').siblings(".all").removeClass('cur');
-        }
     });
 
     $('#btn_search').click(function () {
@@ -41,22 +14,7 @@ $(function () {
             key.focus();
             return false;
         }
-        location.href = '/newpro/prolist/?classid=79&key=' + key.val();
     });
-    var url = '/newpro/prolist/?classid=79';
-    document.onkeydown = function (e) {
-        var ev = document.all ? window.event : e;
-        if (ev.keyCode == 13) {
-            var key = $('#txt_key');
-            if (key.val() == '') {
-                key.focus();
-                return false;
-            }
-            url += '&key=' + key.val();
-            //alert(url);
-            window.location.href = url;
-        }
-    }
 
     //选中
     $('.new_pro_screen_ul li dd').click(function () {
@@ -93,60 +51,64 @@ $(function () {
         $(this).siblings(".sub").slideToggle();
     });
 
-    var width = $(window).width();
-    var height = $(window).height();
-    if (width <= 400 && height <= 700) {
-        $(".pagination").addClass("pagination-sm");
-        $(".divPages").css({
-            position: 'absolute',
-            left: 10
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-        });
-    } else if (width > 1100 && height > 900) {
-        $(".pagination").addClass("pagination-lg");
-        $(".divPages").css({
-            position: 'absolute',
-            left: ($(window).width() - $(".pagination").width()) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-        });
-    } else {
-        $(".divPages").css({
-            position: 'absolute',
-            left: ($(window).width() - $(".pagination").width()) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-        });
-    }
+//     var width = $(window).width();
+//     var height = $(window).height();
+//     var pagination= $(".pagination").width();
+//     if (width <= 400 ) {
+//         $(".pagination").addClass("pagination-sm");
+//         $(".divPages").css({
+//             position: 'absolute',
+//             left: 10
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//         });
+// //     } else if (width > 1100 && height > 900) {
+// //         $(".pagination").addClass("pagination-lg");
+// //         // var pagination = $(".pagination").width();
+// //         $(".divPages").css({
+// //             position: 'absolute',
+// //             left: ($(window).width() - $(".pagination").width()) / 2
+// // //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+// //         });
+//     } else {
+//         $(".pagination").addClass("pagination-lg");
+//         $(".divPages").css({
+//             position: 'absolute',
+//             left: ($(window).width() - pagination) / 2
+// //                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//         });
+//     }
     //监听 浏览器窗口大小的变化事件
     $(window).resize(function () {
-        width = $(window).width();
-        height = $(window).height();
+        var width = $(window).width();
+        // height = $(window).height();
         //随着窗口的变化改变分页大小
-        if (width <= 400 && height <= 700) {
+        if (width <= 400) {
             $(".pagination").removeClass("pagination-lg");
-            $(".pagination").addClass("pagination-sm");
             $(".divPages").removeAttr('style');
+            $(".pagination").addClass("pagination-sm");
             $(".divPages").css({
                 position: 'absolute',
                 left: 10
 //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
             });
-        } else if (width > 1100 && height > 900) {
-            $(".pagination").removeClass("pagination-sm");
-            $(".pagination").addClass("pagination-lg");
-            $(".divPages").removeAttr('style');
-            $(".divPages").css({
-                position: 'absolute',
-                left: ($(window).width() - $(".pagination").width()) / 2
-//                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-            });
+//         } else if (width > 1100 && height > 900) {
+//             $(".pagination").removeClass("pagination-sm");
+//             $(".pagination").addClass("pagination-lg");
+//             $(".divPages").removeAttr('style');
+//             $(".divPages").css({
+//                 position: 'absolute',
+//                 left: ($(window).width() - $(".pagination").width()) / 2
+// //                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//             });
 
         } else {
-            $(".pagination").removeClass("pagination-lg");
             $(".pagination").removeClass("pagination-sm");
             $(".divPages").removeAttr('style');
+            $(".pagination").addClass("pagination-lg");
+           var pagination= $(".pagination").width();
             $(".divPages").css({
                 position: 'absolute',
-                left: ($(window).width() - $(".pagination").width()) / 2
+                left: ($(window).width() - pagination) / 2
 //                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
             });
 
@@ -165,4 +127,31 @@ $(function () {
         $("#phon_cate dd").removeClass('cur');
         $("#phon_son dd").removeClass('cur');
     });
-})
+});
+$(window).load(function(){
+    var width = $(window).width();
+    var pagination= $(".pagination").width();
+    if (width <= 400 ) {
+        $(".pagination").addClass("pagination-sm");
+        $(".divPages").css({
+            position: 'absolute',
+            left: 10
+//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+        });
+//     } else if (width > 1100 && height > 900) {
+//         $(".pagination").addClass("pagination-lg");
+//         // var pagination = $(".pagination").width();
+//         $(".divPages").css({
+//             position: 'absolute',
+//             left: ($(window).width() - $(".pagination").width()) / 2
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//         });
+    } else {
+        $(".pagination").addClass("pagination-lg");
+        $(".divPages").css({
+            position: 'absolute',
+            left: ($(window).width() - pagination) / 2
+//                    top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+        });
+    }
+});

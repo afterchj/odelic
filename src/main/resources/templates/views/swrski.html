@@ -11,7 +11,7 @@
     <script type="text/javascript" src="./js/common.js"></script>
     <link type="text/css" href="./css/base.css" rel="stylesheet">
     <link type="text/css" href="./mycss/common.css" rel="stylesheet">
-    <link type="text/css" href="./mycss/mybase.css" rel="stylesheet">
+    <link type="text/css" href="./mycss/star.css" rel="stylesheet">
     <link type="text/css" href="./mycss/mypage.css" rel="stylesheet">
     <link type="text/css" href="./living_files/inside.css" rel="stylesheet">
     <style type="text/css">
@@ -19,23 +19,19 @@
             margin-right: 20px;
         }
 
-        .lmbg img {
-            width: 240px;
-            height: 90px;
-            /*margin-bottom: 20px;*/
-        }
-
         .solum img {
             width: 1200px;
-            height: 485px;
+            height: 500px;
         }
     </style>
 </head>
 <body>
 <div th:include="layout/header::header"></div>
-<div th:include="layout/trade::trade"></div>
+<!--<div th:include="layout/trade::trade"></div>-->
+<div th:include="layout/right::right"></div>
 <!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/header.html"></iframe>-->
 <!--banner-->
+<div style="width: 100%;height: 90px"></div>
 <div class="lmbg">
     <div class="wrapper">
         <ul>
@@ -55,9 +51,9 @@
     </div>
 </div>
 <div class="solum">
-    <img src="./star/swrski_banner.jpg" alt=""/>
+    <img class="bann" src="./star/swrski_banner.jpg" alt=""/>
     <div style="width: 300px;height:80px;background: #666;opacity: 0.7;padding: 40px 30px;position: absolute;bottom: 50px; left: 0;color: white">
-       <label style="font-size: xx-large;">施华洛世奇系列</label>
+        <label style="font-size: xx-large;">施华洛世奇系列</label>
         <br><br>
         <p>高级空间，精致与奢华共鸣</p>
     </div>
@@ -97,56 +93,41 @@
 </div>
 
 <!--<div class="solu wrapper clearfix" style="clear:both">-->
-<div class="wntj" style="margin-top:100px;">
+<div class="wntj">
     <div class="sertit">为你推荐</div>
     <br/>
-    <div class="soc2 clearfix">
+    <div class="clearfix">
         <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2069"><img
-                    src="./living_files/1466847630.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>
-            </div>
-            <div class="soc2mm">功率（W）：116.5<br>
-                规格尺寸(Mm)：Φ1000*360<br>
-                应用空间：客厅
-            </div>
+            <div class="pic"><a href="#"><img src="./star/img_OB255210LD.png" alt=""></a></div>
+            <!--<div class="soc2mt"><a-->
+            <!--href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>-->
+            <!--</div>-->
+            <div class="soc2mm">型号：OB255210LD</div>
         </div>
         <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2580"><img
-                    src="./living_files/1451385080.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>
-            </div>
-            <div class="soc2mm">功率（W）：135<br>
-                规格尺寸(Mm)：Φ1030*1100<br>
-                应用空间：客厅
-            </div>
+            <div class="pic"><a href="#"><img src="./star/img_OC257130BC.png" alt=""></a></div>
+            <!--<div class="soc2mt"><a-->
+            <!--href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>-->
+            <!--</div>-->
+            <div class="soc2mm">型号：OC257130BC</div>
         </div>
         <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2574"><img
-                    src="./living_files/1447916958.jpg" alt=""></a></div>
-            <div class="soc2mt"><a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>
-            </div>
-            <div class="soc2mm">功率（W）：100<br>
-                规格尺寸(Mm)：Φ 1000*545<br>
-                应用空间：客厅
-            </div>
+            <div class="pic"><a href="#"><img src="./star/img_OC257131BC.png" alt=""></a></div>
+            <!--<div class="soc2mt">-->
+            <!--<a href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>-->
+            <!--</div>-->
+            <div class="soc2mm">型号：OC257131BC</div>
         </div>
         <div class="soc2m">
-            <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2582"><img
-                    src="./living_files/1466762897.jpg" alt=""></a></div>
-            <div class="soc2mt"><a
-                    href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a>
-            </div>
-            <div class="soc2mm">功率（W）：117<br>
-                规格尺寸(Mm)：Φ970*291<br>
-                应用空间：客厅
-            </div>
+            <div class="pic"><a href="#"><img src="./star/img_OP252615LD.png" alt=""></a></div>
+            <!--<div class="soc2mt"><a-->
+            <!--href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a>-->
+            <!--</div>-->
+            <div class="soc2mm">型号：OP252615LD</div>
         </div>
     </div>
     <!--</div>-->
-    <div><a class="button" href="#" target="_blank">查看更多</a></div>
+    <div><a class="button" href="product" target="_blank">更多</a></div>
 </div>
 </div>
 <div th:include="layout/footer::footer"></div>

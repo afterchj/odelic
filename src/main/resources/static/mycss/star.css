@@ -1,0 +1,29 @@
+
+.lmbg img {
+    width: 240px;
+    height: 90px;
+}
+
+.aqua {
+    display: none;
+}
+
+.spect {
+    border-bottom: 1px solid blue;
+}
+
+.mystar {
+    margin: 20px auto 10px auto;
+    width: 400px;
+    height: 80px;
+}
+
+.mystar li {
+    float: left;
+    list-style: none;
+    color: blue;
+    height: 30px;
+    margin-right: 50px;
+    font-size: x-large;
+    cursor: pointer;
+}
