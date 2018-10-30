@@ -52,9 +52,8 @@
 
 .comm2_anli_content{
     clear: both;
-    width: 1280px;
+    width: 1230px;
     margin: 30px auto;
-    padding-left: 25px;
 }
 .comm2_anli_content ul{
     clear: both;
@@ -62,7 +61,6 @@
 .comm2_anli_content ul li{
     width: 410px;
     height: 330px;
-    padding-left: 15px;
     list-style: none;
 }
 .comm2_anli_content ul .img_left{
@@ -71,11 +69,21 @@
 .comm2_anli_content ul .img_right{
     float: left;
 }
+
+
+.comm2_anli_content ul li{
+    width: 410px;
+    height: 330px;
+}
+
 .comm2_anli_content ul li a div{
     width: 380px;
     height: 253px;
+    margin-left: 15px;
     overflow: hidden;
 }
+
+
 .comm2_anli_content ul li a div img{
     width: 380px;
     height: 253px;
@@ -86,7 +94,7 @@
 }
 
 .comm2_anli_content ul li>div{
-    width: 380px;
+    width: 410px;
     font-size:18px;
     color: #333333;
     margin-top: 10px;
