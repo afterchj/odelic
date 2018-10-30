@@ -3,142 +3,34 @@
 <head>
     <title>联系我们</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link href="/static/mj/css/base2.css" rel="stylesheet" type="text/css"/>
-    <link href="/static/mj/css/page.css" rel="stylesheet" type="text/css"/>
-    <link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>
-    <link href="/static/mj/css/inside.css" rel="stylesheet" type="text/css"/>
-    <link href="/static/mj/css/style.css" rel="stylesheet" type="text/css"/>
+    <!--<link href="/static/mj/css/base2.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="/static/mj/css/page.css" rel="stylesheet" type="text/css"/>-->
+    <link type="text/css" href="../css/base.css" rel="stylesheet"> <!--导航-->
+    <link type="text/css" href="../css/page.css" rel="stylesheet"> <!--导航-->
+    <!--<link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="/static/mj/css/inside.css" rel="stylesheet" type="text/css"/>-->
+    <!--<link href="/static/mj/css/style.css" rel="stylesheet" type="text/css"/>-->
     <link href="/static/mj/css/callus.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript"
             src="/static/mj/daohang/js/jquery.min.js"></script>
     <script src="/static/mj/daohang/js/nav.js"></script>
-    <style>
-
-        /** {*/
-        /*box-sizing: unset !important;*/
-        /*}*/
-
-        /*.media {*/
-        /*margin-left: 20%;*/
-        /*margin-right: 10%;*/
-        /*height: 100%;*/
-        /*}*/
-
-        /*.media .media-left > img, .media .media-right > img {*/
-        /*max-width: none !important;*/
-        /*}*/
-
-        /*.parents {*/
-        /*margin-left: 10%;*/
-        /*!*margin-bottom: 3%;*!*/
-        /*!*margin-top: 10%;*!*/
-        /*margin-right: 10%;*/
-        /*width: 100%;*/
-        /*height: 100%;*/
-        /*overflow: hidden;*/
-        /*position: relative;*/
-        /*!*padding-bottom: 10%;*!*/
-        /*}*/
-
-        /*.childImg {*/
-        /*width: 50%;*/
-        /*float: right;*/
-        /*transform: translate(-20%, -20%);*/
-        /*-webkit-transform: translate(-20%, -20%);*/
-        /*-webkit-transform: translate(-20%, -20%);*/
-        /*-o-transform: translate(-20%, -20%);*/
-        /*padding-top: 10%;*/
-        /*}*/
-
-        /*.childImg > img {*/
-        /*width: 80%;*/
-        /*height: 80%;*/
-
-        /*}*/
-
-        /*.childTxt {*/
-        /*position: absolute;*/
-        /*!*right: 5%;*!*/
-        /*right: 50%;*/
-        /*!*top: 50%;*!*/
-        /*!*top: 10%;*!*/
-        /*width: 35%;*/
-        /*!*transform: translateY(-50%);*!*/
-        /*!*-moz-transform: translateY(-50%);*!*/
-        /*!*-webkit-transform: translateY(-50%);*!*/
-        /*!*-o-transform: translateY(-50%);*!*/
-        /*transform: translate(-20%, -20%);*/
-        /*-webkit-transform: translate(-20%, -20%);*/
-        /*-webkit-transform: translate(-20%, -20%);*/
-        /*-o-transform: translate(-20%, -20%);*/
-        /*padding-top: 10%;*/
-        /*}*/
-
-    </style>
-
-    <style>
-        /*.header_b {*/
-        /*background: black;*/
-        /*}*/
-
-        /*.nav {*/
-        /*float: right;*/
-        /*_display: inline;*/
-        /*}*/
-
-        /*b {*/
-        /*font-weight: 700;*/
-        /*}*/
-    </style>
 </head>
-
-<body style="height: 100%;font-family: none;">
+<style>
+    strong, b {
+        font-weight: bold!important;
+    }
+    body{
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif!important;
+    }
+</style>
+<body style="height: 100%;">
 
 <div th:replace="layout/header::header"></div>
 
-<style>
-
-    /*.bannerbox {*/
-    /*margin: 0 auto;*/
-    /*position: relative;*/
-    /*overflow: hidden;*/
-    /*height: 300px;*/
-    /*}*/
-
-    /*.banner {*/
-
-    /*width: 2000px; !*图片宽度*!*/
-    /*-position: fixed;*/
-    /*left: 50%;*/
-    /*margin-left: -1000px; !*图片宽度的一半*!*/
-    /*height: 300px;*/
-    /*bottom: 0;*/
-    /*}*/
-</style>
 <div class="bannerbox">
-    <!--<div class="banner">-->
-    <!--<img src="./static/img/aboutus_01.png">-->
-    <!--</div>-->
 </div>
 
 <div th:include="layout/right::right"></div>
-<script>
-    //    $(function () {
-    //        //返回顶部
-    //        var $body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body'); //operaFix
-    //        $(".totop").hide();
-    //        $(".totop").click(function () {
-    //            $body.animate({scrollTop: 0});
-    //        });
-    //        window.onscroll = function () {
-    //            if ((document.documentElement.scrollTop + document.body.scrollTop) > 200) {
-    //                $(".totop").show();
-    //            } else {
-    //                $(".totop").hide();
-    //            }
-    //        };
-    //    })
-</script>
 <!--<div class="about" id="aboutUs" style="margin-bottom: 10%;">-->
 <!--<div class="aboutBox">-->
 <!--<div class="aboutCon01 aboutCon" id="item1">-->
@@ -198,7 +90,8 @@
         </h3>
     </div>
     <div class="media-right">
-        <img src="/static/mj/img/callus_03.png" class="media-object">
+        <!--<img src="/static/mj/img/callus_03.png" class="media-object">-->
+        <img src="/static/mj/img/map.png" class="media-object">
     </div>
 </div>
 
@@ -251,7 +144,7 @@
 <!--</div>-->
 <!--<div style="clear: both"></div>-->
 <!--</div>-->
-<script src="/static/mj/daohang/js/nav.js"></script>
+<script type="text/javascript" src="../js/nav.js"></script>
 <style>
     /*footer {*/
     /*height: 25%;*/

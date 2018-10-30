@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>dining room</title>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <!--<script type="text/javascript" src="./js/nav.js"></script>-->
+    <script type="text/javascript" src="./js/nav.js"></script>
     <!--<script type="text/javascript" src="./js/comm.js"></script>-->
     <script type="text/javascript" src="./js/common.js"></script>
     <link type="text/css" href="./css/base.css" rel="stylesheet">
@@ -26,6 +26,7 @@
 <body>
 <div th:include="layout/header::header"></div>
 <div th:include="layout/trade::trade"></div>
+<div th:include="layout/right::right"></div>
 <!--<iframe name="" frameborder="0" scrolling="no" width="100%" src="./html/header.html"></iframe>-->
 <!--<div th:include="layout/common::common"></div>-->
 <div style="margin-bottom: 20px;">
@@ -53,9 +54,9 @@
                 <li><a href="hallway"><img src="./home/一站式解决_16.png"><br>
                     <p>玄关</p>
                 </a></li>
-                <li><a href="childhood"><img src="./home/一站式解决_18.png"><br>
-                    <p>儿童房</p>
-                </a></li>
+                <!--<li><a href="childhood"><img src="./home/一站式解决_18.png"><br>-->
+                <!--<p>儿童房</p>-->
+                <!--</a></li>-->
             </ul>
         </div>
     </div>
@@ -157,52 +158,25 @@
                 style="font-size:24px; font-weight:bolder; color:#666; margin-right:5px;">|</label>为你推荐
         </div>
         <br/>
-        <div class="soc2 clearfix">
+        <div class="clearfix">
             <div class="soc2m">
-                <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2069"><img
-                        src="./living_files/1466847630.jpg" alt=""></a></div>
-                <div class="soc2mt"><a
-                        href="http://www.opple.com.cn/newpro/detail/2069">MZX1000A-D0.2*660-SD-雅熙-3000K+4000K</a>
-                </div>
-                <div class="soc2mm">功率（W）：116.5<br>
-                    规格尺寸(Mm)：Φ1000*360<br>
-                    应用空间：客厅
-                </div>
+                <div class="pic"><a href="#"><img src="./home/dining_OC257131BC.jpg" alt=""></a></div>
+                <div class="soc2mm">型号：OC257131BC</div>
             </div>
             <div class="soc2m">
-                <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2580"><img
-                        src="./living_files/1451385080.jpg" alt=""></a></div>
-                <div class="soc2mt"><a
-                        href="http://www.opple.com.cn/newpro/detail/2580">MZX1030-D1*120+D0.2*76-SD-晶典-3000K</a>
-                </div>
-                <div class="soc2mm">功率（W）：135<br>
-                    规格尺寸(Mm)：Φ1030*1100<br>
-                    应用空间：客厅
-                </div>
+                <div class="pic"><a href="#"><img src="./home/dining_OP234372BC.jpg" alt=""></a></div>
+                <div class="soc2mm">型号：OP234372BC</div>
             </div>
             <div class="soc2m">
-                <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2574"><img
-                        src="./living_files/1447916958.jpg" alt=""></a></div>
-                <div class="soc2mt"><a
-                        href="http://www.opple.com.cn/newpro/detail/2574">MX1000-D0.2*480+0.2*576-SD沐兰5700+3000K</a>
-                </div>
-                <div class="soc2mm">功率（W）：100<br>
-                    规格尺寸(Mm)：Φ 1000*545<br>
-                    应用空间：客厅
-                </div>
+                <div class="pic"><a href="#"><img src="./home/dining_OP252319LD.jpg" alt=""></a></div>
+                <div class="soc2mm">型号：OP252319LD</div>
             </div>
             <div class="soc2m">
-                <div class="pic"><a href="http://www.opple.com.cn/newpro/detail/2582"><img
-                        src="./living_files/1466762897.jpg" alt=""></a></div>
-                <div class="soc2mt"><a
-                        href="http://www.opple.com.cn/newpro/detail/2582">MZX970-D0.5*324-SD-云烟-4000K</a></div>
-                <div class="soc2mm">功率（W）：117<br>
-                    规格尺寸(Mm)：Φ970*291<br>
-                    应用空间：客厅
-                </div>
+                <div class="pic"><a href="#"><img src="./home/dining_OP252575LD.jpg" alt=""></a></div>
+                <div class="soc2mm">型号：OP252575LD</div>
             </div>
         </div>
-        <div><a class="button" href="#" target="_blank">查看更多</a></div>
+        <div><a class="button" href="product" target="_blank">查看更多</a></div>
     </div>
 </div>
 <div th:include="layout/footer::footer"></div>

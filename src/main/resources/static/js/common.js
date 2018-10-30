@@ -49,6 +49,7 @@ $(function () {
     var clone = $(".ad .slider li").first().clone();//克隆第一张图片
     $(".ad .slider").append(clone);//复制到列表最后
     var size = $(".ad .slider li").size();
+    console.log("size=" + size);
     for (var j = 0; j < size-1; j++) {
         $(".ad .num").append("<li></li>");
     }

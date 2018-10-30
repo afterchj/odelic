@@ -1034,7 +1034,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         padding-left: 30px;
         padding-right: 30px;
         margin: 0px -15px;
-        font-size: 20px;
+        font-size: 2.5vh;
+        font-family: "KaiTi",楷体,"STXinwei",华文新魏,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
     }
     
     nav.navbar.bootsnav .navbar-nav > li {
@@ -1057,7 +1058,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         display: block;
         width: 100%;
         border-bottom: solid 1px #e0e0e0;
-        padding: 10px 0;
+        padding: 25px 0;
         border-top: solid 1px #e0e0e0;
         margin-bottom: -1px;
     }
@@ -1101,6 +1102,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         border-bottom: solid 1px #e0e0e0;
         padding: 10px 0;
         color: #6f6f6f;
+        font-size: 1.9vh;
+        font-family: "KaiTi",楷体,"STXinwei",华文新魏,"Microsoft YaHei",微软雅黑,"MicrosoftJhengHei",华文细黑,STHeiti,MingLiu;
     }
     
     nav.navbar.bootsnav ul.nav ul.dropdown-menu li a:hover,

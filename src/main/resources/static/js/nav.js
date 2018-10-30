@@ -4,7 +4,7 @@ $(function () {
     $("#aaa>li").hover(function () {
         // window.onerror=function(){return true;}
         $(this).children("ul").show();
-        $(this).children("a").css("background", "#ed8232");
+        $(this).children("a").css("background", "#0d0d0d");
     }, function () {
         $(this).children("ul").hide();
         $(this).children("a").css("background", "");

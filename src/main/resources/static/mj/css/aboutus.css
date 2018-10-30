@@ -4,17 +4,14 @@
     box-sizing:unset!important;
 
 }
-a {
-    text-decoration: none!important;
-}
 
 .nav {
     float: right;
     _display: inline;
 }
-b {
-    font-weight: 700;
-}
+/*b {*/
+    /*font-weight: 700;*/
+/*}*/
 .newFooter{background:#828485!important;}
 .nyBanner01 .hd{position:absolute;z-index:10;bottom:15px;text-align:center;width:100%;}
 
@@ -31,7 +28,6 @@ b {
     margin-left:-1000px; /*图片宽度的一半*/
     height: 600px;
 }
-
 .cirl{
     display: block;
     width: 14px;
@@ -47,3 +43,5 @@ b {
     left: 50%;
     top: 50%;
 }
+
+

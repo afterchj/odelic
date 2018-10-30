@@ -1,6 +1,6 @@
 #contents .item { box-sizing: border-box; }
 
-.cowrapper{width:1149.89px;margin:auto;margin-bottom:50px;}
+.cowrapper{width:1149.89px;margin:auto;margin-bottom:130px;}
 
 #contents {
     width: 1280px;
@@ -68,4 +68,12 @@ img {
 header dl, #contents {
     margin-right: auto;
     margin-left: auto;
+}
+
+@media screen and (max-width: 1440px) {
+    .cowrapper{width:800px;margin:auto;margin-bottom:130px;}
+    #contents section {
+        padding: 50px 240px;
+        margin-top: 0;
+    }
 }

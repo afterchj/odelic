@@ -1,7 +1,7 @@
 .ad {
     clear: both;
     width: 1200px;
-    height: 450px;
+    height: 500px;
     margin: 5px auto;
     position: relative;
     overflow: hidden;
@@ -16,7 +16,7 @@
 
 .ad .slider img {
     width: 1200px;
-    height: 450px;
+    height: 500px;
 }
 
 .ad .slider li {
@@ -27,7 +27,7 @@
     position: absolute;
     width: 100%;
     bottom: 10px;
-    left: 48%;
+    left: 0;
     text-align: center;
     font-size: 0px;
 }
