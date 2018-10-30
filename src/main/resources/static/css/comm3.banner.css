@@ -12,7 +12,7 @@
 }
 .top_switch ul li{
     width: 240px;
-    height: 50px;
+    height: 80px;
     list-style: none;
     background: #0d0d0d;
     /*border:1px solid #fff;*/
@@ -23,15 +23,13 @@
 }
 .top_switch ul li div{
     text-align: center;
-    font-size: 22px;
-    margin-top: 10px;
+    font-size: 20px;
+    margin-top: 27px;
     cursor:pointer;
+    color:#ffffff;
+
 }
 
-.comm2_switch ul li div{
-    display:block;color:#0046aa;font-size:14px;line-height:40px;
-    background:#f2f2f2;text-align:center;text-decoration: none;
-}
 
 /*------------------------------底部轮播图1----------------------------------*/
 .content1{

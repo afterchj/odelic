@@ -23,7 +23,7 @@
     <style type="text/css">
         .top_switch ul li{
             width: 480px;
-            height: 50px;
+            height: 80px;
             list-style: none;
             float: left;
         }
@@ -318,8 +318,8 @@
 
 
     function initView(){
-        document.getElementById('top_switch01').style.background="#c2c2c2";
-        document.getElementById('top_switch02').style.background="#fff";
+        document.getElementById('top_switch01').style.background="#666666";
+        document.getElementById('top_switch02').style.background="#999999";
         document.getElementById('content1').style.display="block";
         document.getElementById('content2').style.display="none";
     };
@@ -327,14 +327,14 @@
 
 
     $("#top_switch01").click(function () {
-        document.getElementById('top_switch01').style.background="#c2c2c2";
-        document.getElementById('top_switch02').style.background="#fff";
+        document.getElementById('top_switch01').style.background="#666666";
+        document.getElementById('top_switch02').style.background="#999999";
         document.getElementById('content1').style.display="block";
         document.getElementById('content2').style.display="none";
     });
     $("#top_switch02").click(function () {
-        document.getElementById('top_switch01').style.background="#fff";
-        document.getElementById('top_switch02').style.background="#c2c2c2";
+        document.getElementById('top_switch01').style.background="#999999";
+        document.getElementById('top_switch02').style.background="#666666";
         document.getElementById('content1').style.display="none";
         document.getElementById('content2').style.display="block";
     });
