@@ -28,7 +28,7 @@
 }
 
 .home {
-    margin: 20px auto;
+    margin: 30px auto;
     width: 1200px;
     height: 400px;
     /*border: 1px solid black;*/
@@ -37,7 +37,7 @@
 
 .content {
     /*position: relative;*/
-    margin: 80px 5px;
+    margin: 60px 30px;
     text-align: left;
     width: 400px;
     height: auto;
