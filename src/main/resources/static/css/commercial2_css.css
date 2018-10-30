@@ -17,11 +17,11 @@
 
 /**/
 .comm2_switch{
-    width:1204px;
+    width:1260px;
     margin: 0px auto;
 }
 .comm2_switch ul li{
-    width: 172px;
+    width: 180px;
     list-style: none;
     float: left;
 }
@@ -52,17 +52,17 @@
 
 .comm2_anli_content{
     clear: both;
-    width: 1320px;
+    width: 1280px;
     margin: 30px auto;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 .comm2_anli_content ul{
     clear: both;
 }
 .comm2_anli_content ul li{
-    width: 420px;
-    height: 340px;
-    padding-left: 20px;
+    width: 410px;
+    height: 330px;
+    padding-left: 15px;
     list-style: none;
 }
 .comm2_anli_content ul .img_left{
@@ -72,21 +72,21 @@
     float: left;
 }
 .comm2_anli_content ul li a div{
-    width: 390px;
-    height: 260px;
+    width: 380px;
+    height: 253px;
     overflow: hidden;
 }
 .comm2_anli_content ul li a div img{
-    width: 390px;
-    height: 260px;
+    width: 380px;
+    height: 253px;
     transition: all 1s;
 }
 .comm2_anli_content ul li a div:hover img{
     transform: scale(1.1,1.1);
 }
 
-.comm2_anli_content ul li div{
-    width: 390px;
+.comm2_anli_content ul li>div{
+    width: 380px;
     font-size:18px;
     color: #333333;
     margin-top: 10px;
