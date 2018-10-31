@@ -7,16 +7,23 @@
     height: 230px;
     /*border: 1px solid green;*/
 }
-.bann{
+
+.bann {
     width: 1200px;
     height: 500px;
 }
+
 .wntj {
     clear: both;
     width: 1200px;
+    /*height: 280px;*/
     margin: 100px auto 0 auto;
     /*float: right;*/
     text-align: center;
+}
+
+.wntj .clearfix {
+   margin-left: 12px;
 }
 
 .solum {
@@ -85,7 +92,7 @@
     line-height: 40px;
     font-size: 12px;
     border: 1px solid #666;
-    margin: 40px auto;
+    margin: 50px auto 100px auto;
     /*margin-top: 40px;*/
     border-radius: 5px;
     display: block;
@@ -117,9 +124,8 @@
     }
 
     /*.wntj {*/
-        /*border: 1px solid blue;*/
+    /*border: 1px solid blue;*/
     /*}*/
-
     .spc {
         display: block;
         width: 800px;
@@ -193,9 +199,8 @@
     }
 
     /*.wntj {*/
-        /*border: 1px solid green;*/
+    /*border: 1px solid green;*/
     /*}*/
-
     .spc {
         display: block;
         width: 800px;
