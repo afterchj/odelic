@@ -10,36 +10,40 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="renderer" content="webkit">
     <link rel="stylesheet" href="/static/mj/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="/static/mj/js/jquery.min.js"></script>
-    <script src="/static/mj/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/static/mj/js/jquery.min.js" type="text/javascript"></script>
+    <script src="/static/mj/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
     <!--<link type="text/css" href="/static/mj/daohang/css/base.css" rel="stylesheet">-->
     <!--<link type="text/css" href="/static/mj/daohang/css/page.css" rel="stylesheet">-->
     <link type="text/css" href="../css/base.css" rel="stylesheet"> <!--导航-->
     <link type="text/css" href="../css/page.css" rel="stylesheet"> <!--导航-->
     <style>
-        /**{*/
-            /*box-sizing:unset!important;*/
-        /*}*/
-        /*a {*/
-            /*text-decoration: none!important;*/
-        /*}*/
-        /*@media screen and (max-width: 1023px) {*/
-            /*nav{*/
-                /*display: block;*/
-            /*}*/
-        /*}*/
         .pro-list li .wenz {
             /*height: 136px;*/
             height: 36px !important;//产品文本高
         }
+        .pro-list li {
+            margin: 0 0 60px 0!important;
+        }
+        .pro-list li h3 {
+            font-size: 20px!important;
+        }
+        .pro-shaix .li_tit {
+            font-size: 16px!important;
+        }
+        .pro-shaix .li_select a {
+            font-size: 14px!important;
+        }
+        .pro-paix {
+            margin: 24px 0 14px!important;
+        }
     </style>
     <link type="text/css" href="/static/mj/css/product.css" rel="stylesheet">
 </head>
-<body style="line-height: normal">
+<body style="line-height: normal;background-color: #fafafa">
 <div th:include="layout/header::header"></div>
     <div class="bannerbox">
         <div class="banner">
-            <img src="/static/mj/img/cpzx_01.png">
+            <img src="/static/mj/img/cpzx_01.jpg">
         </div>
     </div>
 
@@ -53,7 +57,7 @@
 <input type="hidden" id="sonCategory_hide" value="sonCategoryId1">
 <div class="product">
     <div class="pro-shaix">
-        <div class="wrapper" style="background-color: rgb(246, 244, 236);">
+        <div class="wrapper" style="background-color:#EEEEEE;">
             <ul>
                 <li class="clearfix">
                     <div class="li_tit">类型：</div>
@@ -118,10 +122,10 @@
     </div>
 </div>
 </div>
-<div class="divPages">
+<div class="divPages" style="text-align: center;">
     <input type="hidden" id="num" th:value="${pageInfos.getPageNum()}">
     <input type="hidden" id="total" th:value="${pageInfos.getPages()}">
-    <ul class="pagination">
+    <ul class="pagination" >
         <li><a href="#" class="page1">首页</a></li>
         <li><a href="#" class="page2">上一页</a></li>
         <li><a th:if="${pageInfos.getPageNum()-4>=1}" href="#"
@@ -203,15 +207,15 @@
                     <dd class="all cur" data-val="sonCategoryId1"><a
                             href="javascript:;">全部</a></dd>
                     <dd data-title="field2" data-val="sonCategoryId2"><a
-                            href="javascript:;">轻奢</a></dd>
+                            href="javascript:;">欧式</a></dd>
                     <dd data-title="field2" data-val="sonCategoryId3"><a
-                            href="javascript:;">简约</a></dd>
+                            href="javascript:;">时尚轻奢</a></dd>
                     <dd data-title="field2" data-val="sonCategoryId4"><a
-                            href="javascript:;">田园</a></dd>
+                            href="javascript:;">文艺复古</a></dd>
                     <dd data-title="field2" data-val="sonCategoryId5"><a
-                            href="javascript:;">新中式</a></dd>
+                            href="javascript:;">现代简约</a></dd>
                     <dd data-title="field2" data-val="sonCategoryId6"><a
-                            href="javascript:;">和风</a></dd>
+                            href="javascript:;">日式</a></dd>
                     <dd data-title="field2" data-val="sonCategoryId7"><a
                             href="javascript:;">蒸汽朋克</a></dd>
                     <dd data-title="field2" data-val="sonCategoryId8"><a
@@ -229,12 +233,11 @@
 </div>
 <div class="black"></div>
 <div class="clearb"></div>
-
-<script type="text/javascript" src="/static/mj/opjm_files/common.js"></script>
 <div class="clearb" style="clear: both;"></div>
 <div th:include="layout/footer::footer"></div>
 </body>
+<script type="text/javascript" src="/static/mj/opjm_files/common.js"></script>
+<script type="text/javascript" src="/static/js/nav.js"></script>
 <script src="/static/mj/js/opjm.js" type="text/javascript"></script>
-<script type="text/javascript" src="../js/nav.js"></script>
 <script src="/static/mj/js/product.js"></script>
 </html>

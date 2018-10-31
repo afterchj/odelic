@@ -201,7 +201,7 @@ a:hover .show {
     font-size: 14px;
     color: #333;
     padding: 0 22px 0 9px;
-    background: url(/web/ucan/images/else/down.png) no-repeat right 7px center;
+    /*background: url(/web/ucan/images/else/down.png) no-repeat right 7px center;*/
     display: inline-block;
     *display: inline;
     *zoom: 1;
@@ -212,7 +212,7 @@ a:hover .show {
 .pro-paix a:hover, .pro-paix a.cur {
     border: 1px solid #0046aa;
     color: #fff;
-    background: #0046aa url(/web/ucan/images/else/up.png) no-repeat right 7px center;
+    /*background: #0046aa url(/web/ucan/images/else/up.png) no-repeat right 7px center;*/
 }
 
 .pro-paix a.phone {
@@ -3152,7 +3152,7 @@ body {
 }
 
 .new_pro_screen_ul li h3 {
-    background: #f3f3f3 url(/web/ucan/images/phone/jia.png) no-repeat right 5% center;
+    background: #f3f3f3 url(/static/mj/img/jia.png) no-repeat right 5% center;
     background-size: 12px !important;
     line-height: 36px;
     padding: 0 5%;

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)http://caibaojian.com/demo/2017/11/detectOrientation.html -->
+<html lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- 1.Meta Viewport的设置，保证页面适配屏幕尺寸 -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <title>探讨判断横竖屏的最佳实现</title>
+</head>
+<style>
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+    }
+</style>
+<body style="position: static;">
+<script>document.body.addEventListener('touchmove', function () {
+}, false)</script>
+<div>
+    <p id="J_detectRes">检测结果是横屏</p>
+    <p id="J_detectData">clientWidth；1693;<br>clientHeight；912;<br>screen.width：1920;<br>screen.height：1080;
+    </p>
+</div>
+
+<script>
+    // 判断横竖屏
+    var utils = {
+        debounce: function (func, delay) {
+            var timer = null;
+            return function () {
+                var context = this,
+                        args = arguments;
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    func.apply(context, args);
+                }, delay);
+            }
+        }
+    }
+
+    var detectRes = document.getElementById('J_detectRes');
+    var detectData = document.getElementById('J_detectData');
+    function detectOrient() {
+            var sw = window.screen.width;
+            var sh = window.screen.height;
+        if (sw<sh){
+            // 竖屏
+            detectRes.innerHTML = '检测结果是竖屏';
+        }
+        if (sw>sh) {
+            // 横屏
+            detectRes.innerHTML = '检测结果是横屏';
+        }
+        detectData.innerHTML = 'clientWidth；' + document.documentElement.clientWidth + ';<br>'
+                + 'clientHeight；' + document.documentElement.clientHeight + ';<br>'
+                + 'screen.width：' + window.screen.width + ';<br>'
+                + 'screen.height：' + window.screen.height + ';';
+    }
+
+    // 3.函数去抖处理
+    window.onresize = utils.debounce(detectOrient, 300);
+    detectOrient();
+</script>
+</body>
+</html>

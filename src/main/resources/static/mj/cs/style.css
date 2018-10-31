@@ -45,8 +45,9 @@ Modules - reusable parts of our design
 -------------------------------- */
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
-  width: 80%;
-  max-width: 1170px;
+  /*width: 80%;*/
+  width: 87%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .cd-container::after {
@@ -96,11 +97,14 @@ Main components
   content: '';
   position: absolute;
   top: 0;
-  left: 18px;
+  /*left: 18px;*/
+  left: 15px;
   /*height: 400%;!*竖线长度 10个100%*!*/
   /*height: 3000px;*/
-  width: 2px;
-  background: #d7e4ed;
+  /*width: 2px;*/
+  width: 10px;
+  /*background: #d7e4ed;*/
+  background: #808080;
 }
 
 @media only screen and (min-width: 1170px) {
@@ -110,7 +114,8 @@ Main components
   }
   #cd-timeline::before {
     left: 50%;
-    margin-left: -2px;
+    /*margin-left: -2px;*/
+    margin-left: -5px;
       /*height: attr(data-before);*/
     /*height: 3970px;*/
     /*height: 650%;*/
@@ -319,7 +324,7 @@ Main components
 @media only screen and (min-width: 1170px) {
   .cd-timeline-content {
     margin-left: 0;
-    padding: 1.6em;
+    /*padding: 1.6em;*/
     width: 45%;
   }
   .cd-timeline-content::before {
