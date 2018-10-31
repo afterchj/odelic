@@ -220,7 +220,7 @@ list.phon = function(){
         var totalPage = $("#total").val();//总页数
         $.post('listType',
             {category:category,sonCategory:sonCategory},function (data) {
-                console.log(data);
+                // console.log(data);
                 $.each(data, function (key,values) {
                     if (key=="getPageNum"){
                         $("#num").val(values);
@@ -280,7 +280,7 @@ list.phon = function(){
 
 list.next = function () {
     $(".pagination").on("click",".page3",function () {
-        var pagination=0;
+        // var pagination=0;
         var pageNum = $("#num").val();//当前页
         var totalPage = $("#total").val();//总页数
         //判断是否是最后一页
@@ -349,15 +349,15 @@ list.next = function () {
                     // }
                     a+='<li><a href="#" class="page3">下一页</a></li><li><a href="#" class="page4">尾页</a></li>';
                     $(".pagination").append($(a));
-                    pagination = $(".pagination").width();//分页宽度
-                    if (width >= 400 ) {
-                        $(".divPages").removeAttr('style');
-                        $(".divPages").css({
-                            position: 'absolute',
-                            left: ($(window).width() - pagination) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-                        });
-                    }
+//                     pagination = $(".pagination").width();//分页宽度
+//                     if (width >= 400 ) {
+//                         $(".divPages").removeAttr('style');
+//                         $(".divPages").css({
+//                             position: 'absolute',
+//                             left: ($(window).width() - pagination) / 2
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//                         });
+//                     }
                 },"json");
         }else {
             $(".page3").parent().addClass("disabled");//禁止点击下一页
@@ -367,7 +367,7 @@ list.next = function () {
 
 list.previous = function () {
     $(".pagination").on("click",".page2",function () {
-        var pagination=0;
+        // var pagination=0;
         var pageNum = $("#num").val();//当前页
         var totalPage = $("#total").val();//总页数
         //判断是否是第一页
@@ -438,15 +438,15 @@ list.previous = function () {
                     // }
                     a+='<li><a href="#" class="page3">下一页</a></li><li><a href="#" class="page4">尾页</a></li>';
                     $(".pagination").append($(a));
-                    pagination = $(".pagination").width();//分页宽度
-                    if (width >= 400) {
-                        $(".divPages").removeAttr('style');
-                        $(".divPages").css({
-                            position: 'absolute',
-                            left: ($(window).width() - pagination) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-                        });
-                    }
+//                     pagination = $(".pagination").width();//分页宽度
+//                     if (width >= 400) {
+//                         $(".divPages").removeAttr('style');
+//                         $(".divPages").css({
+//                             position: 'absolute',
+//                             left: ($(window).width() - pagination) / 2
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//                         });
+//                     }
                 },"json");
         }else {
             $(".page2").parent().addClass("disabled");//禁止点击上一页
@@ -457,7 +457,7 @@ list.previous = function () {
 
 list.first = function () {
     $(".pagination").on("click",".page1",function () {
-        var pagination=0;
+        // var pagination=0;
         var pageNum = $("#num").val();//当前页
         var totalPage = $("#total").val();//总页数
         //判断是否是第一页
@@ -528,15 +528,15 @@ list.first = function () {
                     // }
                     a+='<li><a href="#" class="page3">下一页</a></li><li><a href="#" class="page4">尾页</a></li>';
                     $(".pagination").append($(a));
-                    pagination = $(".pagination").width();//分页宽度
-                    if (width >= 400) {
-                        $(".divPages").removeAttr('style');
-                        $(".divPages").css({
-                            position: 'absolute',
-                            left: ($(window).width() - pagination) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-                        });
-                    }
+//                     pagination = $(".pagination").width();//分页宽度
+//                     if (width >= 400) {
+//                         $(".divPages").removeAttr('style');
+//                         $(".divPages").css({
+//                             position: 'absolute',
+//                             left: ($(window).width() - pagination) / 2
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//                         });
+//                     }
                 },"json");
         }else {
             $(".page1").parent().addClass("disabled");//禁止点击首页
@@ -547,7 +547,7 @@ list.first = function () {
 
 list.last = function () {
     $(".pagination").on("click",".page4",function () {
-        var pagination=0;
+        // var pagination=0;
         var pageNum = $("#num").val();//当前页
         var totalPage = $("#total").val();//总页数
         //判断是否是最后一页
@@ -618,15 +618,15 @@ list.last = function () {
                     // }
                     a+='<li><a href="#" class="page3">下一页</a></li><li><a href="#" class="page4">尾页</a></li>';
                     $(".pagination").append($(a));
-                    pagination = $(".pagination").width();//分页宽度
-                    if (width >= 400) {
-                        $(".divPages").removeAttr('style');
-                        $(".divPages").css({
-                            position: 'absolute',
-                            left: ($(window).width() - pagination) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-                        });
-                    }
+//                     pagination = $(".pagination").width();//分页宽度
+//                     if (width >= 400) {
+//                         $(".divPages").removeAttr('style');
+//                         $(".divPages").css({
+//                             position: 'absolute',
+//                             left: ($(window).width() - pagination) / 2
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//                         });
+//                     }
                 },"json");
         }else {
             $(".page4").parent().addClass("disabled");//禁止点击尾页
@@ -637,9 +637,9 @@ list.last = function () {
 list.page = function(){
     //动态生成的元素要通过事件委托来处理
     $(".pagination").on('click',".pagenums",function(){
-        var pagination=0;
-        var width = $(window).width();//屏幕宽
-        var height = $(window).height();//屏幕高
+        // var pagination=0;
+        // var width = $(window).width();//屏幕宽
+        // var height = $(window).height();//屏幕高
         $(".pagenums").parent().removeClass("active");
         $(this).parent().addClass("active");
         $("#num").val($(this).text());//更新当前页
@@ -709,15 +709,15 @@ list.page = function(){
                 // }
                 a+='<li><a href="#" class="page3">下一页</a></li><li><a href="#" class="page4">尾页</a></li>';
                 $(".pagination").append($(a));
-                pagination = $(".pagination").width();//分页宽度
-                if (width >= 400) {
-                    $(".divPages").removeAttr('style');
-                    $(".divPages").css({
-                        position: 'absolute',
-                        left: ($(window).width() - pagination) / 2
-//                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
-                    });
-                }
+//                 pagination = $(".pagination").width();//分页宽度
+//                 if (width >= 400) {
+//                     $(".divPages").removeAttr('style');
+//                     $(".divPages").css({
+//                         position: 'absolute',
+//                         left: ($(window).width() - pagination) / 2
+// //                top: ($(window).height() - $('.divPages').outerHeight())/2 + $(document).scrollTop()
+//                     });
+//                 }
             },"json");
     });
 }

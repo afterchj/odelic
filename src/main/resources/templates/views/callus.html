@@ -3,8 +3,12 @@
 <head>
     <title>联系我们</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!--<link href="/static/mj/css/base2.css" rel="stylesheet" type="text/css"/>-->
-    <!--<link href="/static/mj/css/page.css" rel="stylesheet" type="text/css"/>-->
+    <!-- 1.Meta Viewport的设置，保证页面适配屏幕尺寸 -->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="renderer" content="webkit">
     <link type="text/css" href="../css/base.css" rel="stylesheet"> <!--导航-->
     <link type="text/css" href="../css/page.css" rel="stylesheet"> <!--导航-->
     <!--<link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>-->
@@ -13,86 +17,48 @@
     <link href="/static/mj/css/callus.css" rel="stylesheet" type="text/css"/>
     <script type="text/javascript"
             src="/static/mj/daohang/js/jquery.min.js"></script>
-    <script src="/static/mj/daohang/js/nav.js"></script>
 </head>
 <style>
     strong, b {
-        font-weight: bold!important;
+        font-weight: bold !important;
     }
-    body{
-        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif!important;
+
+    body {
+        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
     }
 </style>
-<body style="height: 100%;">
-
+<body>
 <div th:replace="layout/header::header"></div>
-
 <div class="bannerbox">
 </div>
-
 <div th:include="layout/right::right"></div>
-<!--<div class="about" id="aboutUs" style="margin-bottom: 10%;">-->
-<!--<div class="aboutBox">-->
-<!--<div class="aboutCon01 aboutCon" id="item1">-->
-<!--<div class="wrapper">-->
-<!--<ul>-->
-<!--<li class="clearfix" style="display: block">-->
-<!--<div class="con clearfix">-->
-<!--&lt;!&ndash;<div class="pic">&ndash;&gt;-->
-<!--&lt;!&ndash;<img src="./static/img/about01.jpg">&ndash;&gt;-->
-<!--&lt;!&ndash;</div>&ndash;&gt;-->
-<!--<div class="wenz" style="float: left;left: 0;margin-left: 10%">-->
-<!--<div class="table">-->
-<!--<div class="table-cell">-->
-<!--<h3 class="f16"><strong style="font-weight: bolder">商务合作（可联系订单）</strong></h3>-->
-<!--<h3 class="f16">公司：XXXXXXXXX</h3>-->
-<!--<h3 class="f16">地址：XXXXXXXXXXXX</h3>-->
-<!--<h3 class="f16">E-MAIL：XXXX@tpadsz.com</h3>-->
-<!--<h3 class="f16">QQ：XXXXXXXXXX</h3>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="pic" style="float: right;width: 50%;margin-right: 10%">-->
-<!--<img src="/static/mj/img/callus_03.png">-->
-<!--</div>-->
-<!--</div>-->
-<!--</li>-->
-<!--</ul>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div style="clear: both"></div>-->
-<!--<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css"-->
-      <!--rel="stylesheet">-->
-<!--<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>-->
-<!--<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 <link rel="stylesheet" href="/static/mj/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="/static/mj/js/jquery.min.js"></script>
 <script src="/static/mj/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<div class="media" style="height: 65%;">
+<div class="media" style="min-height: 400px;">
 
-    <div class="media-body media-top">
-        <h3 class="media-heading"><strong style="font-weight: bolder">
-            商务合作（可联系订单）</strong>
+    <div class="media-body media-top" style="padding-top: 20px;">
+        <h3 class="media-heading" style="font-size: 30px;font-weight: bold">
+            商务合作（可联系订单）
         </h3><br>
-        <h3 class="media-heading">
+        <h3 class="media-heading" style="font-size: 28px">
             公司：XXXXXXXXX
         </h3>
-        <h3 class="media-heading">
+        <h3 class="media-heading" style="font-size: 28px">
             地址：XXXXXXXXXXXX
         </h3>
-        <h3 class="media-heading">
+        <h3 class="media-heading" style="font-size: 28px">
             E-MAIL：XXXX@tpadsz.com
         </h3>
-        <h3 class="media-heading">
+        <h3 class="media-heading" style="font-size: 28px">
             QQ：XXXXXXXXXX
         </h3>
     </div>
     <div class="media-right">
-        <!--<img src="/static/mj/img/callus_03.png" class="media-object">-->
         <img src="/static/mj/img/map.png" class="media-object">
     </div>
+</div>
+<div class="bannerbox" style="height: 120px">
 </div>
 
 
@@ -115,66 +81,77 @@
 <!--</h3>-->
 <!--</div>-->
 <!--<div class="childImg">-->
-<!--<img src="/static/mj/img/callus_03.png">-->
+<!--<img src="/static/mj/img/map.png">-->
 <!--</div>-->
 <!--<div style="clear: both"></div>-->
 <!--</div>-->
 
-<!--<div class="parents" style="margin-bottom: 10%;margin-left: 20%">-->
-<!--<div class="childTxt" style="float: left;">-->
-<!--<h3 class="f24"><strong style="font-weight: bolder">-->
-<!--商务合作（可联系订单）</strong>-->
-<!--</h3><br>-->
-<!--<h3 class="f24">-->
-<!--公司：XXXXXXXXX-->
-<!--</h3>-->
-<!--<h3 class="f24">-->
-<!--地址：XXXXXXXXXXXX-->
-<!--</h3>-->
-<!--<h3 class="f24">-->
-<!--E-MAIL：XXXX@tpadsz.com-->
-<!--</h3>-->
-<!--<h3 class="f24">-->
-<!--QQ：XXXXXXXXXX-->
-<!--</h3>-->
-<!--</div>-->
-<!--<div class="childImg" style="float:right;margin-right: 20%">-->
-<!--&lt;!&ndash;<img src="img/ditu.png" alt="" style="width: 60%;height: 60%;">&ndash;&gt;-->
-<!--<img src="/static/mj/img/callus_03.png" alt="" style="width: 80%;height: 80%;">-->
-<!--</div>-->
-<!--<div style="clear: both"></div>-->
-<!--</div>-->
 <script type="text/javascript" src="../js/nav.js"></script>
-<style>
-    /*footer {*/
-    /*height: 25%;*/
-    /*}*/
-</style>
-
 <div th:replace="layout/footer::footer"></div>
-<style>
-    footer{
-        margin-bottom: -2%;
-    }
-</style>
 </body>
 <script src="/static/mj/js/callus.js"></script>
 <script>
 
     //中间内容自动填充屏幕
-    var body = $(window).height() + $(window).scrollTop();//屏幕的高，包括滚动距离
-    if (body>=1200){
-        var banner = $(".bannerbox").outerHeight(true);//banner高度
-        var footer = $("footer").outerHeight(true);//footer高度
-        var height = body - (banner + footer);
-        $(".media").height(height);
-        $(window).resize(function () {
-            body = $(window).height() + $(window).scrollTop();//屏幕的高，包括滚动距离
-            banner = $(".bannerbox").outerHeight(true);//banner高度
-            footer = $("footer").outerHeight(true);//footer高度
-            height = body - (banner + footer);
-            $(".media").height(height);
-        });
+    //    var body = $(window).height() + $(window).scrollTop();//屏幕的高，包括滚动距离
+    //    //    var body = $(window).height()//屏幕的高，包括滚动距离
+    //    //    if (body>=1230){
+    //    var banner = $(".bannerbox").outerHeight(true);//banner高度
+    //    var footer = $("footer").outerHeight(true);//footer高度
+    //    var height = body - (banner + footer);
+    //    $(".media").height(height);
+    //    $(window).resize(function () {
+    //        body = $(window).height() + $(window).scrollTop();//屏幕的高，包括滚动距离
+    ////            body = $(window).height();//屏幕的高，包括滚动距离
+    //        banner = $(".bannerbox").outerHeight(true);//banner高度
+    //        footer = $("footer").outerHeight(true);//footer高度
+    //        height = body - (banner + footer);
+    //        $(".media").height(height);
+    //    });
+    //    }
+
+    // 判断横竖屏
+    var utils = {
+        debounce: function (func, delay) {
+            var timer = null;
+            return function () {
+                var context = this,
+                        args = arguments;
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    func.apply(context, args);
+                }, delay);
+            }
+        }
     }
+    function detectOrient() {
+        var sw = window.screen.width;
+        var sh = window.screen.height;
+        var media = document.querySelector(".media");
+        if (sw < sh) {
+            // 竖屏
+            console.log("竖屏")
+            var header = document.getElementsByTagName("header");
+            var banner = document.querySelectorAll(".bannerbox");
+            var footer = document.querySelector("footer");
+            //兼容ie和火狐
+            var banner1= (banner[0].currentStyle || window.getComputedStyle(banner[0],null)).height;
+            var banner2= (banner[1].currentStyle || window.getComputedStyle(banner[1],null)).height;
+            var footer1=(footer.currentStyle||window.getComputedStyle(footer,null)).height;
+            banner1 = parseInt(banner1.substr(0,banner1.length-2));
+            banner2 = parseInt(banner2.substr(0,banner2.length-2));
+            footer1 = parseInt(footer1.substr(0,footer1.length-2));
+            var height = sh-(banner1+banner2+footer1);
+            media.style.height = height+"px";
+            console.log(11)
+        }
+        if (sw>sh) {
+//            // 横屏
+            media.style.height="";
+        }
+    }
+    // 3.函数去抖处理
+    window.onresize = utils.debounce(detectOrient, 300);
+    detectOrient();
 </script>
 </html>

@@ -39,12 +39,13 @@ public class OdelicController {
         return maps;
     }
 
-    /**
-     * 联系我们
-     */
     @RequestMapping(value = "callus", method = RequestMethod.GET)
     public String callus(){
         return "callus";
+    }
+    @RequestMapping(value = "callus2", method = RequestMethod.GET)
+    public String callus2(){
+        return "callus2";
     }
 
 
