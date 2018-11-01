@@ -1,6 +1,6 @@
 #contents .item { box-sizing: border-box; }
 
-.cowrapper{width:1149.89px;margin:auto;margin-bottom:130px;}
+.cowrapper{width:1149.89px;margin:auto;margin-bottom:100px;margin-top: 60px;}
 
 #contents {
     width: 1280px;
@@ -8,19 +8,19 @@
 }
 
 #contents section {
-    padding: 50px 65px;
+    padding: 60px 90px 70px;
     margin-top: 0;
 }
 
 
 #contents .lst-product {
     margin-top: 28px;
-    margin-left: -40px;
+    margin-left: -100px;
     font-size: 0;
 }
 
 #contents .lst-product .item {
-    padding-left: 40px;
+    padding-left: 100px;
     display: inline-block;
     vertical-align: top;
     width: 33.33%;
@@ -29,13 +29,13 @@
 #contents .lst-product .item .b .txt-title {
     font-size: 20px;
     line-height: 1.5;
-    margin-top: 15px;
+    margin-top: 30px;
     float: left;
 }
 #contents .lst-product .item .b .txt-info {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.5;
-    margin-top: 15px;
+    margin-top: 20px;
     float: right;
 }
 #contents .lst-product .item img {
@@ -43,7 +43,7 @@
     height: auto;
 }
 #contents .lst-product .item a {
-    color: #333;
+    color: #000000;
     transition: all .2s;
 }
 #contents .sec-new .lst-product .item a:hover {

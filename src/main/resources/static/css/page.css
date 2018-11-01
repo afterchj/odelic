@@ -588,7 +588,7 @@ a:hover .show {
 
 
 .box {
-    height: auto !important;
+    /*height: auto !important;*/
     padding: 0;
 }
 
@@ -932,39 +932,40 @@ a:hover .show {
 }
 
 .nyBanner01 .box {
-    max-width: 640px !important;
-    width: 640px;
-    padding: 35px 40px 60px 40px;
+    max-width: 900px !important;
+    width: 900px;
+    padding: 45px 50px 45px 50px;
     margin: 0;
-    background: rgba(14, 14, 14, 0.8);
+    background: rgba(00, 00, 00, 0.8);
     position: absolute;
     left: 50%;
     top: 50%;
-    margin-left: -365px;
+    margin-left: -500px;
+    height: 160px;
 }
 
 .nyBanner01 .style-banner h3 {
     margin-bottom: 12px;
     font-size: 30px;
-    color: #da8835;
+    color: #ffa10e;
     text-align: center;
 }
 
 .nyBanner01 .style-banner p {
-    font-size: 14px;
-    color: #fff;
+    font-size: 20px;
+    color: #ffffff;
     line-height: 40px;
     text-align: center;
     position: relative;
-    top: 40px;
+    top: 20px;
 }
 
 .nyBanner01 .banner-line {
-    border-bottom: 1px solid #fff;
-    padding: 10px;
-    width: 130px;
+    border-bottom: 2px solid #fff;
+    padding: 10px 0 0 0;
+    width: 150px;
     position: relative;
-    left: 39%;
+    margin-left: 375px;
 }
 
 /*.newHomeBanner{height:540px;}*/
@@ -1737,7 +1738,7 @@ a:hover .show {
 
 .nyBanner01 {
     position: relative;
-    height: 600px;
+    height: auto;
     background-size: cover !important;
 }
 
@@ -1747,12 +1748,13 @@ a:hover .show {
     bottom: 15px;
     text-align: center;
     width: 100%;
+    height: 10px;
 }
 
 .nyBanner01 .bd li {
     background-size: cover !important;
     width: 100%;
-    height: 600px;
+    height: auto;
 }
 
 .nyBanner01 .bd {
@@ -3360,7 +3362,7 @@ body {
 }
 
 .syContent01 {
-    padding: 30px 0;
+    padding: 100px 0 120px 0;
 }
 
 .syContent01 .wenz {
@@ -3372,9 +3374,10 @@ body {
 }
 
 .syContent01 .box {
-    max-width: 240px !important;
-    width: 240px;
-    padding: 35px 40px 60px 40px;
+    max-width: 232px !important;
+    width: 232px;
+    height: 82px;
+    padding: 30px 30px 30px 30px;
     margin: 0;
     background: rgba(226, 225, 225, 0.68);
     border: 4px solid #fff;
@@ -3406,29 +3409,29 @@ body {
 
 .syContent01 .style-banner h3 {
     font-size: 30px;
-    color: #f0a908;
+    color: #f1c40f;
     text-align: center;
 }
 
 .syContent01 .style-banner h4 {
     font-size: 30px;
-    color: #f0a908;
+    color: #f1c40f;
     float: left;
 }
 
 .syContent01 .style-banner h5 {
     font-size: 30px;
-    color: #f0a908;
+    color: #f1c40f;
     float: right;
 }
 
 .syContent01 .style-banner p {
-    font-size: 14px;
-    color: #000000;
-    line-height: 40px;
+    font-size: 16px;
+    color: #333333;
+    /*line-height: 40px;*/
     text-align: center;
     position: relative;
-    top: 30px;
+    top: 20px;
 }
 
 .syContent01 .yy {
@@ -3470,10 +3473,10 @@ body {
 .picBox2 .pic{height: 320px;position: relative;overflow: hidden;}
 .picBox3 .pic{height: 320px;position: relative;overflow: hidden;}
 .picBox4 .pic{height: 320px;position: relative;overflow: hidden;}
-.picBox1{width: 43%;}
-.picBox2{width: 55%;}
-.picBox3{width: 53%;}
-.picBox4{width: 45%;}
+.picBox1{width: 42.67%;}
+.picBox2{width: 53.5%;}
+.picBox3{width: 52%;}
+.picBox4{width: 44.17%;}
 .index .clearfix{width: 1200px; margin-left: auto;margin-right: auto; }
 
 .syContent01 .pic img {
@@ -3505,7 +3508,7 @@ body {
 }
 
 .mart20 {
-    margin-top: 20px;
+    margin-top: 46px;
 }
 
 .syContent02 {
