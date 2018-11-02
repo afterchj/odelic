@@ -25,15 +25,15 @@ a {
     overflow:hidden;
     height:700px;
 }
-.banner {
-    width: 2000px;
-    /*width:100%; !*图片宽度*!*/
-    position:absolute;
-    left:50%;
-    /*margin-left:-50%; !*图片宽度的一半*!*/
-    margin-left:-50%;
-    height: 700px;
-}
+/*.banner {*/
+    /*width: 2000px;*/
+    /*!*width:100%; !*图片宽度*!*!*/
+    /*position:absolute;*/
+    /*left:50%;*/
+    /*!*margin-left:-50%; !*图片宽度的一半*!*!*/
+    /*margin-left:-50%;*/
+    /*height: 700px;*/
+/*}*/
 
 .divPages{
     padding-bottom: 120px;
