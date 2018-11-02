@@ -14,9 +14,8 @@ $(function(){
            id = $(this).prop("id");
             if (id%2!=0){
             //左侧时间轴
-                $(this).children(".cd-timeline-content").children("h2").css(
-                    {"marginLeft":75+'%',"text-align":"right"});
-                $(this).children(".cd-timeline-content").children("p").css("text-align","right");
+
+
             }
         });
     }

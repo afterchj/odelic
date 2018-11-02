@@ -1,31 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!-- saved from url=(0057)http://caibaojian.com/demo/2017/11/detectOrientation.html -->
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>联系我们</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <!-- 1.Meta Viewport的设置，保证页面适配屏幕尺寸 -->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="renderer" content="webkit">
     <link type="text/css" href="../css/base.css" rel="stylesheet"> <!--导航-->
     <link type="text/css" href="../css/page.css" rel="stylesheet"> <!--导航-->
-    <!--<link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>-->
-    <!--<link href="/static/mj/css/inside.css" rel="stylesheet" type="text/css"/>-->
-    <!--<link href="/static/mj/css/style.css" rel="stylesheet" type="text/css"/>-->
     <link href="/static/mj/css/callus.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript"
-            src="/static/mj/daohang/js/jquery.min.js"></script>
+    <link href="/static/mj/css/map.css" rel="stylesheet" type="text/css"/>
 </head>
 <style>
-    strong, b {
-        font-weight: bold !important;
-    }
 
-    body {
-        font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif !important;
-    }
 </style>
 <body>
 <div th:replace="layout/header::header"></div>
@@ -35,66 +26,38 @@
 <link rel="stylesheet" href="/static/mj/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="/static/mj/js/jquery.min.js"></script>
 <script src="/static/mj/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
-    .media {
 
-    }
-    /*.media .media-body,.media .media-right {*/
-        /*position: absolute;*/
-        /*top: 50%;*/
-        /*transform: translateY(-50%);*/
-    /*}*/
-</style>
-<div class="media" style="min-height: 400px;">
-    <div class="media-body media-top" style="padding-top: 0.2rem;">
-        <h3 class="media-heading" style="font-size: 0.3rem ;font-weight: bold">
-            商务合作（可联系订单）
-        </h3><br>
-        <h3 class="media-heading" style="font-size: 0.28rem">
-            公司：XXXXXXXXX
-        </h3>
-        <h3 class="media-heading" style="font-size: 0.28rem">
-            地址：XXXXXXXXXXXX
-        </h3>
-        <h3 class="media-heading" style="font-size: 0.28rem">
-            E-MAIL：XXXX@tpadsz.com
-        </h3>
-        <h3 class="media-heading" style="font-size: 0.28rem">
-            QQ：XXXXXXXXXX
-        </h3>
+<div class="lx wrapper clearfix" id="lxParent">
+    <div class="lxr fr" id="lxSonOne">
+        <img src="/static/mj/img/map.png">
     </div>
-    <div class="media-right">
-        <img src="/static/mj/img/map.png" class="media-object">
+    <div class="lxl fl" id="lxSonTwo">
+        <div class="table">
+            <div class="table-cell" id="cell">
+                <div class="sertit">
+                    <h3 class="media-heading heading" style="font-weight: bold">
+                        商务合作（可联系订单）
+                    </h3>
+                    <h3 class="media-heading">
+                        公司：XXXXXXXXX
+                    </h3>
+                    <h3 class="media-heading">
+                        地址：XXXXXXXXXXXX
+                    </h3>
+                    <h3 class="media-heading">
+                        E-MAIL：XXXX@tpadsz.com
+                    </h3>
+                    <h3 class="media-heading">
+                        QQ：XXXXXXXXXX
+                    </h3>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 <div class="bannerbox" style="height: 120px">
 </div>
-
-
-<!--<div class="parents">-->
-<!--<div class="childTxt">-->
-<!--<h3 class="f24"><strong style="font-weight: bolder">-->
-<!--商务合作（可联系订单）</strong>-->
-<!--</h3><br>-->
-<!--<h3 class="f24">-->
-<!--公司：XXXXXXXXX-->
-<!--</h3>-->
-<!--<h3 class="f24">-->
-<!--地址：XXXXXXXXXXXX-->
-<!--</h3>-->
-<!--<h3 class="f24">-->
-<!--E-MAIL：XXXX@tpadsz.com-->
-<!--</h3>-->
-<!--<h3 class="f24">-->
-<!--QQ：XXXXXXXXXX-->
-<!--</h3>-->
-<!--</div>-->
-<!--<div class="childImg">-->
-<!--<img src="/static/mj/img/map.png">-->
-<!--</div>-->
-<!--<div style="clear: both"></div>-->
-<!--</div>-->
-
 <script type="text/javascript" src="../js/nav.js"></script>
 <div th:replace="layout/footer::footer"></div>
 </body>
@@ -119,52 +82,52 @@
     //    });
     //    }
 
-    (function(designWidth, maxWidth) {
-        var doc = document,
-                win = window,
-                docEl = doc.documentElement,
-                remStyle = document.createElement("style"),
-                tid;
-
-        function refreshRem() {
-            var width = docEl.getBoundingClientRect().width;
-//            maxWidth = maxWidth || 540;
-            width>maxWidth && (width=maxWidth);
-            var rem = width * 100 / designWidth;
-            remStyle.innerHTML = 'html{font-size:' + rem + 'px!important;}';
-        }
-
-        if (docEl.firstElementChild) {
-            docEl.firstElementChild.appendChild(remStyle);
-        } else {
-            var wrap = doc.createElement("div");
-            wrap.appendChild(remStyle);
-            doc.write(wrap.innerHTML);
-            wrap = null;
-        }
-        //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
-        refreshRem();
-
-        win.addEventListener("resize", function() {
-            clearTimeout(tid); //防止执行两次
-            tid = setTimeout(refreshRem, 300);
-        }, false);
-
-        win.addEventListener("pageshow", function(e) {
-            if (e.persisted) { // 浏览器后退的时候重新计算
-                clearTimeout(tid);
-                tid = setTimeout(refreshRem, 300);
-            }
-        }, false);
-
-        if (doc.readyState === "complete") {
-            doc.body.style.fontSize = "16px";
-        } else {
-            doc.addEventListener("DOMContentLoaded", function(e) {
-                doc.body.style.fontSize = "16px";
-            }, false);
-        }
-    })(1902, 1902);
+    //    (function(designWidth, maxWidth) {
+    //        var doc = document,
+    //                win = window,
+    //                docEl = doc.documentElement,
+    //                remStyle = document.createElement("style"),
+    //                tid;
+    //
+    //        function refreshRem() {
+    //            var width = docEl.getBoundingClientRect().width;
+    ////            maxWidth = maxWidth || 540;
+    //            width>maxWidth && (width=maxWidth);
+    //            var rem = width * 100 / designWidth;
+    //            remStyle.innerHTML = 'html{font-size:' + rem + 'px!important;}';
+    //        }
+    //
+    //        if (docEl.firstElementChild) {
+    //            docEl.firstElementChild.appendChild(remStyle);
+    //        } else {
+    //            var wrap = doc.createElement("div");
+    //            wrap.appendChild(remStyle);
+    //            doc.write(wrap.innerHTML);
+    //            wrap = null;
+    //        }
+    //        //要等 wiewport 设置好后才能执行 refreshRem，不然 refreshRem 会执行2次；
+    //        refreshRem();
+    //
+    //        win.addEventListener("resize", function() {
+    //            clearTimeout(tid); //防止执行两次
+    //            tid = setTimeout(refreshRem, 300);
+    //        }, false);
+    //
+    //        win.addEventListener("pageshow", function(e) {
+    //            if (e.persisted) { // 浏览器后退的时候重新计算
+    //                clearTimeout(tid);
+    //                tid = setTimeout(refreshRem, 300);
+    //            }
+    //        }, false);
+    //
+    //        if (doc.readyState === "complete") {
+    //            doc.body.style.fontSize = "16px";
+    //        } else {
+    //            doc.addEventListener("DOMContentLoaded", function(e) {
+    //                doc.body.style.fontSize = "16px";
+    //            }, false);
+    //        }
+    //    })(1902, 1902);
 
 
     // 判断横竖屏
@@ -184,45 +147,43 @@
     function detectOrient() {
         var sw = window.screen.width;
         var sh = window.screen.height;
-        var media = document.querySelector(".media");
-        var mediaBody=document.querySelector(".media-body");
-        var mediaRight=document.querySelector(".media-right");
+        var lxParent = document.querySelector("#lxParent");
+        var lxSonOne=document.querySelector("#lxSonOne");
+        var lxSonTwo=document.querySelector(".lxSonTwo");
+        var header = document.getElementsByTagName("header");
+        var banner = document.querySelectorAll(".bannerbox");
         if (sw < sh) {
             // 竖屏
-            var header = document.getElementsByTagName("header");
-            var banner = document.querySelectorAll(".bannerbox");
             var footer = document.querySelector("footer");
             //兼容ie和火狐
             var banner1= (banner[0].currentStyle || window.getComputedStyle(banner[0],null)).height;
             var banner2= (banner[1].currentStyle || window.getComputedStyle(banner[1],null)).height;
             var footer1=(footer.currentStyle||window.getComputedStyle(footer,null)).height;
-            var htmlFontSize=document.querySelector("html");
-            var htmlFontSize1=(htmlFontSize.currentStyle||window.getComputedStyle(htmlFontSize,null)).fontSize;
-            var mediaBody2=(mediaBody.currentStyle || window.getComputedStyle(mediaBody,null)).height;
-            var mediaRight2=(mediaRight.currentStyle || window.getComputedStyle(mediaRight,null)).height;
+//            var mediaBody2=(mediaBody.currentStyle || window.getComputedStyle(mediaBody,null)).height;
+//            var mediaRight2=(mediaRight.currentStyle || window.getComputedStyle(mediaRight,null)).height;
             banner1 = parseInt(banner1.substr(0,banner1.length-2));
             banner2 = parseInt(banner2.substr(0,banner2.length-2));
             footer1 = parseInt(footer1.substr(0,footer1.length-2));
-            htmlFontSize1=parseInt(htmlFontSize1.substr(0,htmlFontSize1.length-2));
-            mediaBody2= parseInt(mediaBody2.substr(0,mediaBody2.length-2));
-            mediaRight2=parseInt(mediaRight2.substr(0,mediaRight2.length-2));
+//            htmlFontSize1=parseInt(htmlFontSize1.substr(0,htmlFontSize1.length-2));
+//            mediaBody2= parseInt(mediaBody2.substr(0,mediaBody2.length-2));
+//            mediaRight2=parseInt(mediaRight2.substr(0,mediaRight2.length-2));
             var height = sh-(banner1+banner2+footer1);
-            media.style.height = height+"px";
-            mediaBody.style.paddingTop=(((height)/2)-((mediaBody2)/2))+"px";
-            mediaRight.style.paddingTop=(((height)/2)-((mediaRight2)/2))+"px";
+//            lxParent.style.height = height+"px";
+            lxParent.style.height=(height)+"px";
+//            mediaBody.style.paddingTop=(((height)/2)-((mediaBody2)/2))+"px";
+//            mediaRight.style.paddingTop=(((height)/2)-((mediaRight2)/2))+"px";
         }
         if (sw>sh) {
 //            // 横屏
-            media.style.height="";
-            mediaBody.style.paddingTop="";
-            mediaRight.style.paddingTop="";
+            lxParent.style.height="";
+//            banner[0].style.height=(200)+"px";
+//            banner[1].style.height=(120)+"px";
+//            mediaBody.style.paddingTop="";
+//            mediaRight.style.paddingTop="";
         }
     }
     // 3.函数去抖处理
     window.onresize = utils.debounce(detectOrient, 300);
     detectOrient();
-
-
-
 </script>
 </html>

@@ -15,19 +15,16 @@
     <script src="/static/mj/js/jquery.min.js" type="text/javascript"></script>
     <script src="/static/mj/bootstrap/3.3.7/js/bootstrap.min.js"
             type="text/javascript"></script>
-    <link rel="stylesheet" href="/static/mj/cs/reset.css"> <!-- CSS reset -->
-    <link rel="stylesheet" href="/static/mj/cs/style.css"> <!-- Resource style -->
-    <!--<link href="/static/mj/css/base2.css" rel="stylesheet" type="text/css"/>-->
+    <link rel="stylesheet" href="/static/mj/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="/static/mj/css/styleDep.css"> <!-- Resource style -->
     <link type="text/css" href="../css/base.css" rel="stylesheet"> <!--导航-->
     <link type="text/css" href="../css/page.css" rel="stylesheet"> <!--导航-->
-    <!--<link href="/static/mj/css/page.css" rel="stylesheet" type="text/css"/>-->
     <link href="/static/mj/css/dh.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/inside.css" rel="stylesheet" type="text/css"/>
     <link href="/static/mj/css/style.css" rel="stylesheet" type="text/css"/><!--时间轴-->
     <link href="/static/mj/css/aboutus.css" rel="stylesheet" type="text/css"/>
-    <script type="text/javascript" src="/static/mj/daohang/js/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="/static/mj/js/jquery.min.js"></script>-->
     <script src="/static/mj/js/jquery-1.8.3.js"></script>
-
 </head>
 <style>
     .f16 {
@@ -35,16 +32,7 @@
     }
 </style>
 <body>
-
 <div th:include="layout/header::header"></div>
-
-<!--<div class="banner" data-image-lg="./static/img/banner02.jpg"></div>-->
-<!--<div class="bannerbox" style="font-family: none;">-->
-    <!--<div class="banner">-->
-        <!--<img src="/static/mj/img/aboutus_01.png">-->
-    <!--</div>-->
-<!--</div>-->
-
 <div id="myCarousel" class="carousel slide">
     <div class="carousel-inner">
         <div class="item active">
@@ -52,12 +40,6 @@
         </div>
     </div>
 </div>
-
-<!--<div class="banner" data-image-lg="./static/img/banner02.jpg"-->
-     <!--data-image-xs="./static/img/phoneBanner04.jpg"></div>-->
-
-<!--<div class="ny-banner pro-banner bckBanner" style="background:url(./static/img/aboutus_01.png) no-repeat center center;background-size:cover;">-->
-<!--<div class="ny-banner pro-banner bckBanner" style="background:url(./static/img/banner02.jpg) no-repeat center center;background-size:cover;">-->
 <style>
     .aboutCon01 {
         padding-top: 20px;
@@ -97,10 +79,24 @@
         width: 125px!important;
     }
     .aboutCon01 li .con .pic {
-        width: 47.7%!important;
+        width: 47.7%;
     }
     .aboutCon01 li .con .wenz {
-        width: 53%!important;
+        width: 53%;
+    }
+    @media screen and (max-width: 767px) {
+        .aboutCon01 li .con .wenz {
+            position: relative;
+            height: auto;
+            top: auto;
+            right: auto;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .aboutCon01 li .con .pic {
+            width: 100%;
+        }
     }
 
 </style>
@@ -156,55 +152,6 @@
         </div> <!-- cd-timeline-block -->
         <p class="p_end"></p>
     </section> <!-- cd-timeline -->
-<!--<div class="content">-->
-    <!--<div class="wrapper">-->
-        <!--&lt;!&ndash;<h2 class="f30" style="margin-left: 2%">发展历程</h2>&ndash;&gt;-->
-        <!--<div class="light"><i></i></div>-->
-        <!--&lt;!&ndash;<hr class="line-left">&ndash;&gt;-->
-        <!--&lt;!&ndash;<hr class="line-right">&ndash;&gt;-->
-        <!--<div class="main">-->
-            <!--<h1 class="title">发展历程</h1>-->
-            <!--<div class="year" th:each="yearlist:${years}">-->
-                <!--<h2 th:if="${yearlist}>2012"><a href="#"  th:text="${yearlist}+'年'"><i></i></a></h2>-->
-                <!--<h2 th:if="${yearlist}<=2012"><a href="#"  th:text="2012年以前"><i></i></a></h2>-->
-                <!--<div class="list">-->
-                    <!--<ul>-->
-                        <!--<li class="cls highlight"-->
-                            <!--th:each="lastDays:${lastDays}"-->
-                            <!--th:if="${yearlist}==${lastDays.year}">-->
-                            <!--<p class="date" th:if="${lastDays.day}==null"-->
-                               <!--th:text="${lastDays.month}+'月'"></p>-->
-                            <!--<p class="date" th:if="${lastDays.day}!=null"-->
-                               <!--th:text="${lastDays.month}+'月'+${lastDays.day}+'日'"></p>-->
-                            <!--<p class="intro"-->
-                               <!--th:text="${lastDays.intro}"></p>-->
-                            <!--<p class="version">&nbsp;</p>-->
-                            <!--<div class="more">-->
-                                <!--<p th:text="${lastDays.more}"></p>-->
-                            <!--</div>-->
-                        <!--</li>-->
-
-                        <!--<li class="cls"-->
-                            <!--th:each="timeShaftLists:${timeShaftLists}"-->
-                            <!--th:if="${yearlist}==${timeShaftLists.year}">-->
-                            <!--<p class="date" th:if="${timeShaftLists.day}==null"-->
-                               <!--th:text="${timeShaftLists.month}+'月'"></p>-->
-                            <!--<p class="date" th:if="${timeShaftLists.day}!=null"-->
-                               <!--th:text="${timeShaftLists.month}+'月'+${timeShaftLists.day}+'日'"></p>-->
-                            <!--<p class="intro"-->
-                               <!--th:text="${timeShaftLists.intro}"></p>-->
-                            <!--<p class="version">&nbsp;</p>-->
-                            <!--<div class="more">-->
-                                <!--<p th:text="${timeShaftLists.more}"></p>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                <!--</div>-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
-<!--</div>-->
-
 <div th:include="layout/footer::footer"></div>
 <script src="/static/mj/js/jquery.min.js"></script>
 <script src="/static/mj/js/main.js"></script>

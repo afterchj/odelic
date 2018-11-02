@@ -39,15 +39,14 @@ public class OdelicController {
         return maps;
     }
 
+    /**
+     * 联系我们
+     * @return
+     */
     @RequestMapping(value = "callus", method = RequestMethod.GET)
     public String callus(){
         return "callus";
     }
-    @RequestMapping(value = "callus2", method = RequestMethod.GET)
-    public String callus2(){
-        return "callus2";
-    }
-
 
     /**
      * 产品中心
@@ -61,12 +60,4 @@ public class OdelicController {
         return "productCenter";
     }
 
-    /**
-     * bootstrap导航栏
-     * @return
-     */
-    @RequestMapping(value = "nav-fixed-alt4", method = RequestMethod.GET)
-    public String navAlt4(){
-        return "test/nav-fixed-alt1";
-    }
 }
