@@ -20,12 +20,15 @@
 .solut h2{font-size: 30px;color:#000000;}
 .solut h3{font-size: 26px;color:#333333;text-align:center;}
 .solup,.socmlp span{font-size: 16px;}
+.socmlp p{line-height: 23px;}
 .connect-de1{text-align:center;}
 /*.connect-de2{padding-top: 70px;}*/
 .connect-de3 p{font-size: 16px;color:#333333;padding-bottom: 20px;}
 
 .connect-de4{padding-top: 40px;padding-bottom: 40px;}
 .connect-de5{padding-bottom: 40px;}
+.connect-de6{margin: 0 auto;}
+
 .solubg .other{padding-bottom: 50px;}
 .solut p{font-size:16px;color:#333; margin-top:5px;}
 .solum{color: #333333;font-size:16px;}
@@ -34,7 +37,7 @@
 .solum1{color: #333333;line-height: 20px;font-size:16px;padding-top: 30px;}
 .solup{width:1200px; /*height:540px;*/ position:relative;}
 .solu1mbg{ margin:60px auto 0 auto;}
-.socml{width:47.5%;line-height: 20px;color: #6e6e6e;position: relative;}
+.socml{width:47.5%;color: #6e6e6e;position: relative;}
 .socmlt,.soc2mt{font-size: 14px;color:#333;}
 .bg-cleargray {
     background-color: #d7d4d4;
