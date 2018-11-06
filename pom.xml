@@ -5,7 +5,7 @@
 
     <groupId>com.tpadsz</groupId>
     <artifactId>odelic</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <description>Demo project for Spring Boot</description>
@@ -112,7 +112,7 @@
     </dependencies>
 
     <build>
-        <finalName>ODELIC</finalName>
+        <finalName>ODELIC-${version}</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
