@@ -5071,7 +5071,13 @@ em {
     .nav .nav_small{font-size:14px;padding:0 17px 0 17px;-padding:0 18px 0 19px;color:#ffffff;line-height:70px;display:block;float:left;width:76px;}
     .nav .item .xy_item{width:110px;height:70px;background:#0d0d0d;float:left;cursor: pointer;}
     .index-wrapper{width: 1200px;}
-
+    .index .clearfix{width: 800px;}
+    .syContent01 .box {max-width: 210px !important;width: 210px;padding: 30px 20px 30px 20px;}
+    .syContent01 .picBox1 .box{left: 3%;}
+    .syContent01 .picBox2 .box{left: 6%;}
+    .syContent01 .picBox3 .box{left: 6%;}
+    .syContent01 .picBox4 .box{left: 3%;}
+    .syContent01 .wenz {top: 62%;}
     .header-l {
         float: left;
         _display: inline;
@@ -5093,10 +5099,10 @@ em {
         height: 500px;
     }
 
-    .picBox1 .pic{height: 300px;position: relative;overflow: hidden;}
-    .picBox2 .pic{height: 300px;position: relative;overflow: hidden;}
-    .picBox3 .pic{height: 300px;position: relative;overflow: hidden;}
-    .picBox4 .pic{height: 300px;position: relative;overflow: hidden;}
+    .picBox1 .pic{height: 220px;position: relative;overflow: hidden;}
+    .picBox2 .pic{height: 220px;position: relative;overflow: hidden;}
+    .picBox3 .pic{height: 220px;position: relative;overflow: hidden;}
+    .picBox4 .pic{height: 220px;position: relative;overflow: hidden;}
     .solubg{width: 800px;}
 }
 

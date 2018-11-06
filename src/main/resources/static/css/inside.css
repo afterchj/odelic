@@ -27,7 +27,7 @@
 
 .connect-de4{padding-top: 40px;padding-bottom: 40px;}
 .connect-de5{padding-bottom: 40px;}
-.connect-de6{margin: 0 auto;}
+.solu1mbg6{margin: 0 auto;}
 
 .solubg .other{padding-bottom: 50px;}
 .solut p{font-size:16px;color:#333; margin-top:5px;}
@@ -36,7 +36,14 @@
 .solum-banner{padding-bottom:40px; }
 .solum1{color: #333333;line-height: 20px;font-size:16px;padding-top: 30px;}
 .solup{width:1200px; /*height:540px;*/ position:relative;}
-.solu1mbg{ margin:60px auto 0 auto;}
+.solup-japan span,.solup-natural span{display: block;position:absolute;bottom:0;top:auto;left: 0;right:0;color: #e5e5e5;background: #1e0d0d80;width: 100%;line-height: 20px;padding-bottom: 20px;padding-top: 20px;text-indent: 1em;}
+
+.solu1mbg1,.solu1mbg2,.solu1mbg3,.solu1mbg4,.solu1mbg5{ margin:60px auto 0 auto;}
+.solu1mbg1 .fl span,.solu1mbg2 .fl span,.solu1mbg3 .fl span,.solu1mbg6 .fl span{display: block;position:absolute;bottom:0;top:auto;left: 0px;right:0;color: #e5e5e5;background: #1e0d0d80;width: 100%;padding-bottom: 7px;padding-top: 7px;text-indent: 2em;}
+.solu1mbg1 .fr span,.solu1mbg2 .fr span,.solu1mbg3 .fr span,.solu1mbg4 span,.solu1mbg5 span,.solu1mbg6 .fr span{display: block;position:absolute;bottom:0;top:auto;left: 0px;right:0;color: #e5e5e5;background: #1e0d0d80;width: 100%;padding-bottom: 30px;padding-top: 7px;text-indent: 2em;}
+
+
+
 .socml{width:47.5%;color: #6e6e6e;position: relative;}
 .socmlt,.soc2mt{font-size: 14px;color:#333;}
 .bg-cleargray {
@@ -66,7 +73,19 @@
     .lx .table,.lx .table-cell,.lxlm{width:215px;}
     .connect-de3{color: #6e6e6e;line-height: 30px;width: 800px;margin-left: auto;margin-right: auto;}
     .solup{width:800px; position:relative;margin-left: auto;margin-right: auto;}
-    .solup,.socmlp span{font-size: 10px;}
-    .soc2m{width:120.8px;}
-    .soc2m a{height: 120.8px;}
+    .solup,.socmlp span{font-size: 12px;}
+    .soc2m{width:120px;}
+    .soc2m a{height: 120px;}
+    .lxl{line-height: 0}
+    .sertit{margin-top: 37px;}
+    .lxlm{line-height: 26px; margin-top:26px;}
+    .connect-de3 p{font-size: 13px;}
+    .solum{font-size:13px;}
+    .socmlp p{line-height: 16px;}
+    .solu1mbg3 .fl span{padding-bottom: 2px;padding-top: 2px;}
+    .solu1mbg3 .fr span{padding-bottom: 34px;padding-top: 2px;}
+    .solu1mbg1 .fr span,.solu1mbg2 .fr span,.solu1mbg4 .fr span,.solu1mbg5 .fl span,.solu1mbg6 .fr span{padding-bottom: 23px;}
+    .solu1mbg4 .fl span,.solu1mbg5 .fr span{padding-bottom: 7px;padding-top: 7px;}
+    .solup-japan span,.solup-natural span{padding-bottom: 13px;padding-top: 13px;}
+    .soc2m{margin:0 16px 0 0;}
 }

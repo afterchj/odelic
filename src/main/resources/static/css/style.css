@@ -76,4 +76,10 @@ header dl, #contents {
         padding: 50px 240px;
         margin-top: 0;
     }
+    #contents .lst-product .item .b .txt-title{
+        font-size: 14px;
+    }
+    #contents .lst-product .item .b .txt-info{
+        font-size: 24px;
+    }
 }
