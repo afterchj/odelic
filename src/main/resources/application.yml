@@ -7,7 +7,7 @@ spring:
     prefix: classpath:/templates/views/
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      url: jdbc:mysql://122.112.229.195:3306/light?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true
+      url: jdbc:mysql://122.112.229.195:3306/light?useUnicode=true&characterEncoding=utf8&allowMultiQueries=true&useSSL=false
       password: mopita
       username: mopita
       type: com.alibaba.druid.pool.DruidDataSource
