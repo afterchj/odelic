@@ -1,29 +1,33 @@
 
-.lmbg img {
-    width: 240px;
-    height: 90px;
+.lmbg li {
+    float: left;
+    margin: 30px 20px;
 }
-
 .aqua {
     display: none;
 }
 
 .spect {
-    border-bottom: 1px solid blue;
+    border-bottom: 2px solid #daa145;
+    color: #daa145;
 }
-
+.introduce{
+    font-size:20px;
+    font-weight: bold;
+    color: #000000;
+}
 .mystar {
     margin: 20px auto 10px auto;
     width: 400px;
-    height: 80px;
+    height: 70px;
 }
 
 .mystar li {
     float: left;
     list-style: none;
-    color: blue;
+    /*color: #000000;*/
+    font-size: 30px;
     height: 30px;
     margin-right: 50px;
-    font-size: x-large;
     cursor: pointer;
 }
