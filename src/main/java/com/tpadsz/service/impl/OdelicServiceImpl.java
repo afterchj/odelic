@@ -26,7 +26,7 @@ public class OdelicServiceImpl implements OdelicService {
 
     @Override
     public PageInfo<Odelic> selectAll() {
-        PageHelper.startPage(1, 8);
+        PageHelper.startPage(1, 16);
         List<Odelic> odelicList = odelicDao.selectAll();
         PageInfo<Odelic> pageInfo = new PageInfo<>(odelicList);
         return pageInfo;
@@ -39,7 +39,7 @@ public class OdelicServiceImpl implements OdelicService {
             //未翻页
             pageNum = 1;
         }
-        PageHelper.startPage(pageNum, 8);
+        PageHelper.startPage(pageNum, 16);
         List<Odelic> odelicList = new ArrayList<>();
         String category = pages.getCategory();
         String sonCategory = pages.getSonCategory();

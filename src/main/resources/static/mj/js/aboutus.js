@@ -14,8 +14,9 @@ $(function(){
            id = $(this).prop("id");
             if (id%2!=0){
             //左侧时间轴
-
-
+                $(this).children(".cd-timeline-content").children("h2").css(
+                    {"marginLeft":75+'%',"text-align":"right"});
+                $(this).children(".cd-timeline-content").children("p").css("text-align","right");
             }
         });
     }
@@ -35,7 +36,7 @@ $(function(){
         if(width>1170){
             $(".cd-timeline-block").each(function () {
                 id = $(this).prop("id");
-                console.log("id:"+id);
+                // console.log("id:"+id);
                 if (id%2!=0){
                     //左侧时间轴
                     $(this).children(".cd-timeline-content").children("h2").css(
