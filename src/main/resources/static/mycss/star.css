@@ -3,6 +3,7 @@
     float: left;
     margin: 30px 20px;
 }
+
 .aqua {
     display: none;
 }
@@ -11,11 +12,13 @@
     border-bottom: 2px solid #daa145;
     color: #daa145;
 }
-.introduce{
-    font-size:20px;
-    font-weight: bold;
+
+.introduce {
+    font-size: 24px;
+    font-weight: bolder;
     color: #000000;
 }
+
 .mystar {
     margin: 20px auto 10px auto;
     width: 400px;

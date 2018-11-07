@@ -52,13 +52,23 @@
 }
 
 .solum {
+    font-size: 16px;
     position: relative;
     clear: both;
     width: 1200px;
     margin: 0 auto 10px auto;
     /*margin-bottom: 10px;*/
 }
-
+.context .h2{
+    font-size: 30px;
+    color: #000000;
+}
+.txt1{
+    color: #333333
+}
+.txt2{
+    color: #666666
+}
 .home {
     margin: 60px auto;
     width: 1200px;
@@ -69,8 +79,10 @@
 
 .content {
     /*position: relative;*/
-    margin: 60px 30px;
-    text-align: left;
+    /*margin: 60px 60px;*/
+    color: #333333;
+    margin-top: 60px;
+    text-align: center;
     width: 400px;
     height: auto;
     float: left;
